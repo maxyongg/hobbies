@@ -343,6 +343,56 @@ def sfs():
             print(f"   - {ev.get('start_time')} | {ev.get('name')} | {(ev.get('venue') or {}).get('name')} | films={films}")
 
 
+def round3():
+    print("== CARNIVAL API (plain requests)")
+    r = get("https://service.carnivalcinemas.sg/api/QuickSearch/GetNowPlayingMovies", params={"location": "Mumbai"})
+    if r is not None:
+        print("   ", r.text[:400])
+    print("== EVENTIVE 400 body")
+    r = get("https://api.eventive.org/event_buckets/6a277454f068b0ba9c60baae/events", params={"upcoming_only": "true"})
+    if r is not None:
+        print("   ", r.text[:300])
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        page = b.new_page(user_agent=UA)
+        page.goto("https://carnivalcinemas.sg/", wait_until="domcontentloaded", timeout=60000)
+        page.wait_for_timeout(12000)
+        print("  carnival imgs:", sorted({i for i in re.findall(r"""(?:src|ng-src)=["']([^"']+)["']""", page.content())
+                                          if "CC0" in i or "Movie" in i})[:20])
+        page.close()
+        page = b.new_page(user_agent=UA)
+        found = {}
+
+        def on_response(resp):
+            if "api.eventive.org" in resp.url and "/events" in resp.url:
+                try:
+                    found[resp.url] = (resp.request.headers, resp.json())
+                except Exception:  # noqa: BLE001
+                    pass
+
+        page.on("response", on_response)
+        page.goto("https://www.singaporefilmsociety.com/", wait_until="load", timeout=60000)
+        page.wait_for_timeout(8000)
+        for url, (headers, data) in found.items():
+            print("  eventive:", url, "| request headers:", {k: v[:12] + "…" for k, v in headers.items() if "key" in k.lower() or "eventive" in k.lower()})
+            events = data.get("events", [])
+            print(f"  {len(events)} events; keys: {sorted(events[0]) if events else None}")
+
+            def trim(o):
+                if isinstance(o, dict):
+                    return {k: trim(v) for k, v in o.items() if "description" not in k and k not in ("credits", "ticket_buckets", "tags")}
+                if isinstance(o, list):
+                    return [trim(x) for x in o[:2]]
+                return o
+            if events:
+                print("  first:", json.dumps(trim(events[0]), ensure_ascii=False)[:4000])
+            for ev in events[:40]:
+                films = [(f.get("id"), f.get("name")) for f in ev.get("films") or []]
+                print(f"   - {ev.get('start_time')} | {ev.get('name')} | {(ev.get('venue') or {}).get('name')} | films={films}")
+        b.close()
+
+
 def afa_dates():
     base = "https://asianfilmarchive.org"
     print("== AFA DATES")
@@ -358,6 +408,6 @@ def afa_dates():
 
 
 if __name__ == "__main__":
-    wanted = sys.argv[1:] or ["gv", "sfs", "carnival"]
+    wanted = sys.argv[1:] or ["round3"]
     for name in wanted:
         globals()[name]()
