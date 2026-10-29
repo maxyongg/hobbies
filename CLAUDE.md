@@ -30,7 +30,7 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 - **Live.** v1 merged to `main` (PR #1). `update.yml` runs every 6 h (also Actions → update → Run workflow), commits `data/items.json`, deploys https://maxyongg.github.io/hobbies/. `NTFY_TOPIC` secret is set.
 - First run (2026-10-29 13:51 UTC) seeded 139 items silently: Filmhouse 34, Shaw 64, AFA 41 (all with posters). Alerts start with the next new listing.
 - Six scrapers verified live through CI (2026-10-29): Filmhouse 34, Shaw 64, GV 79, Carnival 7, SFS 11, AFA (upcoming screenings only, latest 100 events). Real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
-- GV/Carnival/SFS seed silently on their first run after merge; after that their new films are stored as `alert: "quiet"` (shown in the New tab, never pushed, not in the widget).
+- Now-showing page live (PRs #4, #5). GV/Carnival/SFS seeded silently in the 2026-10-29 14:30 UTC run (79/7/11); from now on their new films are stored as `alert: "quiet"` (New tab only, never pushed, not in the widget). That run: 124 listings now showing, 80 coming soon, all with posters; ~90 now-showing cards after merging the same film across cinemas.
 - Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone; the Pages site rendering (Claude sessions can't reach github.io either).
 
 ## Layout
