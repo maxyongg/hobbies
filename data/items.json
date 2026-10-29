@@ -1,0 +1,2131 @@
+{
+ "sources": {
+  "afa": {
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  "filmhouse": {
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  "shaw": {
+   "consecutive_failures": 0,
+   "last_error": null
+  }
+ },
+ "items": [
+  {
+   "source": "afa",
+   "id": "70-years-of-taiyupian",
+   "title": "Treasured Legacy: Celebrating 70 Years of Taiyupian",
+   "url": "https://asianfilmarchive.org/event-calendar/70-years-of-taiyupian/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/taiyupian-banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Programme",
+    "70 years of taiyupian"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "a-full-up-train-1957",
+   "title": "A Full-Up Train (満員電車, 1957)",
+   "url": "https://asianfilmarchive.org/event-calendar/a-full-up-train-1957/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/09/Full-Up-Train-still-1-01.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Kon ichikawa",
+    "Twin tales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "all-mixed-up-manji-1964",
+   "title": "All Mixed Up/Manji (卍, 1964) (4K Restoration)",
+   "url": "https://asianfilmarchive.org/event-calendar/all-mixed-up-manji-1964/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/09/Manji_still_1-01.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Twin tales",
+    "Yasuzo masumura"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "an-elephant-sitting-still-2018",
+   "title": "An Elephant Sitting Still (大象席地而坐, 2018)",
+   "url": "https://asianfilmarchive.org/event-calendar/an-elephant-sitting-still-2018/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/an-elephant-sitting-still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "birth-of-a-nation-on-screen-talk",
+   "title": "[TALK] The Birth of a Nation on Screen: Singapore’s Journey from Self-Government to Independence Through Cinema",
+   "url": "https://asianfilmarchive.org/event-calendar/birth-of-a-nation-on-screen-talk/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/07/birthofanationonscreen_raphaelmillettalk_banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Talks"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "cheerful-girl-1957",
+   "title": "A Cheerful Girl / The Blue Sky Maiden (青空娘, 1957) (4K Restoration)",
+   "url": "https://asianfilmarchive.org/event-calendar/cheerful-girl-1957-1/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/09/blue-sky-maiden_hero.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Twin tales",
+    "Yasuzo masumura"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "darah-ku-my-blood-1963",
+   "title": "Darah-ku (My Blood, 1963)",
+   "url": "https://asianfilmarchive.org/event-calendar/darah-ku-my-blood-1963/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/my-blood.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Off the catalogue"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "good-neighbours-1962",
+   "title": "Good Neighbours (兩相好, 1962)",
+   "url": "https://asianfilmarchive.org/event-calendar/good-neighbours-1962/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/兩相好_still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "70 years of taiyupian"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "in-transit-expanded-cinema",
+   "title": "In Transit — Expanded Cinema Programme",
+   "url": "https://asianfilmarchive.org/event-calendar/in-transit-expanded-cinema/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/07/in-transit-banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore shorts",
+    "Singapore shorts 2026"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "in-vandas-room-2000",
+   "title": "In Vanda’s Room (No Quarto da Vanda, 2000)",
+   "url": "https://asianfilmarchive.org/event-calendar/in-vandas-room-2000/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/In-VandasRoom_still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "jonas-mekas-2000",
+   "title": "As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty (2000)",
+   "url": "https://asianfilmarchive.org/event-calendar/jonas-mekas-2000/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/as_I_was_moving_jonas-mekas_still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "kon-ichikawa-yasuzo-masumura",
+   "title": "Twin Tales: Kon Ichikawa and Yasuzō Masumura",
+   "url": "https://asianfilmarchive.org/event-calendar/kon-ichikawa-yasuzo-masumura/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/09/Ichikawa_Masumura_JFF2026_Web.jpg",
+   "release_date": null,
+   "tags": [
+    "Programme",
+    "Japanese film festival",
+    "Kon ichikawa",
+    "Twin tales",
+    "Yasuzo masumura"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "mundane-history-2009",
+   "title": "Mundane History (เจ้านกกระจอก, 2009)",
+   "url": "https://asianfilmarchive.org/event-calendar/mundane-history-2009/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/mundane-history.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "news-from-home-1976",
+   "title": "News From Home (1976)",
+   "url": "https://asianfilmarchive.org/event-calendar/news-from-home-1976/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/News-from-Home-3.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "odd-obsession-1959",
+   "title": "Odd Obsession (鍵, 1959) (4K Restoration)",
+   "url": "https://asianfilmarchive.org/event-calendar/odd-obsession-1959/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/09/odd-obsession-still-01-1440x1078.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Kon ichikawa",
+    "Twin tales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "off-the-catalogue-november-2026",
+   "title": "Off the Catalogue: November 2026 (A Maria Menado Focus)",
+   "url": "https://asianfilmarchive.org/event-calendar/off-the-catalogue-november-2026/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/MariaMenado_OTCNov26_banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Programme",
+    "Off the catalogue"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "past-time",
+   "title": "Past Time",
+   "url": "https://asianfilmarchive.org/event-calendar/past-time/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/past-time-banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Programme",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "permata-di-perlimbahan-jewel-in-the-slum-1952",
+   "title": "Permata di-Perlimbahan (Jewel in the Slum, 1952)",
+   "url": "https://asianfilmarchive.org/event-calendar/permata-di-perlimbahan-jewel-in-the-slum-1952/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/jewel-in-the-slum.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Off the catalogue"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "raja-bersiong-fanged-king-1963",
+   "title": "Raja Bersiong (Fanged King, 1963)",
+   "url": "https://asianfilmarchive.org/event-calendar/raja-bersiong-fanged-king-1963/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/Raja-Bersiong-banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Off the catalogue"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "romance-at-lungshan-temple-1962",
+   "title": "Romance At Lungshan Temple (龙山寺之恋, 1962)",
+   "url": "https://asianfilmarchive.org/event-calendar/romance-at-lungshan-temple-1962/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/龍山寺之戀-still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "70 years of taiyupian"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "satantango-1994",
+   "title": "Sátántangó (1994)",
+   "url": "https://asianfilmarchive.org/event-calendar/satantango-1994/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/SATANTANGO-hero.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-amores-perros-2000",
+   "title": "SGIFF 2026 – Amores Perros (2000)",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-amores-perros-2000-2/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/amores-perros-still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-cageman-1992",
+   "title": "SGIFF 2026 – Cageman (1992)",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-cageman-1992/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/cageman-1.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-in-which-annie-gives-it-those-ones-1989",
+   "title": "SGIFF 2026 – In Which Annie Gives It Those Ones (1989)",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-in-which-annie-gives-it-those-ones-1989/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/in-which-annie-gives-it-those-ones.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-lagaan-2001",
+   "title": "SGIFF 2026 – Lagaan: Once Upon a Time in India (2001)",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-lagaan-2001/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/Lagaan-1.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-landmark",
+   "title": "Singapore International Film Festival 2026 – Landmark",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-landmark/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/in-which-annie-gives-it-those-ones.jpg",
+   "release_date": null,
+   "tags": [
+    "Partner programme",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-macho-dancer-1988",
+   "title": "SGIFF 2026 – Macho Dancer (1988)",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-macho-dancer-1988/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/macho-dancer.jpeg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-my-name-aint-suzie-1985",
+   "title": "SGIFF 2026 – My Name Ain’t Suzie (1985)",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-my-name-aint-suzie-1985-2/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/My-Name-Ain_t-Suzie12-2-1600x864-1.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sgiff-2026-panelstory-or-how-a-housing-development-is-born-1979",
+   "title": "SGIFF 2026 – PanelStory, or How a Housing Development is Born (1979)",
+   "url": "https://asianfilmarchive.org/event-calendar/sgiff-2026-panelstory-or-how-a-housing-development-is-born-1979/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/panelstory.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore international film festival"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "singapore-dreaming-2006",
+   "title": "20th Anniversary Special – Singapore Dreaming 美满人生 (2006)",
+   "url": "https://asianfilmarchive.org/event-calendar/singapore-dreaming-2006-20/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/07/afa_20anni_singaporedreaming_landscape.jpg",
+   "release_date": null,
+   "tags": [
+    "Programme",
+    "Singapore dreaming"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "singapore-shorts-2026",
+   "title": "Singapore Shorts 2026",
+   "url": "https://asianfilmarchive.org/event-calendar/singapore-shorts-2026/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/07/SGShorts26_banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Programme",
+    "Singapore shorts",
+    "Singapore shorts 2026"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "singapore-shorts-26-selection",
+   "title": "Singapore Shorts ’26 – Official Selection 1",
+   "url": "https://asianfilmarchive.org/event-calendar/singapore-shorts-26-selection-1/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/07/OS1.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Singapore shorts 2026"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "sultan-mahmood-mangkat-di-julang-the-passing-of-sultan-mahmood-1961",
+   "title": "Sultan Mahmood Mangkat Di-julang (The Passing of Sultan Mahmood 1961)",
+   "url": "https://asianfilmarchive.org/event-calendar/sultan-mahmood-mangkat-di-julang-the-passing-of-sultan-mahmood-1961/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/10/Sultan-Mahmood-Mangkat-Di-julang-banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Off the catalogue"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "talk-amoy-dialect-cinema",
+   "title": "[TALK] Amoy-dialect Cinema: An Oddity in the World of Chinese-language Cinema",
+   "url": "https://asianfilmarchive.org/event-calendar/talk-amoy-dialect-cinema/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/amoy-poster-1.jpeg",
+   "release_date": null,
+   "tags": [
+    "Talks",
+    "70 years of taiyupian"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "taming-of-the-princess-1958",
+   "title": "Taming Of The Princess (醉打金枝, 1958)",
+   "url": "https://asianfilmarchive.org/event-calendar/taming-of-the-princess-1958/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2022/05/TamingofPrincess.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "70 years of taiyupian"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "the-burmese-harp-1956",
+   "title": "The Burmese Harp (ビルマの竪琴, 1956) (4K Restoration)",
+   "url": "https://asianfilmarchive.org/event-calendar/the-burmese-harp-1956-1/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/09/Burmese-Harp-still-01.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Kon ichikawa",
+    "Twin tales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "the-kiss-1957",
+   "title": "The Kiss (くちづけ, 1957)",
+   "url": "https://asianfilmarchive.org/event-calendar/the-kiss-1957/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/09/Kisses-1-01.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Twin tales",
+    "Yasuzo masumura"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "the-rice-dumpling-vendors-1969",
+   "title": "The Rice Dumpling Vendors (烧肉粽, 1969)",
+   "url": "https://asianfilmarchive.org/event-calendar/the-rice-dumpling-vendors-1969/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/Vendors_still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "70 years of taiyupian"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "west-of-the-tracks-2002",
+   "title": "Tie Xi Qu: West of the Tracks (铁西区, 2002) (with post-screening Q&A)",
+   "url": "https://asianfilmarchive.org/event-calendar/west-of-the-tracks-2002/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/rust-2.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "what-time-is-it-there-2001",
+   "title": "What Time Is It There? (你那邊幾點, 2001)",
+   "url": "https://asianfilmarchive.org/event-calendar/what-time-is-it-there-2001/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/What-Time-Is-It-There_still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Past time"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "afa",
+   "id": "zhang-di-seeks-a-zu-1969",
+   "title": "Zhang Di Seeks A-zu (张帝找阿珠, 1969)",
+   "url": "https://asianfilmarchive.org/event-calendar/zhang-di-seeks-a-zu-1969/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/張帝找阿珠_still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "127",
+   "title": "Al Awda",
+   "url": "https://filmhouse.sg/film/127/al-awda",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/ow3DL97qYIEgX_MtdMbw65RMksVPEtU1Pn8pVSSjDK4.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "144",
+   "title": "The Invite",
+   "url": "https://filmhouse.sg/film/144/the-invite",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/Qz5lRAPafrnKu7MCYAm3uYeu0T1h74Z4V8itC0i958s.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "159",
+   "title": "Ponyo",
+   "url": "https://filmhouse.sg/film/159/ponyo",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/6rjc_NdA2mL4VpaVhjjL5nCnCz4ahJfTm72TSORHOTE.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "168",
+   "title": "Before Sunrise",
+   "url": "https://filmhouse.sg/film/168/before-sunrise",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/mt9WDac4uELoCfFzoDdOj39HZRSWWU2H_qS_2VM0oMw.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "186",
+   "title": "Fatherland",
+   "url": "https://filmhouse.sg/film/186/fatherland",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/h-lRDTPpUaVbZKXLeJ7a5wfvmIDS4MK3wY4SY2feYaA.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "195",
+   "title": "The Violinist",
+   "url": "https://filmhouse.sg/film/195/the-violinist",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/hizkErfZRQpX5NXDgNGg2AHiHLBEjN_oVmG8oxoUKWU.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "208",
+   "title": "The Glory Hoes present The Rocky Horror Picture Show",
+   "url": "https://filmhouse.sg/film/208/the-glory-hoes-present-the-rocky-horror-picture-show",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/4S7i7E9jiyeUlkfWA-kQAMROAFe-LV_2JvPG0SEerFY.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "211",
+   "title": "Stop Making Sense (4K Restoration)",
+   "url": "https://filmhouse.sg/film/211/stop-making-sense-4k-restoration",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/qfE7CBmwt8jmAC2_sLrJAGhJQGAbK5y8Ec4RnuxgF_s.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "212",
+   "title": "Love Letter (4K Restoration)",
+   "url": "https://filmhouse.sg/film/212/love-letter-4k-restoration",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/msjFPL-hD0X10ORGJJfcBfkg73s-5_W-wWQk4kDLB0E.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "213",
+   "title": "Hereditary",
+   "url": "https://filmhouse.sg/film/213/hereditary",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/Jv9JZGGEIant3ebJpAkrLAbA8d4ICIhB5UqWPk9Dhr0.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "214",
+   "title": "What We Do in the Shadows",
+   "url": "https://filmhouse.sg/film/214/what-we-do-in-the-shadows",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/9u7qgXTtQSeXu3oeJCqdw6fN8gSelVz7n1JZbP69Hwo.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "215",
+   "title": "Monster House",
+   "url": "https://filmhouse.sg/film/215/monster-house",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/T8g3eP8jDI5w2bCeZHROI-WRFZFdJhhq32b2VOkeBcw.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "216",
+   "title": "Moonlight (10th Anniversary)",
+   "url": "https://filmhouse.sg/film/216/moonlight-10th-anniversary",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/aB-thlmpTSpCEwmtMl8N5uFWVPDvXpIvEJHZsmT3V2k.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "217",
+   "title": "Kokuho",
+   "url": "https://filmhouse.sg/film/217/kokuho",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/1N7zTZsGmJ2IrqrijtehsvW9hj41-J5mf2tp0g-NTvs.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "220",
+   "title": "Fjord",
+   "url": "https://filmhouse.sg/film/220/fjord",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/z_tZnLzzvZlceIGAaOPw8sHLkLVZ9-97o0JDSJj_L7M.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "223",
+   "title": "The House on the Moon",
+   "url": "https://filmhouse.sg/film/223/the-house-on-the-moon",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/RKoSUfT5BljQXG5Gd8PBUDPqo5RgVU8OfO1oDvd1jHk.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "224",
+   "title": "Crouching Tiger, Hidden Dragon (4K Restoration)",
+   "url": "https://filmhouse.sg/film/224/crouching-tiger-hidden-dragon-4k-restoration",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/2emi_8-mZ809IX_-3o3tFsphrQzcHWQ6x4a-qgA2YHU.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "225",
+   "title": "The Blade (4K Restoration)",
+   "url": "https://filmhouse.sg/film/225/the-blade-4k-restoration",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/AV0k-c-0kY9iupY2qP3lt0W19PKnpzscWMHlMC7K2gQ.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "226",
+   "title": "A Touch of Zen (4K Restoration)",
+   "url": "https://filmhouse.sg/film/226/a-touch-of-zen-4k-restoration",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/OVMSXKQpyChSJ0kp5lmRqyfNmmxDgNkDRGNflO5114g.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "227",
+   "title": "Look Back",
+   "url": "https://filmhouse.sg/film/227/look-back",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/YejRB0CCIF89tsPfjS4Z3ei643tMVpgm8Bhd-yNspCA.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "228",
+   "title": "Castle in the Sky",
+   "url": "https://filmhouse.sg/film/228/castle-in-the-sky",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/zhcngF9u-X411PRzwOFMODdnLdQsbstd8v777Sr2agE.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "229",
+   "title": "Cartoons Underground Programme C - Playground - For Kids",
+   "url": "https://filmhouse.sg/film/229/cartoons-underground-programme-c-playground-for-kids",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/VinKw9eBpcBejqI9e1xW2YekviTvgOlPEMRpkJjuGzY.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "230",
+   "title": "Cartoons Underground Programme A - Held Breath",
+   "url": "https://filmhouse.sg/film/230/cartoons-underground-programme-a-held-breath",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/VinKw9eBpcBejqI9e1xW2YekviTvgOlPEMRpkJjuGzY.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "231",
+   "title": "Cartoons Underground Programme B - Rip Tides",
+   "url": "https://filmhouse.sg/film/231/cartoons-underground-programme-b-rip-tides",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/VinKw9eBpcBejqI9e1xW2YekviTvgOlPEMRpkJjuGzY.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "232",
+   "title": "Amélie (25th Anniversary)",
+   "url": "https://filmhouse.sg/film/232/amlie-25th-anniversary",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/2skZm3Mts3h_uelrna7y5OwWNVidQ2t_-qIQbXlbFPw.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "233",
+   "title": "Delicatessen (4K Restoration)",
+   "url": "https://filmhouse.sg/film/233/delicatessen-4k-restoration",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/CHdIoX2KRrsaay8IHukKzzxs5Uvjv4TYu-ZJHSbo-Fs.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "234",
+   "title": "The City of Lost Children (4K Restoration)",
+   "url": "https://filmhouse.sg/film/234/the-city-of-lost-children-4k-restoration",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/o2woY1W8do3gEK3z4IqUP-fCLGRpsmDW0GLxHP7RzF8.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "235",
+   "title": "Persepolis",
+   "url": "https://filmhouse.sg/film/235/persepolis",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/GQ0Qh1TxFoWYh_YYGaaLzu1_V7YXiiAhHYOFyigyCRY.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "236",
+   "title": "Wildwood",
+   "url": "https://filmhouse.sg/film/236/wildwood",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/f2RERlbD8YWOWDeLbRlltRHC0DtWohaPf0H4lZw8idc.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "240",
+   "title": "All We Imagine as Light",
+   "url": "https://filmhouse.sg/film/240/all-we-imagine-as-light",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/eOEAg3vMmuC_CWhxo8aaS37zxWDPrnV0BD66-a420Jo.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "242",
+   "title": "Mad Max: Fury Road",
+   "url": "https://filmhouse.sg/film/242/mad-max-fury-road",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/Upgyen8eMQDCl3kYn-Gyl8I4AgUesu725GC_CA3mo7c.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "243",
+   "title": "This Is Spinal Tap",
+   "url": "https://filmhouse.sg/film/243/this-is-spinal-tap",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/T3GZrO7WTko2GE0kRo3OUbwV-_2ZvzHS2xwjGi31Sbg.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "245",
+   "title": "Godzilla Minus Zero",
+   "url": "https://filmhouse.sg/film/245/godzilla-minus-zero",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/B7xnZ9htHLED27u2ENzaMs6s0mzOqgF0K4XdgNh6l8I.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "filmhouse",
+   "id": "85",
+   "title": "La La Land (10th Anniversary)",
+   "url": "https://filmhouse.sg/film/85/la-la-land-10th-anniversary",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/8KqeC357tt7n1t_tLUjlUQy_-E-Q-iR2l0eGfpeIeeQ.jpg",
+   "release_date": null,
+   "tags": [],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1363",
+   "title": "The Cat in the Hat",
+   "url": "https://shaw.sg/movie-details/1363",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1377",
+   "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+   "url": "https://shaw.sg/movie-details/1377",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1377-Poster-1784273656234?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1410",
+   "title": "I Play Rocky",
+   "url": "https://shaw.sg/movie-details/1410",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1410-Poster-1792984056128?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1633",
+   "title": "Marvel Studios' Avengers: Doomsday",
+   "url": "https://shaw.sg/movie-details/1633",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1633-Poster-1787107698768?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1640",
+   "title": "Digger",
+   "url": "https://shaw.sg/movie-details/1640",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1640-Poster-1789011459508?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1641",
+   "title": "Street Fighter",
+   "url": "https://shaw.sg/movie-details/1641",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1721",
+   "title": "A Talent For Murder",
+   "url": "https://shaw.sg/movie-details/1721",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1721-Poster-1791175472700?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1741",
+   "title": "Winter Of The Crow (POLISH)",
+   "url": "https://shaw.sg/movie-details/1741",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1741-Poster-1792125307799?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1774",
+   "title": "Verity",
+   "url": "https://shaw.sg/movie-details/1774",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1774-Poster-1789972128931?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1775",
+   "title": "PAW Patrol: The Dino Movie",
+   "url": "https://shaw.sg/movie-details/1775",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1775-Poster-1779940596276?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1776",
+   "title": "Forgotten Island",
+   "url": "https://shaw.sg/movie-details/1776",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1776-Poster-1789376587169?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1777",
+   "title": "Focker In-Law",
+   "url": "https://shaw.sg/movie-details/1777",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1777-Poster-1779940075263?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1788",
+   "title": "The Odyssey",
+   "url": "https://shaw.sg/movie-details/1788",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1788-Poster-1782442868920?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1790",
+   "title": "Resident Evil",
+   "url": "https://shaw.sg/movie-details/1790",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1790-Poster-1786678176860?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1795",
+   "title": "Never After Dark [JPN]",
+   "url": "https://shaw.sg/movie-details/1795",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1796",
+   "title": "Disney and Pixar's Gatto",
+   "url": "https://shaw.sg/movie-details/1796",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1796-Poster-1781601533513?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1806",
+   "title": "The Weight",
+   "url": "https://shaw.sg/movie-details/1806",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1808",
+   "title": "The Land Of Sometimes",
+   "url": "https://shaw.sg/movie-details/1808",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1812",
+   "title": "How To Rob A Bank",
+   "url": "https://shaw.sg/movie-details/1812",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1813",
+   "title": "The Social Reckoning",
+   "url": "https://shaw.sg/movie-details/1813",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1813-Poster-1790320983366?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1815",
+   "title": "Marvel Studios' Avengers: Endgame Encore",
+   "url": "https://shaw.sg/movie-details/1815",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1815-Poster-1789533954346?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1816",
+   "title": "Whalefall",
+   "url": "https://shaw.sg/movie-details/1816",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1816-Poster-1784261162136?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1826",
+   "title": "Heart of the Beast",
+   "url": "https://shaw.sg/movie-details/1826",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1826-Poster-1786502778840?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1827",
+   "title": "Other Mommy",
+   "url": "https://shaw.sg/movie-details/1827",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1827-Poster-1790309587502?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1828",
+   "title": "Sense And Sensibility",
+   "url": "https://shaw.sg/movie-details/1828",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1833",
+   "title": "Clayface",
+   "url": "https://shaw.sg/movie-details/1833",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1835",
+   "title": "Dune: Part Three",
+   "url": "https://shaw.sg/movie-details/1835",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1835-Poster-1793244230073?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1843",
+   "title": "Bitter Christmas (SPANISH)",
+   "url": "https://shaw.sg/movie-details/1843",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1843-Poster-1791187280511?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1869",
+   "title": "Jumanji: Open World",
+   "url": "https://shaw.sg/movie-details/1869",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1869-Poster-1792987808702?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1874",
+   "title": "The Mongoose",
+   "url": "https://shaw.sg/movie-details/1874",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1877",
+   "title": "Disney's Hexed",
+   "url": "https://shaw.sg/movie-details/1877",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1881",
+   "title": "Violent Night 2",
+   "url": "https://shaw.sg/movie-details/1881",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1881-Poster-1786683801975?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1882",
+   "title": "The Angry Birds Movie 3",
+   "url": "https://shaw.sg/movie-details/1882",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1882-Poster-1786693731873?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1890",
+   "title": "Henry's First Dates [THAI]",
+   "url": "https://shaw.sg/movie-details/1890",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1892",
+   "title": "Ice Age: Boiling Point",
+   "url": "https://shaw.sg/movie-details/1892",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1892-Poster-1793085923497?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1894",
+   "title": "Wildwood",
+   "url": "https://shaw.sg/movie-details/1894",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1900",
+   "title": "Ebenezer",
+   "url": "https://shaw.sg/movie-details/1900",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "1901",
+   "title": "George Michael - The Faith Tour",
+   "url": "https://shaw.sg/movie-details/1901",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2006",
+   "title": "The Violinist (ENGLISH)",
+   "url": "https://shaw.sg/movie-details/2006",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2006-Poster-1788941233754?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2011",
+   "title": "Ramayana: Rise of a Legend [TAM]",
+   "url": "https://shaw.sg/movie-details/2011",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2014",
+   "title": "THE BEAST",
+   "url": "https://shaw.sg/movie-details/2014",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2015",
+   "title": "Marvel Studios' Avengers: Endgame Encore (2D | INFINITY VISION)",
+   "url": "https://shaw.sg/movie-details/2015",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2015-Poster-1789008128370?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2030",
+   "title": "The Mage [M]",
+   "url": "https://shaw.sg/movie-details/2030",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2030-Poster-1790049771313?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2031",
+   "title": "The Mage [CANTO]",
+   "url": "https://shaw.sg/movie-details/2031",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2031-Poster-1790050594753?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon",
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2032",
+   "title": "Stray Kids World Tour LIVE VIEWING",
+   "url": "https://shaw.sg/movie-details/2032",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2033",
+   "title": "Stray Kids World Tour LIVE VIEWING (ENCORE)",
+   "url": "https://shaw.sg/movie-details/2033",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2034",
+   "title": "Marvel Studios' Avengers: Doomsday (2D | INFINITY VISION)",
+   "url": "https://shaw.sg/movie-details/2034",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2037",
+   "title": "Oh My Ghost! Oh My God! [M]",
+   "url": "https://shaw.sg/movie-details/2037",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2052",
+   "title": "Street Fighter",
+   "url": "https://shaw.sg/movie-details/2052",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1641-Poster-1788317971729?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2068",
+   "title": "Roman Holiday (1953) (4K)",
+   "url": "https://shaw.sg/movie-details/2068",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2070",
+   "title": "HOSHIMACHI SUISEI \"Once Upon a Stellar\" Live Viewing (JPN)",
+   "url": "https://shaw.sg/movie-details/2070",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2071",
+   "title": "Jailer 2 [TAM]",
+   "url": "https://shaw.sg/movie-details/2071",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Top Movies"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2072",
+   "title": "Jailer 2 [TAM]",
+   "url": "https://shaw.sg/movie-details/2072",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2072-Poster-1791535709576?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2073",
+   "title": "Paradise Lost [KOR]",
+   "url": "https://shaw.sg/movie-details/2073",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2078",
+   "title": "Godzilla Minus Zero [JPN]",
+   "url": "https://shaw.sg/movie-details/2078",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2079",
+   "title": "V [M]",
+   "url": "https://shaw.sg/movie-details/2079",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2080",
+   "title": "V [CANTO]",
+   "url": "https://shaw.sg/movie-details/2080",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2081",
+   "title": "Ah Girl [M]",
+   "url": "https://shaw.sg/movie-details/2081",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2082",
+   "title": "GODZILLA MINUS ZERO - IMAX Premiere Screening (JPN)",
+   "url": "https://shaw.sg/movie-details/2082",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2084",
+   "title": "Ramayana: Rise of a Legend [HINDI]",
+   "url": "https://shaw.sg/movie-details/2084",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2085",
+   "title": "Go For Broke 2 (M)",
+   "url": "https://shaw.sg/movie-details/2085",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Now Showing"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2086",
+   "title": "Casino Royale - 20th Anniversary (4K)",
+   "url": "https://shaw.sg/movie-details/2086",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2087",
+   "title": "Breakfast at Tiffany's (1961) (4K)",
+   "url": "https://shaw.sg/movie-details/2087",
+   "type": "film",
+   "poster": "https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2087-Poster-1792635740812?w=145&dpr=1.3",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "shaw",
+   "id": "2089",
+   "title": "Scene [TAM]",
+   "url": "https://shaw.sg/movie-details/2089",
+   "type": "film",
+   "poster": "https://shaw.sg/assets/images/noimage.png",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "first_seen": "2026-10-29T21:51:51+08:00",
+   "listed": true,
+   "alert": "seed"
+  }
+ ]
+}
