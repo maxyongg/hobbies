@@ -9,7 +9,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-USER_AGENT = "whats-on-sg/0.1 (+https://github.com/maxyongg/hobbies; personal new-film alerts)"
+USER_AGENT = "cinema/0.1 (+https://github.com/maxyongg/hobbies; personal new-film alerts)"
 TIMEOUT = 30
 MIN_INTERVAL = 1.0  # seconds between requests to the same host
 

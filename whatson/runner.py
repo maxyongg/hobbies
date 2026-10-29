@@ -54,7 +54,7 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
             health["last_error"] = error
             log.warning("%s: %s (failure %d)", src.key, error, health["consecutive_failures"])
             if health["consecutive_failures"] == BROKEN_AFTER and not dry_run:
-                notifier.problem(f"whats-on-sg: {src.name} scraper may be broken",
+                notifier.problem(f"cinema: {src.name} scraper may be broken",
                                  f"{error} on {BROKEN_AFTER} runs in a row.", run_url())
             continue
 
