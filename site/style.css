@@ -64,7 +64,7 @@ a { color: inherit; }
   font: inherit; font-size: 0.95rem; padding: 8px 10px; border-radius: 8px;
   border: 1px solid var(--line); background: var(--card); color: var(--text); min-width: 0;
 }
-.controls input { flex: 1; }
+.controls input { flex: 1; -webkit-appearance: none; appearance: none; } /* iOS draws its own search field otherwise */
 
 /* Cinema filter chips */
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }

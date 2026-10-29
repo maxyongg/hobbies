@@ -31,7 +31,7 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 - First run (2026-10-29 13:51 UTC) seeded 139 items silently: Filmhouse 34, Shaw 64, AFA 41 (all with posters). Alerts start with the next new listing.
 - Six scrapers verified live through CI (2026-10-29): Filmhouse 34, Shaw 64, GV 79, Carnival 7, SFS 11, AFA (upcoming screenings only, latest 100 events). Real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
 - Now-showing page live (PRs #4, #5). GV/Carnival/SFS seeded silently in the 2026-10-29 14:30 UTC run (79/7/11); from now on their new films are stored as `alert: "quiet"` (New tab only, never pushed, not in the widget). That run: 124 listings now showing, 80 coming soon, all with posters; ~90 now-showing cards after merging the same film across cinemas.
-- Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone; the Pages site rendering (Claude sessions can't reach github.io either).
+- Pages serves the app since Max set the source to GitHub Actions (2026-10-29). Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone (Claude sessions can't reach github.io either).
 
 ## Layout
 
@@ -65,5 +65,7 @@ To check a scraper change against the real sites: push to a non-`main` branch, t
 - **Cinema sites are blocked from Claude cloud sessions** (shell and WebFetch: `connect_rejected`). Allowing them is the cloud environment's *Network access* setting (environment menu in the session title bar → Edit → Network access → Limited/Custom → Allowed domains: `filmhouse.sg`, `asianfilmarchive.org`, `shaw.sg`, `www.shaw.sg`, keep package managers ticked; or Full). Max's account has **two environments both named "Default"**; as of 2026-10-29 13:05 SGT both still blocked the sites and both still read "Default - trusted network access". A change made mid-session never reached that session (even after it resumed in a new container), so start a brand-new session after changing it. Test with `curl -sS -o /dev/null -w '%{http_code}' https://filmhouse.sg/`. Otherwise verify through the `live` CI job.
 - **Claude's GitHub access can't create/update `.github/workflows/*`** (no `workflow` scope, via git push or MCP). Give Max the exact edit to make on github.com, or stage a file outside `.github/` for him to move.
 - `main` gets a bot commit ("data: update listings") whenever listings change; pull before branching.
+- **Pages source must be "GitHub Actions"** (Settings → Pages). On "Deploy from a branch" GitHub republishes the repo (README) on every push and overwrites the app. Max switched it on 2026-10-29.
+- `site/index.html` loads `style.css?v=<hash>` / `app.js?v=<hash>` (first 10 hex of sha256) so browsers can't mix a new page with a cached old script (that left the page stuck on "Loading…" in Safari). `tests/test_site.py` fails with the exact string to use when either file changes.
 - Be polite: low polling frequency, a descriptive User-Agent, ≥1 s between requests per host. Filmhouse updates general-release showtimes weekly (Tuesdays).
 - Sites change markup; keep each scraper small. The zero-items/failure check alerts after 2 bad runs.
