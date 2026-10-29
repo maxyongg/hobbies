@@ -1,6 +1,6 @@
 # hobbies
 
-**whats-on-sg** — A personal web app that tells me when new films are added at the Singapore cinemas I care about.
+A personal web app that tells me when new films are added at the Singapore cinemas I care about.
 
 ## What it does (v1)
 
@@ -21,6 +21,6 @@
 
 ## Status
 
-Scaffold only. No code yet. See [`CLAUDE.md`](CLAUDE.md) for the handover: decisions, open questions, and next steps.
+Decisions made; no app code yet. See [`CLAUDE.md`](CLAUDE.md) for the handover: decisions, gotchas, and next steps.
 
 Source-by-source notes on how each site lists films: [`docs/sources.md`](docs/sources.md).
