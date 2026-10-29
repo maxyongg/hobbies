@@ -23,9 +23,10 @@ Design for more sources later (gallery openings / things to do from social media
 
 ## Status (2026-10-29)
 
-- v1 code on branch `claude/zen-hypatia-chjicl` (not merged): core loop, store, ntfy, three sources, web page, widget, tests.
-- **All three scrapers verified live** via the CI `live` job (2026-10-29): Filmhouse 34 films, Shaw 64, AFA 41 (latest 50 events, repeats merged). Real data paths are in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
-- `.github/workflows/ci.yml` is installed (Max moved it). `update.yml` is still staged in `workflows/`. Pages, `NTFY_TOPIC` and the widget are not set up yet. Nothing has seeded `data/items.json` yet.
+- **Live.** v1 merged to `main` (PR #1). `update.yml` runs every 6 h (also Actions → update → Run workflow), commits `data/items.json`, deploys https://maxyongg.github.io/hobbies/. `NTFY_TOPIC` secret is set.
+- First run (2026-10-29 13:51 UTC) seeded 139 items silently: Filmhouse 34, Shaw 64, AFA 41 (all with posters). Alerts start with the next new listing.
+- All three scrapers verified live; real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
+- Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone; the Pages site rendering (Claude sessions can't reach github.io either).
 
 ## Layout
 
@@ -37,8 +38,8 @@ whatson/            Python package: python -m whatson run [--dry-run] [--source 
   sources/          one module per source + wordpress.py / html.py helpers; registry in __init__.py
 site/               static web app (reads data/items.json + data/status.json)
 widget/             Scriptable widget
-.github/workflows/  ci.yml: tests; on non-main pushes also a live dry run + probe
-workflows/          staged update.yml (scheduled run + Pages deploy) for Max to move
+.github/workflows/  update.yml: 6-hourly run + commit data + Pages deploy
+                    ci.yml: tests; on non-main pushes also a live dry run + probe
 scripts/probe.py    prints what each site exposes — use when a scraper breaks
 ```
 
@@ -46,16 +47,16 @@ Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source
 
 ## Next steps
 
-1. **Max (one-off setup):** move `workflows/update.yml` into `.github/workflows/`; Settings → Pages → Source: GitHub Actions; add secret `NTFY_TOPIC` (hard-to-guess name, subscribe to it in the ntfy app); install the Scriptable widget (instructions at the top of `widget/whats-on-sg.js`).
-2. Merge the branch to `main`; Actions → update → Run workflow once (seeds silently), check https://maxyongg.github.io/hobbies/.
-3. Optional polish: Shaw lists language/format variants as separate films (`V [CANTO]`, `V [M]`) — group them if alerts are noisy; AFA includes talks — filter by `mep_cat` if unwanted.
-4. Later: more sources (galleries, games) as new modules in `whatson/sources/`.
+1. Confirm with Max: first real ntfy alert arrived and looked right; widget installed; site renders.
+2. Optional polish: Shaw lists language/format variants as separate films (`V [CANTO]`, `V [M]`) — group them if alerts are noisy; AFA includes talks — filter by `mep_cat` if unwanted.
+3. Later: more sources (galleries, games) as new modules in `whatson/sources/`.
 
 To check a scraper change against the real sites: push to a non-`main` branch, then read the `live` job log with the GitHub MCP tools (`actions_list` → `list_workflow_jobs` → `get_job_logs`; the log is large, so save and grep it).
 
 ## Gotchas
 
 - **Cinema sites are blocked from Claude cloud sessions** (shell and WebFetch: `connect_rejected`). Allowing them is the cloud environment's *Network access* setting (environment menu in the session title bar → Edit → Network access → Limited/Custom → Allowed domains: `filmhouse.sg`, `asianfilmarchive.org`, `shaw.sg`, `www.shaw.sg`, keep package managers ticked; or Full). Max's account has **two environments both named "Default"**; as of 2026-10-29 13:05 SGT both still blocked the sites and both still read "Default - trusted network access". A change made mid-session never reached that session (even after it resumed in a new container), so start a brand-new session after changing it. Test with `curl -sS -o /dev/null -w '%{http_code}' https://filmhouse.sg/`. Otherwise verify through the `live` CI job.
-- **Claude's GitHub access can't create/update `.github/workflows/*`** (no `workflow` scope, via git push or MCP). Edit workflows in `workflows/` and ask Max to copy them across, or have Max make the change.
+- **Claude's GitHub access can't create/update `.github/workflows/*`** (no `workflow` scope, via git push or MCP). Give Max the exact edit to make on github.com, or stage a file outside `.github/` for him to move.
+- `main` gets a bot commit ("data: update listings") whenever listings change; pull before branching.
 - Be polite: low polling frequency, a descriptive User-Agent, ≥1 s between requests per host. Filmhouse updates general-release showtimes weekly (Tuesdays).
 - Sites change markup; keep each scraper small. The zero-items/failure check alerts after 2 bad runs.

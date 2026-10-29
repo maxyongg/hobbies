@@ -12,13 +12,14 @@ Every 6 hours a GitHub Actions job:
 
 The first successful check of each cinema records what's already showing without alerting. If a cinema's scraper breaks (errors or finds nothing twice in a row), you get one warning push.
 
-## Setup (one-off)
+Live at **https://maxyongg.github.io/hobbies/**. Run it on demand from Actions → update → Run workflow.
 
-1. **Workflows:** move `workflows/update.yml` and `workflows/ci.yml` into `.github/workflows/` (see [`workflows/README.md`](workflows/README.md)).
+## Setup (done 2026-10-29)
+
+1. **Workflows** in `.github/workflows/`: `update.yml` (every 6 h) and `ci.yml` (tests; live dry run on non-`main` pushes).
 2. **Pages:** Settings → Pages → Build and deployment → Source: **GitHub Actions**.
-3. **Alerts:** pick a hard-to-guess topic name, subscribe to it in the ntfy app, and add it as the repo secret `NTFY_TOPIC` (Settings → Secrets and variables → Actions). Optional: `NTFY_TOKEN` secret and `NTFY_SERVER` variable for a self-hosted or protected server.
-4. **Run once:** Actions → update → Run workflow. The site appears at https://maxyongg.github.io/hobbies/.
-5. **Widget:** follow the comment at the top of [`widget/whats-on-sg.js`](widget/whats-on-sg.js).
+3. **Alerts:** repo secret `NTFY_TOPIC` = the topic subscribed to in the ntfy app (Settings → Secrets and variables → Actions). Optional: `NTFY_TOKEN` secret and `NTFY_SERVER` variable for a self-hosted or protected server.
+4. **Widget:** follow the comment at the top of [`widget/whats-on-sg.js`](widget/whats-on-sg.js).
 
 ## Run locally
 
