@@ -1,14 +1,15 @@
 # hobbies
 
-**cinema** — tells me when new films are listed at the Singapore cinemas I care about.
+**cinema** — what's showing at Singapore cinemas, and a push when Filmhouse, Shaw or the Asian Film Archive list a new film.
 
-## What it does (v1)
+## What it does
 
 Every 6 hours a GitHub Actions job:
 
-1. Checks the listings of **Filmhouse** (Golden Mile Tower), **Shaw Theatres** and the **Asian Film Archive**.
+1. Checks the listings of **Filmhouse**, **Shaw Theatres**, the **Asian Film Archive**, **Golden Village**, **Carnival Cinemas** and the **Singapore Film Society** (SFS Somerset).
 2. Compares them with every film it has seen before (`data/items.json`).
-3. For each new film: sends a push via [ntfy](https://ntfy.sh), and publishes it to the web app (GitHub Pages) and the iOS widget ([Scriptable](https://scriptable.app)).
+3. For each new film at Filmhouse, Shaw or AFA: sends a push via [ntfy](https://ntfy.sh) and shows it in the iOS widget ([Scriptable](https://scriptable.app)).
+4. Publishes the web app: **Now showing** and **Coming soon** across all six (one card per film, with a link to each cinema showing it), plus **New** listings.
 
 The first successful check of each cinema records what's already showing without alerting. If a cinema's scraper breaks (errors or finds nothing twice in a row), you get one warning push.
 

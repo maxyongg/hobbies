@@ -4,7 +4,7 @@ Read this first in every new session. Keep it short and current: update **Status
 
 ## Goal
 
-Alert Max every time a new film is listed at Filmhouse, Shaw Theatres, or the Asian Film Archive (Singapore). Show new films in a web app and an iOS widget.
+Alert Max every time a new film is listed at Filmhouse, Shaw Theatres, or the Asian Film Archive (Singapore). The web app (GitHub Pages) shows **everything showing in Singapore cinemas** — now showing, coming soon, and new listings — and an iOS widget shows the new films.
 
 Design for more sources later (gallery openings / things to do from social media; high-scoring new video games), so each source is a pluggable module, and "film" is one item `type` among several.
 
@@ -22,12 +22,15 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 3. **Widget:** Scriptable script (`site/widget.js`, served at `/widget.js`), no native app/PWA.
 4. **Language:** Python (requests + BeautifulSoup; Playwright for Shaw).
 5. **Shaw scope:** alert on every new title.
+6. **Web app (2026-10-29):** tabs Now showing / Coming soon / New. One card per film, merged across cinemas by normalised title (in `site/app.js`), with a link per cinema for times and booking (no showtimes scraped).
+7. **Cinemas:** alerts for Filmhouse, Shaw, AFA. Golden Village, Carnival Cinemas and Singapore Film Society are web-app only (`alerts = False`). Closed or skipped venues are listed in `docs/sources.md`.
 
 ## Status (2026-10-29)
 
 - **Live.** v1 merged to `main` (PR #1). `update.yml` runs every 6 h (also Actions → update → Run workflow), commits `data/items.json`, deploys https://maxyongg.github.io/hobbies/. `NTFY_TOPIC` secret is set.
 - First run (2026-10-29 13:51 UTC) seeded 139 items silently: Filmhouse 34, Shaw 64, AFA 41 (all with posters). Alerts start with the next new listing.
-- All three scrapers verified live; real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
+- Six scrapers verified live through CI (2026-10-29): Filmhouse 34, Shaw 64, GV 79, Carnival 7, SFS 11, AFA (upcoming screenings only, latest 100 events). Real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
+- GV/Carnival/SFS seed silently on their first run after merge; after that their new films are stored as `alert: "quiet"` (shown in the New tab, never pushed, not in the widget).
 - Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone; the Pages site rendering (Claude sessions can't reach github.io either).
 
 ## Layout
@@ -37,7 +40,8 @@ whatson/            Python package: python -m whatson run [--dry-run] [--source 
   runner.py         fetch → diff → alert → save; seeding; broken-source alerts
   store.py          data/items.json (committed; also the web app's data)
   notify.py         ntfy (JSON publish); log-only when NTFY_TOPIC unset
-  sources/          one module per source + wordpress.py / html.py helpers; registry in __init__.py
+  sources/          one module per source (filmhouse, shaw, afa, gv, carnival, sfs) + wordpress.py / html.py
+                    helpers; registry and alerting/quiet split in __init__.py
 site/               static web app (reads data/items.json + data/status.json) + widget.js (Scriptable)
 widget/whats-on-sg.js  symlink to site/widget.js, only because update.yml still copies that path
 .github/workflows/  update.yml: 6-hourly run + commit data + Pages deploy
@@ -45,13 +49,14 @@ widget/whats-on-sg.js  symlink to site/widget.js, only because update.yml still 
 scripts/probe.py    prints what each site exposes — use when a scraper breaks
 ```
 
-Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source seeds silently (`alert: "seed"`). Items that vanish stay with `listed: false`. Failed sends stay `pending` and retry next run. A source failing/empty on 2 runs in a row sends one warning push. >5 new from one source → one summary push. Run timestamps live in `data/status.json` (published, not committed) so `items.json` only changes when listings do.
+Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source seeds silently (`alert: "seed"`); later new items from `alerts = False` sources get `alert: "quiet"`. Each item has `showing` ("now"/"soon", per source rules in `docs/sources.md`). Items that vanish stay with `listed: false`. Failed sends stay `pending` and retry next run. A source failing/empty on 2 runs in a row sends one warning push. >5 new from one source → one summary push. Run timestamps live in `data/status.json` (published, not committed) so `items.json` only changes when listings do.
 
 ## Next steps
 
 1. Confirm with Max: first real ntfy alert arrived and looked right; widget installed; site renders.
-2. Optional polish: Shaw lists language/format variants as separate films (`V [CANTO]`, `V [M]`) — group them if alerts are noisy; AFA includes talks — filter by `mep_cat` if unwanted.
-3. Later: more sources (galleries, games) as new modules in `whatson/sources/`.
+2. Ask Max how the Now showing page looks once the first post-merge run has filled GV/Carnival/SFS; tune title merging in `site/app.js` (`filmKey`) if the same film shows as two cards.
+3. Optional polish: Shaw lists language/format variants as separate films (`V [CANTO]`, `V [M]`) — group them if alerts are noisy; AFA includes talks — filter by `mep_cat` if unwanted. Objectifs could be added (see `docs/sources.md`).
+4. Later: more sources (galleries, games) as new modules in `whatson/sources/`.
 
 To check a scraper change against the real sites: push to a non-`main` branch, then read the `live` job log with the GitHub MCP tools (`actions_list` → `list_workflow_jobs` → `get_job_logs`; the log is large, so save and grep it).
 
