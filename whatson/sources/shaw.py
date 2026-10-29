@@ -17,6 +17,7 @@ from .html import harvest_links, slug_id
 
 BASE = "https://shaw.sg"
 TABS = ["Now Showing", "Ending Soon", "Advance Sales", "Top Movies", "Coming Soon"]
+SOON_TABS = {"Advance Sales", "Coming Soon"}
 MOVIE_PATH = r"^/movie-details/\d+"
 
 
@@ -46,6 +47,8 @@ class Shaw(Source):
                                               url=link["url"], poster=link["poster"]))
             if tag and tag not in item.tags:
                 item.tags.append(tag)
+            if tag:  # a film on any now-showing tab is "now", even if also in Advance Sales
+                item.showing = "now" if tag not in SOON_TABS or item.showing == "now" else "soon"
 
     def from_browser(self, http) -> list[Item]:
         try:

@@ -15,6 +15,7 @@ class Source:
     key: str  # short, stable; used in item keys and data files
     name: str  # shown in alerts and the web app
     url: str  # human-facing listing page
+    alerts: bool = True  # False: new items are shown in the web app but never pushed
 
     def fetch(self, http) -> list[Item]:
         """Return everything currently listed. Raise or return [] on failure."""

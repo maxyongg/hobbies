@@ -8,9 +8,10 @@ from whatson.store import Store
 
 
 class FakeSource:
-    def __init__(self, key, batches):
+    def __init__(self, key, batches, alerts=True):
         self.key, self.name, self.url = key, key.title(), f"https://{key}.example/"
         self.batches = list(batches)
+        self.alerts = alerts
 
     def fetch(self, http):
         batch = self.batches.pop(0)
@@ -119,3 +120,13 @@ def test_saved_file_is_stable_and_unicode(tmp_path, http):
     store.save()
     assert (tmp_path / "items.json").read_text(encoding="utf-8") == text
     assert "checked" not in json.loads(text)
+
+
+def test_quiet_source_records_new_items_without_alerting(tmp_path, http):
+    src = FakeSource("gv", [["a"], ["a", "b"]], alerts=False)
+    ntfy = Ntfy(http, "t")
+    run_once(tmp_path, src, ntfy, http)
+    store, status = run_once(tmp_path, src, ntfy, http)
+    assert http.posts == []
+    assert store.items[("gv", "b")].alert == "quiet"
+    assert status["sources"]["gv"]["alerts"] is False

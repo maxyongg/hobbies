@@ -35,4 +35,6 @@ class Filmhouse(Source):
                                                   title=link["title"] or title_from_slug(link["url"])))
                 if tag and tag not in item.tags:
                     item.tags.append(tag)
+        for item in items.values():
+            item.showing = "soon" if "Coming soon" in item.tags else "now"
         return list(items.values())

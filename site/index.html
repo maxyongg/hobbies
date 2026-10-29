@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Cinema</title>
-  <meta name="description" content="New films at Filmhouse, Shaw Theatres and the Asian Film Archive.">
+  <meta name="description" content="What's showing at cinemas in Singapore, and what's new.">
   <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#141416" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
@@ -14,13 +14,21 @@
   <header>
     <h1>Cinema</h1>
     <p id="checked" class="muted">Loading…</p>
-    <nav id="filters" aria-label="Filter by source"></nav>
-    <label class="toggle"><input type="checkbox" id="listed-only"> Still listed only</label>
+    <nav id="views" class="tabs" aria-label="View"></nav>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search films" autocomplete="off" aria-label="Search films">
+      <select id="sort" aria-label="Sort">
+        <option value="az">A–Z</option>
+        <option value="new">Newest</option>
+        <option value="most">Most cinemas</option>
+      </select>
+    </div>
+    <nav id="cinemas" class="chips" aria-label="Cinemas"></nav>
   </header>
   <main id="feed" aria-live="polite"></main>
   <footer class="muted">
-    Checked every 6 hours. <a href="https://github.com/maxyongg/hobbies">Source</a> ·
-    <a href="widget.js">Scriptable widget</a>
+    Checked every 6 hours. Tap a cinema to see times and book.
+    <a href="https://github.com/maxyongg/hobbies">Source</a> · <a href="widget.js">Scriptable widget</a>
   </footer>
   <script src="app.js"></script>
 </body>
