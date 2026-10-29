@@ -32,7 +32,7 @@ Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Cl
 - **Listing pages:** `/whatson/`, `/events-calendar/`, programmes under `/event-archive/programmes/` and `/mep_cat/programme/`.
 - **Event detail URL pattern:** `/event-calendar/<title-slug>-<year>/`, e.g. `/event-calendar/hush-2016/`. Repeat screenings get suffixes (`-1`, `-2`); some add a programme tag (`-reciprocal`). → Normalise the id by stripping repeat suffixes so one film = one alert.
 - **Try first:** `/wp-json/wp/v2/mep_events?per_page=100&orderby=date` and `/feed/?post_type=mep_events`.
-- **Implemented (verified live 2026-10-29, 86 events):** `whatson/sources/afa.py` — `mep_events` over WP REST (1,770 posts in total; we read the latest 100), `mep_cat` terms as tags; HTML fallback reads `/event-calendar/<slug>/` links. id = slug with repeat suffixes (`-1`, `-2`) stripped; 4-digit years and programme tags are kept. Includes talks and shorts programmes, not just films. "[SOLD OUT]" is stripped from titles.
+- **Implemented (verified live 2026-10-29):** `whatson/sources/afa.py` — `mep_events` over WP REST (1,770 posts in total), latest 50 with `_fields=id,slug,link,title,date,class_list,yoast_head_json` (~270 KB; with `_embed` it was ~1 MB). Poster = Yoast `og_image`; tags from `class_list` (`mep_cat-*`, `tag-*`). HTML fallback reads `/event-calendar/<slug>/` links on `/whatson/` and `/events-calendar/`. id = slug with repeat suffixes (`-1`, `-2`) stripped; 4-digit years and programme tags are kept. Includes talks and shorts programmes, not just films. "[SOLD OUT]" is stripped from titles. One run (of four, minutes apart) got a non-JSON reply and empty pages — probably bot protection; the next run was fine.
 
 ## Future sources (not v1)
 

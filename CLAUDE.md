@@ -24,7 +24,7 @@ Design for more sources later (gallery openings / things to do from social media
 ## Status (2026-10-29)
 
 - v1 code on branch `claude/zen-hypatia-chjicl` (not merged): core loop, store, ntfy, three sources, web page, widget, tests.
-- **All three scrapers verified live** via the CI `live` job (2026-10-29): Filmhouse 34 films, Shaw 64, AFA 86 events. Real data paths are in `docs/sources.md`.
+- **All three scrapers verified live** via the CI `live` job (2026-10-29): Filmhouse 34 films, Shaw 64, AFA 41 (latest 50 events, repeats merged). Real data paths are in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
 - `.github/workflows/ci.yml` is installed (Max moved it). `update.yml` is still staged in `workflows/`. Pages, `NTFY_TOPIC` and the widget are not set up yet. Nothing has seeded `data/items.json` yet.
 
 ## Layout
