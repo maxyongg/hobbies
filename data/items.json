@@ -4,7 +4,19 @@
    "consecutive_failures": 0,
    "last_error": null
   },
+  "carnival": {
+   "consecutive_failures": 0,
+   "last_error": null
+  },
   "filmhouse": {
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  "gv": {
+   "consecutive_failures": 0,
+   "last_error": null
+  },
+  "sfs": {
    "consecutive_failures": 0,
    "last_error": null
   },
@@ -14,6 +26,1602 @@
   }
  },
  "items": [
+  {
+   "source": "carnival",
+   "id": "aadarsha-kutumbam-house-no-47-ak",
+   "title": "Aadarsha Kutumbam House No: 47 - AK",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002374.JPG",
+   "release_date": "2026-11-02",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "carnival",
+   "id": "disco",
+   "title": "Disco",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002373.JPG",
+   "release_date": "2026-11-06",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "carnival",
+   "id": "jailer-2-nc16",
+   "title": "Jailer 2 (NC16)",
+   "url": "https://carnivalcinemas.sg/Jailer%202%20(NC16)/Jailer%202%20(NC16)",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002365.JPG",
+   "release_date": "2026-10-15",
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "carnival",
+   "id": "mookuthi-amman-2",
+   "title": "Mookuthi Amman 2",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002371.JPG",
+   "release_date": "2026-11-06",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "carnival",
+   "id": "scene",
+   "title": "Scene",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002370.JPG",
+   "release_date": "2026-11-06",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "carnival",
+   "id": "tamil-ramayana-rise-of-a-legend",
+   "title": "Ramayana: Rise Of A Legend (TAMIL)",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002372.JPG",
+   "release_date": "2026-11-05",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "carnival",
+   "id": "the-execution-m18",
+   "title": "The Execution (M18)",
+   "url": "https://carnivalcinemas.sg/The%20Execution(M18)/The%20Execution(M18)",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002369.JPG",
+   "release_date": "2026-11-21",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1332",
+   "title": "The Cat In The Hat",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1332",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1332.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1392",
+   "title": "Digger",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1392",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1392.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1395",
+   "title": "Marvel Studios’ Avengers: Doomsday",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1395",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1395.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1398",
+   "title": "Minions & Monsters",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1398",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1398.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1408",
+   "title": "Dune: Part Three",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1408",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1408.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1410",
+   "title": "Forgotten Island",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1410",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1410.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1413",
+   "title": "How To Rob A Bank",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1413",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1413.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1415",
+   "title": "Focker In-Law",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1415",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1415.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1418",
+   "title": "Paw Patrol: The Dino Movie",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1418",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1418.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1422",
+   "title": "The Odyssey",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1422",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1422.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1424",
+   "title": "Spider-Man: Brand New Day",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1424",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1424.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1425",
+   "title": "Clayface",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1425",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1425.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1429",
+   "title": "Verity",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1429",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1429.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1439",
+   "title": "Resident Evil",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1439",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1439.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1444",
+   "title": "The Violinist (Eng)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1444",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1444.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1446",
+   "title": "Sense And Sensibility",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1446",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1446.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1448",
+   "title": "Disney’s Hexed",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1448",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1448.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1449",
+   "title": "Whalefall",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1449",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1449.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1451",
+   "title": "Children Of Blood And Bone",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1451",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1451.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1453",
+   "title": "Violent Night 2",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1453",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1453.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1454",
+   "title": "Ebenezer",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1454",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1454.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1458",
+   "title": "Street Fighter",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1458",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1458.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1460",
+   "title": "Other Mommy",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1460",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1460.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1462",
+   "title": "Heart Of The Beast",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1462",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1462.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1463",
+   "title": "Coyote vs. Acme",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1463",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1463.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1465",
+   "title": "Marvel Studios' Avengers: Endgame Encore",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1465",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1465.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1467",
+   "title": "Marvel Studios' Avengers: Endgame Encore (IV)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1467",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1467.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1468",
+   "title": "Jumanji: Open World",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1468",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1468.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1469",
+   "title": "Shaun The Sheep: The Beast Of Mossy Bottom",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1469",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1469.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1471",
+   "title": "Marvel Studios’ Avengers: Doomsday (IV)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1471",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1471.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1472",
+   "title": "Cocomelon: The Movie",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1472",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1472.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1477",
+   "title": "Ice Age: Boiling Point",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1477",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1477.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1478",
+   "title": "Not Alone",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1478",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1478.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1479",
+   "title": "The Thomas Crown Affair",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1479",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1479.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "1480",
+   "title": "Wildwood",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1480",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1480.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "2387",
+   "title": "The Fellow Who Rejected College 拒绝联考的小子",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2387",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2387.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "2475",
+   "title": "Puella Magi Madoka Magica The Movie -Walpurgisnacht: Rising- 魔法少女小圆 〈魔女之夜的回天〉",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2475",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2475.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "2484",
+   "title": "Eda Raa",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2484",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2484.jpg",
+   "release_date": null,
+   "tags": [
+    "Sinhala",
+    "PG"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4460",
+   "title": "We Are All Strangers 我们不是陌生人",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4460",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4460.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4484",
+   "title": "八仙！All Wishes Come True!",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4484",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4484.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4487",
+   "title": "Pace 脚踏实地",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4487",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4487.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4490",
+   "title": "Blue Lock",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4490",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4490.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4496",
+   "title": "Once Upon A Time In The Middle East 欢迎来龙餐馆",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4496",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4496.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4499",
+   "title": "The Violinist 沧海琴声 (Mand)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4499",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4499.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4502",
+   "title": "Back To Love 带你去见我妈 (Teochew)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4502",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4502.jpg",
+   "release_date": null,
+   "tags": [
+    "Teochew",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4503",
+   "title": "Henry’s First Dates",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4503",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4503.jpg",
+   "release_date": null,
+   "tags": [
+    "Thai",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4505",
+   "title": "Baththa",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4505",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4505.jpg",
+   "release_date": null,
+   "tags": [
+    "Tamil",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4507",
+   "title": "Jailer 2",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4507",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4507.jpg",
+   "release_date": null,
+   "tags": [
+    "Tamil",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4508",
+   "title": "Munafik Melawan Iblis",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4508",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4508.jpg",
+   "release_date": null,
+   "tags": [
+    "Indonesian",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4510",
+   "title": "Godzilla Minus Zero",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4510",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4510.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4511",
+   "title": "Go For Broke 2 重生 2",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4511",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4511.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4512",
+   "title": "Ramayana: Rise Of A Legend (Hindi)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4512",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4512.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4515",
+   "title": "Always Yours, Never Mine",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4515",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4515.jpg",
+   "release_date": null,
+   "tags": [
+    "Tagalog",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4517",
+   "title": "V 空枪 (Mand)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4517",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4517.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4518",
+   "title": "V 空枪 (Canto)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4518",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4518.jpg",
+   "release_date": null,
+   "tags": [
+    "Cantonese",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4520",
+   "title": "Scene",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4520",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4520.jpg",
+   "release_date": null,
+   "tags": [
+    "Tamil"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "4521",
+   "title": "Kudrat 1968: High Council",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4521",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4521.jpg",
+   "release_date": null,
+   "tags": [
+    "Malay"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7490",
+   "title": "Chiikawa The Movie: The Secret Of The Mermaid Island",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7490",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7490.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7491",
+   "title": "Fans' Screening: CHIIKAWA THE MOVIE: THE SECRET OF THE MERMAID ISLAND",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7491",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7491.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7497",
+   "title": "Detective Conan The Movie: Fallen Angels Of The Highway",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7497",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7497.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7504",
+   "title": "Bts World Tour `arirang' In São Paulo: Live Viewing",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7504",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7504.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean",
+    "General"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7505",
+   "title": "Bts World Tour `arirang' In São Paulo: Live Viewing (encore)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7505",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7505.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean",
+    "General"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7508",
+   "title": "Marvel Studios' Avengers: Endgame x Doomsday Marathon (Atmos IV)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7508",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7508.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7509",
+   "title": "Look Back",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7509",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7509.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7512",
+   "title": "[jap] Crayon Shinchan The Movie: Spooky! My Yokai Vacation",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7512",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7512.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7513",
+   "title": "[mand] Crayon Shinchan The Movie: Spooky! My Yokai Vacation",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7513",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7513.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7514",
+   "title": "Halloween Fans' Screening: Clayface",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7514",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7514.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7515",
+   "title": "Fans' Screening: LOOK BACK",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7515",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7515.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7516",
+   "title": "Stray Kids World Tour LIVE VIEWING",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7516",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7516.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7517",
+   "title": "Stray Kids World Tour LIVE VIEWING (ENCORE)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7517",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7517.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7518",
+   "title": "GODZILLA MINUS ZERO Premiere Screening",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7518",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7518.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7519",
+   "title": "EXO PLANET #6 - EXhOrizon [dot] in CINEMAS",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7519",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7519.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean",
+    "General"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7520",
+   "title": "Fans' Screening - Detective Conan: The Counterfeit Case of Ultra 30",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7520",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7520.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7521",
+   "title": "“jeonghan X Joshua Journey Into [dreaming] – Japan” Live Viewing",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7521",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7521.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean, Japanese"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "7522",
+   "title": "Detective Conan: Episode \"zero\": The Shinichi Kudo Aquarium Case",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7522",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7522.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "8489",
+   "title": "Drishyam: The Conclusion",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8489",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8489.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi",
+    "PG"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "8490",
+   "title": "Udta Teer",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8490",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8490.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "8491",
+   "title": "Prahaar: The Untold Story Of Ujjwal Nikam",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8491",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8491.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "gv",
+   "id": "8492",
+   "title": "Nayyi Navelli",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8492",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8492.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6a5042c675bd49357a05f4c2",
+   "title": "Itam: A Sun Bear Story",
+   "url": "https://events.singaporefilmsociety.com/films/6a5042c675bd49357a05f4c2",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/d7d7eec89bb976ebb3bd31947b427b5a.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6a5045c451da292b56c9aa70",
+   "title": "The Old Man and His Car",
+   "url": "https://events.singaporefilmsociety.com/films/6a5045c451da292b56c9aa70",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/9cbf2d822c27933a0951d827749c2281.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6a5f1c002b33ea397dd1afc0",
+   "title": "Finding Mojo (Mojoku Hilang!)",
+   "url": "https://events.singaporefilmsociety.com/films/6a5f1c002b33ea397dd1afc0",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/3f50053d20de323b5d96d37b1f084a44.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6a88485d56d0529cb938058b",
+   "title": "The Hopeless 10",
+   "url": "https://events.singaporefilmsociety.com/films/6a88485d56d0529cb938058b",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1787316619288temp-1787316617669-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6aaa3073f96d731e7868b10e",
+   "title": "A Wicked Tale",
+   "url": "https://events.singaporefilmsociety.com/films/6aaa3073f96d731e7868b10e",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1789573026763temp-1789573026676-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6ab4a1ee427841e72d8e97c3",
+   "title": "Ikatan Darah",
+   "url": "https://events.singaporefilmsociety.com/films/6ab4a1ee427841e72d8e97c3",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/5b7657b33fd1a2cf66573b00efc91315.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6ac5c272d4796dc7179974b0",
+   "title": "A Feeling Of Music Playing",
+   "url": "https://events.singaporefilmsociety.com/films/6ac5c272d4796dc7179974b0",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1ca473a9af5e2401022baa279b648910.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6acd9a03f65428d37ae2c60d",
+   "title": "Alice in the Cities",
+   "url": "https://events.singaporefilmsociety.com/films/6acd9a03f65428d37ae2c60d",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/326bbddad8d4ab571113133ac42c7884.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6ace287d8ff16fc6f850878b",
+   "title": "Roman Holiday",
+   "url": "https://events.singaporefilmsociety.com/films/6ace287d8ff16fc6f850878b",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/6357cbfb4033720ba878cd67d06aa0f7.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Spotlight"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6ace29d10b3d0ab772302dbf",
+   "title": "Breakfast at Tiffany's",
+   "url": "https://events.singaporefilmsociety.com/films/6ace29d10b3d0ab772302dbf",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/cf0327d36ca749699f4cc6854db441bf.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Spotlight"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
+  {
+   "source": "sfs",
+   "id": "6ae00846683644e34d1bfe51",
+   "title": "Coward",
+   "url": "https://events.singaporefilmsociety.com/films/6ae00846683644e34d1bfe51",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/72e062eaa0705502678215b763769b08.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Showcase #61"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-10-29T22:30:28+08:00",
+   "listed": true,
+   "alert": "seed"
+  },
   {
    "source": "afa",
    "id": "70-years-of-taiyupian",
@@ -26,8 +1634,9 @@
     "Programme",
     "70 years of taiyupian"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -43,8 +1652,9 @@
     "Kon ichikawa",
     "Twin tales"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -60,8 +1670,9 @@
     "Twin tales",
     "Yasuzo masumura"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -76,8 +1687,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -91,8 +1703,9 @@
    "tags": [
     "Talks"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -108,8 +1721,9 @@
     "Twin tales",
     "Yasuzo masumura"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -124,6 +1738,7 @@
     "Screening",
     "Off the catalogue"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -140,8 +1755,9 @@
     "Screening",
     "70 years of taiyupian"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -157,8 +1773,9 @@
     "Singapore shorts",
     "Singapore shorts 2026"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -173,8 +1790,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -189,8 +1807,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -208,8 +1827,9 @@
     "Twin tales",
     "Yasuzo masumura"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -224,8 +1844,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -240,8 +1861,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -257,8 +1879,9 @@
     "Kon ichikawa",
     "Twin tales"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -273,8 +1896,9 @@
     "Programme",
     "Off the catalogue"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -289,8 +1913,9 @@
     "Programme",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -305,6 +1930,7 @@
     "Screening",
     "Off the catalogue"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -321,6 +1947,7 @@
     "Screening",
     "Off the catalogue"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -337,8 +1964,9 @@
     "Screening",
     "70 years of taiyupian"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -353,8 +1981,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -369,6 +1998,7 @@
     "Screening",
     "Singapore international film festival"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -385,8 +2015,9 @@
     "Screening",
     "Singapore international film festival"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -401,8 +2032,9 @@
     "Screening",
     "Singapore international film festival"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -417,8 +2049,9 @@
     "Screening",
     "Singapore international film festival"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -433,6 +2066,7 @@
     "Partner programme",
     "Singapore international film festival"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -449,6 +2083,7 @@
     "Screening",
     "Singapore international film festival"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -465,6 +2100,7 @@
     "Screening",
     "Singapore international film festival"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -481,6 +2117,7 @@
     "Screening",
     "Singapore international film festival"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -497,8 +2134,9 @@
     "Programme",
     "Singapore dreaming"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -514,8 +2152,9 @@
     "Singapore shorts",
     "Singapore shorts 2026"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -530,8 +2169,9 @@
     "Screening",
     "Singapore shorts 2026"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -546,6 +2186,7 @@
     "Screening",
     "Off the catalogue"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -562,8 +2203,9 @@
     "Talks",
     "70 years of taiyupian"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -578,8 +2220,9 @@
     "Screening",
     "70 years of taiyupian"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -595,8 +2238,9 @@
     "Kon ichikawa",
     "Twin tales"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -612,8 +2256,9 @@
     "Twin tales",
     "Yasuzo masumura"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -628,8 +2273,9 @@
     "Screening",
     "70 years of taiyupian"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -644,8 +2290,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -660,8 +2307,9 @@
     "Screening",
     "Past time"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -675,8 +2323,9 @@
    "tags": [
     "Screening"
    ],
+   "showing": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -688,6 +2337,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/ow3DL97qYIEgX_MtdMbw65RMksVPEtU1Pn8pVSSjDK4.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -701,6 +2351,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/Qz5lRAPafrnKu7MCYAm3uYeu0T1h74Z4V8itC0i958s.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -714,6 +2365,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/6rjc_NdA2mL4VpaVhjjL5nCnCz4ahJfTm72TSORHOTE.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -727,6 +2379,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/mt9WDac4uELoCfFzoDdOj39HZRSWWU2H_qS_2VM0oMw.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -740,6 +2393,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/h-lRDTPpUaVbZKXLeJ7a5wfvmIDS4MK3wY4SY2feYaA.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -753,6 +2407,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/hizkErfZRQpX5NXDgNGg2AHiHLBEjN_oVmG8oxoUKWU.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -766,6 +2421,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/4S7i7E9jiyeUlkfWA-kQAMROAFe-LV_2JvPG0SEerFY.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -779,6 +2435,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/qfE7CBmwt8jmAC2_sLrJAGhJQGAbK5y8Ec4RnuxgF_s.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -792,6 +2449,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/msjFPL-hD0X10ORGJJfcBfkg73s-5_W-wWQk4kDLB0E.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -805,6 +2463,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/Jv9JZGGEIant3ebJpAkrLAbA8d4ICIhB5UqWPk9Dhr0.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -818,6 +2477,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/9u7qgXTtQSeXu3oeJCqdw6fN8gSelVz7n1JZbP69Hwo.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -831,6 +2491,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/T8g3eP8jDI5w2bCeZHROI-WRFZFdJhhq32b2VOkeBcw.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -844,6 +2505,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/aB-thlmpTSpCEwmtMl8N5uFWVPDvXpIvEJHZsmT3V2k.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -857,6 +2519,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/1N7zTZsGmJ2IrqrijtehsvW9hj41-J5mf2tp0g-NTvs.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -870,6 +2533,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/z_tZnLzzvZlceIGAaOPw8sHLkLVZ9-97o0JDSJj_L7M.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -885,6 +2549,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -900,6 +2565,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -915,6 +2581,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -928,6 +2595,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/OVMSXKQpyChSJ0kp5lmRqyfNmmxDgNkDRGNflO5114g.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -941,6 +2609,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/YejRB0CCIF89tsPfjS4Z3ei643tMVpgm8Bhd-yNspCA.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -954,6 +2623,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/zhcngF9u-X411PRzwOFMODdnLdQsbstd8v777Sr2agE.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -967,6 +2637,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/VinKw9eBpcBejqI9e1xW2YekviTvgOlPEMRpkJjuGzY.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -980,6 +2651,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/VinKw9eBpcBejqI9e1xW2YekviTvgOlPEMRpkJjuGzY.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -993,6 +2665,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/VinKw9eBpcBejqI9e1xW2YekviTvgOlPEMRpkJjuGzY.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1008,6 +2681,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1023,6 +2697,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1038,6 +2713,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1053,6 +2729,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1066,6 +2743,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/f2RERlbD8YWOWDeLbRlltRHC0DtWohaPf0H4lZw8idc.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1079,6 +2757,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/eOEAg3vMmuC_CWhxo8aaS37zxWDPrnV0BD66-a420Jo.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1092,6 +2771,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/Upgyen8eMQDCl3kYn-Gyl8I4AgUesu725GC_CA3mo7c.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1107,6 +2787,7 @@
    "tags": [
     "Coming soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1120,6 +2801,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/B7xnZ9htHLED27u2ENzaMs6s0mzOqgF0K4XdgNh6l8I.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1133,6 +2815,7 @@
    "poster": "https://cdn.taposapp.com/poster/600x900/8KqeC357tt7n1t_tLUjlUQy_-E-Q-iR2l0eGfpeIeeQ.jpg",
    "release_date": null,
    "tags": [],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1148,6 +2831,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1164,6 +2848,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1179,6 +2864,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1194,6 +2880,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1210,6 +2897,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1225,6 +2913,7 @@
    "tags": [
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1240,6 +2929,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1255,6 +2945,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1271,6 +2962,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1287,6 +2979,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1304,6 +2997,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1319,6 +3013,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1336,6 +3031,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1353,6 +3049,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1370,6 +3067,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1385,6 +3083,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1400,6 +3099,7 @@
    "tags": [
     "Now Showing"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1415,6 +3115,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1430,6 +3131,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1446,6 +3148,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1462,6 +3165,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1479,6 +3183,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1495,6 +3200,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1511,6 +3217,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1526,6 +3233,7 @@
    "tags": [
     "Now Showing"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1543,6 +3251,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1558,6 +3267,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1573,6 +3283,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1588,6 +3299,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1603,6 +3315,7 @@
    "tags": [
     "Now Showing"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1618,6 +3331,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1633,6 +3347,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1648,6 +3363,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1663,6 +3379,7 @@
    "tags": [
     "Now Showing"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1678,6 +3395,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1695,6 +3413,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1710,6 +3429,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1725,6 +3445,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1741,6 +3462,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1756,6 +3478,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1771,6 +3494,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1787,6 +3511,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1803,6 +3528,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1820,6 +3546,7 @@
     "Ending Soon",
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1835,6 +3562,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1850,6 +3578,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1865,6 +3594,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1881,6 +3611,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1897,6 +3628,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1912,6 +3644,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1927,6 +3660,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1942,6 +3676,7 @@
    "tags": [
     "Top Movies"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1958,6 +3693,7 @@
     "Now Showing",
     "Ending Soon"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1973,6 +3709,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -1988,6 +3725,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2003,6 +3741,7 @@
    "tags": [
     "Now Showing"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2018,6 +3757,7 @@
    "tags": [
     "Now Showing"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2033,6 +3773,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2048,6 +3789,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2063,6 +3805,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2078,6 +3821,7 @@
    "tags": [
     "Now Showing"
    ],
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2093,6 +3837,7 @@
    "tags": [
     "Advance Sales"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2108,6 +3853,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2123,6 +3869,7 @@
    "tags": [
     "Coming Soon"
    ],
+   "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
