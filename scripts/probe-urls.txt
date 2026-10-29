@@ -1,0 +1,18 @@
+# Filmhouse
+https://filmhouse.sg/robots.txt
+https://filmhouse.sg/wp-json/
+https://filmhouse.sg/wp-json/wp/v2/types
+https://filmhouse.sg/feed/
+https://filmhouse.sg/films/
+https://filmhouse.sg/films/coming-soon/
+
+# Asian Film Archive
+https://asianfilmarchive.org/robots.txt
+https://asianfilmarchive.org/wp-json/wp/v2/types
+https://asianfilmarchive.org/wp-json/wp/v2/mep_events?per_page=3&orderby=date
+https://asianfilmarchive.org/feed/?post_type=mep_events
+https://asianfilmarchive.org/whatson/
+
+# Shaw
+https://shaw.sg/robots.txt
+deep https://shaw.sg/movie
