@@ -1,6 +1,6 @@
 # hobbies
 
-**whats-on-sg** — tells me when new films are listed at the Singapore cinemas I care about.
+**cinema** — tells me when new films are listed at the Singapore cinemas I care about.
 
 ## What it does (v1)
 
@@ -19,7 +19,7 @@ Live at **https://maxyongg.github.io/hobbies/**. Run it on demand from Actions �
 1. **Workflows** in `.github/workflows/`: `update.yml` (every 6 h) and `ci.yml` (tests; live dry run on non-`main` pushes).
 2. **Pages:** Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 3. **Alerts:** repo secret `NTFY_TOPIC` = the topic subscribed to in the ntfy app (Settings → Secrets and variables → Actions). Optional: `NTFY_TOKEN` secret and `NTFY_SERVER` variable for a self-hosted or protected server.
-4. **Widget:** follow the comment at the top of [`widget/whats-on-sg.js`](widget/whats-on-sg.js).
+4. **Widget:** follow the comment at the top of [`site/widget.js`](site/widget.js) (published at https://maxyongg.github.io/hobbies/widget.js).
 
 ## Run locally
 

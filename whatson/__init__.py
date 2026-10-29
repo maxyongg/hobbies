@@ -1,1 +1,1 @@
-"""whats-on-sg: alert on new listings from pluggable sources."""
+"""cinema: alert on new listings from pluggable sources."""

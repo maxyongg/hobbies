@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-UA = "whats-on-sg/0.1 (+https://github.com/maxyongg/hobbies; personal new-film alerts)"
+UA = "cinema/0.1 (+https://github.com/maxyongg/hobbies; personal new-film alerts)"
 S = requests.Session()
 S.headers["User-Agent"] = UA
 

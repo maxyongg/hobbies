@@ -8,6 +8,8 @@ Alert Max every time a new film is listed at Filmhouse, Shaw Theatres, or the As
 
 Design for more sources later (gallery openings / things to do from social media; high-scoring new video games), so each source is a pluggable module, and "film" is one item `type` among several.
 
+App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python package is still `whatson` because the workflows run `python -m whatson`.
+
 ## Owner preferences
 
 - Max prefers fresh sessions that read this file over long threads. Keep this file the single source of handover truth.
@@ -17,7 +19,7 @@ Design for more sources later (gallery openings / things to do from social media
 
 1. **Hosting/scheduler:** GitHub Actions cron (every 6 h) runs the scrapers, commits `data/items.json`, deploys `site/` to GitHub Pages.
 2. **Alerts:** ntfy.sh push (topic in repo secret `NTFY_TOPIC`), plus a **Scriptable** iOS widget reading the Pages JSON.
-3. **Widget:** Scriptable script (`widget/whats-on-sg.js`), no native app/PWA.
+3. **Widget:** Scriptable script (`site/widget.js`, served at `/widget.js`), no native app/PWA.
 4. **Language:** Python (requests + BeautifulSoup; Playwright for Shaw).
 5. **Shaw scope:** alert on every new title.
 
@@ -36,8 +38,8 @@ whatson/            Python package: python -m whatson run [--dry-run] [--source 
   store.py          data/items.json (committed; also the web app's data)
   notify.py         ntfy (JSON publish); log-only when NTFY_TOPIC unset
   sources/          one module per source + wordpress.py / html.py helpers; registry in __init__.py
-site/               static web app (reads data/items.json + data/status.json)
-widget/             Scriptable widget
+site/               static web app (reads data/items.json + data/status.json) + widget.js (Scriptable)
+widget/whats-on-sg.js  symlink to site/widget.js, only because update.yml still copies that path
 .github/workflows/  update.yml: 6-hourly run + commit data + Pages deploy
                     ci.yml: tests; on non-main pushes also a live dry run + probe
 scripts/probe.py    prints what each site exposes — use when a scraper breaks

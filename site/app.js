@@ -1,4 +1,4 @@
-// What's on SG — renders data/items.json (written by the scheduled scraper run).
+// Cinema — renders data/items.json (written by the scheduled scraper run).
 "use strict";
 
 const NAMES = { filmhouse: "Filmhouse", shaw: "Shaw Theatres", afa: "Asian Film Archive" };
