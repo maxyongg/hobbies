@@ -23,15 +23,18 @@ class Http:
         self.session.mount("http://", HTTPAdapter(max_retries=retry))
         self._last: dict[str, float] = {}
 
-    def get(self, url: str, **kw) -> requests.Response:
+    def request(self, method: str, url: str, **kw) -> requests.Response:
         host = urlparse(url).netloc
         wait = self._last.get(host, 0) + MIN_INTERVAL - time.monotonic()
         if wait > 0:
             time.sleep(wait)
         try:
-            return self.session.get(url, timeout=TIMEOUT, **kw)
+            return self.session.request(method, url, timeout=TIMEOUT, **kw)
         finally:
             self._last[host] = time.monotonic()
+
+    def get(self, url: str, **kw) -> requests.Response:
+        return self.request("GET", url, **kw)
 
     def get_text(self, url: str, **kw) -> str:
         r = self.get(url, **kw)
@@ -39,7 +42,13 @@ class Http:
         return r.text
 
     def get_json(self, url: str, **kw):
-        r = self.get(url, **kw)
+        return self.json(self.get(url, **kw))
+
+    def post_json(self, url: str, **kw):
+        return self.json(self.request("POST", url, **kw))
+
+    @staticmethod
+    def json(r: requests.Response):
         r.raise_for_status()
         try:
             return r.json()

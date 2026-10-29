@@ -3,13 +3,15 @@
 Events live at /event-calendar/<title-slug>-<year>/; repeat screenings add -1, -2, ...
 Reads the plugin's post type (mep_events) over WP REST, asking only for the fields
 needed; falls back to event links on the What's On / Events Calendar pages.
+Screenings that have ended are left out; ones within NOW_DAYS count as "now".
 """
 
 from __future__ import annotations
 
 import re
+from datetime import datetime, timedelta
 
-from ..models import Item
+from ..models import SGT, Item
 from . import wordpress as wp
 from .base import Source
 from .html import get_pages, harvest_links, last_segment, slug_id
@@ -18,6 +20,34 @@ BASE = "https://asianfilmarchive.org"
 LISTINGS = ["/whatson/", "/events-calendar/"]
 EVENT_PATH = r"^/event-calendar/[^/]+/?$"
 SOLD_OUT = re.compile(r"[\[(]sold out[\])]\s*", re.I)
+NOW_DAYS = 7
+# Nested _fields (WP >= 5.3) keep each post to the few keys used, so 100 posts stay small.
+DATE_KEYS = ("event_upcoming_datetime", "event_start_datetime", "event_expire_datetime", "event_end_datetime")
+FIELDS = ",".join(["id", "slug", "link", "title", "class_list", "yoast_head_json.og_image"]
+                  + [f"event_informations.{k}" for k in DATE_KEYS])
+
+
+def now() -> datetime:
+    return datetime.now(SGT).replace(tzinfo=None)  # the plugin's datetimes are naive SGT
+
+
+def screening_times(post: dict) -> tuple[datetime | None, datetime | None]:
+    """(next start, end) from the plugin's meta, e.g. event_start_datetime = ["2026-10-31 11:00:00"]."""
+    info = post.get("event_informations") or {}
+
+    def meta(*keys):
+        for key in keys:
+            value = info.get(key)
+            value = value[0] if isinstance(value, list) and value else value
+            if value:
+                try:
+                    return datetime.strptime(value, "%Y-%m-%d %H:%M:%S")
+                except ValueError:
+                    continue
+        return None
+
+    return (meta("event_upcoming_datetime", "event_start_datetime"),
+            meta("event_expire_datetime", "event_end_datetime"))
 
 
 def film_id(slug: str) -> str:
@@ -39,16 +69,22 @@ class AsianFilmArchive(Source):
 
     def from_rest(self, http) -> list[Item]:
         items: dict[str, Item] = {}
-        posts = wp.latest_posts(http, BASE, "mep_events", per_page=50,
-                                fields="id,slug,link,title,date,class_list,yoast_head_json")
+        posts = wp.latest_posts(http, BASE, "mep_events", per_page=100, fields=FIELDS)
+        current = now()
         for p in posts:  # newest first
             if not p.get("slug") or not wp.title(p):
                 continue
+            start, end = screening_times(p)
+            if end and end < current:
+                continue  # already screened
+            showing = None if not start else "now" if start <= current + timedelta(days=NOW_DAYS) else "soon"
             fid = film_id(p["slug"])
-            items.setdefault(fid, Item(
+            item = items.setdefault(fid, Item(
                 source=self.key, id=fid, title=SOLD_OUT.sub("", wp.title(p)), url=p["link"],
-                poster=wp.featured_image(p), tags=wp.class_terms(p, ("mep_cat-", "tag-")),
+                poster=wp.featured_image(p), tags=wp.class_terms(p, ("mep_cat-", "tag-")), showing=showing,
             ))
+            if showing == "now":  # any repeat screening this week makes the film "now"
+                item.showing = "now"
         return list(items.values())
 
     def from_listing_pages(self, http) -> list[Item]:

@@ -1,6 +1,12 @@
+from datetime import datetime, timezone
+
+from whatson.sources import afa
 from whatson.sources.afa import AsianFilmArchive, film_id
+from whatson.sources.carnival import Carnival
 from whatson.sources.filmhouse import Filmhouse
+from whatson.sources.gv import GoldenVillage
 from whatson.sources.html import harvest_links
+from whatson.sources.sfs import items_from_events
 from whatson.sources.shaw import Shaw, movie_id
 
 def test_afa_film_id_strips_repeat_suffix_but_keeps_year():
@@ -25,6 +31,7 @@ def test_afa_rest_merges_repeat_screenings(http):
     items = AsianFilmArchive().fetch(http)
     assert [(i.id, i.title) for i in items] == [("hush-2016", "Hush – Encore"), ("mother-2009", "Mother")]
     assert items[0].tags == ["Screening", "Singapore international film festival"]
+    assert "event_informations.event_start_datetime" in afa.FIELDS
     assert items[0].poster == "https://x/p.jpg"
 
 
@@ -98,3 +105,91 @@ def test_harvest_prefers_heading_over_whole_card_text():
               <p>A long synopsis about the film that goes on.</p></a>"""
     [link] = harvest_links(html, "https://filmhouse.sg/films/", r"^/films/")
     assert (link["title"], link["poster"]) == ("X", "https://filmhouse.sg/x.jpg")
+
+
+def test_afa_drops_past_screenings_and_sets_showing(http, monkeypatch):
+    monkeypatch.setattr(afa, "now", lambda: datetime(2026, 10, 29, 12, 0))
+    base = "https://asianfilmarchive.org"
+
+    def ev(slug, start, end):
+        return {"slug": slug, "title": {"rendered": slug}, "link": f"{base}/event-calendar/{slug}/",
+                "event_informations": {"event_start_datetime": [start], "event_expire_datetime": [end]}}
+
+    http.routes[f"{base}/wp-json/wp/v2/mep_events"] = [
+        ev("past-2001", "2026-10-25 13:30:00", "2026-10-25 15:00:00"),
+        ev("tonight-2002", "2026-10-29 19:00:00", "2026-10-29 21:00:00"),
+        ev("later-2003", "2026-11-20 19:00:00", "2026-11-20 21:00:00"),
+        ev("repeat-2004-1", "2026-11-25 19:00:00", "2026-11-25 21:00:00"),
+        ev("repeat-2004", "2026-10-30 19:00:00", "2026-10-30 21:00:00"),
+        {"slug": "undated-2005", "title": {"rendered": "Undated"}, "link": f"{base}/event-calendar/undated-2005/"},
+    ]
+    items = {i.id: i.showing for i in AsianFilmArchive().fetch(http)}
+    assert items == {"tonight-2002": "now", "later-2003": "soon", "repeat-2004": "now", "undated-2005": None}
+
+
+def test_gv_lists_and_titles(http):
+    # Field names as returned by POST www.gv.com.sg/.gv-api/{nowshowing,advancesales,comingsoon}.
+    gv_base = "https://www.gv.com.sg/.gv-api"
+    http.routes[f"{gv_base}/nowshowing"] = {"success": True, "data": [
+        {"filmCd": "7509", "filmTitle": "LOOK BACK *", "imageLink": "https://media/img7509.jpg",
+         "language": "Japanese", "rating": "PG", "type": "Single"},
+        {"filmCd": "4510", "filmTitle": "Godzilla Minus Zero *", "language": "Japanese", "rating": "PG13", "type": "Single"},
+    ]}
+    http.routes[f"{gv_base}/advancesales"] = {"success": True, "data": [
+        {"filmCd": "4510", "filmTitle": "Godzilla Minus Zero *", "type": "Single"},
+    ]}
+    http.routes[f"{gv_base}/comingsoon"] = {"success": True, "data": [
+        {"filmCd": "4512", "filmTitle": "(Hindi) Ramayana: Rise Of A Legend *", "language": "Hindi",
+         "rating": "Rating to be Advised", "type": "Group"},
+    ]}
+    items = {i.id: i for i in GoldenVillage().fetch(http)}
+    assert {k: (v.title, v.showing, v.tags) for k, v in items.items()} == {
+        "7509": ("Look Back", "now", ["Japanese", "PG"]),
+        "4510": ("Godzilla Minus Zero", "now", ["Japanese", "PG13"]),
+        "4512": ("Ramayana: Rise Of A Legend (Hindi)", "soon", ["Hindi"]),
+    }
+    assert items["7509"].url == "https://www.gv.com.sg/GVMovieDetails#/movie/7509"
+    assert items["4512"].url == "https://www.gv.com.sg/GVGroupSynopsis#/group/4512"
+    assert GoldenVillage.alerts is False
+
+
+def test_carnival_lists(http, monkeypatch):
+    # Field names as returned by service.carnivalcinemas.sg/api/QuickSearch/*.
+    api = "https://service.carnivalcinemas.sg/api/QuickSearch"
+    http.routes[f"{api}/GetNowPlayingMovies"] = {"responseMovies": [
+        {"code": "Jailer 2 (NC16)", "name": "Jailer 2 (NC16)", "openingDate": "2026-10-15T00:00:00"},
+        {"code": "The Execution(M18)", "name": "The Execution(M18)", "openingDate": "2099-11-21T00:00:00"},
+    ]}
+    http.routes[f"{api}/GetCommingSoonMovies"] = {"responseMovies": [
+        {"code": "111", "name": "(TAMIL) Ramayana: Rise Of A Legend", "openingDate": "2099-11-05T00:00:00"},
+        {"code": "111", "name": "Scene ", "openingDate": "2099-11-06T00:00:00"},
+    ]}
+    items = {i.id: i for i in Carnival().fetch(http)}
+    assert {k: (v.title, v.showing) for k, v in items.items()} == {
+        "jailer-2-nc16": ("Jailer 2 (NC16)", "now"),
+        "the-execution-m18": ("The Execution (M18)", "soon"),
+        "tamil-ramayana-rise-of-a-legend": ("Ramayana: Rise Of A Legend (TAMIL)", "soon"),
+        "scene": ("Scene", "soon"),
+    }
+    assert items["jailer-2-nc16"].url == "https://carnivalcinemas.sg/Jailer%202%20(NC16)/Jailer%202%20(NC16)"
+
+
+def test_sfs_events_to_films():
+    # Shaped like api.eventive.org/event_buckets/<id>/events?upcoming_only=true
+    def ev(start, name, film_id, film_name):
+        return {"start_time": start, "name": name,
+                "films": [{"id": film_id, "name": film_name, "poster_image": f"https://static/{film_id}.jpg"}]}
+
+    events = [
+        ev("2026-10-30T11:30:00.000Z", "SFS Somerset: The Old Man and His Car", "f1", "The Old Man and His Car"),
+        ev("2026-11-21T11:30:00.000Z", "SFS Somerset: A Wicked Tale (with Q&A)", "f2", "A Wicked Tale"),
+        ev("2026-11-07T08:00:00.000Z", "SFS Spotlight: Roman Holiday (Members-Only)", "f3", "Roman Holiday"),
+        ev("2026-11-08T11:30:00.000Z", "SFS Somerset: The Old Man and His Car", "f1", "The Old Man and His Car"),
+    ]
+    items = {i.id: i for i in items_from_events(events, datetime(2026, 10, 29, 12, tzinfo=timezone.utc))}
+    assert {k: (v.title, v.showing, v.tags) for k, v in items.items()} == {
+        "f1": ("The Old Man and His Car", "now", ["SFS Somerset"]),
+        "f2": ("A Wicked Tale", "soon", ["SFS Somerset"]),
+        "f3": ("Roman Holiday", "soon", ["SFS Spotlight"]),
+    }
+    assert items["f1"].url == "https://events.singaporefilmsociety.com/films/f1"

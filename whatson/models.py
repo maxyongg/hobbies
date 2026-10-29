@@ -22,10 +22,11 @@ class Item:
     poster: str | None = None
     release_date: str | None = None
     tags: list[str] = field(default_factory=list)
+    showing: str | None = None  # "now" | "soon" (None: source can't tell; treated as now)
     # Set by the store, not by sources:
     first_seen: str | None = None
     listed: bool = True  # present in the latest successful fetch
-    alert: str = "pending"  # "seed" (silently recorded on first run) | "pending" | "sent"
+    alert: str = "pending"  # "seed" (first run) | "quiet" (source doesn't alert) | "pending" | "sent"
 
     @property
     def key(self) -> tuple[str, str]:

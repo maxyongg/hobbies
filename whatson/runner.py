@@ -46,8 +46,8 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
         except Exception as e:  # noqa: BLE001 - one broken source must not stop the others
             log.exception("%s failed", src.key)
             items, error = [], f"{type(e).__name__}: {e}"
-        status["sources"][src.key] = {"name": src.name, "url": src.url, "ok": not error,
-                                      "count": len(items), "error": error}
+        status["sources"][src.key] = {"name": src.name, "url": src.url, "alerts": src.alerts,
+                                      "ok": not error, "count": len(items), "error": error}
 
         if error:
             health["consecutive_failures"] += 1
@@ -64,11 +64,12 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
         health["last_error"] = None
 
         seed = not store.has_source(src.key)
-        new = store.merge(src.key, items, now, seed=seed)
+        new = store.merge(src.key, items, now, alert="seed" if seed else "pending" if src.alerts else "quiet")
         if seed:
             log.info("%s: seeded %d items (no alerts on first run)", src.key, len(new))
         else:
-            log.info("%s: %d listed, %d new", src.key, len(items), len(new))
+            showing = {s: sum(1 for i in items if (i.showing or "now") == s) for s in ("now", "soon")}
+            log.info("%s: %d listed (%d now, %d soon), %d new", src.key, len(items), showing["now"], showing["soon"], len(new))
         for i in new:
             log.info("  + %s | %s | %s", i.id, i.title, i.url)
 

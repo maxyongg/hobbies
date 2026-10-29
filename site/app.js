@@ -1,10 +1,20 @@
 // Cinema — renders data/items.json (written by the scheduled scraper run).
+//   Now showing / Coming soon: one card per film, merged across cinemas by title.
+//   New: listings first seen since tracking began, by day.
 "use strict";
 
-const NAMES = { filmhouse: "Filmhouse", shaw: "Shaw Theatres", afa: "Asian Film Archive" };
+const NAMES = {
+  filmhouse: "Filmhouse", shaw: "Shaw Theatres", afa: "Asian Film Archive", gv: "Golden Village",
+  carnival: "Carnival Cinemas", sfs: "Singapore Film Society",
+};
+const SHORT = {
+  "Shaw Theatres": "Shaw", "Asian Film Archive": "AFA", "Golden Village": "GV",
+  "Carnival Cinemas": "Carnival", "Singapore Film Society": "SFS",
+};
 const TZ = "Asia/Singapore";
+const VIEWS = [["now", "Now showing"], ["soon", "Coming soon"], ["new", "New"]];
 
-const state = { items: [], status: null, source: "all", listedOnly: false };
+const state = { items: [], status: null, view: "now", hidden: new Set(), query: "", sort: "az" };
 
 function load(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
@@ -49,67 +59,162 @@ function ago(iso) {
 function sourceName(key) {
   return state.status?.sources?.[key]?.name || NAMES[key] || key;
 }
-
-function card(item) {
-  const poster = item.poster
-    ? el("img", { class: "poster", src: item.poster, alt: "", loading: "lazy", referrerpolicy: "no-referrer" })
-    : el("div", { class: "poster blank", "aria-hidden": "true" }, "🎬");
-  if (item.poster) poster.addEventListener("error", () => poster.replaceWith(el("div", { class: "poster blank" }, "🎬")));
-  return el("a", { class: "card" + (item.listed ? "" : " gone"), href: item.url, target: "_blank", rel: "noopener" },
-    poster,
-    el("div", { class: "body" },
-      el("span", { class: `src ${item.source}` }, sourceName(item.source)),
-      el("span", { class: "title" }, item.title),
-      item.tags?.length ? el("span", { class: "meta" }, item.tags.join(" · ")) : null,
-      item.listed ? null : el("span", { class: "meta" }, "No longer listed"),
-    ),
-  );
+function shortName(key) {
+  const name = sourceName(key);
+  return SHORT[name] || name;
 }
 
-function renderFilters() {
-  const nav = document.getElementById("filters");
-  const keys = [...new Set([...Object.keys(state.status?.sources || {}), ...state.items.map(i => i.source)])];
-  if (!keys.includes(state.source)) state.source = "all";
-  nav.replaceChildren(...["all", ...keys].map(key => {
-    const s = state.status?.sources?.[key];
-    const btn = el("button", { type: "button", "aria-pressed": String(state.source === key) },
-      key === "all" ? "All" : sourceName(key),
-      s ? el("span", { class: `dot ${s.ok ? "ok" : "bad"}`, title: s.ok ? `${s.count} listed` : s.error }) : null);
-    btn.addEventListener("click", () => { state.source = key; save("source", key); render(); });
+// --- Merging the same film across cinemas -------------------------------------------
+
+const BRACKETS = /\s*[[(][^\])]*[\])]/g; // [M], (4K Restoration), (ENGLISH), [CANTO]
+const STUDIO = /^(marvel studios|disney and pixars|disney pixars|disneys|dc studios|dreamworks)\s+/;
+
+function cleanTitle(title) {
+  return title.replace(BRACKETS, "").replace(/\s+/g, " ").replace(/[\s:–-]+$/, "").trim() || title;
+}
+
+function filmKey(title) {
+  return cleanTitle(title).toLowerCase()
+    .normalize("NFKD").replace(/[̀-ͯ]/g, "") // Amélie -> amelie
+    .replace(/[’']/g, "")
+    .replace(/&/g, " and ")
+    .replace(/[^\p{L}\p{N}]+/gu, " ").trim()
+    .replace(STUDIO, "");
+}
+
+function variants(title) {
+  return [...title.matchAll(/[[(]([^\])]*)[\])]/g)].map(m => m[1].trim()).filter(Boolean);
+}
+
+function groupFilms(items) {
+  const groups = new Map();
+  for (const item of items) {
+    const key = filmKey(item.title);
+    let g = groups.get(key);
+    if (!g) groups.set(key, g = { key, items: [], title: cleanTitle(item.title), poster: null, firstSeen: item.first_seen });
+    g.items.push(item);
+    if (cleanTitle(item.title).length < g.title.length) g.title = cleanTitle(item.title);
+    if (!g.poster && item.poster) g.poster = item.poster;
+    if (item.first_seen < g.firstSeen) g.firstSeen = item.first_seen;
+  }
+  for (const g of groups.values()) {
+    g.showing = g.items.some(i => (i.showing || "now") === "now") ? "now" : "soon";
+    g.sources = [...new Set(g.items.map(i => i.source))];
+  }
+  return [...groups.values()];
+}
+
+// --- Rendering ------------------------------------------------------------------------
+
+function poster(src, href) {
+  const img = src
+    ? el("img", { class: "poster", src, alt: "", loading: "lazy", referrerpolicy: "no-referrer" })
+    : el("div", { class: "poster blank", "aria-hidden": "true" }, "🎬");
+  if (src) img.addEventListener("error", () => img.replaceWith(el("div", { class: "poster blank" }, "🎬")));
+  return el("a", { href, target: "_blank", rel: "noopener", tabindex: "-1" }, img);
+}
+
+function filmCard(g) {
+  const where = g.sources.map(source => {
+    const mine = g.items.filter(i => i.source === source);
+    const labels = [...new Set(mine.flatMap(i => variants(i.title)))];
+    return el("a", { class: `where src-${source}`, href: mine[0].url, target: "_blank", rel: "noopener" },
+      el("span", { class: "dot-src" }), shortName(source),
+      labels.length ? el("small", {}, labels.join(" · ")) : null);
+  });
+  return el("article", { class: "card" },
+    poster(g.poster, g.items[0].url),
+    el("div", { class: "body" },
+      el("h3", { class: "title" }, g.title),
+      el("div", { class: "wheres" }, ...where)));
+}
+
+function itemCard(item) {
+  return el("article", { class: "card" + (item.listed ? "" : " gone") },
+    poster(item.poster, item.url),
+    el("div", { class: "body" },
+      el("span", { class: `src src-${item.source}` }, sourceName(item.source)),
+      el("h3", { class: "title" }, el("a", { href: item.url, target: "_blank", rel: "noopener" }, item.title)),
+      item.tags?.length ? el("span", { class: "meta" }, item.tags.join(" · ")) : null,
+      item.listed ? null : el("span", { class: "meta" }, "No longer listed")));
+}
+
+function sourceKeys() {
+  return [...new Set([...Object.keys(state.status?.sources || {}), ...state.items.map(i => i.source)])];
+}
+
+function renderControls(counts) {
+  document.getElementById("views").replaceChildren(...VIEWS.map(([key, label]) => {
+    const btn = el("button", { type: "button", "aria-pressed": String(state.view === key) },
+      label, counts[key] !== undefined ? el("span", { class: "count" }, String(counts[key])) : null);
+    btn.addEventListener("click", () => { state.view = key; save("view", key); render(); });
     return btn;
   }));
+  document.getElementById("sort").hidden = state.view === "new";
+
+  const keys = sourceKeys();
+  const chips = keys.map(key => {
+    const s = state.status?.sources?.[key];
+    const btn = el("button", { type: "button", class: `src-${key}`, "aria-pressed": String(!state.hidden.has(key)),
+      title: s && !s.ok ? `Last check failed: ${s.error}` : null },
+    el("span", { class: "dot-src" }), shortName(key), s && !s.ok ? " ⚠︎" : null);
+    btn.addEventListener("click", () => {
+      state.hidden.has(key) ? state.hidden.delete(key) : state.hidden.add(key);
+      save("hidden", [...state.hidden]);
+      render();
+    });
+    return btn;
+  });
+  if (state.hidden.size) {
+    const all = el("button", { type: "button", class: "reset" }, "Show all");
+    all.addEventListener("click", () => { state.hidden.clear(); save("hidden", []); render(); });
+    chips.push(all);
+  }
+  document.getElementById("cinemas").replaceChildren(...chips);
 }
 
 function render() {
-  renderFilters();
+  const visible = state.items.filter(i => !state.hidden.has(i.source));
+  const films = groupFilms(visible.filter(i => i.listed));
+  const fresh = visible.filter(i => i.alert !== "seed");
+  renderControls({
+    now: films.filter(g => g.showing === "now").length,
+    soon: films.filter(g => g.showing === "soon").length,
+    new: fresh.length,
+  });
+
+  const q = filmKey(state.query);
   const feed = document.getElementById("feed");
-  const shown = state.items.filter(i =>
-    (state.source === "all" || i.source === state.source) && (!state.listedOnly || i.listed));
-  const fresh = shown.filter(i => i.alert !== "seed");
-  const seeded = shown.filter(i => i.alert === "seed");
-
-  const groups = new Map();
-  for (const item of fresh) {
-    const day = (item.first_seen || "").slice(0, 10);
-    if (!groups.has(day)) groups.set(day, []);
-    groups.get(day).push(item);
+  if (!state.items.length) {
+    feed.replaceChildren(el("p", { class: "empty" }, "No data yet — waiting for the first scheduled run."));
+    return;
   }
 
-  const parts = [];
-  for (const [day, items] of groups) {
-    parts.push(el("h2", {}, dayLabel(day)), el("div", { class: "grid" }, ...items.map(card)));
+  if (state.view === "new") {
+    const raw = state.query.trim().toLowerCase();
+    const items = fresh.filter(i => !q || filmKey(i.title).includes(q) || i.title.toLowerCase().includes(raw));
+    const days = new Map();
+    for (const item of items) {
+      const day = (item.first_seen || "").slice(0, 10);
+      if (!days.has(day)) days.set(day, []);
+      days.get(day).push(item);
+    }
+    const parts = [];
+    for (const [day, list] of days) parts.push(el("h2", {}, dayLabel(day)), el("div", { class: "grid" }, ...list.map(itemCard)));
+    feed.replaceChildren(...(parts.length ? parts
+      : [el("p", { class: "empty" }, "Nothing new since tracking began. New listings appear here (and as alerts).")]));
+    return;
   }
-  if (!fresh.length) {
-    parts.push(el("p", { class: "empty" }, state.items.length
-      ? "No new films since tracking began. They'll appear here as cinemas add them."
-      : "No data yet — waiting for the first scheduled run."));
-  }
-  if (seeded.length) {
-    parts.push(el("details", {},
-      el("summary", {}, `Already listed when tracking began (${seeded.length})`),
-      el("div", { class: "grid" }, ...seeded.map(card))));
-  }
-  feed.replaceChildren(...parts);
+
+  const raw = state.query.trim().toLowerCase();
+  const matches = g => !q || g.key.includes(q) || g.items.some(i => i.title.toLowerCase().includes(raw));
+  let shown = films.filter(g => g.showing === state.view && matches(g));
+  const byTitle = (a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" });
+  if (state.sort === "new") shown.sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || byTitle(a, b));
+  else if (state.sort === "most") shown.sort((a, b) => b.sources.length - a.sources.length || byTitle(a, b));
+  else shown.sort(byTitle);
+  feed.replaceChildren(shown.length ? el("div", { class: "grid" }, ...shown.map(filmCard))
+    : el("p", { class: "empty" }, q ? "No films match your search." : "Nothing here for the selected cinemas."));
 }
 
 async function getJSON(url) {
@@ -119,18 +224,20 @@ async function getJSON(url) {
 }
 
 async function main() {
-  state.source = load("source", "all");
-  state.listedOnly = load("listedOnly", false);
-  const toggle = document.getElementById("listed-only");
-  toggle.checked = state.listedOnly;
-  toggle.addEventListener("change", () => { state.listedOnly = toggle.checked; save("listedOnly", toggle.checked); render(); });
+  state.view = load("view", "now");
+  if (!VIEWS.some(([k]) => k === state.view)) state.view = "now";
+  state.hidden = new Set(load("hidden", []));
+  state.sort = load("sort", "az");
+  const sort = document.getElementById("sort");
+  sort.value = state.sort;
+  sort.addEventListener("change", () => { state.sort = sort.value; save("sort", sort.value); render(); });
+  const search = document.getElementById("search");
+  search.addEventListener("input", () => { state.query = search.value; render(); });
 
   const [items, status] = await Promise.allSettled([getJSON("data/items.json"), getJSON("data/status.json")]);
   state.items = items.status === "fulfilled" ? items.value.items || [] : [];
   state.status = status.status === "fulfilled" ? status.value : null;
-  document.getElementById("checked").textContent = state.status
-    ? `Checked ${ago(state.status.checked)}`
-    : "Not checked yet";
+  document.getElementById("checked").textContent = state.status ? `Checked ${ago(state.status.checked)}` : "Not checked yet";
   render();
 }
 

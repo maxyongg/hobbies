@@ -11,7 +11,7 @@ from pathlib import Path
 
 from .models import Item
 
-MUTABLE_FIELDS = ("title", "url", "poster", "release_date", "tags", "type")
+MUTABLE_FIELDS = ("title", "url", "poster", "release_date", "tags", "type", "showing")
 
 
 class Store:
@@ -29,8 +29,8 @@ class Store:
     def has_source(self, source: str) -> bool:
         return any(k[0] == source for k in self.items)
 
-    def merge(self, source: str, fetched: list[Item], now: str, seed: bool) -> list[Item]:
-        """Record a successful fetch. Returns the items not seen before."""
+    def merge(self, source: str, fetched: list[Item], now: str, alert: str = "pending") -> list[Item]:
+        """Record a successful fetch; new items get `alert`. Returns the items not seen before."""
         new = []
         fetched_keys = set()
         for item in fetched:
@@ -39,7 +39,7 @@ class Store:
             if old is None:
                 item.first_seen = now
                 item.listed = True
-                item.alert = "seed" if seed else "pending"
+                item.alert = alert
                 self.items[item.key] = item
                 new.append(item)
             else:

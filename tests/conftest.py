@@ -44,6 +44,9 @@ class FakeHttp:
         r.raise_for_status()
         return r.json()
 
+    def post_json(self, url, **kw):
+        return self.get_json(url)
+
     def post(self, url, **kw):
         if self.fail_posts:
             raise RuntimeError("ntfy down")
