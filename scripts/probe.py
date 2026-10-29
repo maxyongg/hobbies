@@ -357,7 +357,7 @@ def afa_dates():
 
 if __name__ == "__main__":
     names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "carnival", "discover", "posters"]
-    wanted = sys.argv[1:] or ["posters"]
+    wanted = sys.argv[1:]
     if not wanted:
         # CI runs this with no arguments. While debugging a source on a branch, default `wanted` to its probe.
         print("usage: probe.py " + " | ".join(names) + "  (set a default list here while debugging)")

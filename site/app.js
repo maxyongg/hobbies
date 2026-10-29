@@ -94,27 +94,47 @@ function groupFilms(items) {
   for (const item of items) {
     const key = filmKey(item.title);
     let g = groups.get(key);
-    if (!g) groups.set(key, g = { key, items: [], title: cleanTitle(item.title), poster: null, firstSeen: item.first_seen });
+    if (!g) groups.set(key, g = { key, items: [], title: cleanTitle(item.title), firstSeen: item.first_seen });
     g.items.push(item);
     if (cleanTitle(item.title).length < g.title.length) g.title = cleanTitle(item.title);
-    if (!g.poster && item.poster) g.poster = item.poster;
     if (item.first_seen < g.firstSeen) g.firstSeen = item.first_seen;
   }
   for (const g of groups.values()) {
     g.showing = g.items.some(i => (i.showing || "now") === "now") ? "now" : "soon";
     g.sources = [...new Set(g.items.map(i => i.source))];
+    g.posters = posterCandidates(g.items);
   }
   return [...groups.values()];
 }
 
 // --- Rendering ------------------------------------------------------------------------
 
-function poster(src, href) {
-  const img = src
-    ? el("img", { class: "poster", src, alt: "", loading: "lazy", referrerpolicy: "no-referrer" })
-    : el("div", { class: "poster blank", "aria-hidden": "true" }, "🎬");
-  if (src) img.addEventListener("error", () => img.replaceWith(el("div", { class: "poster blank" }, "🎬")));
-  return el("a", { href, target: "_blank", rel: "noopener", tabindex: "-1" }, img);
+// Poster hosts that load reliably from another site come first; Shaw's image proxy refuses some.
+const POSTER_ORDER = ["filmhouse", "gv", "sfs", "afa", "carnival", "shaw"];
+const PLACEHOLDER = /noimage|no-image|placeholder/i;
+
+function posterCandidates(items) {
+  const rank = i => (POSTER_ORDER.indexOf(i.source) + POSTER_ORDER.length + 1) % (POSTER_ORDER.length + 1);
+  return [...new Set([...items].sort((a, b) => rank(a) - rank(b))
+    .map(i => i.poster).filter(p => p && !PLACEHOLDER.test(p)))];
+}
+
+// Try each candidate in turn; fall back to 🎬 when none loads.
+function poster(candidates, href) {
+  const blank = () => el("div", { class: "poster blank", "aria-hidden": "true" }, "🎬");
+  const link = el("a", { href, target: "_blank", rel: "noopener", tabindex: "-1" });
+  if (!candidates.length) {
+    link.append(blank());
+    return link;
+  }
+  let next = 1;
+  const img = el("img", { class: "poster", src: candidates[0], alt: "", loading: "lazy", referrerpolicy: "no-referrer" });
+  img.addEventListener("error", () => {
+    if (next < candidates.length) img.src = candidates[next++];
+    else img.replaceWith(blank());
+  });
+  link.append(img);
+  return link;
 }
 
 function filmCard(g) {
@@ -126,7 +146,7 @@ function filmCard(g) {
       labels.length ? el("small", {}, labels.join(" · ")) : null);
   });
   return el("article", { class: "card" },
-    poster(g.poster, g.items[0].url),
+    poster(g.posters, g.items[0].url),
     el("div", { class: "body" },
       el("h3", { class: "title" }, g.title),
       el("div", { class: "wheres" }, ...where)));
@@ -134,7 +154,7 @@ function filmCard(g) {
 
 function itemCard(item) {
   return el("article", { class: "card" + (item.listed ? "" : " gone") },
-    poster(item.poster, item.url),
+    poster(posterCandidates([item]), item.url),
     el("div", { class: "body" },
       el("span", { class: `src src-${item.source}` }, sourceName(item.source)),
       el("h3", { class: "title" }, el("a", { href: item.url, target: "_blank", rel: "noopener" }, item.title)),
