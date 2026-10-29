@@ -41,7 +41,12 @@ class Http:
     def get_json(self, url: str, **kw):
         r = self.get(url, **kw)
         r.raise_for_status()
-        return r.json()
+        try:
+            return r.json()
+        except ValueError:
+            # Usually a bot-protection or error page served with 200; say what it was.
+            snippet = " ".join(r.text[:200].split())
+            raise ValueError(f"expected JSON from {r.url}, got {r.headers.get('content-type')}: {snippet!r}") from None
 
     def post(self, url: str, **kw) -> requests.Response:
         return self.session.post(url, timeout=TIMEOUT, **kw)

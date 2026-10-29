@@ -126,20 +126,16 @@ def filmhouse():
 def afa():
     base = "https://asianfilmarchive.org"
     print("== AFA")
-    wp(base, ["mep_events", "mep_event", "events"])
-    r = get(base + "/wp-json/wp/v2/mep_cat", params={"per_page": 100})
-    if r is not None and r.ok:
-        print("   mep_cat:", [(c.get("id"), c.get("slug"), c.get("count")) for c in r.json()])
+    r = get(base + "/wp-json/wp/v2/mep_events",
+            params={"per_page": 5, "_fields": "id,slug,link,title,date,class_list,yoast_head_json"})
+    if r is not None:
+        print("   ", " ".join(r.text[:600].split()))
     for path in ["/whatson/", "/events-calendar/"]:
         r = get(base + path)
-        if r is not None and r.ok:
-            links = anchors(r.text, base)
-            print(f"  anchors on {path}: {len(links)}")
-            for h, t in links.items():
-                print(f"    {h} | {t}")
-    r = get(base + "/feed/", params={"post_type": "mep_events"})
-    if r is not None and r.ok:
-        print(r.text[:2500])
+        if r is not None:
+            print(f"    event links on {path}:", len(anchors(r.text, base, r"/event-calendar/")))
+            if not r.ok or "event-calendar" not in r.text:
+                print("   ", " ".join(r.text[:600].split()))
 
 
 def shaw():
@@ -191,6 +187,6 @@ def shaw():
 
 
 if __name__ == "__main__":
-    wanted = sys.argv[1:] or ["filmhouse", "shaw"]
+    wanted = sys.argv[1:] or ["filmhouse", "shaw", "afa"]
     for name in wanted:
         globals()[name]()

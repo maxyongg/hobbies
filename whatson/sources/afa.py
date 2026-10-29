@@ -1,8 +1,8 @@
 """Asian Film Archive (Oldham Theatre) — WordPress + "Event Manager for WooCommerce".
 
 Events live at /event-calendar/<title-slug>-<year>/; repeat screenings add -1, -2, ...
-Data path is unverified (sites were unreachable when this was written): tries the
-plugin's post type over REST first, then links on the What's On pages.
+Reads the plugin's post type (mep_events) over WP REST, asking only for the fields
+needed; falls back to event links on the What's On / Events Calendar pages.
 """
 
 from __future__ import annotations
@@ -38,15 +38,16 @@ class AsianFilmArchive(Source):
         return self.first_working(http, self.from_rest, self.from_listing_pages)
 
     def from_rest(self, http) -> list[Item]:
-        rest_base = wp.find_rest_base(http, BASE, ["mep_events", "mep_event"]) or "mep_events"
         items: dict[str, Item] = {}
-        for p in wp.latest_posts(http, BASE, rest_base):  # newest first
+        posts = wp.latest_posts(http, BASE, "mep_events", per_page=50,
+                                fields="id,slug,link,title,date,class_list,yoast_head_json")
+        for p in posts:  # newest first
             if not p.get("slug") or not wp.title(p):
                 continue
             fid = film_id(p["slug"])
             items.setdefault(fid, Item(
                 source=self.key, id=fid, title=SOLD_OUT.sub("", wp.title(p)), url=p["link"],
-                poster=wp.featured_image(p), tags=wp.term_names(p),
+                poster=wp.featured_image(p), tags=wp.class_terms(p, ("mep_cat-", "tag-")),
             ))
         return list(items.values())
 

@@ -5,22 +5,17 @@ from __future__ import annotations
 from .html import clean
 
 
-def find_rest_base(http, base: str, candidates: list[str]) -> str | None:
-    """Return the rest_base of the first post type whose key or rest_base is a candidate."""
-    types = http.get_json(f"{base}/wp-json/wp/v2/types")
-    for want in candidates:
-        for key, t in types.items():
-            if want in (key, t.get("rest_base")):
-                return t.get("rest_base") or key
-    return None
+def latest_posts(http, base: str, rest_base: str, per_page: int = 100, fields: str | None = None) -> list[dict]:
+    """Most recently published posts of a type. New listings are new posts, so one page is enough.
 
-
-def latest_posts(http, base: str, rest_base: str, per_page: int = 100) -> list[dict]:
-    """Most recently published posts of a type. New listings are new posts, so one page is enough."""
-    return http.get_json(
-        f"{base}/wp-json/wp/v2/{rest_base}",
-        params={"per_page": per_page, "orderby": "date", "order": "desc", "_embed": "wp:featuredmedia,wp:term"},
-    )
+    With `fields`, ask only for those (much lighter); otherwise embed images and terms.
+    """
+    params = {"per_page": per_page, "orderby": "date", "order": "desc"}
+    if fields:
+        params["_fields"] = fields
+    else:
+        params["_embed"] = "wp:featuredmedia,wp:term"
+    return http.get_json(f"{base}/wp-json/wp/v2/{rest_base}", params=params)
 
 
 def title(post: dict) -> str:
@@ -35,12 +30,13 @@ def featured_image(post: dict) -> str | None:
     return og[0].get("url") if og else None
 
 
-def term_names(post: dict, taxonomies: set[str] | None = None) -> list[str]:
+def class_terms(post: dict, prefixes: tuple[str, ...]) -> list[str]:
+    """Term names from post_class() entries like "mep_cat-screening" (no _embed needed)."""
     names = []
-    for group in (post.get("_embedded") or {}).get("wp:term") or []:
-        for term in group or []:
-            if isinstance(term, dict) and (taxonomies is None or term.get("taxonomy") in taxonomies):
-                name = clean(term.get("name"))
+    for prefix in prefixes:
+        for c in post.get("class_list") or []:
+            if c.startswith(prefix):
+                name = c.removeprefix(prefix).replace("-", " ").strip().capitalize()
                 if name and name not in names:
                     names.append(name)
     return names

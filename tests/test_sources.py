@@ -3,18 +3,6 @@ from whatson.sources.filmhouse import Filmhouse
 from whatson.sources.html import harvest_links
 from whatson.sources.shaw import Shaw, movie_id
 
-TYPES_NO_FILMS = {"post": {"rest_base": "posts"}, "page": {"rest_base": "pages"}}
-
-
-def wp_post(slug, title, link, image=None, terms=()):
-    post = {"slug": slug, "title": {"rendered": title}, "link": link, "_embedded": {}}
-    if image:
-        post["_embedded"]["wp:featuredmedia"] = [{"source_url": image}]
-    if terms:
-        post["_embedded"]["wp:term"] = [[{"taxonomy": "mep_cat", "name": t} for t in terms]]
-    return post
-
-
 def test_afa_film_id_strips_repeat_suffix_but_keeps_year():
     assert film_id("hush-2016") == "hush-2016"
     assert film_id("hush-2016-1") == "hush-2016"
@@ -24,16 +12,20 @@ def test_afa_film_id_strips_repeat_suffix_but_keeps_year():
 
 
 def test_afa_rest_merges_repeat_screenings(http):
+    # Field names as returned by /wp-json/wp/v2/mep_events?_fields=...
     base = "https://asianfilmarchive.org"
-    http.routes[f"{base}/wp-json/wp/v2/types"] = {**TYPES_NO_FILMS, "mep_events": {"rest_base": "mep_events"}}
     http.routes[f"{base}/wp-json/wp/v2/mep_events"] = [
-        wp_post("hush-2016-1", "Hush &#8211; Encore", f"{base}/event-calendar/hush-2016-1/", terms=["Programme"]),
-        wp_post("hush-2016", "Hush", f"{base}/event-calendar/hush-2016/", image="https://x/p.jpg"),
-        wp_post("mother-2009", "<em>Mother</em>", f"{base}/event-calendar/mother-2009/"),
+        {"slug": "hush-2016-1", "title": {"rendered": "[SOLD OUT] Hush &#8211; Encore"},
+         "link": f"{base}/event-calendar/hush-2016-1/",
+         "class_list": ["post-1", "mep_events", "tag-singapore-international-film-festival", "mep_cat-screening"],
+         "yoast_head_json": {"og_image": [{"url": "https://x/p.jpg"}]}},
+        {"slug": "hush-2016", "title": {"rendered": "Hush"}, "link": f"{base}/event-calendar/hush-2016/"},
+        {"slug": "mother-2009", "title": {"rendered": "<em>Mother</em>"}, "link": f"{base}/event-calendar/mother-2009/"},
     ]
     items = AsianFilmArchive().fetch(http)
     assert [(i.id, i.title) for i in items] == [("hush-2016", "Hush – Encore"), ("mother-2009", "Mother")]
-    assert items[0].tags == ["Programme"]
+    assert items[0].tags == ["Screening", "Singapore international film festival"]
+    assert items[0].poster == "https://x/p.jpg"
 
 
 def test_afa_falls_back_to_listing_pages(http):
