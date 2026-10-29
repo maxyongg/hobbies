@@ -23,9 +23,9 @@ Design for more sources later (gallery openings / things to do from social media
 
 ## Status (2026-10-29)
 
-- v1 code written on branch `claude/zen-hypatia-chjicl`: core loop, store, ntfy, three sources, web page, widget, tests (pass, on hand-written fixtures).
-- **Scrapers are unverified against the live sites** — the cloud session couldn't reach them. Data paths are best guesses with fallbacks (see `docs/sources.md`). Shaw is the least certain.
-- Workflows are staged in `workflows/`, not yet in `.github/workflows/` (see Gotchas).
+- v1 code on branch `claude/zen-hypatia-chjicl` (not merged): core loop, store, ntfy, three sources, web page, widget, tests.
+- **All three scrapers verified live** via the CI `live` job (2026-10-29): Filmhouse 34 films, Shaw 64, AFA 86 events. Real data paths are in `docs/sources.md`.
+- `.github/workflows/ci.yml` is installed (Max moved it). `update.yml` is still staged in `workflows/`. Pages, `NTFY_TOPIC` and the widget are not set up yet. Nothing has seeded `data/items.json` yet.
 
 ## Layout
 
@@ -37,7 +37,8 @@ whatson/            Python package: python -m whatson run [--dry-run] [--source 
   sources/          one module per source + wordpress.py / html.py helpers; registry in __init__.py
 site/               static web app (reads data/items.json + data/status.json)
 widget/             Scriptable widget
-workflows/          staged GitHub Actions (update.yml, ci.yml)
+.github/workflows/  ci.yml: tests; on non-main pushes also a live dry run + probe
+workflows/          staged update.yml (scheduled run + Pages deploy) for Max to move
 scripts/probe.py    prints what each site exposes — use when a scraper breaks
 ```
 
@@ -45,10 +46,12 @@ Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source
 
 ## Next steps
 
-1. **Max (one-off setup):** move `workflows/*.yml` into `.github/workflows/`; Settings → Pages → Source: GitHub Actions; add secret `NTFY_TOPIC` (hard-to-guess name, subscribe to it in the ntfy app); install the Scriptable widget (instructions at the top of `widget/whats-on-sg.js`).
-2. **Verify scrapers live.** Once `ci.yml` is in place, any push to a non-`main` branch runs a read-only dry run + `scripts/probe.py` in the `live` job; read it with the GitHub MCP tools (`actions_list` → `get_job_logs`). Fix data paths per source; for Shaw, find the JSON endpoint in the probe output and replace the Playwright path with a direct call.
-3. Merge to `main`; trigger `update` manually once (seeds, no alerts), check the Pages site.
+1. **Max (one-off setup):** move `workflows/update.yml` into `.github/workflows/`; Settings → Pages → Source: GitHub Actions; add secret `NTFY_TOPIC` (hard-to-guess name, subscribe to it in the ntfy app); install the Scriptable widget (instructions at the top of `widget/whats-on-sg.js`).
+2. Merge the branch to `main`; Actions → update → Run workflow once (seeds silently), check https://maxyongg.github.io/hobbies/.
+3. Optional polish: Shaw lists language/format variants as separate films (`V [CANTO]`, `V [M]`) — group them if alerts are noisy; AFA includes talks — filter by `mep_cat` if unwanted.
 4. Later: more sources (galleries, games) as new modules in `whatson/sources/`.
+
+To check a scraper change against the real sites: push to a non-`main` branch, then read the `live` job log with the GitHub MCP tools (`actions_list` → `list_workflow_jobs` → `get_job_logs`; the log is large, so save and grep it).
 
 ## Gotchas
 

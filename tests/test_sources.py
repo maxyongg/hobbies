@@ -73,23 +73,6 @@ def test_filmhouse_falls_back_to_slug_title(http):
     assert (item.id, item.title) == ("245", "Godzilla Minus Zero")
 
 
-def test_shaw_api(http):
-    # Field names as returned by shaw.sg/internal/get_now_showing_movies.
-    http.routes["https://shaw.sg/internal/get_now_showing_movies"] = [
-        {"primaryTitle": "HYBE CINE FEST 2026", "code": "SH-CF-HYPE26", "movieReleaseId": 0,
-         "posterUrl": "https://cdn/h.jpg", "releaseDate": "2026-09-30T21:00:00", "isAdvanceSales": False},
-        {"primaryTitle": "Clayface", "code": "2085", "movieReleaseId": 5551,
-         "posterUrl": "https://cdn/c.jpg", "releaseDate": "2026-10-22T00:00:00", "isAdvanceSales": True},
-        {"primaryTitle": "", "code": "1"},
-    ]
-    items = {i.id: i for i in Shaw().fetch(http)}
-    assert set(items) == {"sh-cf-hype26", "2085"}
-    clay = items["2085"]
-    assert (clay.title, clay.url, clay.release_date, clay.tags) == (
-        "Clayface", "https://shaw.sg/movie-details/2085", "2026-10-22", ["Advance sales"])
-    assert items["sh-cf-hype26"].url == "https://shaw.sg/movie"
-
-
 def test_shaw_movie_id_prefers_numeric_segment():
     assert movie_id("https://www.shaw.sg/movie-details/12345/some-title") == "12345"
 
@@ -97,9 +80,12 @@ def test_shaw_movie_id_prefers_numeric_segment():
 def test_shaw_reads_movie_links_and_skips_tabs():
     html = """
       <a href="/movie/coming-soon">Coming Soon</a>
-      <div><a href="/movie-details/12345"><img data-src="/img/w.jpg" alt="Wicked"></a>
-           <a href="/movie-details/12345">Book Now</a></div>
-      <div><span>ADVANCE SALES</span><a href="/movie-details/678">Dune: Part Two</a></div>"""
+      <div><div><a href="/movie-details/12345"><span>NEW RELEASE</span><picture>
+             <img data-src="/img/w.jpg" alt="Wicked"></picture></a></div>
+           <div><div><h3>Wicked</h3></div><a href="/movie-details/12345"><button>BUY</button></a>
+           <span>A witch's story.</span><a href="/movie-details/12345">(Details)</a></div></div>
+      <div><a href="/movie-details/678"><span>ADVANCE SALES</span><img alt="Dune: Part Two"></a>
+           <h3>Dune: Part Two</h3></div>"""
     found = {}
     Shaw().items_from_html(html, found, tag="Advance Sales")
     assert {k: (v.title, v.tags) for k, v in found.items()} == {

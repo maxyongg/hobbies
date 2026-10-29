@@ -1,6 +1,6 @@
 # Sources — how each site lists films
 
-Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Claude cloud sessions). Verify before relying on any of this — the CI `live` job and `scripts/probe.py` print what the scrapers actually find.
+Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Claude cloud sessions). The CI `live` job (non-`main` pushes) prints what the scrapers find and runs `scripts/probe.py`; read it with the GitHub MCP tools.
 
 ## Filmhouse — https://filmhouse.sg
 
@@ -15,7 +15,7 @@ Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Cl
 - Film detail URL pattern: not yet confirmed.
 - **Try first:** `/wp-json/` (look for a films post type) and `/feed/`. Fall back to parsing `/films` + `/films/coming-soon/`.
 - General-release showtimes update weekly on Tuesdays.
-- **Implemented (unverified):** `whatson/sources/filmhouse.py` — (1) a WP post type named `film`/`films`/`movie`/`movies` via `/wp-json/wp/v2/types`, latest 100 posts; (2) links matching `/film(s)/<slug>/` on `/films/` and `/films/coming-soon/` (tagged "Coming soon"). id = slug.
+- **Implemented (verified live 2026-10-29, 34 films):** `whatson/sources/filmhouse.py`. No film post type over REST and `/feed/` is empty. Listings are rendered server-side by the JACRO plugin: each film is a `div.jacro-event` card with a poster link and an `a.liveeventtitle` title link to `http://filmhouse.sg/film/<id>/<slug>` (JACRO's numeric id = our id), plus `/filmhouse-singapore/booknow/<n>` showtime links. Reads `/films/` and `/films/coming-soon/` (tagged "Coming soon"). Posters on `cdn.taposapp.com`.
 
 ## Shaw Theatres — https://shaw.sg
 
@@ -23,7 +23,7 @@ Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Cl
 - **Listing page:** `/movie`, with tabs "New Now Showing", "Ending Soon", "Advance Sales", "Top Movies", "Coming Soon".
 - **Movie data is not in the HTML** — it's loaded by JavaScript. Find the JSON endpoint the page calls (browser devtools → Network on `/movie`) and poll that directly. Playwright is the fallback.
 - Location pages: `/theatre/location/<id or slug>`.
-- **Implemented (unverified, least certain):** `whatson/sources/shaw.py` — (1) movie-detail links in the static HTML; (2) headless Chromium renders `/movie`, clicks each tab, reads links like `/movie(s)/<x>` or `/movie-detail(s)/<x>` (tagged with the tab name). id = numeric path segment if any, else the path. `scripts/probe.py shaw` prints every XHR/JSON call the page makes — use it to switch to the JSON endpoint.
+- **Implemented (verified live 2026-10-29, 64 films):** `whatson/sources/shaw.py`. Next.js site on `shaw.sg` (www redirects). Tabs load JSON from `shaw.sg/internal/get_now_showing_movies`, `get_advance_sale_movies`, `get_top_movies`, `get_coming_soon_movies`, but these return a 404 page to plain `requests` (even with Referer), so the scraper renders `/movie` in Chromium, clicks each tab, and reads `/movie-details/<id>` cards (title in the card's `<h3>`, tag = tab name). Language/format variants are separate ids (e.g. `V [CANTO]`, `V [M]`).
 
 ## Asian Film Archive — https://asianfilmarchive.org
 
@@ -32,7 +32,7 @@ Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Cl
 - **Listing pages:** `/whatson/`, `/events-calendar/`, programmes under `/event-archive/programmes/` and `/mep_cat/programme/`.
 - **Event detail URL pattern:** `/event-calendar/<title-slug>-<year>/`, e.g. `/event-calendar/hush-2016/`. Repeat screenings get suffixes (`-1`, `-2`); some add a programme tag (`-reciprocal`). → Normalise the id by stripping repeat suffixes so one film = one alert.
 - **Try first:** `/wp-json/wp/v2/mep_events?per_page=100&orderby=date` and `/feed/?post_type=mep_events`.
-- **Implemented (unverified):** `whatson/sources/afa.py` — (1) `mep_events` over WP REST, latest 100 posts, `mep_cat` terms as tags; (2) `/event-calendar/<slug>/` links on `/whatson/` and `/events-calendar/`. id = slug with repeat suffixes (`-1`, `-2`) stripped; 4-digit years and programme tags (`-reciprocal`) are kept, so a film in a new programme alerts again.
+- **Implemented (verified live 2026-10-29, 86 events):** `whatson/sources/afa.py` — `mep_events` over WP REST (1,770 posts in total; we read the latest 100), `mep_cat` terms as tags; HTML fallback reads `/event-calendar/<slug>/` links. id = slug with repeat suffixes (`-1`, `-2`) stripped; 4-digit years and programme tags are kept. Includes talks and shorts programmes, not just films. "[SOLD OUT]" is stripped from titles.
 
 ## Future sources (not v1)
 

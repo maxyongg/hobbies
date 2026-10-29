@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 
 # Link texts that label buttons rather than films.
 GENERIC = re.compile(
-    r"^(buy|book|get)( tickets?| now)?$|^(more )?(info|details)$|^(watch )?trailer$|^read more$|^learn more$",
+    r"^(buy|book|get)( tickets?| now)?$|^\(?(more )?(info|details)\)?$|^(watch )?trailer$|^read more$|^learn more$",
     re.I,
 )
 
