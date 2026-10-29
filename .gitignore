@@ -15,3 +15,8 @@ node_modules/
 .DS_Store
 .idea/
 .vscode/
+
+# whats-on-sg run output that is published but not committed
+data/status.json
+_site/
+.pytest_cache/

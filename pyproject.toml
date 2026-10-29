@@ -1,0 +1,8 @@
+[project]
+name = "whats-on-sg"
+version = "0.1.0"
+description = "Alerts when new films are listed at Singapore cinemas."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
