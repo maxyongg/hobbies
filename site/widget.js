@@ -5,7 +5,8 @@
 // → Script: Cinema.
 // Optional widget Parameter: sources to show, comma-separated, e.g. "filmhouse,afa".
 //
-// Shows the newest films first seen by the scraper (data/items.json on GitHub Pages).
+// Shows the newest films from the cinemas that send alerts (Filmhouse, Shaw, AFA), as first
+// seen by the scraper (data/items.json on GitHub Pages).
 // Tapping a film (medium/large) opens it; tapping elsewhere opens the web app.
 
 const SITE = "https://maxyongg.github.io/hobbies/";
@@ -99,7 +100,7 @@ async function main() {
   try {
     const { data, stale } = await loadData();
     const items = (data.items || [])
-      .filter(i => i.alert !== "seed" && (!only.length || only.includes(i.source)))
+      .filter(i => (i.alert === "sent" || i.alert === "pending") && (!only.length || only.includes(i.source)))
       .sort((a, b) => (b.first_seen || "").localeCompare(a.first_seen || ""));
     widget = build(items, family, stale);
   } catch (e) {

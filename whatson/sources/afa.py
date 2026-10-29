@@ -21,6 +21,10 @@ LISTINGS = ["/whatson/", "/events-calendar/"]
 EVENT_PATH = r"^/event-calendar/[^/]+/?$"
 SOLD_OUT = re.compile(r"[\[(]sold out[\])]\s*", re.I)
 NOW_DAYS = 7
+# Nested _fields (WP >= 5.3) keep each post to the few keys used, so 100 posts stay small.
+DATE_KEYS = ("event_upcoming_datetime", "event_start_datetime", "event_expire_datetime", "event_end_datetime")
+FIELDS = ",".join(["id", "slug", "link", "title", "class_list", "yoast_head_json.og_image"]
+                  + [f"event_informations.{k}" for k in DATE_KEYS])
 
 
 def now() -> datetime:
@@ -65,8 +69,7 @@ class AsianFilmArchive(Source):
 
     def from_rest(self, http) -> list[Item]:
         items: dict[str, Item] = {}
-        posts = wp.latest_posts(http, BASE, "mep_events", per_page=50,
-                                fields="id,slug,link,title,date,class_list,yoast_head_json,event_informations")
+        posts = wp.latest_posts(http, BASE, "mep_events", per_page=100, fields=FIELDS)
         current = now()
         for p in posts:  # newest first
             if not p.get("slug") or not wp.title(p):

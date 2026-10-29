@@ -31,6 +31,7 @@ def test_afa_rest_merges_repeat_screenings(http):
     items = AsianFilmArchive().fetch(http)
     assert [(i.id, i.title) for i in items] == [("hush-2016", "Hush – Encore"), ("mother-2009", "Mother")]
     assert items[0].tags == ["Screening", "Singapore international film festival"]
+    assert "event_informations.event_start_datetime" in afa.FIELDS
     assert items[0].poster == "https://x/p.jpg"
 
 

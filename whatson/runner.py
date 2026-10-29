@@ -68,7 +68,8 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
         if seed:
             log.info("%s: seeded %d items (no alerts on first run)", src.key, len(new))
         else:
-            log.info("%s: %d listed, %d new", src.key, len(items), len(new))
+            showing = {s: sum(1 for i in items if (i.showing or "now") == s) for s in ("now", "soon")}
+            log.info("%s: %d listed (%d now, %d soon), %d new", src.key, len(items), showing["now"], showing["soon"], len(new))
         for i in new:
             log.info("  + %s | %s | %s", i.id, i.title, i.url)
 
