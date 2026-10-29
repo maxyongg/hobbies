@@ -318,6 +318,29 @@ def carnival():
         b.close()
 
 
+def posters():
+    """Can another site show each cinema's posters? GET a few stored poster URLs with no
+    Referer (what the web app sends) and with a foreign one; Shaw's gumlet URLs also direct."""
+    data = json.loads(open("data/items.json", encoding="utf-8").read())
+    by_source = {}
+    for item in data["items"]:
+        if item.get("listed") and item.get("poster"):
+            by_source.setdefault(item["source"], []).append(item["poster"])
+    for source, urls in sorted(by_source.items()):
+        picks = [u for u in urls if "noimage" not in u][:3]
+        if source == "shaw":
+            picks += [re.sub(r"^https://[^/]+\.gumlet\.io/fetch/(.+?)(\?.*)?$", r"\1", u) for u in picks if "gumlet" in u]
+        print(f"== POSTERS {source}")
+        for url in picks:
+            for label, headers in (("no referer", {}), ("github.io", {"Referer": "https://maxyongg.github.io/"})):
+                try:
+                    r = S.get(url, headers=headers, timeout=30)
+                    print(f"  {label:10} {r.status_code} {r.headers.get('content-type')} {len(r.content)}B "
+                          f"cache={r.headers.get('cache-control')} {url[:140]}")
+                except Exception as e:  # noqa: BLE001
+                    print(f"  {label:10} ERROR {e!r} {url[:140]}")
+
+
 def afa_dates():
     base = "https://asianfilmarchive.org"
     print("== AFA DATES")
@@ -333,8 +356,8 @@ def afa_dates():
 
 
 if __name__ == "__main__":
-    names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "carnival", "discover"]
-    wanted = sys.argv[1:]
+    names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "carnival", "discover", "posters"]
+    wanted = sys.argv[1:] or ["posters"]
     if not wanted:
         # CI runs this with no arguments. While debugging a source on a branch, default `wanted` to its probe.
         print("usage: probe.py " + " | ".join(names) + "  (set a default list here while debugging)")
