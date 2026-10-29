@@ -1,0 +1,32 @@
+# Diagnostic: print live responses from the source sites into the job log.
+# Cloud Claude sessions can't reach these sites; Actions runners can.
+# Lives in ci/workflows/ because Claude sessions can't push to .github/workflows/
+# (token lacks the workflow scope). To enable: git mv ci/workflows/probe.yml .github/workflows/
+name: probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated URLs, optionally prefixed with 'deep'. Empty = scripts/probe-urls.txt"
+        required: false
+        default: ""
+  push:
+    paths:
+      - scripts/probe.py
+      - scripts/probe-urls.txt
+      - .github/workflows/probe.yml
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe
+        env:
+          URLS: ${{ inputs.urls }}
+        run: python3 scripts/probe.py $URLS
