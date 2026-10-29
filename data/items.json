@@ -1,8 +1,8 @@
 {
  "sources": {
   "afa": {
-   "consecutive_failures": 1,
-   "last_error": "from_rest: ValueError: expected JSON from https://asianfilmarchive.org/wp-json/wp/v2/mep_events?per_page=100&orderby=date&order=desc&_fields=id%2Cslug%2Clink%2Ctitle%2Cclass_list%2Cyoast_head_json.og_image%2Cevent_informations.event_upcoming_datetime%2Cevent_informations.event_start_datetime%2Cevent_informations.event_expire_datetime%2Cevent_informations.event_end_datetime, got text/html: '<html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" content=\"0;/.well-known/sgcaptcha/?r=%2Fwp-json%2Fwp%2Fv2%2Fmep_events%3Fper_page%3D100%26orderby%3Ddate%26order%3Ddesc%26_fields%'; from_listing_pages: 0 items"
+   "consecutive_failures": 0,
+   "last_error": null
   },
   "carnival": {
    "consecutive_failures": 0,
