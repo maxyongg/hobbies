@@ -186,7 +186,99 @@ def shaw():
         b.close()
 
 
+CANDIDATES = {
+    "gv": ["https://www.gv.com.sg/", "https://www.gv.com.sg/GVMovies"],
+    "carnival": ["https://carnivalcinemas.sg/", "https://www.carnivalcinemas.sg/"],
+    "sfs": ["https://www.singaporefilmsociety.com/", "https://singaporefilmsociety.com/"],
+    "alliance": ["https://www.alliancefrancaise.org.sg/"],
+    "objectifs": ["https://www.objectifs.com.sg/"],
+    "sgiff": ["https://www.sgiff.com/"],
+}
+NOISE = re.compile(r"google|facebook|doubleclick|hotjar|clarity|tiktok|freshworks|gstatic|youtube|cookie|onetrust|sentry", re.I)
+
+
+def discover():
+    """First look at candidate cinema sites: platform, links, and JSON calls when rendered."""
+    for key, urls in CANDIDATES.items():
+        print(f"== DISCOVER {key}")
+        for url in urls:
+            r = get(url)
+            if r is None or not r.ok:
+                continue
+            soup = BeautifulSoup(r.text, "lxml")
+            gen = soup.find("meta", attrs={"name": "generator"})
+            print("  final:", r.url, "| title:", soup.title.string.strip() if soup.title and soup.title.string else None,
+                  "| generator:", gen.get("content") if gen else None)
+            origin = f"{urlparse(r.url).scheme}://{urlparse(r.url).netloc}"
+            t = get(origin + "/wp-json/wp/v2/types")
+            if t is not None and t.ok and "json" in t.headers.get("content-type", ""):
+                print("  wp types:", [(k, v.get("rest_base")) for k, v in t.json().items()])
+            links = anchors(r.text, r.url)
+            print(f"  anchors: {len(links)}")
+            for h, txt in list(links.items())[:120]:
+                print(f"    {h} | {txt}")
+            for m in sorted(set(re.findall(r"[\"'](/?[^\"' <>]*(?:api|Api|API|json|graphql)[^\"' <>]*)[\"']", r.text)))[:30]:
+                print("    ref:", m[:200])
+            break
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        for key in ("gv", "carnival", "sfs"):
+            page = b.new_page(user_agent=UA)
+            seen = []
+
+            def on_response(resp, seen=seen):
+                ct = resp.headers.get("content-type", "")
+                if ("json" in ct or resp.request.resource_type in ("xhr", "fetch")) and not NOISE.search(resp.url):
+                    try:
+                        body = resp.text()
+                    except Exception:  # noqa: BLE001
+                        body = ""
+                    seen.append((resp.request.method, resp.url, resp.status, body))
+
+            page.on("response", on_response)
+            url = CANDIDATES[key][-1] if key == "gv" else CANDIDATES[key][0]
+            print(f"== RENDER {key} {url}")
+            try:
+                page.goto(url, wait_until="load", timeout=60000)
+                try:
+                    page.wait_for_load_state("networkidle", timeout=20000)
+                except Exception:  # noqa: BLE001
+                    pass
+                page.wait_for_timeout(3000)
+            except Exception as e:  # noqa: BLE001
+                print("  error:", type(e).__name__, e)
+                continue
+            print("  url:", page.url)
+            for method, u, status, body in seen[:40]:
+                print(f"   {method} {u[:200]} -> {status} {len(body)}B")
+                print("     ", " ".join(body[:400].split()))
+            links = anchors(page.content(), page.url)
+            print(f"  rendered anchors: {len(links)}")
+            for h, txt in list(links.items())[:150]:
+                print(f"    {h} | {txt}")
+            page.close()
+        b.close()
+
+
+def afa_dates():
+    base = "https://asianfilmarchive.org"
+    print("== AFA DATES")
+    r = get(base + "/wp-json/wp/v2/mep_events", params={"per_page": 3, "_fields": "id,slug,event_informations"})
+    if r is None or not r.ok:
+        return
+    for ev in r.json():
+        info = ev.get("event_informations") or {}
+        print("  ", ev["slug"], "keys:", sorted(info)[:80])
+        for k, v in info.items():
+            if re.search(r"date|time|start|end", k, re.I):
+                print(f"     {k} = {str(v)[:200]}")
+
+
 if __name__ == "__main__":
-    wanted = sys.argv[1:] or ["filmhouse", "shaw", "afa"]
+    wanted = sys.argv[1:] or ["afa_dates", "discover"]
     for name in wanted:
         globals()[name]()
