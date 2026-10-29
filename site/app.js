@@ -68,6 +68,8 @@ function shortName(key) {
 
 const BRACKETS = /\s*[[(][^\])]*[\])]/g; // [M], (4K Restoration), (ENGLISH), [CANTO]
 const STUDIO = /^(marvel studios|disney and pixars|disney pixars|disneys|dc studios|dreamworks)\s+/;
+// GV appends the Chinese title ("The Violinist 沧海琴声"); ignore a CJK tail after a Latin title.
+const CJK_TAIL = /(?<=[a-z0-9!?.)])\s+[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}][^a-z]*$/u;
 
 function cleanTitle(title) {
   return title.replace(BRACKETS, "").replace(/\s+/g, " ").replace(/[\s:–-]+$/, "").trim() || title;
@@ -75,7 +77,8 @@ function cleanTitle(title) {
 
 function filmKey(title) {
   return cleanTitle(title).toLowerCase()
-    .normalize("NFKD").replace(/[̀-ͯ]/g, "") // Amélie -> amelie
+    .replace(CJK_TAIL, "")
+    .normalize("NFKD").replace(/[\u0300-\u036f]/g, "") // Amélie -> amelie
     .replace(/[’']/g, "")
     .replace(/&/g, " and ")
     .replace(/[^\p{L}\p{N}]+/gu, " ").trim()
