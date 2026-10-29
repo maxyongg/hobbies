@@ -17,6 +17,7 @@ from .html import get_pages, harvest_links, last_segment, slug_id
 BASE = "https://asianfilmarchive.org"
 LISTINGS = ["/whatson/", "/events-calendar/"]
 EVENT_PATH = r"^/event-calendar/[^/]+/?$"
+SOLD_OUT = re.compile(r"[\[(]sold out[\])]\s*", re.I)
 
 
 def film_id(slug: str) -> str:
@@ -44,7 +45,7 @@ class AsianFilmArchive(Source):
                 continue
             fid = film_id(p["slug"])
             items.setdefault(fid, Item(
-                source=self.key, id=fid, title=wp.title(p), url=p["link"],
+                source=self.key, id=fid, title=SOLD_OUT.sub("", wp.title(p)), url=p["link"],
                 poster=wp.featured_image(p), tags=wp.term_names(p),
             ))
         return list(items.values())
@@ -53,7 +54,9 @@ class AsianFilmArchive(Source):
         items: dict[str, Item] = {}
         for page, html in get_pages(http, [BASE + p for p in LISTINGS]):
             for link in harvest_links(html, page, EVENT_PATH):
+                if not link["title"]:
+                    continue
                 fid = film_id(last_segment(link["url"]))
-                items.setdefault(fid, Item(source=self.key, id=fid, title=link["title"],
+                items.setdefault(fid, Item(source=self.key, id=fid, title=SOLD_OUT.sub("", link["title"]),
                                            url=link["url"], poster=link["poster"]))
         return list(items.values())

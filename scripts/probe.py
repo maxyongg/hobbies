@@ -41,6 +41,28 @@ def anchors(html, base, pattern=None):
     return seen
 
 
+def card_html(html, base, pattern, n=3, limit=2500):
+    """Print the smallest ancestor of each of the first n matching links that holds only that link."""
+    soup = BeautifulSoup(html, "lxml")
+    shown = set()
+    for a in soup.find_all("a", href=True):
+        href = urljoin(base, a["href"])
+        if not re.search(pattern, urlparse(href).path) or href in shown:
+            continue
+        shown.add(href)
+        node = a
+        for parent in a.parents:
+            hrefs = {urljoin(base, x["href"]) for x in parent.find_all("a", href=True)
+                     if re.search(pattern, urlparse(urljoin(base, x["href"])).path)}
+            if len(hrefs) > 1:
+                break
+            node = parent
+        print(f"  --- card for {href}:")
+        print(str(node)[:limit])
+        if len(shown) >= n:
+            break
+
+
 def wp(base, guesses):
     r = get(base + "/wp-json/")
     if r is not None and r.ok:
@@ -79,24 +101,26 @@ def wp(base, guesses):
 def filmhouse():
     base = "https://filmhouse.sg"
     print("== FILMHOUSE")
-    wp(base, ["film", "films", "movie", "movies", "event", "events"])
-    for path in ["/films", "/films/coming-soon/", "/seasons-events/ls/"]:
-        r = get(base + path)
-        if r is not None and r.ok:
-            links = anchors(r.text, base)
-            print(f"  anchors on {path}: {len(links)}")
-            for h, t in links.items():
-                print(f"    {h} | {t}")
-            for m in sorted(set(re.findall(r"https?://[^\"' ]*(?:api|json|jacro|tapos)[^\"' ]*", r.text)))[:40]:
-                print("    ref:", m)
-            if path == "/films":
-                soup = BeautifulSoup(r.text, "lxml")
-                print("  /films sample HTML:")
-                body = soup.find("main") or soup.body
-                print(str(body)[:6000] if body else "")
-    r = get(base + "/feed/")
+    r = get(base + "/films")
     if r is not None and r.ok:
-        print(r.text[:1500])
+        card_html(r.text, base, r"^/film/\d+/")
+        for m in sorted(set(re.findall(r"admin-ajax[^\"' ]*|ajax_?url[^,]{0,120}|wp-json/[a-z0-9_-]+/v\d[^\"' ]*", r.text)))[:20]:
+            print("    ref:", m)
+        first = re.search(r"https?://filmhouse\.sg/film/\d+/[^\"'# ]+", r.text)
+        if first:
+            d = get(first.group(0).replace("http://", "https://"))
+            if d is not None and d.ok:
+                soup = BeautifulSoup(d.text, "lxml")
+                print("  title:", soup.title.string if soup.title else None)
+                for prop in ("og:title", "og:image", "og:description"):
+                    tag = soup.find("meta", property=prop)
+                    print(f"  {prop}:", tag.get("content") if tag else None)
+                print("  h1/h2:", [h.get_text(" ", strip=True) for h in soup.find_all(["h1", "h2"])][:8])
+                for js in soup.find_all("script", type="application/ld+json")[:3]:
+                    print("  ld+json:", (js.string or "")[:1500])
+    r = get(base + "/films/coming-soon/")
+    if r is not None and r.ok:
+        card_html(r.text, base, r"^/film/\d+/", n=1)
 
 
 def afa():
@@ -119,14 +143,24 @@ def afa():
 
 
 def shaw():
-    base = "https://www.shaw.sg"
+    base = "https://shaw.sg"
     print("== SHAW")
-    r = get(base + "/movie")
-    if r is not None:
-        print("  scripts:", re.findall(r"<script[^>]+src=\"([^\"]+)\"", r.text)[:30])
-        for m in sorted(set(re.findall(r"[\"'](/?[^\"' ]*(?:api|Api|API|json)[^\"' ]*)[\"']", r.text)))[:60]:
-            print("    ref:", m)
-        print(r.text[:3000])
+    r = get(base + "/internal/get_now_showing_movies", headers={"Referer": base + "/movie"})
+    if r is not None and r.ok:
+        movies = r.json()
+        keys = sorted({k for m in movies for k in m})
+        print(f"  {len(movies)} movies; keys: {keys}")
+        for m in [m for m in movies if m.get("movieReleaseId")][:3]:
+            print("   full:", json.dumps({k: v for k, v in m.items() if k != "synopsisShort"}, ensure_ascii=False))
+        for m in movies:
+            flags = [k for k, v in m.items() if k.startswith("is") and v]
+            print(f"   - {m.get('movieReleaseId')} | {m.get('code')} | {m.get('primaryTitle')} | {m.get('releaseDate')} | {flags}")
+    for name in ["get_coming_soon_movies", "get_advance_sales_movies", "get_ending_soon_movies",
+                 "get_top_movies", "get_all_movies", "get_movies"]:
+        r = get(f"{base}/internal/{name}", headers={"Referer": base + "/movie"})
+        if r is not None and r.ok and "json" in r.headers.get("content-type", ""):
+            data = r.json()
+            print(f"    {name}: {len(data) if isinstance(data, list) else type(data).__name__}", str(data)[:300])
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -135,32 +169,28 @@ def shaw():
     with sync_playwright() as p:
         b = p.chromium.launch()
         page = b.new_page(user_agent=UA)
-        seen = []
-
-        def on_response(resp):
-            ct = resp.headers.get("content-type", "")
-            if resp.request.resource_type in ("xhr", "fetch") or "json" in ct:
-                try:
-                    body = resp.text()
-                except Exception:  # noqa: BLE001
-                    body = ""
-                seen.append((resp.request.method, resp.url, resp.status, ct, body))
-
-        page.on("response", on_response)
+        calls = []
+        page.on("request", lambda req: "/internal/" in req.url and calls.append(req.url))
         page.goto(base + "/movie", wait_until="networkidle", timeout=90000)
-        page.wait_for_timeout(5000)
-        print(f"  XHR/JSON responses: {len(seen)}")
-        for method, url, status, ct, body in seen:
-            print(f"   {method} {url} -> {status} {ct} {len(body)}B")
-            print("     ", body[:1500].replace("\n", " "))
-        links = anchors(page.content(), base)
-        print(f"  rendered anchors: {len(links)}")
-        for h, t in links.items():
-            print(f"    {h} | {t}")
+        page.wait_for_timeout(3000)
+        print("  internal calls on load:", calls)
+        card_html(page.content(), base, r"^/movie-details/\d+", n=3, limit=3000)
+        for tab in ["Now Showing", "New Now Showing", "Ending Soon", "Advance Sales", "Top Movies", "Coming Soon"]:
+            before = len(calls)
+            try:
+                page.get_by_text(tab, exact=True).first.click(timeout=5000)
+                page.wait_for_timeout(3000)
+            except Exception as e:  # noqa: BLE001
+                print(f"  tab {tab!r}: {type(e).__name__}")
+                continue
+            ids = sorted(set(re.findall(r"/movie-details/(\d+)", page.content())))
+            print(f"  tab {tab!r}: url={page.url} new internal calls={calls[before:]} movie ids={len(ids)}")
+            if tab == "Coming Soon":
+                card_html(page.content(), base, r"^/movie-details/\d+", n=2, limit=3000)
         b.close()
 
 
 if __name__ == "__main__":
-    wanted = sys.argv[1:] or ["filmhouse", "afa", "shaw"]
+    wanted = sys.argv[1:] or ["filmhouse", "shaw"]
     for name in wanted:
         globals()[name]()

@@ -47,53 +47,72 @@ def test_afa_falls_back_to_listing_pages(http):
     assert [(i.id, i.title, i.poster) for i in items] == [("hush-2016", "Hush", f"{base}/p.jpg")]
 
 
-def test_filmhouse_uses_film_post_type_when_present(http):
-    base = "https://filmhouse.sg"
-    http.routes[f"{base}/wp-json/wp/v2/types"] = {**TYPES_NO_FILMS, "film": {"rest_base": "films"}}
-    http.routes[f"{base}/wp-json/wp/v2/films"] = [wp_post("perfect-days", "Perfect Days", f"{base}/films/perfect-days/")]
-    [item] = Filmhouse().fetch(http)
-    assert (item.id, item.url) == ("perfect-days", f"{base}/films/perfect-days/")
+def test_filmhouse_reads_film_cards_and_tags_coming_soon(http):
+    # Shaped like the live listing: bare poster links to http://filmhouse.sg/film/<id>/<slug>,
+    # title in the card next to it, plus per-showtime "Book" links.
+    def card(fid, slug, title):
+        return f"""<div class="film"><a href="http://filmhouse.sg/film/{fid}/{slug}"><img src="https://cdn/{fid}.jpg"></a>
+                   <div class="info"><h2>{title}</h2><a href="/filmhouse-singapore/booknow/1{fid}">Book 4:10 pm</a></div></div>"""
 
-
-def test_filmhouse_listing_pages_tag_coming_soon(http):
     base = "https://filmhouse.sg"
-    http.routes[f"{base}/wp-json/wp/v2/types"] = TYPES_NO_FILMS
-    http.routes[f"{base}/films/"] = """
-      <a href="/films/">Films</a><a href="/films/coming-soon/">Coming soon</a>
-      <a href="/films/perfect-days/"><h3>Perfect Days</h3></a>
-      <a href="/films/all-we-imagine-as-light/">All We Imagine as Light</a>"""
-    http.routes[f"{base}/films/coming-soon/"] = """
-      <a href="/films/all-we-imagine-as-light/">All We Imagine as Light</a>
-      <a href="/films/sp%C3%A9cial/">Spécial</a>"""
+    http.routes[f"{base}/films/"] = "<nav><a href='/films'>All Films</a></nav>" + card(220, "fjord", "Fjord") + \
+        card(232, "amlie-25th-anniversary", "Amélie (25th Anniversary)")
+    http.routes[f"{base}/films/coming-soon/"] = card(232, "amlie-25th-anniversary", "Amélie (25th Anniversary)")
     items = {i.id: i for i in Filmhouse().fetch(http)}
-    assert set(items) == {"perfect-days", "all-we-imagine-as-light", "spécial"}
-    assert items["all-we-imagine-as-light"].tags == ["Coming soon"]
-    assert items["perfect-days"].tags == []
+    assert {k: (v.title, v.tags) for k, v in items.items()} == {
+        "220": ("Fjord", []),
+        "232": ("Amélie (25th Anniversary)", ["Coming soon"]),
+    }
+    assert items["220"].url == f"{base}/film/220/fjord"
+    assert items["220"].poster == "https://cdn/220.jpg"
+
+
+def test_filmhouse_falls_back_to_slug_title(http):
+    http.routes["https://filmhouse.sg/films/"] = '<a href="/film/245/godzilla-minus-zero"><img src="/p.jpg"></a>'
+    [item] = Filmhouse().fetch(http)
+    assert (item.id, item.title) == ("245", "Godzilla Minus Zero")
+
+
+def test_shaw_api(http):
+    # Field names as returned by shaw.sg/internal/get_now_showing_movies.
+    http.routes["https://shaw.sg/internal/get_now_showing_movies"] = [
+        {"primaryTitle": "HYBE CINE FEST 2026", "code": "SH-CF-HYPE26", "movieReleaseId": 0,
+         "posterUrl": "https://cdn/h.jpg", "releaseDate": "2026-09-30T21:00:00", "isAdvanceSales": False},
+        {"primaryTitle": "Clayface", "code": "2085", "movieReleaseId": 5551,
+         "posterUrl": "https://cdn/c.jpg", "releaseDate": "2026-10-22T00:00:00", "isAdvanceSales": True},
+        {"primaryTitle": "", "code": "1"},
+    ]
+    items = {i.id: i for i in Shaw().fetch(http)}
+    assert set(items) == {"sh-cf-hype26", "2085"}
+    clay = items["2085"]
+    assert (clay.title, clay.url, clay.release_date, clay.tags) == (
+        "Clayface", "https://shaw.sg/movie-details/2085", "2026-10-22", ["Advance sales"])
+    assert items["sh-cf-hype26"].url == "https://shaw.sg/movie"
 
 
 def test_shaw_movie_id_prefers_numeric_segment():
     assert movie_id("https://www.shaw.sg/movie-details/12345/some-title") == "12345"
-    assert movie_id("https://www.shaw.sg/movie/some-title") == "some-title"
 
 
 def test_shaw_reads_movie_links_and_skips_tabs():
     html = """
       <a href="/movie/coming-soon">Coming Soon</a>
-      <a href="/movie-details/12345/wicked"><img data-src="/img/w.jpg" alt="Wicked"></a>
-      <a href="/movie-details/12345/wicked">Book Now</a>
-      <a href="/movie-details/678/dune">Dune: Part Two</a>"""
+      <div><a href="/movie-details/12345"><img data-src="/img/w.jpg" alt="Wicked"></a>
+           <a href="/movie-details/12345">Book Now</a></div>
+      <div><span>ADVANCE SALES</span><a href="/movie-details/678">Dune: Part Two</a></div>"""
     found = {}
     Shaw().items_from_html(html, found, tag="Advance Sales")
     assert {k: (v.title, v.tags) for k, v in found.items()} == {
         "12345": ("Wicked", ["Advance Sales"]),
         "678": ("Dune: Part Two", ["Advance Sales"]),
     }
-    assert found["12345"].poster == "https://www.shaw.sg/img/w.jpg"
+    assert found["12345"].poster == "https://shaw.sg/img/w.jpg"
 
 
 def test_harvest_ignores_other_hosts_and_button_text():
     html = '<a href="https://other.example/films/x/">X</a><a href="/films/y/">Book now</a>'
-    assert harvest_links(html, "https://filmhouse.sg/films/", r"^/films/") == []
+    assert harvest_links(html, "https://filmhouse.sg/films/", r"^/films/") == [
+        {"url": "https://filmhouse.sg/films/y/", "title": "", "poster": None}]
 
 
 def test_harvest_prefers_heading_over_whole_card_text():
