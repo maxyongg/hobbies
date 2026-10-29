@@ -1,6 +1,6 @@
 # Sources — how each site lists films
 
-Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Claude cloud sessions). Verify before relying on any of this.
+Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Claude cloud sessions). Verify before relying on any of this — the CI `live` job and `scripts/probe.py` print what the scrapers actually find.
 
 ## Filmhouse — https://filmhouse.sg
 
@@ -15,6 +15,7 @@ Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Cl
 - Film detail URL pattern: not yet confirmed.
 - **Try first:** `/wp-json/` (look for a films post type) and `/feed/`. Fall back to parsing `/films` + `/films/coming-soon/`.
 - General-release showtimes update weekly on Tuesdays.
+- **Implemented (unverified):** `whatson/sources/filmhouse.py` — (1) a WP post type named `film`/`films`/`movie`/`movies` via `/wp-json/wp/v2/types`, latest 100 posts; (2) links matching `/film(s)/<slug>/` on `/films/` and `/films/coming-soon/` (tagged "Coming soon"). id = slug.
 
 ## Shaw Theatres — https://shaw.sg
 
@@ -22,6 +23,7 @@ Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Cl
 - **Listing page:** `/movie`, with tabs "New Now Showing", "Ending Soon", "Advance Sales", "Top Movies", "Coming Soon".
 - **Movie data is not in the HTML** — it's loaded by JavaScript. Find the JSON endpoint the page calls (browser devtools → Network on `/movie`) and poll that directly. Playwright is the fallback.
 - Location pages: `/theatre/location/<id or slug>`.
+- **Implemented (unverified, least certain):** `whatson/sources/shaw.py` — (1) movie-detail links in the static HTML; (2) headless Chromium renders `/movie`, clicks each tab, reads links like `/movie(s)/<x>` or `/movie-detail(s)/<x>` (tagged with the tab name). id = numeric path segment if any, else the path. `scripts/probe.py shaw` prints every XHR/JSON call the page makes — use it to switch to the JSON endpoint.
 
 ## Asian Film Archive — https://asianfilmarchive.org
 
@@ -30,6 +32,7 @@ Surveyed 2026-10-29 via WebFetch (shell access to these domains is blocked in Cl
 - **Listing pages:** `/whatson/`, `/events-calendar/`, programmes under `/event-archive/programmes/` and `/mep_cat/programme/`.
 - **Event detail URL pattern:** `/event-calendar/<title-slug>-<year>/`, e.g. `/event-calendar/hush-2016/`. Repeat screenings get suffixes (`-1`, `-2`); some add a programme tag (`-reciprocal`). → Normalise the id by stripping repeat suffixes so one film = one alert.
 - **Try first:** `/wp-json/wp/v2/mep_events?per_page=100&orderby=date` and `/feed/?post_type=mep_events`.
+- **Implemented (unverified):** `whatson/sources/afa.py` — (1) `mep_events` over WP REST, latest 100 posts, `mep_cat` terms as tags; (2) `/event-calendar/<slug>/` links on `/whatson/` and `/events-calendar/`. id = slug with repeat suffixes (`-1`, `-2`) stripped; 4-digit years and programme tags (`-reciprocal`) are kept, so a film in a new programme alerts again.
 
 ## Future sources (not v1)
 
