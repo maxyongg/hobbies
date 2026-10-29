@@ -67,5 +67,6 @@ To check a scraper change against the real sites: push to a non-`main` branch, t
 - `main` gets a bot commit ("data: update listings") whenever listings change; pull before branching.
 - **Pages source must be "GitHub Actions"** (Settings → Pages). On "Deploy from a branch" GitHub republishes the repo (README) on every push and overwrites the app. Max switched it on 2026-10-29.
 - `site/index.html` loads `style.css?v=<hash>` / `app.js?v=<hash>` (first 10 hex of sha256) so browsers can't mix a new page with a cached old script (that left the page stuck on "Loading…" in Safari). `tests/test_site.py` fails with the exact string to use when either file changes.
+- **Posters are hotlinked** from each cinema's CDN. Shaw's gumlet proxy answers 403 to other sites' Referer, so Shaw stores the Azure CDN URL behind it; Shaw's page swaps failed images for `noimage.png`, so its scraper answers image requests with a 1x1 PNG rather than blocking them. Carnival 404s posters for some coming-soon films. The web app tries each cinema's poster for a film before showing 🎬. `scripts/probe.py posters` re-checks hosts.
 - Be polite: low polling frequency, a descriptive User-Agent, ≥1 s between requests per host. Filmhouse updates general-release showtimes weekly (Tuesdays).
 - Sites change markup; keep each scraper small. The zero-items/failure check alerts after 2 bad runs.

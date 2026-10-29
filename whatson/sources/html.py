@@ -11,6 +11,9 @@ from bs4 import BeautifulSoup
 
 log = logging.getLogger(__name__)
 
+# Stand-in images sites show while loading or when a poster is missing.
+PLACEHOLDER = re.compile(r"noimage|no-image|no_image|placeholder|spacer|blank\.(png|gif)", re.I)
+
 # Link texts that label buttons rather than films.
 GENERIC = re.compile(
     r"^(buy|book|get)( tickets?| now)?$|^\(?(more )?(info|details)\)?$|^(watch )?trailer$|^read more$|^learn more$",
@@ -75,15 +78,25 @@ def consider(entry: dict, node, base_url: str, in_card: bool = False) -> None:
         candidates += [(3, node.get("title")), (3, node.get("aria-label")), (2, node.get_text(" ", strip=True))]
     candidates.append((1, img.get("alt") if img is not None else None))
     if img is not None and not entry["poster"]:
-        src = img.get("data-src") or img.get("src")
-        if src and not src.startswith("data:"):
-            entry["poster"] = urljoin(base_url, src)
+        entry["poster"] = poster_url(img, base_url)
     for score, text in candidates:
         text = clean(text)
         if not text or GENERIC.match(text) or len(text) > 150:
             continue  # button labels, or a whole card's text
         if (score, len(text)) > (entry["score"], len(entry["title"])):
             entry["title"], entry["score"] = text, score
+
+
+def poster_url(img, base_url: str) -> str | None:
+    """First real image URL for an <img>: data-src, src, then srcset / <picture><source>."""
+    candidates = [img.get("data-src"), img.get("src")]
+    picture = img.find_parent("picture")  # lxml nests <img> inside the void <source> tags
+    sources = [img] + (picture.find_all("source") if picture else [])
+    candidates += [(s.get("srcset") or "").split(",")[0].strip().split(" ")[0] for s in sources]
+    for src in candidates:
+        if src and not src.startswith("data:") and not PLACEHOLDER.search(src):
+            return urljoin(base_url, src)
+    return None
 
 
 def title_from_slug(url: str) -> str:

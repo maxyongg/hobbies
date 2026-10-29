@@ -94,6 +94,16 @@ def test_shaw_reads_movie_links_and_skips_tabs():
     assert found["12345"].poster == "https://shaw.sg/img/w.jpg"
 
 
+def test_shaw_unwraps_gumlet_posters():
+    html = """<div><a href="/movie-details/1377"><img alt="X"
+        src="https://shawsgqk.gumlet.io/fetch/https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1377-Poster-1784273656234?w=145&amp;dpr=1.3"></a>
+        <h3>X</h3></div>"""
+    found = {}
+    Shaw().items_from_html(html, found)
+    assert found["1377"].poster == ("https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/"
+                                    "1377-Poster-1784273656234")
+
+
 def test_harvest_ignores_other_hosts_and_button_text():
     html = '<a href="https://other.example/films/x/">X</a><a href="/films/y/">Book now</a>'
     assert harvest_links(html, "https://filmhouse.sg/films/", r"^/films/") == [
@@ -193,3 +203,14 @@ def test_sfs_events_to_films():
         "f3": ("Roman Holiday", "soon", ["SFS Spotlight"]),
     }
     assert items["f1"].url == "https://events.singaporefilmsociety.com/films/f1"
+
+
+def test_poster_skips_placeholder_and_uses_picture_source():
+    # Shaw swaps a failed poster for /assets/images/noimage.png; the real one stays in <source srcset>.
+    html = """<div><a href="/movie-details/1"><picture>
+        <source media="(max-width: 480px)" srcset="https://cdn/1-Poster?w=100&amp;dpr=1.3" type="png">
+        <img src="/assets/images/noimage.png" alt="X"></picture></a><h3>X</h3></div>
+      <div><a href="/movie-details/2"><img src="/assets/images/noimage.png" alt="Y"></a><h3>Y</h3></div>"""
+    links = {l["url"]: l["poster"] for l in harvest_links(html, "https://shaw.sg/movie", r"^/movie-details/\d+")}
+    assert links == {"https://shaw.sg/movie-details/1": "https://cdn/1-Poster?w=100&dpr=1.3",
+                     "https://shaw.sg/movie-details/2": None}

@@ -8,6 +8,8 @@ so render /movie in headless Chromium (Playwright), click each tab, and read the
 
 from __future__ import annotations
 
+import base64
+import re
 from urllib.parse import urlparse
 
 from ..http import USER_AGENT
@@ -19,6 +21,10 @@ BASE = "https://shaw.sg"
 TABS = ["Now Showing", "Ending Soon", "Advance Sales", "Top Movies", "Coming Soon"]
 SOON_TABS = {"Advance Sales", "Coming Soon"}
 MOVIE_PATH = r"^/movie-details/\d+"
+# Posters come through Shaw's gumlet image proxy, which answers 403 to pages on other sites;
+# the Azure CDN behind it serves the same image to anyone.
+GUMLET = re.compile(r"^https://[^/]+\.gumlet\.io/fetch/(https?://[^?]+)")
+PIXEL = base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=")
 
 
 def movie_id(url: str) -> str:
@@ -43,8 +49,11 @@ class Shaw(Source):
             if not link["title"]:
                 continue
             mid = movie_id(link["url"])
+            poster = link["poster"]
+            if poster and (m := GUMLET.match(poster)):
+                poster = m.group(1)
             item = found.setdefault(mid, Item(source=self.key, id=mid, title=link["title"],
-                                              url=link["url"], poster=link["poster"]))
+                                              url=link["url"], poster=poster))
             if tag and tag not in item.tags:
                 item.tags.append(tag)
             if tag:  # a film on any now-showing tab is "now", even if also in Advance Sales
@@ -61,9 +70,11 @@ class Shaw(Source):
             browser = p.chromium.launch()
             try:
                 page = browser.new_page(user_agent=USER_AGENT)
-                # Posters aren't needed to read the DOM; skip heavy assets.
-                page.route("**/*", lambda route: route.abort()
-                           if route.request.resource_type in ("image", "media", "font") else route.continue_())
+                # Posters aren't needed to read the DOM, but a failed image makes Shaw swap in its
+                # "no image" placeholder, so answer image requests with a 1x1 PNG instead.
+                page.route("**/*", lambda route: route.fulfill(status=200, content_type="image/png", body=PIXEL)
+                           if route.request.resource_type == "image" else route.abort()
+                           if route.request.resource_type in ("media", "font") else route.continue_())
                 page.goto(self.url, wait_until="load", timeout=60_000)
                 settle(page)
                 self.items_from_html(page.content(), found)
