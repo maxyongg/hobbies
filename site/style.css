@@ -102,6 +102,11 @@ h2 + .grid { margin-top: 0; }
 .meta { font-size: 0.78rem; color: var(--muted); }
 .src { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--c); }
 
+/* Ratings: IMDb and Letterboxd, each linking to the film's page there */
+.ratings { display: flex; flex-wrap: wrap; gap: 2px 10px; font-size: 0.78rem; }
+.rating { color: var(--muted); text-decoration: none; white-space: nowrap; }
+.rating b { color: var(--text); font-weight: 700; }
+
 /* Where it's showing: one link per cinema */
 .wheres { display: flex; flex-wrap: wrap; gap: 5px; }
 .where {

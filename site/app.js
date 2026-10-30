@@ -1,6 +1,7 @@
 // Cinema — renders data/items.json (written by the scheduled scraper run).
 //   Now showing / Coming soon: one card per film, merged across cinemas by title.
 //   New: listings first seen since tracking began, by day.
+//   Ratings (IMDb, Letterboxd) come from data/ratings.json, keyed by "<source>:<id>".
 "use strict";
 
 const NAMES = {
@@ -14,7 +15,7 @@ const SHORT = {
 const TZ = "Asia/Singapore";
 const VIEWS = [["now", "Now showing"], ["soon", "Coming soon"], ["new", "New"]];
 
-const state = { items: [], status: null, view: "now", hidden: new Set(), query: "", sort: "az" };
+const state = { items: [], status: null, ratings: null, view: "now", hidden: new Set(), query: "", sort: "az" };
 
 function load(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
@@ -103,8 +104,35 @@ function groupFilms(items) {
     g.showing = g.items.some(i => (i.showing || "now") === "now") ? "now" : "soon";
     g.sources = [...new Set(g.items.map(i => i.source))];
     g.posters = posterCandidates(g.items);
+    g.rating = ratingOf(g.items);
   }
   return [...groups.values()];
+}
+
+// --- Ratings --------------------------------------------------------------------------
+
+function ratingOf(items) {
+  const r = state.ratings;
+  for (const i of items) {
+    const id = r?.items?.[`${i.source}:${i.id}`];
+    const film = id && r.films?.[id];
+    if (film) return { id, ...film };
+  }
+  return null;
+}
+
+// For "Top rated": IMDb out of 10, else Letterboxd out of 5 scaled to 10; unrated last.
+function score(f) {
+  return f?.imdb ?? (f?.letterboxd ? f.letterboxd * 2 : -1);
+}
+
+function ratings(f) {
+  if (!f || !(f.imdb || f.letterboxd)) return null;
+  const link = (cls, href, label, value) => el("a", { class: `rating ${cls}`, href, target: "_blank", rel: "noopener" },
+    label, " ", el("b", {}, value.toFixed(1)));
+  return el("div", { class: "ratings" },
+    f.imdb ? link("imdb", `https://www.imdb.com/title/${f.imdb_id}/`, "IMDb", f.imdb) : null,
+    f.letterboxd ? link("lb", f.letterboxd_url || `https://letterboxd.com/tmdb/${f.id}/`, "Letterboxd", f.letterboxd) : null);
 }
 
 // --- Rendering ------------------------------------------------------------------------
@@ -149,6 +177,7 @@ function filmCard(g) {
     poster(g.posters, g.items[0].url),
     el("div", { class: "body" },
       el("h3", { class: "title" }, g.title),
+      ratings(g.rating),
       el("div", { class: "wheres" }, ...where)));
 }
 
@@ -158,6 +187,7 @@ function itemCard(item) {
     el("div", { class: "body" },
       el("span", { class: `src src-${item.source}` }, sourceName(item.source)),
       el("h3", { class: "title" }, el("a", { href: item.url, target: "_blank", rel: "noopener" }, item.title)),
+      ratings(ratingOf([item])),
       item.tags?.length ? el("span", { class: "meta" }, item.tags.join(" · ")) : null,
       item.listed ? null : el("span", { class: "meta" }, "No longer listed")));
 }
@@ -235,6 +265,7 @@ function render() {
   const byTitle = (a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" });
   if (state.sort === "new") shown.sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || byTitle(a, b));
   else if (state.sort === "most") shown.sort((a, b) => b.sources.length - a.sources.length || byTitle(a, b));
+  else if (state.sort === "rated") shown.sort((a, b) => score(b.rating) - score(a.rating) || byTitle(a, b));
   else shown.sort(byTitle);
   feed.replaceChildren(shown.length ? el("div", { class: "grid" }, ...shown.map(filmCard))
     : el("p", { class: "empty" }, q ? "No films match your search." : "Nothing here for the selected cinemas."));
@@ -257,9 +288,11 @@ async function main() {
   const search = document.getElementById("search");
   search.addEventListener("input", () => { state.query = search.value; render(); });
 
-  const [items, status] = await Promise.allSettled([getJSON("data/items.json"), getJSON("data/status.json")]);
+  const [items, status, ratings] = await Promise.allSettled(
+    ["data/items.json", "data/status.json", "data/ratings.json"].map(getJSON));
   state.items = items.status === "fulfilled" ? items.value.items || [] : [];
   state.status = status.status === "fulfilled" ? status.value : null;
+  state.ratings = ratings.status === "fulfilled" ? ratings.value : null;
   document.getElementById("checked").textContent = state.status ? `Checked ${ago(state.status.checked)}` : "Not checked yet";
   render();
 }
