@@ -79,3 +79,4 @@ To check a scraper change against the real sites: push to a non-`main` branch, t
 - Be polite: low polling frequency, a descriptive User-Agent, ≥1 s between requests per host. Filmhouse updates general-release showtimes weekly (Tuesdays).
 - **TMDb v3 keys travel in the URL** (`api_key=`). `Tmdb.get` keeps it out of its own errors, but urllib3 retry warnings can include it; GitHub masks the secret in Actions logs. Never print TMDb request URLs elsewhere.
 - Sites change markup; keep each scraper small. The zero-items/failure check alerts after 2 bad runs.
+- **AFA (SiteGround) answers with a captcha page** (`/.well-known/sgcaptcha/`) after several live runs a few minutes apart (seen 2026-10-30 on the 4th push in 6 min). Batch commits before pushing a branch; docs-only commits can carry `[skip ci]`.
