@@ -23,6 +23,9 @@ class Item:
     release_date: str | None = None
     tags: list[str] = field(default_factory=list)
     showing: str | None = None  # "now" | "soon" (None: source can't tell; treated as now)
+    # Upcoming screenings, from sources that list them (see screening()). They go to
+    # showtimes.json, not the store, so items.json doesn't change as screenings pass.
+    sessions: list[dict] = field(default_factory=list)
     # Set by the store, not by sources:
     first_seen: str | None = None
     listed: bool = True  # present in the latest successful fetch
@@ -33,9 +36,19 @@ class Item:
         return (self.source, self.id)
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        d = asdict(self)
+        del d["sessions"]
+        return d
 
     @classmethod
     def from_dict(cls, d: dict) -> Item:
         known = cls.__dataclass_fields__
         return cls(**{k: v for k, v in d.items() if k in known})
+
+
+def screening(start: datetime, url: str, venue: str | None = None, note: str | None = None) -> dict:
+    """One screening for showtimes.json. `start` is Singapore time (naive, or any tz-aware)."""
+    if start.tzinfo:
+        start = start.astimezone(SGT)
+    d = {"start": start.strftime("%Y-%m-%dT%H:%M"), "url": url, "venue": venue or None, "note": note or None}
+    return {k: v for k, v in d.items() if v}

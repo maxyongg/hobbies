@@ -18,5 +18,6 @@ node_modules/
 
 # cinema run output that is published but not committed
 data/status.json
+data/showtimes.json
 _site/
 .pytest_cache/
