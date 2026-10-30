@@ -33,7 +33,7 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 - Six scrapers verified live through CI (2026-10-29): Filmhouse 34, Shaw 64, GV 79, Carnival 7, SFS 11, AFA (upcoming screenings only, latest 100 events). Real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
 - Now-showing page live (PRs #4, #5). GV/Carnival/SFS seeded silently in the 2026-10-29 14:30 UTC run (79/7/11); from now on their new films are stored as `alert: "quiet"` (New tab only, never pushed, not in the widget). That run: 124 listings now showing, 80 coming soon, all with posters; ~90 now-showing cards after merging the same film across cinemas.
 - **Ratings (2026-10-30):** IMDb + Letterboxd ratings on web-app cards (all tabs, plus a "Top rated" sort) and in the widget (medium/large rows: `IMDb 7.8 · LB 3.9`); not in ntfy pushes (Max: not needed). `whatson/ratings.py` runs after the scrapers: listed films are matched once to TMDb by cleaned title (chains GV/Shaw/Carnival prefer recent releases; others the most popular exact title; AFA's bracketed year filters) → IMDb ID; IMDb ratings from IMDb's daily `title.ratings.tsv.gz` (hidden under 100 votes); Letterboxd from `letterboxd.com/tmdb/<id>/` (scraped, best effort; on 403/429 it stops and keeps the last ratings). Ratings refresh once per SGT day, so `data/ratings.json` gets one bot commit a day. Unmatched titles retry after 7 days. Repo secret `TMDB_API_KEY` (v3 API key, verified 2026-10-30) is passed to `update.yml` "Check sources" and the `ci.yml` live dry run.
-- **Screening times (2026-10-30, branch `claude/nifty-hypatia-a4izf6`):** Filmhouse/AFA/SFS scrapers attach `Item.sessions`; the runner writes `data/showtimes.json` (gitignored, published like `status.json`). Cards show the next day's times, tap for all (each links to book); "Next screening" sort. Verified in the branch's live job (2026-10-30): Filmhouse 74 screenings / 36 films, AFA 7 / 7, SFS 17 / 11. `scripts/probe.py showtimes` prints the raw markup if one breaks.
+- **Screening times (2026-10-30, merged in PR #10):** Filmhouse/AFA/SFS scrapers attach `Item.sessions`; the runner writes `data/showtimes.json` (gitignored, published like `status.json`). Cards show the next day's times, tap for all (each links to book; sold out dimmed); "Next screening" sort. Verified in the branch's live job (2026-10-30): Filmhouse 77 screenings / 37 films, AFA 7 / 7, SFS 17 / 11. `scripts/probe.py showtimes` prints the raw markup if one breaks.
 - Pages serves the app since Max set the source to GitHub Actions (2026-10-29). Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone (Claude sessions can't reach github.io either).
 
 ## Layout
@@ -47,7 +47,7 @@ whatson/            Python package: python -m whatson run [--dry-run] [--source 
                     helpers; registry and alerting/quiet split in __init__.py
   ratings.py        TMDb match → IMDb + Letterboxd ratings → data/ratings.json (never fails the run)
   showtimes.py      Item.sessions → data/showtimes.json (future screenings only; not committed)
-site/               static web app (reads data/items.json, status.json, ratings.json) + widget.js (Scriptable)
+site/               static web app (reads data/items.json, status.json, ratings.json, showtimes.json) + widget.js (Scriptable)
 data/rating-overrides.json  hand fixes: "<title as on the site>": IMDb/TMDb link, or null for no rating
 widget/whats-on-sg.js  symlink to site/widget.js, only because update.yml still copies that path
 .github/workflows/  update.yml: 6-hourly run + commit data + Pages deploy
@@ -59,7 +59,7 @@ Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source
 
 ## Next steps
 
-1. Merge the screening-times branch once its live job looks right; ask Max how the times look on his phone.
+1. Ask Max how the screening times look on his phone (first published by the post-merge `update` run).
 1. Confirm with Max: first real ntfy alert arrived and looked right; widget installed (re-paste `widget.js` for ratings); site renders with ratings.
 1. Ratings: ask Max which films show a wrong rating and add them to `data/rating-overrides.json`; if Letterboxd blocks GitHub runners (log: "Letterboxd answered HTTP 403"), show TMDb's own rating instead.
 2. Ask Max how the Now showing page looks once the first post-merge run has filled GV/Carnival/SFS; tune title merging in `site/app.js` (`filmKey`) if the same film shows as two cards.
