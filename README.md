@@ -10,7 +10,7 @@ Every 6 hours a GitHub Actions job:
 2. Compares them with every film it has seen before (`data/items.json`).
 3. For each new film at Filmhouse, Shaw or AFA: sends a push via [ntfy](https://ntfy.sh) and shows it in the iOS widget ([Scriptable](https://scriptable.app)).
 4. Looks up **IMDb** and **Letterboxd** ratings for each film (matched by title through [TMDb](https://www.themoviedb.org); refreshed daily) for the web app and widget.
-5. Publishes the web app: **Now showing** and **Coming soon** across all six (one card per film, with its ratings and a link to each cinema showing it), plus **New** listings.
+5. Publishes the web app: **Now showing** and **Coming soon** across all six (one card per film, with its ratings and a link to each cinema showing it), plus **New** listings. Films at Filmhouse, AFA and SFS also show their **screening times** (each links to book); for the chains, tap the cinema.
 
 The first successful check of each cinema records what's already showing without alerting. If a cinema's scraper breaks (errors or finds nothing twice in a row), you get one warning push.
 

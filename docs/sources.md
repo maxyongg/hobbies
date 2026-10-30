@@ -16,6 +16,7 @@ Surveyed and verified 2026-10-29 through the CI `live` job (Claude cloud session
 - **Try first:** `/wp-json/` (look for a films post type) and `/feed/`. Fall back to parsing `/films` + `/films/coming-soon/`.
 - General-release showtimes update weekly on Tuesdays.
 - **Implemented (verified live 2026-10-29, 34 films; alerts):** `whatson/sources/filmhouse.py`. Showing: coming-soon page → soon, else now. No film post type over REST and `/feed/` is empty. Listings are rendered server-side by the JACRO plugin: each film is a `div.jacro-event` card with a poster link and an `a.liveeventtitle` title link to `http://filmhouse.sg/film/<id>/<slug>` (JACRO's numeric id = our id), plus `/filmhouse-singapore/booknow/<n>` showtime links. Reads `/films/` and `/films/coming-soon/` (tagged "Coming soon"). Posters on `cdn.taposapp.com`.
+- **Screening times (2026-10-30):** inside each card, `div.performance-list-items-outer` holds `ul.performance-list-items`, each with a `div.heading` day ("Friday 30th October", no year) and `li` > `a.film_book_button` (href `/filmhouse-singapore/booknow/<n>`, `span.time` "4:10 pm"), sometimes a `div.movietag` (kept as the note). Year inferred: the nearest date from a week ago on.
 
 ## Shaw Theatres — https://shaw.sg
 
@@ -33,6 +34,7 @@ Surveyed and verified 2026-10-29 through the CI `live` job (Claude cloud session
 - **Event detail URL pattern:** `/event-calendar/<title-slug>-<year>/`, e.g. `/event-calendar/hush-2016/`. Repeat screenings get suffixes (`-1`, `-2`); some add a programme tag (`-reciprocal`). → Normalise the id by stripping repeat suffixes so one film = one alert.
 - **Try first:** `/wp-json/wp/v2/mep_events?per_page=100&orderby=date` and `/feed/?post_type=mep_events`.
 - **Implemented (verified live 2026-10-29; alerts):** `whatson/sources/afa.py` — showing from the plugin's `event_informations` meta (`event_upcoming_datetime`/`event_start_datetime`, `event_expire_datetime`): ended screenings dropped, start within 7 days → now, later → soon; `mep_events` over WP REST (1,770 posts in total), latest 50 with `_fields=id,slug,link,title,date,class_list,yoast_head_json` (~270 KB; with `_embed` it was ~1 MB). Poster = Yoast `og_image`; tags from `class_list` (`mep_cat-*`, `tag-*`). HTML fallback reads `/event-calendar/<slug>/` links on `/whatson/` and `/events-calendar/`. id = slug with repeat suffixes (`-1`, `-2`) stripped; 4-digit years and programme tags are kept. Includes talks and shorts programmes, not just films. "[SOLD OUT]" is stripped from titles. One run (of four, minutes apart) got a non-JSON reply and empty pages — probably bot protection; the next run was fine.
+- **Screening times (2026-10-30):** one post = one screening (no multi-date meta seen): start from `event_upcoming_datetime`/`event_start_datetime`, venue from `event_informations.location_name`, link = the post; "[SOLD OUT]" in the title → note "Sold out".
 
 ## Golden Village — https://www.gv.com.sg (web app only, no alerts)
 
@@ -47,6 +49,7 @@ Surveyed and verified 2026-10-29 through the CI `live` job (Claude cloud session
 ## Singapore Film Society — https://www.singaporefilmsociety.com (web app only)
 
 - SFS Somerset (GV Cineleisure Hall 6) plus SFS Spotlight/Showcase screenings at other halls. Site on Duda; tickets via Eventive (bucket `6a277454f068b0ba9c60baae`, frontend `events.singaporefilmsociety.com`). `api.eventive.org` refuses requests without the client header the page sends, so the scraper loads the SFS homepage in Chromium and reads `/event_buckets/<id>/events?upcoming_only=true` as the page fetches it. One item per film (`films[].id`), URL `events.singaporefilmsociety.com/films/<id>`, poster `films[].poster_image`, tag = series ("SFS Somerset", "SFS Spotlight"). Showing: a session within 7 days → now.
+- **Screening times (2026-10-30):** one event = one screening: `start_time` (UTC), venue `venue.short_name` (e.g. "GV Cineleisure", else `venue.name`/`location`), note = what the event name adds after the film title ("Members-Only", "with Post-Screening Q&A …"). Links go to the film's Eventive page (lists its screenings with ticket buttons); event-page URLs weren't verified.
 
 ## Looked at, not included (2026-10-29)
 
