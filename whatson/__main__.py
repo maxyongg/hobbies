@@ -11,7 +11,7 @@ import logging
 import sys
 from pathlib import Path
 
-from . import notify, runner
+from . import notify, ratings, runner
 from .http import Http
 from .sources import SOURCES
 from .store import Store
@@ -44,6 +44,7 @@ def main(argv=None) -> int:
         logging.warning("NTFY_TOPIC not set: new items are logged, not pushed")
     status = runner.run(sources, Store(args.data), notifier, http,
                         status_path=args.status, dry_run=args.dry_run)
+    ratings.check(http)
     # Non-zero only if every source failed, so one flaky site doesn't fail the workflow.
     return 0 if any(s["ok"] for s in status["sources"].values()) else 1
 
