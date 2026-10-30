@@ -31,6 +31,7 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 - First run (2026-10-29 13:51 UTC) seeded 139 items silently: Filmhouse 34, Shaw 64, AFA 41 (all with posters). Alerts start with the next new listing.
 - Six scrapers verified live through CI (2026-10-29): Filmhouse 34, Shaw 64, GV 79, Carnival 7, SFS 11, AFA (upcoming screenings only, latest 100 events). Real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
 - Now-showing page live (PRs #4, #5). GV/Carnival/SFS seeded silently in the 2026-10-29 14:30 UTC run (79/7/11); from now on their new films are stored as `alert: "quiet"` (New tab only, never pushed, not in the widget). That run: 124 listings now showing, 80 coming soon, all with posters; ~90 now-showing cards after merging the same film across cinemas.
+- **Ratings (in progress, branch `claude/lucid-gauss-2hijls`):** IMDb + Letterboxd ratings on web-app cards. Plan: match each film to TMDb (title + year hint) → IMDb ID → IMDb rating from IMDb's daily `title.ratings.tsv.gz` → Letterboxd rating from `letterboxd.com/imdb/<id>/` (scraped, best effort); cache in `data/ratings.json`. Repo secret `TMDB_API_KEY` (v3 API key) is set and passed to `update.yml` "Check sources" and `ci.yml` live dry run; verified 2026-10-30 (CI log: "TMDb accepted the API key"). So far only `whatson/ratings.py` key check exists.
 - Pages serves the app since Max set the source to GitHub Actions (2026-10-29). Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone (Claude sessions can't reach github.io either).
 
 ## Layout
@@ -53,6 +54,7 @@ Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source
 
 ## Next steps
 
+1. Build ratings (see Status): matcher + `data/ratings.json` + card badges; check matches in the `live` CI log before merging.
 1. Confirm with Max: first real ntfy alert arrived and looked right; widget installed; site renders.
 2. Ask Max how the Now showing page looks once the first post-merge run has filled GV/Carnival/SFS; tune title merging in `site/app.js` (`filmKey`) if the same film shows as two cards.
 3. Optional polish: Shaw lists language/format variants as separate films (`V [CANTO]`, `V [M]`) — group them if alerts are noisy; AFA includes talks — filter by `mep_cat` if unwanted. Objectifs could be added (see `docs/sources.md`).
