@@ -157,7 +157,8 @@ function times(sessions) {
   const venues = [...new Set(sessions.map(s => s.venue || ""))];
   const [[firstDay, first]] = days;
   const more = sessions.length - first.length;
-  const slot = s => el("a", { class: `slot src-${s.source}`, href: s.url, target: "_blank", rel: "noopener" },
+  const slot = s => el("a", { class: `slot src-${s.source}${/sold out/i.test(s.note || "") ? " sold" : ""}`,
+    href: s.url, target: "_blank", rel: "noopener" },
     el("b", {}, clock(s.start)),
     multi ? el("small", {}, shortName(s.source)) : null,
     venues.length > 1 && s.venue ? el("small", {}, s.venue) : null,

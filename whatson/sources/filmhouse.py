@@ -3,7 +3,9 @@
 No film post type over REST. The listing pages link each film as /film/<id>/<slug>
 (id is JACRO's, stable); the link is a bare poster, so the title comes from the card.
 Each card (div.jacro-event) also lists its screenings: a div.heading per day
-("Friday 30th October"), then a.film_book_button links (span.time "4:10 pm").
+("Friday 30th October"), then a.film_book_button links (span.time "4:10 pm"), or
+a.soldfilm_book_button without a link when sold out; div.movietag holds span.tag
+labels ("4K", "LastChance", "Live Q&A").
 """
 
 from __future__ import annotations
@@ -64,8 +66,17 @@ def parse_time(text: str) -> tuple[int, int] | None:
     return (hour, minute) if hour < 24 and minute < 60 else None
 
 
+def labels(slot) -> list[str]:
+    """Tags on a screening: "LastChance" -> "Last Chance"."""
+    tag = slot.find(class_="movietag")
+    if tag is None:
+        return []
+    texts = [clean(t.get_text(" ")) for t in tag.find_all(class_="tag")] or [clean(tag.get_text(" "))]
+    return [re.sub(r"([a-z])([A-Z])", r"\1 \2", t) for t in texts if t]
+
+
 def sessions_from_html(page_html: str, page_url: str, ref: date) -> dict[str, list[dict]]:
-    """Film id -> screenings listed on its card."""
+    """Film id -> screenings listed on its card. Sold-out ones link to the film's page."""
     soup = BeautifulSoup(page_html, "lxml")
     found: dict[str, list[dict]] = {}
     for card in soup.select("div.jacro-event"):
@@ -73,20 +84,21 @@ def sessions_from_html(page_html: str, page_url: str, ref: date) -> dict[str, li
         if link is None:
             continue
         fid = re.search(r"/film/(\d+)/", link["href"]).group(1)
+        film_url = re.sub(r"^http:", "https:", urljoin(page_url, link["href"]))
         day = None
         for node in card.find_all(["div", "a"]):  # document order: a day heading, then that day's Book links
             classes = node.get("class") or []
             if "heading" in classes:
                 day = parse_day(node.get_text(" ", strip=True), ref)
-            elif "film_book_button" in classes and day and node.get("href"):
+            elif day and any(c.endswith("book_button") for c in classes):
                 when = parse_time(node.find(class_="time").get_text() if node.find(class_="time") else "")
                 if not when:
                     continue
-                slot = node.find_parent("li") or node
-                tag = slot.find(class_="movietag")
+                sold = any(c.startswith("sold") for c in classes) or not node.get("href")
+                note = (["Sold out"] if sold else []) + labels(node.find_parent("li") or node)
                 found.setdefault(fid, []).append(screening(
-                    datetime(day.year, day.month, day.day, *when), urljoin(page_url, node["href"]),
-                    note=clean(tag.get_text(" ")) if tag else None))
+                    datetime(day.year, day.month, day.day, *when),
+                    film_url if sold else urljoin(page_url, node["href"]), note=" · ".join(note)))
     return found
 
 

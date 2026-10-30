@@ -137,6 +137,8 @@ h2 + .grid { margin-top: 0; }
 }
 .slot b { font-weight: 600; white-space: nowrap; }
 .slot small { color: var(--muted); font-size: 0.7rem; line-height: 1.25; }
+.slot.sold { opacity: 0.55; }
+.slot.sold b { text-decoration: line-through; }
 .times .venue { margin: 7px 0 0; color: var(--muted); }
 
 .empty { padding: 32px 0; color: var(--muted); }

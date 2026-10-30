@@ -230,7 +230,10 @@ def test_filmhouse_reads_screenings_from_cards(http, monkeypatch):
             <li class=""><a class="film_book_button" href="https://filmhouse.sg/filmhouse-singapore/booknow/1958">
               <span class="hover">Book</span><span class="time">4:10 pm</span></a></li>
             <li class="4k"><a class="film_book_button" href="https://filmhouse.sg/filmhouse-singapore/booknow/1959">
-              <span class="hover">Book</span><span class="time">12:05 am</span></a> <div class="movietag"><span>4K</span></div></li>
+              <span class="hover">Book</span><span class="time">12:05 am</span></a>
+              <div class="movietag"><span class="tag lastchance">LastChance</span> <span class="tag 4k">4K</span> </div></li>
+            <li class=""><a class="soldfilm_book_button"><span class="hover">Sold Out</span><span class="time">7:45 pm</span></a>
+              <div class="movietag"> </div></li>
           </ul>
           <ul class="performance-list-items"><div class="heading">Saturday 2nd January</div>
             <li><a class="film_book_button" href="/filmhouse-singapore/booknow/1960"><span class="time">11:00 am</span></a></li>
@@ -240,7 +243,8 @@ def test_filmhouse_reads_screenings_from_cards(http, monkeypatch):
     [item] = Filmhouse().fetch(http)
     assert item.sessions == [
         {"start": "2026-12-30T16:10", "url": f"{base}/filmhouse-singapore/booknow/1958"},
-        {"start": "2026-12-30T00:05", "url": f"{base}/filmhouse-singapore/booknow/1959", "note": "4K"},
+        {"start": "2026-12-30T00:05", "url": f"{base}/filmhouse-singapore/booknow/1959", "note": "Last Chance · 4K"},
+        {"start": "2026-12-30T19:45", "url": f"{base}/film/220/fjord", "note": "Sold out"},
         {"start": "2027-01-02T11:00", "url": f"{base}/filmhouse-singapore/booknow/1960"},
     ]
 
@@ -270,8 +274,10 @@ def test_afa_screenings_with_venue_and_sold_out(http, monkeypatch):
     http.routes[f"{base}/wp-json/wp/v2/mep_events"] = [
         ev("hush-2016-1", "[SOLD OUT] Hush", "2026-11-01 19:30:00", "Oldham Theatre"),
         ev("hush-2016", "Hush", "2026-10-31 11:00:00", ""),
+        ev("off-the-catalogue-november-2026", "Off the Catalogue", "2026-11-04 00:00:00", ""),
     ]
-    [item] = AsianFilmArchive().fetch(http)
+    item, catalogue = AsianFilmArchive().fetch(http)
+    assert catalogue.sessions == []
     assert item.sessions == [
         {"start": "2026-11-01T19:30", "url": f"{base}/event-calendar/hush-2016-1/", "venue": "Oldham Theatre",
          "note": "Sold out"},

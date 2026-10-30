@@ -379,7 +379,7 @@ def showtimes():
 
 if __name__ == "__main__":
     names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "carnival", "discover", "posters", "showtimes"]
-    wanted = sys.argv[1:] or ["showtimes"]  # debugging screening times; revert to []
+    wanted = sys.argv[1:]
     if not wanted:
         # CI runs this with no arguments. While debugging a source on a branch, default `wanted` to its probe.
         print("usage: probe.py " + " | ".join(names) + "  (set a default list here while debugging)")

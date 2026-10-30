@@ -10,7 +10,7 @@ Each post is one screening, so its start time and location_name are the film's s
 from __future__ import annotations
 
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, time, timedelta
 
 from ..models import SGT, Item, screening
 from . import wordpress as wp
@@ -92,7 +92,7 @@ class AsianFilmArchive(Source):
             ))
             if showing == "now":  # any repeat screening this week makes the film "now"
                 item.showing = "now"
-            if start:
+            if start and start.time() != time(0, 0):  # midnight: a date-only listing, not a screening
                 item.sessions.append(screening(start, p["link"], venue(p),
                                                "Sold out" if SOLD_OUT.search(wp.title(p)) else None))
         return list(items.values())
