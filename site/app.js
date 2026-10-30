@@ -2,6 +2,7 @@
 //   Now showing / Coming soon: one card per film, merged across cinemas by title.
 //   New: listings first seen since tracking began, by day.
 //   Ratings (IMDb, Letterboxd) come from data/ratings.json, keyed by "<source>:<id>".
+//   Screening times (Filmhouse, AFA, SFS) come from data/showtimes.json, keyed the same way.
 "use strict";
 
 const NAMES = {
@@ -15,7 +16,9 @@ const SHORT = {
 const TZ = "Asia/Singapore";
 const VIEWS = [["now", "Now showing"], ["soon", "Coming soon"], ["new", "New"]];
 
-const state = { items: [], status: null, ratings: null, view: "now", hidden: new Set(), query: "", sort: "az" };
+const state = {
+  items: [], status: null, ratings: null, showtimes: null, view: "now", hidden: new Set(), query: "", sort: "az",
+};
 
 function load(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
@@ -47,6 +50,28 @@ function dayLabel(isoDay) {
   return new Date(isoDay + "T12:00:00+08:00").toLocaleDateString("en-SG", {
     timeZone: TZ, weekday: "short", day: "numeric", month: "short", year: "numeric",
   });
+}
+
+// Now in Singapore as "YYYY-MM-DDTHH:MM", the format of showtimes.json starts.
+function sgtNow() {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-GB", {
+    timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+  }).formatToParts(new Date()).map(x => [x.type, x.value]));
+  return `${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}`;
+}
+
+function dayShort(isoDay) {
+  const today = sgtDate(new Date());
+  if (isoDay === today) return "Today";
+  if (isoDay === sgtDate(new Date(Date.now() + 864e5))) return "Tomorrow";
+  return new Date(isoDay + "T12:00:00+08:00").toLocaleDateString("en-SG", {
+    timeZone: TZ, weekday: "short", day: "numeric", month: "short",
+  });
+}
+
+function clock(start) { // "2026-10-30T16:10" -> "4:10 pm"
+  const [h, m] = start.slice(11, 16).split(":").map(Number);
+  return `${(h + 11) % 12 + 1}:${String(m).padStart(2, "0")} ${h < 12 ? "am" : "pm"}`;
 }
 
 function ago(iso) {
@@ -105,8 +130,45 @@ function groupFilms(items) {
     g.sources = [...new Set(g.items.map(i => i.source))];
     g.posters = posterCandidates(g.items);
     g.rating = ratingOf(g.items);
+    g.sessions = sessionsOf(g.items);
   }
   return [...groups.values()];
+}
+
+// --- Screening times --------------------------------------------------------------------
+
+function sessionsOf(items) {
+  const now = sgtNow();
+  return items.flatMap(i => (state.showtimes?.items?.[`${i.source}:${i.id}`] || []).map(s => ({ ...s, source: i.source })))
+    .filter(s => s.start > now)
+    .sort((a, b) => a.start.localeCompare(b.start));
+}
+
+// Collapsed: the next day's times. Open: every screening by day, each a link to book.
+function times(sessions) {
+  if (!sessions.length) return null;
+  const days = new Map();
+  for (const s of sessions) {
+    const day = s.start.slice(0, 10);
+    if (!days.has(day)) days.set(day, []);
+    days.get(day).push(s);
+  }
+  const multi = new Set(sessions.map(s => s.source)).size > 1;
+  const venues = [...new Set(sessions.map(s => s.venue || ""))];
+  const [[firstDay, first]] = days;
+  const more = sessions.length - first.length;
+  const slot = s => el("a", { class: `slot src-${s.source}${/sold out/i.test(s.note || "") ? " sold" : ""}`,
+    href: s.url, target: "_blank", rel: "noopener" },
+    el("b", {}, clock(s.start)),
+    multi ? el("small", {}, shortName(s.source)) : null,
+    venues.length > 1 && s.venue ? el("small", {}, s.venue) : null,
+    s.note ? el("small", {}, s.note) : null);
+  return el("details", { class: "times" },
+    el("summary", {}, el("b", {}, dayShort(firstDay)), " ", first.map(s => clock(s.start)).join(", "),
+      more ? el("span", { class: "more" }, ` +${more} more`) : null),
+    ...[...days].map(([day, list]) => el("div", { class: "day" },
+      el("span", {}, dayShort(day)), el("div", { class: "slots" }, ...list.map(slot)))),
+    venues.length === 1 && venues[0] ? el("p", { class: "venue" }, venues[0]) : null);
 }
 
 // --- Ratings --------------------------------------------------------------------------
@@ -178,7 +240,8 @@ function filmCard(g) {
     el("div", { class: "body" },
       el("h3", { class: "title" }, g.title),
       ratings(g.rating),
-      el("div", { class: "wheres" }, ...where)));
+      el("div", { class: "wheres" }, ...where),
+      times(g.sessions)));
 }
 
 function itemCard(item) {
@@ -189,7 +252,8 @@ function itemCard(item) {
       el("h3", { class: "title" }, el("a", { href: item.url, target: "_blank", rel: "noopener" }, item.title)),
       ratings(ratingOf([item])),
       item.tags?.length ? el("span", { class: "meta" }, item.tags.join(" · ")) : null,
-      item.listed ? null : el("span", { class: "meta" }, "No longer listed")));
+      item.listed ? null : el("span", { class: "meta" }, "No longer listed"),
+      item.listed ? times(sessionsOf([item])) : null));
 }
 
 function sourceKeys() {
@@ -266,6 +330,10 @@ function render() {
   if (state.sort === "new") shown.sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || byTitle(a, b));
   else if (state.sort === "most") shown.sort((a, b) => b.sources.length - a.sources.length || byTitle(a, b));
   else if (state.sort === "rated") shown.sort((a, b) => score(b.rating) - score(a.rating) || byTitle(a, b));
+  else if (state.sort === "next") { // films with times first, soonest screening first
+    const next = g => g.sessions[0]?.start || "9999";
+    shown.sort((a, b) => next(a).localeCompare(next(b)) || byTitle(a, b));
+  }
   else shown.sort(byTitle);
   feed.replaceChildren(shown.length ? el("div", { class: "grid" }, ...shown.map(filmCard))
     : el("p", { class: "empty" }, q ? "No films match your search." : "Nothing here for the selected cinemas."));
@@ -288,11 +356,12 @@ async function main() {
   const search = document.getElementById("search");
   search.addEventListener("input", () => { state.query = search.value; render(); });
 
-  const [items, status, ratings] = await Promise.allSettled(
-    ["data/items.json", "data/status.json", "data/ratings.json"].map(getJSON));
+  const [items, status, ratings, showtimes] = await Promise.allSettled(
+    ["data/items.json", "data/status.json", "data/ratings.json", "data/showtimes.json"].map(getJSON));
   state.items = items.status === "fulfilled" ? items.value.items || [] : [];
   state.status = status.status === "fulfilled" ? status.value : null;
   state.ratings = ratings.status === "fulfilled" ? ratings.value : null;
+  state.showtimes = showtimes.status === "fulfilled" ? showtimes.value : null;
   document.getElementById("checked").textContent = state.status ? `Checked ${ago(state.status.checked)}` : "Not checked yet";
   render();
 }

@@ -355,8 +355,30 @@ def afa_dates():
                 print(f"     {k} = {str(v)[:200]}")
 
 
+def showtimes():
+    """Raw screening markup the scrapers read: Filmhouse's day headings and Book links
+    (movietag notes, sold-out classes), AFA's location_name."""
+    print("== SHOWTIMES filmhouse")
+    r = get("https://filmhouse.sg/films/")
+    if r is not None and r.ok:
+        soup = BeautifulSoup(r.text, "lxml")
+        lists = soup.select("div.performance-list-items-outer")
+        print(f"  {len(lists)} performance lists; li classes:",
+              sorted({" ".join(li.get("class") or []) for li in soup.select("ul.performance-list-items li")}))
+        print("  movietags:", sorted({t.get_text(" ", strip=True) for t in soup.select(".movietag")})[:40])
+        print("  headings:", [h.get_text(" ", strip=True) for h in soup.select(".performance-list-items .heading")][:20])
+        for block in lists[:2]:
+            print(str(block)[:2500])
+    print("== SHOWTIMES afa")
+    r = get("https://asianfilmarchive.org/wp-json/wp/v2/mep_events",
+            params={"per_page": 20, "_fields": "slug,event_informations.location_name,event_informations.event_start_datetime"})
+    if r is not None and r.ok:
+        for ev in r.json():
+            print("  ", ev.get("slug"), (ev.get("event_informations") or {}))
+
+
 if __name__ == "__main__":
-    names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "carnival", "discover", "posters"]
+    names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "carnival", "discover", "posters", "showtimes"]
     wanted = sys.argv[1:]
     if not wanted:
         # CI runs this with no arguments. While debugging a source on a branch, default `wanted` to its probe.

@@ -3,7 +3,8 @@ Showcase screenings at other halls.
 
 Screenings are sold through Eventive. Its API needs the client header SFS's own page
 sends, so instead of imitating that, load www.singaporefilmsociety.com in headless
-Chromium and read the events list the page fetches. One item per film, not per session.
+Chromium and read the events list the page fetches. One item per film, not per session;
+each event is one of its screenings (venue short_name, e.g. "GV Cineleisure").
 Shown in the web app only (alerts = False).
 """
 
@@ -12,13 +13,26 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 
 from ..http import USER_AGENT
-from ..models import Item
+from ..models import Item, screening
 from .base import Source, SourceError
 from .html import clean
 
 SITE = "https://www.singaporefilmsociety.com/"
 EVENTS = "https://events.singaporefilmsociety.com"
 NOW_DAYS = 7
+
+
+def note(event_name: str, film_name: str) -> str | None:
+    """What the event adds to the film: "SFS Spotlight: Roman Holiday (Members-Only)" -> "Members-Only"."""
+    rest = event_name.split(":", 1)[-1].strip()
+    if not rest.lower().startswith(film_name.lower()):
+        return None
+    return rest[len(film_name):].strip(" ()–-") or None
+
+
+def venue(event: dict) -> str | None:
+    v = event.get("venue") or {}
+    return clean(v.get("short_name") or v.get("name") or event.get("location")) or None
 
 
 def items_from_events(events: list[dict], now: datetime) -> list[Item]:
@@ -42,6 +56,8 @@ def items_from_events(events: list[dict], now: datetime) -> list[Item]:
                 item.showing = "now"
             if series and series not in item.tags:
                 item.tags.append(series)
+            if start:
+                item.sessions.append(screening(start, item.url, venue(ev), note(clean(ev.get("name")), title)))
     return list(items.values())
 
 

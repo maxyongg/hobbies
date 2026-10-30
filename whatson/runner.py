@@ -7,6 +7,7 @@ import logging
 import os
 from pathlib import Path
 
+from . import showtimes as times
 from .models import Item, now_sgt
 from .notify import Notifier
 from .sources import Source, SourceError
@@ -31,9 +32,10 @@ def run_url() -> str | None:
 
 
 def run(sources: list[Source], store, notifier: Notifier, http, status_path: Path | None = None,
-        dry_run: bool = False) -> dict:
+        dry_run: bool = False, showtimes_path: Path | None = None) -> dict:
     now = now_sgt()
     status = {"checked": now, "sources": {}}
+    showtimes: dict[str, list[dict]] = {}
     names = {s.key: s.name for s in sources}
 
     for src in sources:
@@ -48,6 +50,11 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
             items, error = [], f"{type(e).__name__}: {e}"
         status["sources"][src.key] = {"name": src.name, "url": src.url, "alerts": src.alerts,
                                       "ok": not error, "count": len(items), "error": error}
+        if found := times.collect(items, now):
+            showtimes.update(found)
+            sessions = [s for ss in found.values() for s in ss]
+            log.info("%s: %d upcoming screenings for %d films, %s to %s", src.key, len(sessions), len(found),
+                     min(s["start"] for s in sessions), max(s["start"] for s in sessions))
 
         if error:
             health["consecutive_failures"] += 1
@@ -81,6 +88,8 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
         if status_path:
             status_path.parent.mkdir(parents=True, exist_ok=True)
             status_path.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        if showtimes_path:
+            times.write(showtimes_path, showtimes)
     return status
 
 

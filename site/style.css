@@ -117,5 +117,29 @@ h2 + .grid { margin-top: 0; }
 }
 .where small { font-weight: 400; color: var(--muted); }
 
+/* Screening times: the next day's times; tap for every screening, each linking to book */
+.times { font-size: 0.78rem; border-top: 1px solid var(--line); padding-top: 6px; }
+.times summary { cursor: pointer; list-style: none; }
+.times summary::-webkit-details-marker { display: none; }
+.times summary::after { content: " ▾"; color: var(--muted); }
+.times[open] summary::after { content: " ▴"; }
+.times .more { color: var(--muted); }
+.day { margin-top: 7px; }
+.day > span {
+  display: block; color: var(--muted); font-weight: 600; font-size: 0.7rem;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.slots { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 3px; }
+.slot {
+  display: inline-flex; flex-direction: column; text-decoration: none; padding: 2px 7px; border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--c) 45%, transparent);
+  background: color-mix(in srgb, var(--c) 8%, transparent);
+}
+.slot b { font-weight: 600; white-space: nowrap; }
+.slot small { color: var(--muted); font-size: 0.7rem; line-height: 1.25; }
+.slot.sold { opacity: 0.55; }
+.slot.sold b { text-decoration: line-through; }
+.times .venue { margin: 7px 0 0; color: var(--muted); }
+
 .empty { padding: 32px 0; color: var(--muted); }
 footer { margin: 40px auto 0; }

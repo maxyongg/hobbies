@@ -1,6 +1,6 @@
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
-from whatson.sources import afa
+from whatson.sources import afa, filmhouse
 from whatson.sources.afa import AsianFilmArchive, film_id
 from whatson.sources.carnival import Carnival
 from whatson.sources.filmhouse import Filmhouse
@@ -214,3 +214,88 @@ def test_poster_skips_placeholder_and_uses_picture_source():
     links = {l["url"]: l["poster"] for l in harvest_links(html, "https://shaw.sg/movie", r"^/movie-details/\d+")}
     assert links == {"https://shaw.sg/movie-details/1": "https://cdn/1-Poster?w=100&dpr=1.3",
                      "https://shaw.sg/movie-details/2": None}
+
+
+def test_filmhouse_reads_screenings_from_cards(http, monkeypatch):
+    # Shaped like the live JACRO card (probe, 2026-10-29): a day heading, then Book links with span.time.
+    monkeypatch.setattr(filmhouse, "today", lambda: date(2026, 12, 30))
+    base = "https://filmhouse.sg"
+    http.routes[f"{base}/films/"] = """
+      <div class="jacro-event movie-tabs row 4k"><div class="film_list-outer">
+        <div class="film_img"><a href="http://filmhouse.sg/film/220/fjord"><img src="https://cdn/220.jpg"></a></div>
+        <div class="jacrofilm-list-content"><a class="liveeventtitle" href="http://filmhouse.sg/film/220/fjord">Fjord</a></div>
+        <!--- show time --->
+        <div class="performance-list-items-outer">
+          <ul class="performance-list-items"><div class="heading">Wednesday 30th December</div>
+            <li class=""><a class="film_book_button" href="https://filmhouse.sg/filmhouse-singapore/booknow/1958">
+              <span class="hover">Book</span><span class="time">4:10 pm</span></a></li>
+            <li class="4k"><a class="film_book_button" href="https://filmhouse.sg/filmhouse-singapore/booknow/1959">
+              <span class="hover">Book</span><span class="time">12:05 am</span></a>
+              <div class="movietag"><span class="tag lastchance">LastChance</span> <span class="tag 4k">4K</span> </div></li>
+            <li class=""><a class="soldfilm_book_button"><span class="hover">Sold Out</span><span class="time">7:45 pm</span></a>
+              <div class="movietag"> </div></li>
+          </ul>
+          <ul class="performance-list-items"><div class="heading">Saturday 2nd January</div>
+            <li><a class="film_book_button" href="/filmhouse-singapore/booknow/1960"><span class="time">11:00 am</span></a></li>
+          </ul>
+        </div>
+      </div></div>"""
+    [item] = Filmhouse().fetch(http)
+    assert item.sessions == [
+        {"start": "2026-12-30T16:10", "url": f"{base}/filmhouse-singapore/booknow/1958"},
+        {"start": "2026-12-30T00:05", "url": f"{base}/filmhouse-singapore/booknow/1959", "note": "Last Chance · 4K"},
+        {"start": "2026-12-30T19:45", "url": f"{base}/film/220/fjord", "note": "Sold out"},
+        {"start": "2027-01-02T11:00", "url": f"{base}/filmhouse-singapore/booknow/1960"},
+    ]
+
+
+def test_filmhouse_day_and_time_parsing():
+    ref = date(2026, 10, 29)
+    assert filmhouse.parse_day("Friday 30th October", ref) == date(2026, 10, 30)
+    assert filmhouse.parse_day("Mon 26th Oct", ref) == date(2026, 10, 26)  # a few days back: same year
+    assert filmhouse.parse_day("Tuesday 5th January", ref) == date(2027, 1, 5)
+    assert filmhouse.parse_day("Today", ref) == ref
+    assert filmhouse.parse_day("Coming soon", ref) is None
+    assert filmhouse.parse_time("4:10 pm") == (16, 10)
+    assert filmhouse.parse_time("12:30 PM") == (12, 30)
+    assert filmhouse.parse_time("12:05 a.m.") == (0, 5)
+    assert filmhouse.parse_time("19:45") == (19, 45)
+    assert filmhouse.parse_time("Book") is None
+
+
+def test_afa_screenings_with_venue_and_sold_out(http, monkeypatch):
+    monkeypatch.setattr(afa, "now", lambda: datetime(2026, 10, 29, 12, 0))
+    base = "https://asianfilmarchive.org"
+
+    def ev(slug, title, start, venue):
+        return {"slug": slug, "title": {"rendered": title}, "link": f"{base}/event-calendar/{slug}/",
+                "event_informations": {"event_start_datetime": [start], "location_name": [venue]}}
+
+    http.routes[f"{base}/wp-json/wp/v2/mep_events"] = [
+        ev("hush-2016-1", "[SOLD OUT] Hush", "2026-11-01 19:30:00", "Oldham Theatre"),
+        ev("hush-2016", "Hush", "2026-10-31 11:00:00", ""),
+        ev("off-the-catalogue-november-2026", "Off the Catalogue", "2026-11-04 00:00:00", ""),
+    ]
+    item, catalogue = AsianFilmArchive().fetch(http)
+    assert catalogue.sessions == []
+    assert item.sessions == [
+        {"start": "2026-11-01T19:30", "url": f"{base}/event-calendar/hush-2016-1/", "venue": "Oldham Theatre",
+         "note": "Sold out"},
+        {"start": "2026-10-31T11:00", "url": f"{base}/event-calendar/hush-2016/"},
+    ]
+    assert "event_informations.location_name" in afa.FIELDS
+
+
+def test_sfs_screenings_in_singapore_time_with_venue_and_note():
+    events = [
+        {"start_time": "2026-11-07T08:00:00.000Z", "name": "SFS Spotlight: Roman Holiday (Members-Only)",
+         "venue": {"name": "Shaw Theatres Lido", "short_name": "Shaw Lido"},
+         "films": [{"id": "f3", "name": "Roman Holiday"}]},
+        {"start_time": "2026-10-31T08:00:00.000Z", "name": "SFS Somerset: Itam: A Sun Bear Story",
+         "location": "GV Cineleisure Hall 6 (SFS Somerset)", "films": [{"id": "f4", "name": "Itam: A Sun Bear Story"}]},
+    ]
+    items = {i.id: i for i in items_from_events(events, datetime(2026, 10, 29, 12, tzinfo=timezone.utc))}
+    assert items["f3"].sessions == [{"start": "2026-11-07T16:00", "url": "https://events.singaporefilmsociety.com/films/f3",
+                                     "venue": "Shaw Lido", "note": "Members-Only"}]
+    assert items["f4"].sessions == [{"start": "2026-10-31T16:00", "url": "https://events.singaporefilmsociety.com/films/f4",
+                                     "venue": "GV Cineleisure Hall 6 (SFS Somerset)"}]

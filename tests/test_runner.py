@@ -1,7 +1,8 @@
 import json
+from datetime import datetime
 
 from whatson import runner
-from whatson.models import Item
+from whatson.models import Item, screening
 from whatson.notify import Ntfy, Notifier
 from whatson.sources import SourceError
 from whatson.store import Store
@@ -130,3 +131,22 @@ def test_quiet_source_records_new_items_without_alerting(tmp_path, http):
     assert http.posts == []
     assert store.items[("gv", "b")].alert == "quiet"
     assert status["sources"]["gv"]["alerts"] is False
+
+
+def test_showtimes_go_to_their_own_file_not_the_store(tmp_path, http):
+    class WithTimes(FakeSource):
+        def fetch(self, http):
+            items = super().fetch(http)
+            items[0].sessions = [screening(datetime(2099, 1, 2, 19, 30), "https://fh.example/book/2"),
+                                 screening(datetime(2099, 1, 1, 16, 10), "https://fh.example/book/1", "Hall 1", "Q&A"),
+                                 screening(datetime(2000, 1, 1, 16, 10), "https://fh.example/book/0")]  # past
+            return items
+
+    store = Store(tmp_path / "items.json")
+    runner.run([WithTimes("fh", [["a", "b"]])], store, Notifier(), http, showtimes_path=tmp_path / "showtimes.json")
+    data = json.loads((tmp_path / "showtimes.json").read_text(encoding="utf-8"))
+    assert data["items"] == {"fh:a": [
+        {"start": "2099-01-01T16:10", "url": "https://fh.example/book/1", "venue": "Hall 1", "note": "Q&A"},
+        {"start": "2099-01-02T19:30", "url": "https://fh.example/book/2"},
+    ]}
+    assert "sessions" not in (tmp_path / "items.json").read_text(encoding="utf-8")

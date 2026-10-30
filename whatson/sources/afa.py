@@ -4,17 +4,18 @@ Events live at /event-calendar/<title-slug>-<year>/; repeat screenings add -1, -
 Reads the plugin's post type (mep_events) over WP REST, asking only for the fields
 needed; falls back to event links on the What's On / Events Calendar pages.
 Screenings that have ended are left out; ones within NOW_DAYS count as "now".
+Each post is one screening, so its start time and location_name are the film's showtimes.
 """
 
 from __future__ import annotations
 
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, time, timedelta
 
-from ..models import SGT, Item
+from ..models import SGT, Item, screening
 from . import wordpress as wp
 from .base import Source
-from .html import get_pages, harvest_links, last_segment, slug_id
+from .html import clean, get_pages, harvest_links, last_segment, slug_id
 
 BASE = "https://asianfilmarchive.org"
 LISTINGS = ["/whatson/", "/events-calendar/"]
@@ -24,7 +25,7 @@ NOW_DAYS = 7
 # Nested _fields (WP >= 5.3) keep each post to the few keys used, so 100 posts stay small.
 DATE_KEYS = ("event_upcoming_datetime", "event_start_datetime", "event_expire_datetime", "event_end_datetime")
 FIELDS = ",".join(["id", "slug", "link", "title", "class_list", "yoast_head_json.og_image"]
-                  + [f"event_informations.{k}" for k in DATE_KEYS])
+                  + [f"event_informations.{k}" for k in (*DATE_KEYS, "location_name")])
 
 
 def now() -> datetime:
@@ -48,6 +49,12 @@ def screening_times(post: dict) -> tuple[datetime | None, datetime | None]:
 
     return (meta("event_upcoming_datetime", "event_start_datetime"),
             meta("event_expire_datetime", "event_end_datetime"))
+
+
+def venue(post: dict) -> str | None:
+    value = (post.get("event_informations") or {}).get("location_name")
+    value = value[0] if isinstance(value, list) and value else value
+    return clean(value) if isinstance(value, str) else None
 
 
 def film_id(slug: str) -> str:
@@ -85,6 +92,9 @@ class AsianFilmArchive(Source):
             ))
             if showing == "now":  # any repeat screening this week makes the film "now"
                 item.showing = "now"
+            if start and start.time() != time(0, 0):  # midnight: a date-only listing, not a screening
+                item.sessions.append(screening(start, p["link"], venue(p),
+                                               "Sold out" if SOLD_OUT.search(wp.title(p)) else None))
         return list(items.values())
 
     def from_listing_pages(self, http) -> list[Item]:
