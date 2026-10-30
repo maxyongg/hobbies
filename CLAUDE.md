@@ -25,13 +25,13 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 6. **Web app (2026-10-29):** tabs Now showing / Coming soon / New. One card per film, merged across cinemas by normalised title (in `site/app.js`), with a link per cinema for times and booking (no showtimes scraped).
 7. **Cinemas:** alerts for Filmhouse, Shaw, AFA. Golden Village, Carnival Cinemas and Singapore Film Society are web-app only (`alerts = False`). Closed or skipped venues are listed in `docs/sources.md`.
 
-## Status (2026-10-29)
+## Status (2026-10-30)
 
 - **Live.** v1 merged to `main` (PR #1). `update.yml` runs every 6 h (also Actions → update → Run workflow), commits `data/items.json`, deploys https://maxyongg.github.io/hobbies/. `NTFY_TOPIC` secret is set.
 - First run (2026-10-29 13:51 UTC) seeded 139 items silently: Filmhouse 34, Shaw 64, AFA 41 (all with posters). Alerts start with the next new listing.
 - Six scrapers verified live through CI (2026-10-29): Filmhouse 34, Shaw 64, GV 79, Carnival 7, SFS 11, AFA (upcoming screenings only, latest 100 events). Real data paths in `docs/sources.md`. AFA once returned a non-JSON reply (likely bot protection); `get_json` now logs what came back.
 - Now-showing page live (PRs #4, #5). GV/Carnival/SFS seeded silently in the 2026-10-29 14:30 UTC run (79/7/11); from now on their new films are stored as `alert: "quiet"` (New tab only, never pushed, not in the widget). That run: 124 listings now showing, 80 coming soon, all with posters; ~90 now-showing cards after merging the same film across cinemas.
-- **Ratings (in progress, branch `claude/lucid-gauss-2hijls`):** IMDb + Letterboxd ratings on web-app cards. Plan: match each film to TMDb (title + year hint) → IMDb ID → IMDb rating from IMDb's daily `title.ratings.tsv.gz` → Letterboxd rating from `letterboxd.com/imdb/<id>/` (scraped, best effort); cache in `data/ratings.json`. Repo secret `TMDB_API_KEY` (v3 API key) is set and passed to `update.yml` "Check sources" and `ci.yml` live dry run; verified 2026-10-30 (CI log: "TMDb accepted the API key"). So far only `whatson/ratings.py` key check exists.
+- **Ratings (2026-10-30):** IMDb + Letterboxd ratings on web-app cards (all tabs, plus a "Top rated" sort) and in the widget (medium/large rows: `IMDb 7.8 · LB 3.9`); not in ntfy pushes (Max: not needed). `whatson/ratings.py` runs after the scrapers: listed films are matched once to TMDb by cleaned title (chains GV/Shaw/Carnival prefer recent releases; others the most popular exact title; AFA's bracketed year filters) → IMDb ID; IMDb ratings from IMDb's daily `title.ratings.tsv.gz` (hidden under 100 votes); Letterboxd from `letterboxd.com/tmdb/<id>/` (scraped, best effort; on 403/429 it stops and keeps the last ratings). Ratings refresh once per SGT day, so `data/ratings.json` gets one bot commit a day. Unmatched titles retry after 7 days. Repo secret `TMDB_API_KEY` (v3 API key, verified 2026-10-30) is passed to `update.yml` "Check sources" and the `ci.yml` live dry run.
 - Pages serves the app since Max set the source to GitHub Actions (2026-10-29). Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone (Claude sessions can't reach github.io either).
 
 ## Layout
@@ -43,7 +43,9 @@ whatson/            Python package: python -m whatson run [--dry-run] [--source 
   notify.py         ntfy (JSON publish); log-only when NTFY_TOPIC unset
   sources/          one module per source (filmhouse, shaw, afa, gv, carnival, sfs) + wordpress.py / html.py
                     helpers; registry and alerting/quiet split in __init__.py
-site/               static web app (reads data/items.json + data/status.json) + widget.js (Scriptable)
+  ratings.py        TMDb match → IMDb + Letterboxd ratings → data/ratings.json (never fails the run)
+site/               static web app (reads data/items.json, status.json, ratings.json) + widget.js (Scriptable)
+data/rating-overrides.json  hand fixes: "<title as on the site>": IMDb/TMDb link, or null for no rating
 widget/whats-on-sg.js  symlink to site/widget.js, only because update.yml still copies that path
 .github/workflows/  update.yml: 6-hourly run + commit data + Pages deploy
                     ci.yml: tests; on non-main pushes also a live dry run + probe
@@ -54,8 +56,8 @@ Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source
 
 ## Next steps
 
-1. Build ratings (see Status): matcher + `data/ratings.json` + card badges; check matches in the `live` CI log before merging.
-1. Confirm with Max: first real ntfy alert arrived and looked right; widget installed; site renders.
+1. Confirm with Max: first real ntfy alert arrived and looked right; widget installed (re-paste `widget.js` for ratings); site renders with ratings.
+1. Ratings: ask Max which films show a wrong rating and add them to `data/rating-overrides.json`; if Letterboxd blocks GitHub runners (log: "Letterboxd answered HTTP 403"), show TMDb's own rating instead.
 2. Ask Max how the Now showing page looks once the first post-merge run has filled GV/Carnival/SFS; tune title merging in `site/app.js` (`filmKey`) if the same film shows as two cards.
 3. Optional polish: Shaw lists language/format variants as separate films (`V [CANTO]`, `V [M]`) — group them if alerts are noisy; AFA includes talks — filter by `mep_cat` if unwanted. Objectifs could be added (see `docs/sources.md`).
 4. Later: more sources (galleries, games) as new modules in `whatson/sources/`.
@@ -71,4 +73,5 @@ To check a scraper change against the real sites: push to a non-`main` branch, t
 - `site/index.html` loads `style.css?v=<hash>` / `app.js?v=<hash>` (first 10 hex of sha256) so browsers can't mix a new page with a cached old script (that left the page stuck on "Loading…" in Safari). `tests/test_site.py` fails with the exact string to use when either file changes.
 - **Posters are hotlinked** from each cinema's CDN. Shaw's gumlet proxy answers 403 to other sites' Referer, so Shaw stores the Azure CDN URL behind it; Shaw's page swaps failed images for `noimage.png`, so its scraper answers image requests with a 1x1 PNG rather than blocking them. Carnival 404s posters for some coming-soon films. The web app tries each cinema's poster for a film before showing 🎬. `scripts/probe.py posters` re-checks hosts.
 - Be polite: low polling frequency, a descriptive User-Agent, ≥1 s between requests per host. Filmhouse updates general-release showtimes weekly (Tuesdays).
+- **TMDb v3 keys travel in the URL** (`api_key=`). `Tmdb.get` keeps it out of its own errors, but urllib3 retry warnings can include it; GitHub masks the secret in Actions logs. Never print TMDb request URLs elsewhere.
 - Sites change markup; keep each scraper small. The zero-items/failure check alerts after 2 bad runs.

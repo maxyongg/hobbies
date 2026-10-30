@@ -1,0 +1,4 @@
+{
+ "_help": "Fix a wrong or missing rating: \"<film title as on the site>\": \"<IMDb or TMDb link>\", or null for no rating. Applies on the next run.",
+ "_example": "\"Fatherland\": \"https://www.imdb.com/title/tt1234567/\""
+}

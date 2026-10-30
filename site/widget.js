@@ -6,11 +6,13 @@
 // Optional widget Parameter: sources to show, comma-separated, e.g. "filmhouse,afa".
 //
 // Shows the newest films from the cinemas that send alerts (Filmhouse, Shaw, AFA), as first
-// seen by the scraper (data/items.json on GitHub Pages).
+// seen by the scraper (data/items.json on GitHub Pages), with IMDb and Letterboxd ("LB")
+// ratings where known (data/ratings.json; medium and large widgets only).
 // Tapping a film (medium/large) opens it; tapping elsewhere opens the web app.
 
 const SITE = "https://maxyongg.github.io/hobbies/";
 const DATA_URL = SITE + "data/items.json";
+const RATINGS_URL = SITE + "data/ratings.json";
 const SHORT = { filmhouse: "FH", shaw: "SHAW", afa: "AFA" };
 const COLORS = {
   filmhouse: Color.dynamic(new Color("#b4441f"), new Color("#f08a5d")),
@@ -22,11 +24,11 @@ const MUTED = Color.dynamic(new Color("#6d6a63"), new Color("#9b998f"));
 const BG = Color.dynamic(new Color("#f6f4ef"), new Color("#141416"));
 const NEW_DAYS = 7;
 
-async function loadData() {
+async function loadJSON(url, cacheName) {
   const fm = FileManager.local();
-  const cache = fm.joinPath(fm.cacheDirectory(), "cinema.json");
+  const cache = fm.joinPath(fm.cacheDirectory(), cacheName);
   try {
-    const req = new Request(DATA_URL);
+    const req = new Request(url);
     req.timeoutInterval = 15;
     const data = await req.loadJSON();
     fm.writeString(cache, JSON.stringify(data));
@@ -37,6 +39,22 @@ async function loadData() {
   }
 }
 
+async function loadData() {
+  const [items, ratings] = await Promise.all([
+    loadJSON(DATA_URL, "cinema.json"),
+    loadJSON(RATINGS_URL, "cinema-ratings.json").catch(() => ({ data: {} })),
+  ]);
+  return { data: items.data, ratings: ratings.data, stale: items.stale };
+}
+
+function ratingText(ratings, item) {
+  const id = ratings.items?.[`${item.source}:${item.id}`];
+  const f = id && ratings.films?.[id];
+  if (!f) return "";
+  return [f.imdb && `IMDb ${f.imdb.toFixed(1)}`, f.letterboxd && `LB ${f.letterboxd.toFixed(1)}`]
+    .filter(Boolean).join(" · ");
+}
+
 function shortDate(iso) {
   const days = Math.floor((Date.now() - new Date(iso)) / 864e5);
   if (days < 1) return "today";
@@ -44,7 +62,7 @@ function shortDate(iso) {
   return `${days}d`;
 }
 
-function build(items, family, stale) {
+function build(items, ratings, family, stale) {
   const w = new ListWidget();
   w.backgroundColor = BG;
   w.url = SITE;
@@ -83,6 +101,14 @@ function build(items, family, stale) {
     t.lineLimit = 1;
     if (family !== "small") {
       row.addSpacer();
+      const rating = ratingText(ratings, item);
+      if (rating) {
+        const r = row.addText(rating);
+        r.font = Font.systemFont(10);
+        r.textColor = MUTED;
+        r.lineLimit = 1;
+        row.addSpacer(6);
+      }
       const d = row.addText(shortDate(item.first_seen));
       d.font = Font.systemFont(10);
       d.textColor = MUTED;
@@ -98,11 +124,11 @@ async function main() {
   const family = config.widgetFamily || "medium";
   let widget;
   try {
-    const { data, stale } = await loadData();
+    const { data, ratings, stale } = await loadData();
     const items = (data.items || [])
       .filter(i => (i.alert === "sent" || i.alert === "pending") && (!only.length || only.includes(i.source)))
       .sort((a, b) => (b.first_seen || "").localeCompare(a.first_seen || ""));
-    widget = build(items, family, stale);
+    widget = build(items, ratings, family, stale);
   } catch (e) {
     widget = new ListWidget();
     widget.backgroundColor = BG;

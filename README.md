@@ -9,7 +9,8 @@ Every 6 hours a GitHub Actions job:
 1. Checks the listings of **Filmhouse**, **Shaw Theatres**, the **Asian Film Archive**, **Golden Village**, **Carnival Cinemas** and the **Singapore Film Society** (SFS Somerset).
 2. Compares them with every film it has seen before (`data/items.json`).
 3. For each new film at Filmhouse, Shaw or AFA: sends a push via [ntfy](https://ntfy.sh) and shows it in the iOS widget ([Scriptable](https://scriptable.app)).
-4. Publishes the web app: **Now showing** and **Coming soon** across all six (one card per film, with a link to each cinema showing it), plus **New** listings.
+4. Looks up **IMDb** and **Letterboxd** ratings for each film (matched by title through [TMDb](https://www.themoviedb.org); refreshed daily) for the web app and widget.
+5. Publishes the web app: **Now showing** and **Coming soon** across all six (one card per film, with its ratings and a link to each cinema showing it), plus **New** listings.
 
 The first successful check of each cinema records what's already showing without alerting. If a cinema's scraper breaks (errors or finds nothing twice in a row), you get one warning push.
 
@@ -20,7 +21,12 @@ Live at **https://maxyongg.github.io/hobbies/**. Run it on demand from Actions �
 1. **Workflows** in `.github/workflows/`: `update.yml` (every 6 h) and `ci.yml` (tests; live dry run on non-`main` pushes).
 2. **Pages:** Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 3. **Alerts:** repo secret `NTFY_TOPIC` = the topic subscribed to in the ntfy app (Settings → Secrets and variables → Actions). Optional: `NTFY_TOKEN` secret and `NTFY_SERVER` variable for a self-hosted or protected server.
-4. **Widget:** follow the comment at the top of [`site/widget.js`](site/widget.js) (published at https://maxyongg.github.io/hobbies/widget.js).
+4. **Widget:** follow the comment at the top of [`site/widget.js`](site/widget.js) (published at https://maxyongg.github.io/hobbies/widget.js). Re-paste it into Scriptable when it changes.
+5. **Ratings (2026-10-30):** repo secret `TMDB_API_KEY` (free TMDb API key), passed to `update.yml` and the `ci.yml` live job.
+
+## Wrong rating?
+
+Films are matched to IMDb/Letterboxd by title, so a few go wrong (remakes, common titles). Fix one in [`data/rating-overrides.json`](data/rating-overrides.json): `"<film title as on the site>": "<IMDb or TMDb link>"`, or `null` to show no rating. It applies on the next run.
 
 ## Run locally
 

@@ -12,6 +12,7 @@ from urllib3.util.retry import Retry
 USER_AGENT = "cinema/0.1 (+https://github.com/maxyongg/hobbies; personal new-film alerts)"
 TIMEOUT = 30
 MIN_INTERVAL = 1.0  # seconds between requests to the same host
+HOST_INTERVAL = {"api.themoviedb.org": 0.1}  # APIs that allow more (TMDb: ~40 requests/s)
 
 
 class Http:
@@ -25,7 +26,7 @@ class Http:
 
     def request(self, method: str, url: str, **kw) -> requests.Response:
         host = urlparse(url).netloc
-        wait = self._last.get(host, 0) + MIN_INTERVAL - time.monotonic()
+        wait = self._last.get(host, 0) + HOST_INTERVAL.get(host, MIN_INTERVAL) - time.monotonic()
         if wait > 0:
             time.sleep(wait)
         try:

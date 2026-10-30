@@ -8,10 +8,12 @@ import pytest
 
 
 class FakeResponse:
-    def __init__(self, body, status=200):
+    def __init__(self, body, status=200, url=None):
         self.body = body
         self.status_code = status
-        self.text = body if isinstance(body, str) else json.dumps(body)
+        self.url = url
+        self.content = body if isinstance(body, bytes) else None
+        self.text = body if isinstance(body, str) else "" if isinstance(body, bytes) else json.dumps(body)
 
     def raise_for_status(self):
         if self.status_code >= 400:
@@ -22,17 +24,23 @@ class FakeResponse:
 
 
 class FakeHttp:
-    """Maps URL (without query string) -> body. Unknown URLs 404. Records posts."""
+    """Maps URL (without query string) -> body, FakeResponse, or a function of the request's
+    params returning either. Unknown URLs 404. Records gets and posts."""
 
     def __init__(self, routes=None):
         self.routes = routes or {}
+        self.gets = []
         self.posts = []
         self.fail_posts = False
 
     def get(self, url, **kw):
-        if url in self.routes:
-            return FakeResponse(self.routes[url])
-        return FakeResponse("not found", 404)
+        self.gets.append(url)
+        if url not in self.routes:
+            return FakeResponse("not found", 404, url)
+        route = self.routes[url]
+        if callable(route):
+            route = route(kw.get("params") or {})
+        return route if isinstance(route, FakeResponse) else FakeResponse(route, url=url)
 
     def get_text(self, url, **kw):
         r = self.get(url)
