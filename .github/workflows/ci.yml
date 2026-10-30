@@ -37,6 +37,8 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       - name: Dry run (fetch and report; no writes, no alerts)
         run: python -m whatson run --dry-run
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       - name: Probe (what each site exposes)
         if: ${{ !cancelled() }}
         run: python scripts/probe.py
