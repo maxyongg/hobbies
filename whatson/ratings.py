@@ -295,12 +295,13 @@ class Ratings:
                 "imdb": None, "letterboxd": None, "letterboxd_url": None}
 
     def refresh(self, http, ids: set[str]) -> None:
+        ids = sorted(i for i in ids if i in self.films)
         if not ids:
             return
-        films = [self.films[i] for i in sorted(ids)]
+        films = [self.films[i] for i in ids]
         wanted = {f["imdb_id"] for f in films if f.get("imdb_id")}
         try:
-            imdb = imdb_ratings(http, wanted)
+            imdb = imdb_ratings(http, wanted) if wanted else {}
         except Exception as e:  # noqa: BLE001
             log.warning("ratings: IMDb ratings file failed: %s", e)
             imdb = None
@@ -308,7 +309,7 @@ class Ratings:
             for f in films:
                 rating, votes = imdb.get(f.get("imdb_id"), (None, 0))
                 f["imdb"] = rating if votes >= MIN_VOTES else None
-        for tmdb_id, f in zip(sorted(ids), films):
+        for tmdb_id, f in zip(ids, films):
             try:
                 f["letterboxd"], url = letterboxd(http, int(tmdb_id))
                 f["letterboxd_url"] = url or f.get("letterboxd_url")
