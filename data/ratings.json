@@ -48,6 +48,7 @@
   "filmhouse:242": "76341",
   "filmhouse:243": "11031",
   "filmhouse:245": "1381071",
+  "filmhouse:246": "1454209",
   "filmhouse:85": "313369",
   "gv:1332": "1117898",
   "gv:1392": "1248832",
@@ -956,6 +957,14 @@
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/coward-2026/"
   },
+  "1454209": {
+   "title": "National Theatre Live: Inter Alia",
+   "year": 2025,
+   "imdb_id": "tt36364878",
+   "imdb": 8.4,
+   "letterboxd": 4.3,
+   "letterboxd_url": "https://letterboxd.com/film/national-theatre-live-inter-alia/"
+  },
   "1465063": {
    "title": "Forgotten Island",
    "year": 2026,
@@ -1564,6 +1573,10 @@
   },
   "my name aint suzie": {
    "tmdb": 187021,
+   "checked": "2026-10-30"
+  },
+  "national theatre live inter alia": {
+   "tmdb": 1454209,
    "checked": "2026-10-30"
   },
   "nayyi navelli": {
