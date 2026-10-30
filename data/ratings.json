@@ -1,0 +1,1802 @@
+{
+ "updated": "2026-10-30",
+ "items": {
+  "afa:darah-ku-my-blood-1963": "249504",
+  "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
+  "afa:raja-bersiong-fanged-king-1963": "249101",
+  "afa:sgiff-2026-amores-perros-2000": "55",
+  "afa:sgiff-2026-landmark": "784267",
+  "afa:sgiff-2026-macho-dancer-1988": "170924",
+  "afa:sgiff-2026-my-name-aint-suzie-1985": "187021",
+  "afa:sultan-mahmood-mangkat-di-julang-the-passing-of-sultan-mahmood-1961": "286237",
+  "carnival:disco": "1612811",
+  "carnival:drones": "1716531",
+  "carnival:jailer-2-nc16": "1234139",
+  "carnival:mookuthi-amman-2": "1327835",
+  "carnival:scene": "1402181",
+  "carnival:tamil-ramayana-rise-of-a-legend": "656908",
+  "filmhouse:127": "1370096",
+  "filmhouse:144": "950028",
+  "filmhouse:159": "12429",
+  "filmhouse:168": "76",
+  "filmhouse:186": "1437696",
+  "filmhouse:195": "748681",
+  "filmhouse:208": "36685",
+  "filmhouse:211": "24128",
+  "filmhouse:212": "47002",
+  "filmhouse:213": "493922",
+  "filmhouse:214": "246741",
+  "filmhouse:215": "9297",
+  "filmhouse:216": "376867",
+  "filmhouse:217": "1379266",
+  "filmhouse:220": "1401459",
+  "filmhouse:223": "1601002",
+  "filmhouse:224": "146",
+  "filmhouse:225": "42845",
+  "filmhouse:226": "44154",
+  "filmhouse:227": "1591675",
+  "filmhouse:228": "10515",
+  "filmhouse:232": "194",
+  "filmhouse:233": "892",
+  "filmhouse:234": "902",
+  "filmhouse:235": "2011",
+  "filmhouse:236": "791523",
+  "filmhouse:237": "1422041",
+  "filmhouse:238": "1476614",
+  "filmhouse:239": "848700",
+  "filmhouse:240": "927547",
+  "filmhouse:242": "76341",
+  "filmhouse:243": "11031",
+  "filmhouse:245": "1381071",
+  "filmhouse:85": "313369",
+  "gv:1332": "1117898",
+  "gv:1392": "1248832",
+  "gv:1395": "1003596",
+  "gv:1398": "1315772",
+  "gv:1408": "1170608",
+  "gv:1410": "1465063",
+  "gv:1413": "1437511",
+  "gv:1415": "1400336",
+  "gv:1418": "1185806",
+  "gv:1422": "1368337",
+  "gv:1424": "969681",
+  "gv:1425": "1400940",
+  "gv:1429": "1283515",
+  "gv:1439": "1423191",
+  "gv:1444": "748681",
+  "gv:1446": "1503762",
+  "gv:1448": "1538497",
+  "gv:1449": "1255833",
+  "gv:1451": "621304",
+  "gv:1453": "1078446",
+  "gv:1454": "1567605",
+  "gv:1458": "1153576",
+  "gv:1460": "1400837",
+  "gv:1462": "1263337",
+  "gv:1463": "1204680",
+  "gv:1465": "299534",
+  "gv:1467": "299534",
+  "gv:1468": "1260649",
+  "gv:1469": "1477104",
+  "gv:1471": "1003596",
+  "gv:1472": "1480503",
+  "gv:1477": "1384758",
+  "gv:1478": "1718699",
+  "gv:1479": "615121",
+  "gv:1480": "791523",
+  "gv:2475": "822653",
+  "gv:2484": "1759202",
+  "gv:4460": "884692",
+  "gv:4484": "1633056",
+  "gv:4487": "1746726",
+  "gv:4490": "1623376",
+  "gv:4496": "1391021",
+  "gv:4499": "748681",
+  "gv:4503": "1319525",
+  "gv:4505": "1515692",
+  "gv:4507": "1234139",
+  "gv:4508": "1567791",
+  "gv:4510": "1381071",
+  "gv:4511": "1503023",
+  "gv:4512": "656908",
+  "gv:4515": "1748404",
+  "gv:4517": "1567937",
+  "gv:4518": "1567937",
+  "gv:4520": "1402181",
+  "gv:4521": "1731816",
+  "gv:7490": "1586876",
+  "gv:7491": "1586876",
+  "gv:7509": "1591675",
+  "gv:7512": "1598766",
+  "gv:7513": "1598766",
+  "gv:7514": "1400940",
+  "gv:7515": "1591675",
+  "gv:7518": "1381071",
+  "gv:7520": "1777750",
+  "gv:8489": "1269325",
+  "gv:8490": "1375156",
+  "gv:8491": "1081010",
+  "gv:8492": "1654581",
+  "sfs:6a5042c675bd49357a05f4c2": "1679026",
+  "sfs:6a5045c451da292b56c9aa70": "1555810",
+  "sfs:6a5f1c002b33ea397dd1afc0": "1425085",
+  "sfs:6aaa3073f96d731e7868b10e": "458624",
+  "sfs:6ab4a1ee427841e72d8e97c3": "1421155",
+  "sfs:6ac5c272d4796dc7179974b0": "1157628",
+  "sfs:6acd9a03f65428d37ae2c60d": "2204",
+  "sfs:6ace287d8ff16fc6f850878b": "804",
+  "sfs:6ace29d10b3d0ab772302dbf": "164",
+  "sfs:6ae00846683644e34d1bfe51": "1437981",
+  "shaw:1363": "1117898",
+  "shaw:1377": "1477104",
+  "shaw:1410": "1286656",
+  "shaw:1633": "1003596",
+  "shaw:1640": "1248832",
+  "shaw:1641": "1153576",
+  "shaw:1721": "1084409",
+  "shaw:1741": "1212310",
+  "shaw:1774": "1283515",
+  "shaw:1775": "1185806",
+  "shaw:1776": "1465063",
+  "shaw:1777": "1400336",
+  "shaw:1788": "1368337",
+  "shaw:1790": "1423191",
+  "shaw:1795": "1629051",
+  "shaw:1796": "1497464",
+  "shaw:1806": "1433583",
+  "shaw:1808": "467914",
+  "shaw:1812": "1437511",
+  "shaw:1813": "1281331",
+  "shaw:1815": "299534",
+  "shaw:1816": "1255833",
+  "shaw:1826": "1263337",
+  "shaw:1827": "1400837",
+  "shaw:1828": "1503762",
+  "shaw:1833": "1400940",
+  "shaw:1835": "1170608",
+  "shaw:1843": "1088548",
+  "shaw:1869": "1260649",
+  "shaw:1874": "1294189",
+  "shaw:1877": "1538497",
+  "shaw:1881": "1078446",
+  "shaw:1882": "1300926",
+  "shaw:1890": "1319525",
+  "shaw:1892": "1384758",
+  "shaw:1894": "791523",
+  "shaw:1900": "1567605",
+  "shaw:1901": "1649403",
+  "shaw:2006": "748681",
+  "shaw:2011": "656908",
+  "shaw:2014": "1185344",
+  "shaw:2015": "299534",
+  "shaw:2030": "1386467",
+  "shaw:2031": "1386467",
+  "shaw:2034": "1003596",
+  "shaw:2037": "1193673",
+  "shaw:2052": "1153576",
+  "shaw:2068": "804",
+  "shaw:2071": "1234139",
+  "shaw:2072": "1234139",
+  "shaw:2073": "1584855",
+  "shaw:2078": "1381071",
+  "shaw:2081": "747509",
+  "shaw:2082": "1381071",
+  "shaw:2084": "656908",
+  "shaw:2085": "1503023",
+  "shaw:2086": "36557",
+  "shaw:2087": "164",
+  "shaw:2089": "1402181"
+ },
+ "films": {
+  "55": {
+   "title": "Amores Perros",
+   "year": 2000,
+   "imdb_id": "tt0245712",
+   "imdb": 8.0,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/amores-perros/"
+  },
+  "76": {
+   "title": "Before Sunrise",
+   "year": 1995,
+   "imdb_id": "tt0112471",
+   "imdb": 8.1,
+   "letterboxd": 4.3,
+   "letterboxd_url": "https://letterboxd.com/film/before-sunrise/"
+  },
+  "146": {
+   "title": "Crouching Tiger, Hidden Dragon",
+   "year": 2000,
+   "imdb_id": "tt0190332",
+   "imdb": 7.8,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/crouching-tiger-hidden-dragon/"
+  },
+  "164": {
+   "title": "Breakfast at Tiffany's",
+   "year": 1961,
+   "imdb_id": "tt0054698",
+   "imdb": 7.5,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/breakfast-at-tiffanys/"
+  },
+  "194": {
+   "title": "Amélie",
+   "year": 2001,
+   "imdb_id": "tt0211915",
+   "imdb": 8.2,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/amelie/"
+  },
+  "804": {
+   "title": "Roman Holiday",
+   "year": 1953,
+   "imdb_id": "tt0046250",
+   "imdb": 8.0,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/roman-holiday/"
+  },
+  "892": {
+   "title": "Delicatessen",
+   "year": 1991,
+   "imdb_id": "tt0101700",
+   "imdb": 7.5,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/delicatessen/"
+  },
+  "902": {
+   "title": "The City of Lost Children",
+   "year": 1995,
+   "imdb_id": "tt0112682",
+   "imdb": 7.4,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/the-city-of-lost-children/"
+  },
+  "2011": {
+   "title": "Persepolis",
+   "year": 2007,
+   "imdb_id": "tt0808417",
+   "imdb": 8.0,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/persepolis/"
+  },
+  "2204": {
+   "title": "Alice in the Cities",
+   "year": 1974,
+   "imdb_id": "tt0069687",
+   "imdb": 7.8,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/alice-in-the-cities/"
+  },
+  "9297": {
+   "title": "Monster House",
+   "year": 2006,
+   "imdb_id": "tt0385880",
+   "imdb": 6.7,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/monster-house/"
+  },
+  "10515": {
+   "title": "Castle in the Sky",
+   "year": 1986,
+   "imdb_id": "tt0092067",
+   "imdb": 8.0,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/castle-in-the-sky/"
+  },
+  "11031": {
+   "title": "This Is Spinal Tap",
+   "year": 1984,
+   "imdb_id": "tt0088258",
+   "imdb": 7.9,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/this-is-spinal-tap/"
+  },
+  "12429": {
+   "title": "Ponyo",
+   "year": 2008,
+   "imdb_id": "tt0876563",
+   "imdb": 7.6,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/ponyo/"
+  },
+  "24128": {
+   "title": "Stop Making Sense",
+   "year": 1984,
+   "imdb_id": "tt0088178",
+   "imdb": 8.7,
+   "letterboxd": 4.7,
+   "letterboxd_url": "https://letterboxd.com/film/stop-making-sense/"
+  },
+  "36557": {
+   "title": "Casino Royale",
+   "year": 2006,
+   "imdb_id": "tt0381061",
+   "imdb": 8.0,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/casino-royale-2006/"
+  },
+  "36685": {
+   "title": "The Rocky Horror Picture Show",
+   "year": 1975,
+   "imdb_id": "tt0073629",
+   "imdb": 7.4,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/the-rocky-horror-picture-show/"
+  },
+  "42845": {
+   "title": "The Blade",
+   "year": 1995,
+   "imdb_id": "tt0112800",
+   "imdb": 6.9,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/the-blade/"
+  },
+  "44154": {
+   "title": "A Touch of Zen",
+   "year": 1970,
+   "imdb_id": "tt0064451",
+   "imdb": 7.5,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/a-touch-of-zen/"
+  },
+  "47002": {
+   "title": "Love Letter",
+   "year": 1995,
+   "imdb_id": "tt0113703",
+   "imdb": 7.9,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/love-letter/"
+  },
+  "76341": {
+   "title": "Mad Max: Fury Road",
+   "year": 2015,
+   "imdb_id": "tt1392190",
+   "imdb": 8.1,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/mad-max-fury-road/"
+  },
+  "170924": {
+   "title": "Macho Dancer",
+   "year": 1989,
+   "imdb_id": "tt0095562",
+   "imdb": 6.6,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/macho-dancer/"
+  },
+  "187021": {
+   "title": "My Name Ain't Suzie",
+   "year": 1985,
+   "imdb_id": "tt0089651",
+   "imdb": 6.5,
+   "letterboxd": 3.6,
+   "letterboxd_url": "https://letterboxd.com/film/my-name-aint-suzie/"
+  },
+  "246741": {
+   "title": "What We Do in the Shadows",
+   "year": 2014,
+   "imdb_id": "tt3416742",
+   "imdb": 7.6,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/what-we-do-in-the-shadows/"
+  },
+  "249101": {
+   "title": "Raja Bersiong",
+   "year": 1963,
+   "imdb_id": "tt33094593",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/raja-bersiong/"
+  },
+  "249504": {
+   "title": "Darah Ku",
+   "year": 1963,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/darah-ku/"
+  },
+  "286237": {
+   "title": "Sultan Mahmood Mangkat Di-Julang",
+   "year": 1961,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/sultan-mahmood-mangkat-di-julang/"
+  },
+  "299534": {
+   "title": "Avengers: Endgame",
+   "year": 2019,
+   "imdb_id": "tt4154796",
+   "imdb": 8.4,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/avengers-endgame/"
+  },
+  "313369": {
+   "title": "La La Land",
+   "year": 2016,
+   "imdb_id": "tt3783958",
+   "imdb": 8.0,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/la-la-land/"
+  },
+  "376867": {
+   "title": "Moonlight",
+   "year": 2016,
+   "imdb_id": "tt4975722",
+   "imdb": 7.4,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/moonlight-2016/"
+  },
+  "458624": {
+   "title": "A Wicked Tale",
+   "year": 2005,
+   "imdb_id": "tt0462064",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/a-wicked-tale/"
+  },
+  "467914": {
+   "title": "The Land of Sometimes",
+   "year": 2026,
+   "imdb_id": "tt3517106",
+   "imdb": 4.6,
+   "letterboxd": 2.8,
+   "letterboxd_url": "https://letterboxd.com/film/the-land-of-sometimes/"
+  },
+  "493922": {
+   "title": "Hereditary",
+   "year": 2018,
+   "imdb_id": "tt7784604",
+   "imdb": 7.3,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/hereditary/"
+  },
+  "561483": {
+   "title": "Permata Di-Perlimbahan",
+   "year": 1952,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/permata-di-perlimbahan/"
+  },
+  "615121": {
+   "title": "The Thomas Crown Affair",
+   "year": 2027,
+   "imdb_id": "tt5500064",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-thomas-crown-affair-2027/"
+  },
+  "621304": {
+   "title": "Children of Blood and Bone",
+   "year": 2027,
+   "imdb_id": "tt6779038",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/children-of-blood-and-bone/"
+  },
+  "656908": {
+   "title": "Ramayana: Rise of a Legend",
+   "year": 2026,
+   "imdb_id": "tt27988879",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
+  },
+  "747509": {
+   "title": "Ah Girl",
+   "year": 2026,
+   "imdb_id": "tt35683770",
+   "imdb": null,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/ah-girl/"
+  },
+  "748681": {
+   "title": "The Violinist",
+   "year": 2026,
+   "imdb_id": "tt30388264",
+   "imdb": 7.4,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/the-violinist-2026/"
+  },
+  "784267": {
+   "title": "Landmark",
+   "year": 1993,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/landmark/"
+  },
+  "791523": {
+   "title": "Wildwood",
+   "year": 2026,
+   "imdb_id": "tt2056785",
+   "imdb": 8.7,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/wildwood-2026/"
+  },
+  "822653": {
+   "title": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+   "year": 2026,
+   "imdb_id": "tt14523706",
+   "imdb": null,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/puella-magi-madoka-magica-the-movie-walpurgisnacht/"
+  },
+  "848700": {
+   "title": "Minotaur",
+   "year": 2026,
+   "imdb_id": "tt37118301",
+   "imdb": 7.7,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/minotaur-2026/"
+  },
+  "884692": {
+   "title": "We Are All Strangers",
+   "year": 2026,
+   "imdb_id": "tt13848364",
+   "imdb": 7.2,
+   "letterboxd": 3.3,
+   "letterboxd_url": "https://letterboxd.com/film/we-are-all-strangers/"
+  },
+  "927547": {
+   "title": "All We Imagine as Light",
+   "year": 2024,
+   "imdb_id": "tt32086077",
+   "imdb": 7.0,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/all-we-imagine-as-light/"
+  },
+  "950028": {
+   "title": "The Invite",
+   "year": 2026,
+   "imdb_id": "tt14173636",
+   "imdb": 7.4,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/"
+  },
+  "969681": {
+   "title": "Spider-Man: Brand New Day",
+   "year": 2026,
+   "imdb_id": "tt22084616",
+   "imdb": 7.9,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/spider-man-brand-new-day/"
+  },
+  "1003596": {
+   "title": "Avengers: Doomsday",
+   "year": 2026,
+   "imdb_id": "tt21357150",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/avengers-doomsday/"
+  },
+  "1078446": {
+   "title": "Violent Night 2",
+   "year": 2026,
+   "imdb_id": "tt32432428",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/violent-night-2/"
+  },
+  "1081010": {
+   "title": "Prahaar: The Untold Story of Ujjwal Nikam",
+   "year": 2026,
+   "imdb_id": "tt28773062",
+   "imdb": 8.6,
+   "letterboxd": 3.4,
+   "letterboxd_url": "https://letterboxd.com/film/prahaar-the-untold-story-of-ujjwal-nikam/"
+  },
+  "1084409": {
+   "title": "A Talent for Murder",
+   "year": 2026,
+   "imdb_id": "tt14129116",
+   "imdb": 6.8,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/a-talent-for-murder-2026/"
+  },
+  "1088548": {
+   "title": "Bitter Christmas",
+   "year": 2026,
+   "imdb_id": "tt28088049",
+   "imdb": 6.3,
+   "letterboxd": 3.1,
+   "letterboxd_url": "https://letterboxd.com/film/bitter-christmas/"
+  },
+  "1117898": {
+   "title": "The Cat in the Hat",
+   "year": 2026,
+   "imdb_id": "tt2321555",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/"
+  },
+  "1153576": {
+   "title": "Street Fighter",
+   "year": 2026,
+   "imdb_id": "tt27419420",
+   "imdb": 6.2,
+   "letterboxd": 2.8,
+   "letterboxd_url": "https://letterboxd.com/film/street-fighter-2026/"
+  },
+  "1157628": {
+   "title": "A Feeling Of Music Playing",
+   "year": 2023,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/a-feeling-of-music-playing/"
+  },
+  "1170608": {
+   "title": "Dune: Part Three",
+   "year": 2026,
+   "imdb_id": "tt31378509",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/dune-part-three/"
+  },
+  "1185344": {
+   "title": "The Beast",
+   "year": 2026,
+   "imdb_id": "tt29256561",
+   "imdb": 5.3,
+   "letterboxd": 2.7,
+   "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
+  },
+  "1185806": {
+   "title": "PAW Patrol: The Dino Movie",
+   "year": 2026,
+   "imdb_id": "tt29356163",
+   "imdb": 6.0,
+   "letterboxd": 2.9,
+   "letterboxd_url": "https://letterboxd.com/film/paw-patrol-the-dino-movie/"
+  },
+  "1193673": {
+   "title": "Oh My Ghost! Oh My God!",
+   "year": 2026,
+   "imdb_id": "tt43560584",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/oh-my-ghost-oh-my-god/"
+  },
+  "1204680": {
+   "title": "Coyote vs. Acme",
+   "year": 2026,
+   "imdb_id": "tt1756855",
+   "imdb": 7.3,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/coyote-vs-acme/"
+  },
+  "1212310": {
+   "title": "Winter of the Crow",
+   "year": 2026,
+   "imdb_id": "tt30235784",
+   "imdb": 6.3,
+   "letterboxd": 3.3,
+   "letterboxd_url": "https://letterboxd.com/film/winter-of-the-crow/"
+  },
+  "1234139": {
+   "title": "Jailer 2",
+   "year": 2026,
+   "imdb_id": "tt33318732",
+   "imdb": 8.1,
+   "letterboxd": 3.4,
+   "letterboxd_url": "https://letterboxd.com/film/jailer-2-2026/"
+  },
+  "1248832": {
+   "title": "Digger",
+   "year": 2026,
+   "imdb_id": "tt31450459",
+   "imdb": 7.5,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/digger-2026/"
+  },
+  "1255833": {
+   "title": "Whalefall",
+   "year": 2026,
+   "imdb_id": "tt28535715",
+   "imdb": 6.6,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/whalefall/"
+  },
+  "1260649": {
+   "title": "Jumanji: Open World",
+   "year": 2026,
+   "imdb_id": "tt26735127",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/jumanji-open-world/"
+  },
+  "1263337": {
+   "title": "Heart of the Beast",
+   "year": 2026,
+   "imdb_id": "tt7526136",
+   "imdb": 7.2,
+   "letterboxd": 3.3,
+   "letterboxd_url": "https://letterboxd.com/film/heart-of-the-beast-2026/"
+  },
+  "1269325": {
+   "title": "Drishyam: The Conclusion",
+   "year": 2026,
+   "imdb_id": "tt27050858",
+   "imdb": 7.7,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/drishyam-the-conclusion/"
+  },
+  "1281331": {
+   "title": "The Social Reckoning",
+   "year": 2026,
+   "imdb_id": "tt37510326",
+   "imdb": 6.7,
+   "letterboxd": 3.0,
+   "letterboxd_url": "https://letterboxd.com/film/the-social-reckoning/"
+  },
+  "1283515": {
+   "title": "Verity",
+   "year": 2026,
+   "imdb_id": "tt32261958",
+   "imdb": 6.0,
+   "letterboxd": 2.6,
+   "letterboxd_url": "https://letterboxd.com/film/verity-2026/"
+  },
+  "1286656": {
+   "title": "I Play Rocky",
+   "year": 2026,
+   "imdb_id": "tt11995650",
+   "imdb": 7.8,
+   "letterboxd": 3.6,
+   "letterboxd_url": "https://letterboxd.com/film/i-play-rocky/"
+  },
+  "1294189": {
+   "title": "The Mongoose",
+   "year": 2026,
+   "imdb_id": "tt13611778",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-mongoose-2026/"
+  },
+  "1300926": {
+   "title": "The Angry Birds Movie 3",
+   "year": 2026,
+   "imdb_id": "tt32557122",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-angry-birds-movie-3/"
+  },
+  "1315772": {
+   "title": "Minions & Monsters",
+   "year": 2026,
+   "imdb_id": "tt32890033",
+   "imdb": 6.3,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/"
+  },
+  "1319525": {
+   "title": "Henry's First Dates",
+   "year": 2026,
+   "imdb_id": "tt37846333",
+   "imdb": 7.5,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/henrys-first-dates/"
+  },
+  "1327835": {
+   "title": "Mookuthi Amman 2",
+   "year": 2026,
+   "imdb_id": "tt32909364",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/mookuthi-amman-2/"
+  },
+  "1368337": {
+   "title": "The Odyssey",
+   "year": 2026,
+   "imdb_id": "tt33764258",
+   "imdb": 8.4,
+   "letterboxd": 4.3,
+   "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/"
+  },
+  "1370096": {
+   "title": "Al Awda",
+   "year": 2024,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/al-awda/"
+  },
+  "1375156": {
+   "title": "Udta Teer",
+   "year": 2026,
+   "imdb_id": "tt31806773",
+   "imdb": 6.8,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/udta-teer/"
+  },
+  "1379266": {
+   "title": "Kokuho",
+   "year": 2025,
+   "imdb_id": "tt35231039",
+   "imdb": 7.5,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/kokuho/"
+  },
+  "1381071": {
+   "title": "Godzilla Minus Zero",
+   "year": 2026,
+   "imdb_id": "tt34384661",
+   "imdb": 8.0,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/"
+  },
+  "1384758": {
+   "title": "Ice Age: Boiling Point",
+   "year": 2027,
+   "imdb_id": "tt34512981",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/ice-age-boiling-point/"
+  },
+  "1386467": {
+   "title": "The Mage",
+   "year": 2026,
+   "imdb_id": "tt32432312",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-mage/"
+  },
+  "1391021": {
+   "title": "Once Upon a Time in the Middle East",
+   "year": 2026,
+   "imdb_id": "tt34386754",
+   "imdb": 8.3,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/once-upon-a-time-in-the-middle-east/"
+  },
+  "1400336": {
+   "title": "Focker-in-Law",
+   "year": 2026,
+   "imdb_id": "tt34966140",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/focker-in-law/"
+  },
+  "1400837": {
+   "title": "Other Mommy",
+   "year": 2026,
+   "imdb_id": "tt36586020",
+   "imdb": 5.3,
+   "letterboxd": 2.2,
+   "letterboxd_url": "https://letterboxd.com/film/other-mommy/"
+  },
+  "1400940": {
+   "title": "Clayface",
+   "year": 2026,
+   "imdb_id": "tt34890576",
+   "imdb": 7.5,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/clayface/"
+  },
+  "1401459": {
+   "title": "Fjord",
+   "year": 2026,
+   "imdb_id": "tt35410859",
+   "imdb": 7.6,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/fjord-2026/"
+  },
+  "1402181": {
+   "title": "Scene",
+   "year": 2026,
+   "imdb_id": "tt38192494",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/scene-2026/"
+  },
+  "1421155": {
+   "title": "Ikatan Darah",
+   "year": 2026,
+   "imdb_id": "tt38221401",
+   "imdb": 7.0,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/ikatan-darah/"
+  },
+  "1422041": {
+   "title": "LA BOLA NEGRA",
+   "year": 2026,
+   "imdb_id": "tt35511966",
+   "imdb": 8.1,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/la-bola-negra/"
+  },
+  "1423191": {
+   "title": "Resident Evil",
+   "year": 2026,
+   "imdb_id": "tt35538033",
+   "imdb": 7.5,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/resident-evil-2026/"
+  },
+  "1425085": {
+   "title": "Finding Mojo",
+   "year": 2026,
+   "imdb_id": "tt35611573",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/finding-mojo/"
+  },
+  "1433583": {
+   "title": "The Weight",
+   "year": 2026,
+   "imdb_id": "tt10794054",
+   "imdb": 6.7,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/the-weight-2026/"
+  },
+  "1437511": {
+   "title": "How to Rob a Bank",
+   "year": 2026,
+   "imdb_id": "tt35866986",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/"
+  },
+  "1437696": {
+   "title": "Fatherland",
+   "year": 2026,
+   "imdb_id": "tt37304295",
+   "imdb": 7.3,
+   "letterboxd": 3.6,
+   "letterboxd_url": "https://letterboxd.com/film/fatherland-2026/"
+  },
+  "1437981": {
+   "title": "Coward",
+   "year": 2026,
+   "imdb_id": "tt39328391",
+   "imdb": 7.5,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/coward-2026/"
+  },
+  "1465063": {
+   "title": "Forgotten Island",
+   "year": 2026,
+   "imdb_id": "tt36583977",
+   "imdb": 7.6,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/forgotten-island-2026/"
+  },
+  "1476614": {
+   "title": "All of a Sudden",
+   "year": 2026,
+   "imdb_id": "tt36834996",
+   "imdb": 8.1,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/all-of-a-sudden-2026/"
+  },
+  "1477104": {
+   "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+   "year": 2026,
+   "imdb_id": "tt36841161",
+   "imdb": 7.1,
+   "letterboxd": 3.6,
+   "letterboxd_url": "https://letterboxd.com/film/shaun-the-sheep-the-beast-of-mossy-bottom/"
+  },
+  "1480503": {
+   "title": "CoComelon: The Movie",
+   "year": 2027,
+   "imdb_id": "tt31339071",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/cocomelon-the-movie/"
+  },
+  "1497464": {
+   "title": "Gatto",
+   "year": 2027,
+   "imdb_id": "tt26443610",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/gatto/"
+  },
+  "1503023": {
+   "title": "Go for Broke 2",
+   "year": 2026,
+   "imdb_id": "tt41558341",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/go-for-broke-2-2026/"
+  },
+  "1503762": {
+   "title": "Sense and Sensibility",
+   "year": 2026,
+   "imdb_id": "tt13609648",
+   "imdb": 7.3,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/sense-and-sensibility-2026/"
+  },
+  "1515692": {
+   "title": "Baththa",
+   "year": 2026,
+   "imdb_id": "tt44090278",
+   "imdb": 9.0,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/baththa/"
+  },
+  "1538497": {
+   "title": "Hexed",
+   "year": 2026,
+   "imdb_id": "tt38077943",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/hexed-2026/"
+  },
+  "1555810": {
+   "title": "The Old Man and His Car",
+   "year": 2026,
+   "imdb_id": "tt38589232",
+   "imdb": null,
+   "letterboxd": 3.3,
+   "letterboxd_url": "https://letterboxd.com/film/the-old-man-and-his-car/"
+  },
+  "1567605": {
+   "title": "Ebenezer",
+   "year": 2026,
+   "imdb_id": "tt38773219",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/ebenezer-2026/"
+  },
+  "1567791": {
+   "title": "Munafik: Melawan Iblis",
+   "year": 2026,
+   "imdb_id": "tt38782610",
+   "imdb": null,
+   "letterboxd": 2.9,
+   "letterboxd_url": "https://letterboxd.com/film/munafik-melawan-iblis/"
+  },
+  "1567937": {
+   "title": "V",
+   "year": 2026,
+   "imdb_id": "tt38775487",
+   "imdb": 7.0,
+   "letterboxd": 3.3,
+   "letterboxd_url": "https://letterboxd.com/film/v-2026/"
+  },
+  "1584855": {
+   "title": "Paradise Lost",
+   "year": 2026,
+   "imdb_id": "tt43658893",
+   "imdb": null,
+   "letterboxd": 3.0,
+   "letterboxd_url": "https://letterboxd.com/film/paradise-lost-2026-1/"
+  },
+  "1586876": {
+   "title": "Chiikawa the Movie: The Secret of the Mermaid Island",
+   "year": 2026,
+   "imdb_id": "tt39026173",
+   "imdb": 7.4,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/chiikawa-the-movie-the-secret-of-the-mermaid/"
+  },
+  "1591675": {
+   "title": "Look Back",
+   "year": 2026,
+   "imdb_id": "tt39094466",
+   "imdb": 7.6,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/look-back-2026/"
+  },
+  "1598766": {
+   "title": "Crayon Shinchan the Movie: Spooky! My Yokai Vacation",
+   "year": 2026,
+   "imdb_id": "tt41293342",
+   "imdb": null,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/crayon-shinchan-the-movie-spooky-my-yokai/"
+  },
+  "1601002": {
+   "title": "The House on the Moon",
+   "year": 2026,
+   "imdb_id": "tt39334277",
+   "imdb": null,
+   "letterboxd": 3.1,
+   "letterboxd_url": "https://letterboxd.com/film/the-house-on-the-moon-2026/"
+  },
+  "1612811": {
+   "title": "Disco",
+   "year": 2026,
+   "imdb_id": "tt39346312",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/disco-2026-2/"
+  },
+  "1623376": {
+   "title": "Blue Lock",
+   "year": 2026,
+   "imdb_id": "tt39400168",
+   "imdb": 6.4,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/blue-lock-2026/"
+  },
+  "1629051": {
+   "title": "Never After Dark",
+   "year": 2026,
+   "imdb_id": "tt38589433",
+   "imdb": 6.7,
+   "letterboxd": 3.6,
+   "letterboxd_url": "https://letterboxd.com/film/never-after-dark/"
+  },
+  "1633056": {
+   "title": "All Wishes Come True!",
+   "year": 2026,
+   "imdb_id": "tt43515101",
+   "imdb": 8.0,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/all-wishes-come-true/"
+  },
+  "1649403": {
+   "title": "George Michael: The Faith Tour",
+   "year": 2026,
+   "imdb_id": "tt40564737",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/george-michael-the-faith-tour/"
+  },
+  "1654581": {
+   "title": "Nayyi Navelli",
+   "year": 2026,
+   "imdb_id": "tt40855841",
+   "imdb": 5.5,
+   "letterboxd": 2.8,
+   "letterboxd_url": "https://letterboxd.com/film/nayyi-navelli/"
+  },
+  "1679026": {
+   "title": "Itam: A Sun Bear Story",
+   "year": 2026,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/itam-a-sun-bear-story/"
+  },
+  "1716531": {
+   "title": "Drones",
+   "year": 2026,
+   "imdb_id": "tt43088118",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/drones-2026/"
+  },
+  "1718699": {
+   "title": "Not Alone",
+   "year": 2027,
+   "imdb_id": "tt43609247",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/not-alone-2027/"
+  },
+  "1731816": {
+   "title": "Kudrat 1968: High Council",
+   "year": 2026,
+   "imdb_id": "tt49276988",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/kudrat-1968-high-council/"
+  },
+  "1746726": {
+   "title": "Pace",
+   "year": 2026,
+   "imdb_id": "tt46083068",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/pace-2026/"
+  },
+  "1748404": {
+   "title": "Always Yours, Never Mine",
+   "year": 2026,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": 3.0,
+   "letterboxd_url": "https://letterboxd.com/film/always-yours-never-mine/"
+  },
+  "1759202": {
+   "title": "Eda Raa",
+   "year": 2026,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/eda-raa/"
+  },
+  "1777750": {
+   "title": "Detective Conan: The Counterfeit Case of Ultra 30",
+   "year": 2026,
+   "imdb_id": "tt46656123",
+   "imdb": null,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/detective-conan-the-counterfeit-case-of-ultra/"
+  }
+ },
+ "matches": {
+  "a feeling of music playing": {
+   "tmdb": 1157628,
+   "checked": "2026-10-30"
+  },
+  "a talent for murder": {
+   "tmdb": 1084409,
+   "checked": "2026-10-30"
+  },
+  "a touch of zen": {
+   "tmdb": 44154,
+   "checked": "2026-10-30"
+  },
+  "a wicked tale": {
+   "tmdb": 458624,
+   "checked": "2026-10-30"
+  },
+  "aadarsha kutumbam house no 47 ak": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "ah girl": {
+   "tmdb": 747509,
+   "checked": "2026-10-30"
+  },
+  "al awda": {
+   "tmdb": 1370096,
+   "checked": "2026-10-30"
+  },
+  "alice in the cities": {
+   "tmdb": 2204,
+   "checked": "2026-10-30"
+  },
+  "all of a sudden": {
+   "tmdb": 1476614,
+   "checked": "2026-10-30"
+  },
+  "all we imagine as light": {
+   "tmdb": 927547,
+   "checked": "2026-10-30"
+  },
+  "all wishes come true": {
+   "tmdb": 1633056,
+   "checked": "2026-10-30"
+  },
+  "always yours never mine": {
+   "tmdb": 1748404,
+   "checked": "2026-10-30"
+  },
+  "amelie": {
+   "tmdb": 194,
+   "checked": "2026-10-30"
+  },
+  "amores perros": {
+   "tmdb": 55,
+   "checked": "2026-10-30"
+  },
+  "avengers doomsday": {
+   "tmdb": 1003596,
+   "checked": "2026-10-30"
+  },
+  "avengers endgame": {
+   "tmdb": 299534,
+   "checked": "2026-10-30"
+  },
+  "avengers endgame x doomsday marathon": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "back to love": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "baththa": {
+   "tmdb": 1515692,
+   "checked": "2026-10-30"
+  },
+  "before sunrise": {
+   "tmdb": 76,
+   "checked": "2026-10-30"
+  },
+  "bitter christmas": {
+   "tmdb": 1088548,
+   "checked": "2026-10-30"
+  },
+  "blue lock": {
+   "tmdb": 1623376,
+   "checked": "2026-10-30"
+  },
+  "breakfast at tiffanys": {
+   "tmdb": 164,
+   "checked": "2026-10-30"
+  },
+  "bts world tour arirang in sao paulo live viewing": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "cartoons underground programme a held breath": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "cartoons underground programme b rip tides": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "cartoons underground programme c playground for kids": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "casino royale": {
+   "tmdb": 36557,
+   "checked": "2026-10-30"
+  },
+  "castle in the sky": {
+   "tmdb": 10515,
+   "checked": "2026-10-30"
+  },
+  "chiikawa the movie the secret of the mermaid island": {
+   "tmdb": 1586876,
+   "checked": "2026-10-30"
+  },
+  "children of blood and bone": {
+   "tmdb": 621304,
+   "checked": "2026-10-30"
+  },
+  "clayface": {
+   "tmdb": 1400940,
+   "checked": "2026-10-30"
+  },
+  "cocomelon the movie": {
+   "tmdb": 1480503,
+   "checked": "2026-10-30"
+  },
+  "coward": {
+   "tmdb": 1437981,
+   "checked": "2026-10-30"
+  },
+  "coyote vs acme": {
+   "tmdb": 1204680,
+   "checked": "2026-10-30"
+  },
+  "crayon shinchan the movie spooky my yokai vacation": {
+   "tmdb": 1598766,
+   "checked": "2026-10-30"
+  },
+  "crouching tiger hidden dragon": {
+   "tmdb": 146,
+   "checked": "2026-10-30"
+  },
+  "darah ku": {
+   "tmdb": 249504,
+   "checked": "2026-10-30"
+  },
+  "delicatessen": {
+   "tmdb": 892,
+   "checked": "2026-10-30"
+  },
+  "detective conan episode zero the shinichi kudo aquarium case": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "detective conan the counterfeit case of ultra 30": {
+   "tmdb": 1777750,
+   "checked": "2026-10-30"
+  },
+  "detective conan the movie fallen angels of the highway": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "digger": {
+   "tmdb": 1248832,
+   "checked": "2026-10-30"
+  },
+  "disco": {
+   "tmdb": 1612811,
+   "checked": "2026-10-30"
+  },
+  "drishyam the conclusion": {
+   "tmdb": 1269325,
+   "checked": "2026-10-30"
+  },
+  "drones": {
+   "tmdb": 1716531,
+   "checked": "2026-10-30"
+  },
+  "dune part three": {
+   "tmdb": 1170608,
+   "checked": "2026-10-30"
+  },
+  "ebenezer": {
+   "tmdb": 1567605,
+   "checked": "2026-10-30"
+  },
+  "eda raa": {
+   "tmdb": 1759202,
+   "checked": "2026-10-30"
+  },
+  "exo planet 6 exhorizon in cinemas": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "fatherland": {
+   "tmdb": 1437696,
+   "checked": "2026-10-30"
+  },
+  "finding mojo": {
+   "tmdb": 1425085,
+   "checked": "2026-10-30"
+  },
+  "fjord": {
+   "tmdb": 1401459,
+   "checked": "2026-10-30"
+  },
+  "focker in law": {
+   "tmdb": 1400336,
+   "checked": "2026-10-30"
+  },
+  "forgotten island": {
+   "tmdb": 1465063,
+   "checked": "2026-10-30"
+  },
+  "gatto": {
+   "tmdb": 1497464,
+   "checked": "2026-10-30"
+  },
+  "george michael the faith tour": {
+   "tmdb": 1649403,
+   "checked": "2026-10-30"
+  },
+  "go for broke 2": {
+   "tmdb": 1503023,
+   "checked": "2026-10-30"
+  },
+  "godzilla minus zero": {
+   "tmdb": 1381071,
+   "checked": "2026-10-30"
+  },
+  "heart of the beast": {
+   "tmdb": 1263337,
+   "checked": "2026-10-30"
+  },
+  "henrys first dates": {
+   "tmdb": 1319525,
+   "checked": "2026-10-30"
+  },
+  "hereditary": {
+   "tmdb": 493922,
+   "checked": "2026-10-30"
+  },
+  "hexed": {
+   "tmdb": 1538497,
+   "checked": "2026-10-30"
+  },
+  "hoshimachi suisei once upon a stellar live viewing": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "how to rob a bank": {
+   "tmdb": 1437511,
+   "checked": "2026-10-30"
+  },
+  "i play rocky": {
+   "tmdb": 1286656,
+   "checked": "2026-10-30"
+  },
+  "ice age boiling point": {
+   "tmdb": 1384758,
+   "checked": "2026-10-30"
+  },
+  "ikatan darah": {
+   "tmdb": 1421155,
+   "checked": "2026-10-30"
+  },
+  "itam a sun bear story": {
+   "tmdb": 1679026,
+   "checked": "2026-10-30"
+  },
+  "jailer 2": {
+   "tmdb": 1234139,
+   "checked": "2026-10-30"
+  },
+  "jeonghan x joshua journey into japan live viewing": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "jumanji open world": {
+   "tmdb": 1260649,
+   "checked": "2026-10-30"
+  },
+  "kokuho": {
+   "tmdb": 1379266,
+   "checked": "2026-10-30"
+  },
+  "kudrat 1968 high council": {
+   "tmdb": 1731816,
+   "checked": "2026-10-30"
+  },
+  "la bola negra": {
+   "tmdb": 1422041,
+   "checked": "2026-10-30"
+  },
+  "la la land": {
+   "tmdb": 313369,
+   "checked": "2026-10-30"
+  },
+  "landmark": {
+   "tmdb": 784267,
+   "checked": "2026-10-30"
+  },
+  "look back": {
+   "tmdb": 1591675,
+   "checked": "2026-10-30"
+  },
+  "love letter": {
+   "tmdb": 47002,
+   "checked": "2026-10-30"
+  },
+  "macho dancer": {
+   "tmdb": 170924,
+   "checked": "2026-10-30"
+  },
+  "mad max fury road": {
+   "tmdb": 76341,
+   "checked": "2026-10-30"
+  },
+  "minions and monsters": {
+   "tmdb": 1315772,
+   "checked": "2026-10-30"
+  },
+  "minotaur": {
+   "tmdb": 848700,
+   "checked": "2026-10-30"
+  },
+  "monster house": {
+   "tmdb": 9297,
+   "checked": "2026-10-30"
+  },
+  "mookuthi amman 2": {
+   "tmdb": 1327835,
+   "checked": "2026-10-30"
+  },
+  "moonlight": {
+   "tmdb": 376867,
+   "checked": "2026-10-30"
+  },
+  "munafik melawan iblis": {
+   "tmdb": 1567791,
+   "checked": "2026-10-30"
+  },
+  "my name aint suzie": {
+   "tmdb": 187021,
+   "checked": "2026-10-30"
+  },
+  "nayyi navelli": {
+   "tmdb": 1654581,
+   "checked": "2026-10-30"
+  },
+  "never after dark": {
+   "tmdb": 1629051,
+   "checked": "2026-10-30"
+  },
+  "not alone": {
+   "tmdb": 1718699,
+   "checked": "2026-10-30"
+  },
+  "oh my ghost oh my god": {
+   "tmdb": 1193673,
+   "checked": "2026-10-30"
+  },
+  "once upon a time in the middle east": {
+   "tmdb": 1391021,
+   "checked": "2026-10-30"
+  },
+  "other mommy": {
+   "tmdb": 1400837,
+   "checked": "2026-10-30"
+  },
+  "pace": {
+   "tmdb": 1746726,
+   "checked": "2026-10-30"
+  },
+  "panelstory or how a housing development is born": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "paradise lost": {
+   "tmdb": 1584855,
+   "checked": "2026-10-30"
+  },
+  "paw patrol the dino movie": {
+   "tmdb": 1185806,
+   "checked": "2026-10-30"
+  },
+  "permata di perlimbahan": {
+   "tmdb": 561483,
+   "checked": "2026-10-30"
+  },
+  "persepolis": {
+   "tmdb": 2011,
+   "checked": "2026-10-30"
+  },
+  "ponyo": {
+   "tmdb": 12429,
+   "checked": "2026-10-30"
+  },
+  "prahaar the untold story of ujjwal nikam": {
+   "tmdb": 1081010,
+   "checked": "2026-10-30"
+  },
+  "puella magi madoka magica the movie walpurgisnacht rising": {
+   "tmdb": 822653,
+   "checked": "2026-10-30"
+  },
+  "raja bersiong": {
+   "tmdb": 249101,
+   "checked": "2026-10-30"
+  },
+  "ramayana rise of a legend": {
+   "tmdb": 656908,
+   "checked": "2026-10-30"
+  },
+  "resident evil": {
+   "tmdb": 1423191,
+   "checked": "2026-10-30"
+  },
+  "roman holiday": {
+   "tmdb": 804,
+   "checked": "2026-10-30"
+  },
+  "scene": {
+   "tmdb": 1402181,
+   "checked": "2026-10-30"
+  },
+  "sense and sensibility": {
+   "tmdb": 1503762,
+   "checked": "2026-10-30"
+  },
+  "shaun the sheep the beast of mossy bottom": {
+   "tmdb": 1477104,
+   "checked": "2026-10-30"
+  },
+  "spider man brand new day": {
+   "tmdb": 969681,
+   "checked": "2026-10-30"
+  },
+  "stop making sense": {
+   "tmdb": 24128,
+   "checked": "2026-10-30"
+  },
+  "stray kids world tour live viewing": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "street fighter": {
+   "tmdb": 1153576,
+   "checked": "2026-10-30"
+  },
+  "sultan mahmood mangkat di julang": {
+   "tmdb": 286237,
+   "checked": "2026-10-30"
+  },
+  "the angry birds movie 3": {
+   "tmdb": 1300926,
+   "checked": "2026-10-30"
+  },
+  "the beast": {
+   "tmdb": 1185344,
+   "checked": "2026-10-30"
+  },
+  "the blade": {
+   "tmdb": 42845,
+   "checked": "2026-10-30"
+  },
+  "the cat in the hat": {
+   "tmdb": 1117898,
+   "checked": "2026-10-30"
+  },
+  "the city of lost children": {
+   "tmdb": 902,
+   "checked": "2026-10-30"
+  },
+  "the execution": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "the fellow who rejected college": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "the hopeless 10": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "the house on the moon": {
+   "tmdb": 1601002,
+   "checked": "2026-10-30"
+  },
+  "the invite": {
+   "tmdb": 950028,
+   "checked": "2026-10-30"
+  },
+  "the land of sometimes": {
+   "tmdb": 467914,
+   "checked": "2026-10-30"
+  },
+  "the mage": {
+   "tmdb": 1386467,
+   "checked": "2026-10-30"
+  },
+  "the mongoose": {
+   "tmdb": 1294189,
+   "checked": "2026-10-30"
+  },
+  "the odyssey": {
+   "tmdb": 1368337,
+   "checked": "2026-10-30"
+  },
+  "the old man and his car": {
+   "tmdb": 1555810,
+   "checked": "2026-10-30"
+  },
+  "the rocky horror picture show": {
+   "tmdb": 36685,
+   "checked": "2026-10-30"
+  },
+  "the social reckoning": {
+   "tmdb": 1281331,
+   "checked": "2026-10-30"
+  },
+  "the thomas crown affair": {
+   "tmdb": 615121,
+   "checked": "2026-10-30"
+  },
+  "the violinist": {
+   "tmdb": 748681,
+   "checked": "2026-10-30"
+  },
+  "the weight": {
+   "tmdb": 1433583,
+   "checked": "2026-10-30"
+  },
+  "this is spinal tap": {
+   "tmdb": 11031,
+   "checked": "2026-10-30"
+  },
+  "udta teer": {
+   "tmdb": 1375156,
+   "checked": "2026-10-30"
+  },
+  "v": {
+   "tmdb": null,
+   "checked": "2026-10-30"
+  },
+  "verity": {
+   "tmdb": 1283515,
+   "checked": "2026-10-30"
+  },
+  "violent night 2": {
+   "tmdb": 1078446,
+   "checked": "2026-10-30"
+  },
+  "we are all strangers": {
+   "tmdb": 884692,
+   "checked": "2026-10-30"
+  },
+  "whalefall": {
+   "tmdb": 1255833,
+   "checked": "2026-10-30"
+  },
+  "what we do in the shadows": {
+   "tmdb": 246741,
+   "checked": "2026-10-30"
+  },
+  "wildwood": {
+   "tmdb": 791523,
+   "checked": "2026-10-30"
+  },
+  "winter of the crow": {
+   "tmdb": 1212310,
+   "checked": "2026-10-30"
+  },
+  "空枪": {
+   "tmdb": 1567937,
+   "checked": "2026-10-30"
+  }
+ }
+}
