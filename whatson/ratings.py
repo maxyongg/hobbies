@@ -32,6 +32,7 @@ LETTERBOXD = "https://letterboxd.com/tmdb/{}/"
 MIN_VOTES = 100  # fewer IMDb votes than this: too early to show a rating
 RETRY_UNMATCHED = timedelta(days=7)
 CHAINS = {"gv", "shaw", "carnival"}  # first-run cinemas: prefer recent releases
+OLD_HIT_VOTES = 500  # chains show old films only as re-releases of well-known ones (Endgame, Casino Royale)
 
 # Listings that are not films, so have no rating.
 NOT_FILMS = re.compile(r"live viewing|world tour|\bin cinemas\b|\bconcert\b|\bmarathon\b|\bprogramme\b", re.I)
@@ -79,6 +80,8 @@ def clean(title: str) -> tuple[list[str], int | None]:
         latin, cjk = CJK.sub(" ", t), " ".join(CJK.findall(t))
     latin = re.sub(r"\s+", " ", latin).strip(" :–-!")
     queries = [latin] if len(norm(latin)) >= 3 else []
+    if queries and (short := re.sub(r"\s+the movie\b", "", latin, flags=re.I)) != latin:
+        queries.append(short)  # TMDb: "Detective Conan: Fallen Angel..." for "Detective Conan The Movie: ..."
     if cjk:
         queries.append(cjk)  # GV: "V 空枪 (Mand)"
     queries += alts
@@ -142,6 +145,8 @@ class Tmdb:
                      if title_matches(q, m.get("title", "")) or title_matches(q, m.get("original_title", ""))]
             if year:
                 found = [m for m in found if abs(release_year(m) - year) <= 1]
+            elif chain:
+                found = [m for m in found if recent(m, today) or m.get("vote_count", 0) >= OLD_HIT_VOTES]
             if found:
                 return max(found, key=lambda m: rank(m, q, chain, today))
         return None
@@ -158,11 +163,14 @@ def release_year(m: dict) -> int:
     return int((m.get("release_date") or "0")[:4] or 0)
 
 
+def recent(m: dict, today: date) -> bool:
+    y = release_year(m)
+    return not y or y >= today.year - 1  # unreleased films often have no date yet
+
+
 def rank(m: dict, query: str, chain: bool, today: date) -> tuple:
     exact = norm(query) in (norm(m.get("title", "")), norm(m.get("original_title", "")))
-    y = release_year(m)
-    recent = not y or y >= today.year - 1  # unreleased films often have no date yet
-    return (exact, recent if chain else True, m.get("popularity", 0))
+    return (exact, recent(m, today) if chain else True, m.get("popularity", 0))
 
 
 def letterboxd(http, tmdb_id: int) -> tuple[float | None, str | None]:

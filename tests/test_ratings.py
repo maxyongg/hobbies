@@ -16,9 +16,9 @@ def film(source, id, title, listed=True):
     return Item(source=source, id=id, title=title, url=f"https://{source}.example/{id}", listed=listed)
 
 
-def movie(id, title, year, popularity=1.0):
+def movie(id, title, year, popularity=1.0, votes=10):
     return {"id": id, "title": title, "original_title": title, "release_date": f"{year}-06-01",
-            "popularity": popularity}
+            "popularity": popularity, "vote_count": votes}
 
 
 SEARCH = {
@@ -27,8 +27,12 @@ SEARCH = {
     "Jailer 2": [movie(5, "Jailer", 2023, popularity=40)],
     "Darah-ku": [],
     "My Blood": [movie(6, "My Blood", 1963), movie(7, "My Blood", 2020, popularity=9)],
+    "The Execution": [movie(9, "The Execution", 2014)],
+    "Avengers: Endgame": [movie(8, "Avengers: Endgame", 2019, votes=25000)],
+    "Detective Conan The Movie: Fallen Angels Of The Highway": [],
+    "Detective Conan: Fallen Angels Of The Highway": [movie(10, "Detective Conan: Fallen Angel of the Highway", 2026)],
 }
-MOVIES = {1: "tt0120804", 2: "tt2000002", 3: "tt0112471", 6: "tt6000006", 8: "tt8000008"}
+MOVIES = {1: "tt0120804", 2: "tt2000002", 3: "tt0112471", 6: "tt6000006", 8: "tt8000008", 10: "tt1000010"}
 IMDB = {"tt2000002": (6.9, 5000), "tt0112471": (8.1, 300000), "tt6000006": (7.0, 12)}
 
 
@@ -53,6 +57,9 @@ ITEMS = [
     film("carnival", "j2", "Jailer 2 (NC16)"),
     film("afa", "db", "Darah-ku (My Blood, 1963)"),
     film("gv", "bts", "Bts World Tour `arirang' In São Paulo: Live Viewing"),
+    film("carnival", "ex", "The Execution (M18)"),
+    film("gv", "eg", "Marvel Studios' Avengers: Endgame Encore"),
+    film("gv", "dc", "Detective Conan The Movie: Fallen Angels Of The Highway"),
     film("afa", "old", "Gone Film", listed=False),
 ]
 
@@ -90,8 +97,11 @@ def test_matches_films_and_fetches_ratings(tmp_path):
     http = FakeHttp(routes())
     data = run(tmp_path, http)
 
-    # Chains prefer the recent remake; repertory takes the best-known film; AFA's year picks 1963.
-    assert data["items"] == {"gv:re": "2", "shaw:re2": "2", "filmhouse:bs": "3", "afa:db": "6"}
+    # Chains prefer the recent remake and show old films only if well known; repertory takes the
+    # best-known film; AFA's year picks 1963; "The Movie" is dropped if the full title finds nothing.
+    assert data["items"] == {"gv:re": "2", "shaw:re2": "2", "filmhouse:bs": "3", "afa:db": "6",
+                             "gv:eg": "8", "gv:dc": "10"}
+    assert data["matches"]["the execution"]["tmdb"] is None  # an obscure 2014 film: not this release
     assert data["films"]["2"] == {"title": "Film 2", "year": 2026, "imdb_id": "tt2000002", "imdb": 6.9,
                                   "letterboxd": 3.3, "letterboxd_url": "https://letterboxd.com/film/film-2/"}
     assert data["films"]["6"]["imdb"] is None  # 12 votes: too few to show
