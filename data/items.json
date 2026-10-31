@@ -28,6 +28,20 @@
  "items": [
   {
    "source": "filmhouse",
+   "id": "182",
+   "title": "Perfect Days",
+   "url": "https://filmhouse.sg/film/182/perfect-days",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/Gwv3eYvY2NV-phNkhr2sgd6ag96-61Py5Wrnow16VDA.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-10-31T20:29:52+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
    "id": "246",
    "title": "National Theatre Live: Inter Alia",
    "url": "https://filmhouse.sg/film/246/national-theatre-live-inter-alia",
@@ -1529,7 +1543,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1623,7 +1637,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "now",
+   "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1655,7 +1669,7 @@
    "tags": [
     "SFS Spotlight"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -2409,7 +2423,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2429,10 +2443,10 @@
   {
    "source": "filmhouse",
    "id": "159",
-   "title": "Ponyo",
-   "url": "https://filmhouse.sg/film/159/ponyo",
+   "title": "Ponyo on the Cliff by the Sea",
+   "url": "https://filmhouse.sg/film/159/ponyo-on-the-cliff-by-the-sea",
    "type": "film",
-   "poster": "https://cdn.taposapp.com/poster/600x900/6rjc_NdA2mL4VpaVhjjL5nCnCz4ahJfTm72TSORHOTE.jpg",
+   "poster": "https://cdn.taposapp.com/poster/600x900/5fHfNuL9D1rR-3GBEjUaRdF5M_b5UMUNnYd7iTHeoQA.jpg",
    "release_date": null,
    "tags": [],
    "showing": "now",
@@ -2690,7 +2704,7 @@
    "title": "Castle in the Sky",
    "url": "https://filmhouse.sg/film/228/castle-in-the-sky",
    "type": "film",
-   "poster": "https://cdn.taposapp.com/poster/600x900/zhcngF9u-X411PRzwOFMODdnLdQsbstd8v777Sr2agE.jpg",
+   "poster": "https://cdn.taposapp.com/poster/600x900/QZRBZX2l8qnA8VT9hED0TVcjdhRZSUtw7PfFsamiy7w.jpg",
    "release_date": null,
    "tags": [],
    "showing": "now",
