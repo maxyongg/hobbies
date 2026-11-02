@@ -27,6 +27,22 @@
  },
  "items": [
   {
+   "source": "filmhouse",
+   "id": "247",
+   "title": "Ah Girl",
+   "url": "https://filmhouse.sg/film/247/ah-girl",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/6g27gyNEo-e2vxYCuvVn9EFBqGPuQr6Cxh6mC5oN0Po.jpg",
+   "release_date": null,
+   "tags": [
+    "Coming soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-02T23:53:43+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
    "source": "gv",
    "id": "1474",
    "title": "Ramayana: Rise Of A Legend (English)",
@@ -181,7 +197,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
