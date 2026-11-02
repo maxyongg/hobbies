@@ -27,6 +27,38 @@
  },
  "items": [
   {
+   "source": "gv",
+   "id": "1474",
+   "title": "Ramayana: Rise Of A Legend (English)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1474",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1474.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-02T14:02:51+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "4514",
+   "title": "Ramayana: Rise Of A Legend (Tamil)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4514",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4514.jpg",
+   "release_date": null,
+   "tags": [
+    "Tamil"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-02T14:02:51+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
    "source": "filmhouse",
    "id": "182",
    "title": "Perfect Days",
@@ -2913,8 +2945,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1363-Poster-1781593990362",
    "release_date": null,
    "tags": [
-    "Top Movies",
-    "Coming Soon"
+    "Advance Sales",
+    "Top Movies"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3197,7 +3229,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1808-Poster-1787909217599",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
