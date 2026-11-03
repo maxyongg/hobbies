@@ -27,6 +27,34 @@
  },
  "items": [
   {
+   "source": "carnival",
+   "id": "mookuthi-amman-2-nc16",
+   "title": "Mookuthi Amman 2 (NC16)",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002371.JPG",
+   "release_date": "2026-11-06",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-11-04T07:24:06+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "carnival",
+   "id": "scene-nc16",
+   "title": "Scene (NC16)",
+   "url": "https://carnivalcinemas.sg/Scene%20(NC16)/Scene%20(NC16)",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002370.JPG",
+   "release_date": "2026-11-06",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-11-04T07:24:06+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
    "source": "gv",
    "id": "1481",
    "title": "The Hunger Games: Sunrise On The Reaping",
@@ -360,7 +388,7 @@
    "tags": [],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -374,7 +402,7 @@
    "tags": [],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3071,7 +3099,7 @@
    "tags": [
     "Coming soon"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -4071,9 +4099,10 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2082-Poster-1792401667518",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing",
+    "Ending Soon"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"

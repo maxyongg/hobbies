@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -13,7 +13,9 @@
   "carnival:drones": "1716531",
   "carnival:jailer-2-nc16": "1234139",
   "carnival:mookuthi-amman-2": "1327835",
+  "carnival:mookuthi-amman-2-nc16": "1327835",
   "carnival:scene": "1402181",
+  "carnival:scene-nc16": "1402181",
   "carnival:tamil-ramayana-rise-of-a-legend": "656908",
   "filmhouse:127": "1370096",
   "filmhouse:144": "950028",
@@ -751,14 +753,14 @@
    "year": 2026,
    "imdb_id": "tt11995650",
    "imdb": 7.8,
-   "letterboxd": 3.7,
+   "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/i-play-rocky/"
   },
   "1294189": {
    "title": "The Mongoose",
    "year": 2026,
    "imdb_id": "tt13611778",
-   "imdb": 4.9,
+   "imdb": 5.0,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/the-mongoose-2026/"
   },
@@ -958,7 +960,7 @@
    "title": "Fatherland",
    "year": 2026,
    "imdb_id": "tt37304295",
-   "imdb": 7.4,
+   "imdb": 7.3,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/fatherland-2026/"
   },
@@ -982,7 +984,7 @@
    "title": "Forgotten Island",
    "year": 2026,
    "imdb_id": "tt36583977",
-   "imdb": 7.6,
+   "imdb": 7.5,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/forgotten-island-2026/"
   },
@@ -1030,7 +1032,7 @@
    "title": "Sense and Sensibility",
    "year": 2026,
    "imdb_id": "tt13609648",
-   "imdb": 7.3,
+   "imdb": 7.2,
    "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/sense-and-sensibility-2026/"
   },
@@ -1038,7 +1040,7 @@
    "title": "Baththa",
    "year": 2026,
    "imdb_id": "tt44090278",
-   "imdb": 8.8,
+   "imdb": 8.7,
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/baththa/"
   },
@@ -1095,7 +1097,7 @@
    "year": 2026,
    "imdb_id": "tt39026173",
    "imdb": 7.4,
-   "letterboxd": 4.1,
+   "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/chiikawa-the-movie-the-secret-of-the-mermaid/"
   },
   "1591675": {
@@ -1134,7 +1136,7 @@
    "title": "Blue Lock",
    "year": 2026,
    "imdb_id": "tt39400168",
-   "imdb": 6.4,
+   "imdb": 6.5,
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/blue-lock-2026/"
   },
@@ -1142,7 +1144,7 @@
    "title": "Never After Dark",
    "year": 2026,
    "imdb_id": "tt38589433",
-   "imdb": 6.7,
+   "imdb": 6.6,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/never-after-dark/"
   },
@@ -1166,7 +1168,7 @@
    "title": "Nayyi Navelli",
    "year": 2026,
    "imdb_id": "tt40855841",
-   "imdb": 5.5,
+   "imdb": 5.4,
    "letterboxd": 2.8,
    "letterboxd_url": "https://letterboxd.com/film/nayyi-navelli/"
   },
@@ -1199,7 +1201,7 @@
    "year": 2026,
    "imdb_id": "tt49276988",
    "imdb": null,
-   "letterboxd": 3.2,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/kudrat-1968-high-council/"
   },
   "1746726": {
