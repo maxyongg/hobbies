@@ -87,6 +87,7 @@
   "gv:1478": "1718699",
   "gv:1479": "615121",
   "gv:1480": "791523",
+  "gv:1481": "1300968",
   "gv:2475": "822653",
   "gv:2484": "1759202",
   "gv:4460": "884692",
@@ -189,7 +190,8 @@
   "shaw:2085": "1503023",
   "shaw:2086": "36557",
   "shaw:2087": "164",
-  "shaw:2089": "1402181"
+  "shaw:2089": "1402181",
+  "shaw:2092": "1765072"
  },
  "films": {
   "55": {
@@ -768,6 +770,14 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/the-angry-birds-movie-3/"
   },
+  "1300968": {
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "year": 2026,
+   "imdb_id": "tt32558705",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/"
+  },
   "1315772": {
    "title": "Minions & Monsters",
    "year": 2026,
@@ -1216,6 +1226,14 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/eda-raa/"
   },
+  "1765072": {
+   "title": "You Can See Everything",
+   "year": 2026,
+   "imdb_id": "tt45368240",
+   "imdb": 9.1,
+   "letterboxd": 4.6,
+   "letterboxd_url": "https://letterboxd.com/film/you-can-see-everything/"
+  },
   "1777750": {
    "title": "Detective Conan: The Counterfeit Case of Ultra 30",
    "year": 2026,
@@ -1317,6 +1335,14 @@
   "breakfast at tiffanys": {
    "tmdb": 164,
    "checked": "2026-10-30"
+  },
+  "bts world tour arirang in jakarta live viewing": {
+   "tmdb": null,
+   "checked": "2026-11-03"
+  },
+  "bts world tour arirang in kaohsiung live viewing": {
+   "tmdb": null,
+   "checked": "2026-11-03"
   },
   "bts world tour arirang in sao paulo live viewing": {
    "tmdb": null,
@@ -1566,6 +1592,10 @@
    "tmdb": 1327835,
    "checked": "2026-10-30"
   },
+  "mookuthi amman 2 mahasakthi": {
+   "tmdb": null,
+   "checked": "2026-11-03"
+  },
   "moonlight": {
    "tmdb": 376867,
    "checked": "2026-10-30"
@@ -1734,6 +1764,10 @@
    "tmdb": 1601002,
    "checked": "2026-10-30"
   },
+  "the hunger games sunrise on the reaping": {
+   "tmdb": 1300968,
+   "checked": "2026-11-03"
+  },
   "the invite": {
    "tmdb": 950028,
    "checked": "2026-10-30"
@@ -1817,6 +1851,10 @@
   "winter of the crow": {
    "tmdb": 1212310,
    "checked": "2026-10-30"
+  },
+  "you can see everything": {
+   "tmdb": 1765072,
+   "checked": "2026-11-03"
   },
   "空枪": {
    "tmdb": 1567937,

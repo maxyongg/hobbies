@@ -27,6 +27,155 @@
  },
  "items": [
   {
+   "source": "gv",
+   "id": "1481",
+   "title": "The Hunger Games: Sunrise On The Reaping",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1481",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1481.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "4522",
+   "title": "Mookuthi Amman 2: Mahasakthi",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4522",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4522.jpg",
+   "release_date": null,
+   "tags": [
+    "Tamil",
+    "NC16"
+   ],
+   "showing": "now",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7527",
+   "title": "Bts World Tour ‘arirang’ In Kaohsiung: Live Viewing",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7527",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7527.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean",
+    "General"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7528",
+   "title": "Bts World Tour ‘arirang’ In Kaohsiung: Live Viewing (encore)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7528",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7527.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean",
+    "General"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7529",
+   "title": "Bts World Tour ‘arirang’ In Jakarta: Live Viewing",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7529",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7529.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean",
+    "General"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2092",
+   "title": "You Can See Everything",
+   "url": "https://shaw.sg/movie-details/2092",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2092-Poster-1793692226083",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2095",
+   "title": "BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG: LIVE VIEWING (KOR)",
+   "url": "https://shaw.sg/movie-details/2095",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2095-Poster-1793674923052",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2096",
+   "title": "BTS WORLD TOUR 'ARIRANG' IN JAKARTA: LIVE VIEWING (KOR)",
+   "url": "https://shaw.sg/movie-details/2096",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2096-Poster-1793676191707",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2097",
+   "title": "BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG: LIVE VIEWING (ENCORE)(KOR)",
+   "url": "https://shaw.sg/movie-details/2097",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2097-Poster-1793675461446",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-03T22:15:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
    "source": "filmhouse",
    "id": "247",
    "title": "Ah Girl",
@@ -53,7 +202,7 @@
    "tags": [
     "English"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-02T14:02:51+08:00",
    "listed": true,
    "alert": "quiet"
@@ -69,7 +218,7 @@
    "tags": [
     "Tamil"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-02T14:02:51+08:00",
    "listed": true,
    "alert": "quiet"
@@ -883,7 +1032,7 @@
     "Sinhala",
     "PG"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1087,7 +1236,7 @@
     "Japanese",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1120,7 +1269,7 @@
    "tags": [
     "Hindi"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1185,9 +1334,10 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4520.jpg",
    "release_date": null,
    "tags": [
-    "Tamil"
+    "Tamil",
+    "NC16"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1403,9 +1553,10 @@
    "poster": "https://media.gv.com.sg/imagesresize/img7516.jpg",
    "release_date": null,
    "tags": [
-    "Korean"
+    "Korean",
+    "General"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1419,9 +1570,10 @@
    "poster": "https://media.gv.com.sg/imagesresize/img7517.jpg",
    "release_date": null,
    "tags": [
-    "Korean"
+    "Korean",
+    "General"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1455,7 +1607,7 @@
     "Korean",
     "General"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -3838,7 +3990,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2073-Poster-1792569353634",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
