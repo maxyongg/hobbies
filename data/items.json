@@ -1,8 +1,8 @@
 {
  "sources": {
   "afa": {
-   "consecutive_failures": 0,
-   "last_error": null
+   "consecutive_failures": 1,
+   "last_error": "from_rest: ValueError: expected JSON from https://asianfilmarchive.org/wp-json/wp/v2/mep_events?per_page=100&orderby=date&order=desc&_fields=id%2Cslug%2Clink%2Ctitle%2Cclass_list%2Cyoast_head_json.og_image%2Cevent_informations.event_upcoming_datetime%2Cevent_informations.event_start_datetime%2Cevent_informations.event_expire_datetime%2Cevent_informations.event_end_datetime%2Cevent_informations.location_name, got text/html: '<html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" content=\"0;/.well-known/sgcaptcha/?r=%2Fwp-json%2Fwp%2Fv2%2Fmep_events%3Fper_page%3D100%26orderby%3Ddate%26order%3Ddesc%26_fields%'; from_listing_pages: 0 items"
   },
   "carnival": {
    "consecutive_failures": 0,
@@ -17,8 +17,8 @@
    "last_error": null
   },
   "sfs": {
-   "consecutive_failures": 0,
-   "last_error": null
+   "consecutive_failures": 1,
+   "last_error": "from_browser: Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://www.singaporefilmsociety.com/\nCall log:\n  - navigating to \"https://www.singaporefilmsociety.com/\", waiting until \"load\"\n"
   },
   "shaw": {
    "consecutive_failures": 0,
@@ -26,6 +26,38 @@
   }
  },
  "items": [
+  {
+   "source": "shaw",
+   "id": "2091",
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "url": "https://shaw.sg/movie-details/2091",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2091-Poster-1793759686477",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-04T14:22:52+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2106",
+   "title": "Dune",
+   "url": "https://shaw.sg/movie-details/2106",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2106-Poster-1793761012420",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-04T14:22:52+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
   {
    "source": "carnival",
    "id": "mookuthi-amman-2-nc16",
@@ -3788,7 +3820,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2011-Poster-1792740515662",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4116,7 +4148,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2084-Poster-1792740488170",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4180,7 +4212,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2089-Poster-1793075463302",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",

@@ -193,7 +193,9 @@
   "shaw:2086": "36557",
   "shaw:2087": "164",
   "shaw:2089": "1402181",
-  "shaw:2092": "1765072"
+  "shaw:2091": "1300968",
+  "shaw:2092": "1765072",
+  "shaw:2106": "438631"
  },
  "films": {
   "55": {
@@ -427,6 +429,14 @@
    "imdb": 7.4,
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/moonlight-2016/"
+  },
+  "438631": {
+   "title": "Dune",
+   "year": 2021,
+   "imdb_id": "tt1160419",
+   "imdb": 8.0,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/dune-2021/"
   },
   "458624": {
    "title": "A Wicked Tale",
@@ -1437,6 +1447,10 @@
   "drones": {
    "tmdb": 1716531,
    "checked": "2026-10-30"
+  },
+  "dune": {
+   "tmdb": 438631,
+   "checked": "2026-11-04"
   },
   "dune part three": {
    "tmdb": 1170608,
