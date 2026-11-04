@@ -1,8 +1,8 @@
 {
  "sources": {
   "afa": {
-   "consecutive_failures": 1,
-   "last_error": "from_rest: ValueError: expected JSON from https://asianfilmarchive.org/wp-json/wp/v2/mep_events?per_page=100&orderby=date&order=desc&_fields=id%2Cslug%2Clink%2Ctitle%2Cclass_list%2Cyoast_head_json.og_image%2Cevent_informations.event_upcoming_datetime%2Cevent_informations.event_start_datetime%2Cevent_informations.event_expire_datetime%2Cevent_informations.event_end_datetime%2Cevent_informations.location_name, got text/html: '<html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" content=\"0;/.well-known/sgcaptcha/?r=%2Fwp-json%2Fwp%2Fv2%2Fmep_events%3Fper_page%3D100%26orderby%3Ddate%26order%3Ddesc%26_fields%'; from_listing_pages: 0 items"
+   "consecutive_failures": 0,
+   "last_error": null
   },
   "carnival": {
    "consecutive_failures": 0,
@@ -17,8 +17,8 @@
    "last_error": null
   },
   "sfs": {
-   "consecutive_failures": 1,
-   "last_error": "from_browser: Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://www.singaporefilmsociety.com/\nCall log:\n  - navigating to \"https://www.singaporefilmsociety.com/\", waiting until \"load\"\n"
+   "consecutive_failures": 0,
+   "last_error": null
   },
   "shaw": {
    "consecutive_failures": 0,
@@ -26,6 +26,86 @@
   }
  },
  "items": [
+  {
+   "source": "carnival",
+   "id": "disco-m18",
+   "title": "Disco (M18)",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002373.JPG",
+   "release_date": "2026-11-06",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-11-05T03:46:51+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "4523",
+   "title": "The Rope Curse 4: Kuntilanak 粽邪4：坤蒂拉娜",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4523",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4523.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin, Hokkien, Indonesian",
+    "NC16"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T03:46:51+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "1787",
+   "title": "The Odyssey",
+   "url": "https://shaw.sg/movie-details/1787",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1787-Poster-1782454716275",
+   "release_date": null,
+   "tags": [
+    "Now Showing",
+    "Ending Soon"
+   ],
+   "showing": "now",
+   "first_seen": "2026-11-05T03:46:51+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2090",
+   "title": "AH GIRL [M] Special 90s Party Screening",
+   "url": "https://shaw.sg/movie-details/2090",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2090-Poster-1793692306877",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T03:46:51+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2098",
+   "title": "OM Chapter 1: Udhiram - The Blood Wood [TAM]",
+   "url": "https://shaw.sg/movie-details/2098",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2098-Poster-1793782059048",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T03:46:51+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
   {
    "source": "shaw",
    "id": "2091",
@@ -62,7 +142,7 @@
    "source": "carnival",
    "id": "mookuthi-amman-2-nc16",
    "title": "Mookuthi Amman 2 (NC16)",
-   "url": "https://carnivalcinemas.sg/",
+   "url": "https://carnivalcinemas.sg/Mookuthi%20Amman%202(NC16)/Mookuthi%20Amman%202(NC16)",
    "type": "film",
    "poster": "https://carnivalcinemas.sg/upload/movie/CC00002371.JPG",
    "release_date": "2026-11-06",
@@ -260,7 +340,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img1474.jpg",
    "release_date": null,
    "tags": [
-    "English"
+    "English",
+    "PG13"
    ],
    "showing": "now",
    "first_seen": "2026-11-02T14:02:51+08:00",
@@ -276,7 +357,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4514.jpg",
    "release_date": null,
    "tags": [
-    "Tamil"
+    "Tamil",
+    "PG13"
    ],
    "showing": "now",
    "first_seen": "2026-11-02T14:02:51+08:00",
@@ -378,7 +460,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -392,7 +474,7 @@
    "tags": [],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -441,12 +523,12 @@
    "source": "carnival",
    "id": "tamil-ramayana-rise-of-a-legend",
    "title": "Ramayana: Rise Of A Legend (TAMIL)",
-   "url": "https://carnivalcinemas.sg/",
+   "url": "https://carnivalcinemas.sg/(TAMIL)%20Ramayana%3A%20Rise%20Of%20A%20Legend/(TAMIL)%20Ramayana%3A%20Rise%20Of%20A%20Legend",
    "type": "film",
    "poster": "https://carnivalcinemas.sg/upload/movie/CC00002372.JPG",
    "release_date": "2026-11-05",
    "tags": [],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1327,7 +1409,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4512.jpg",
    "release_date": null,
    "tags": [
-    "Hindi"
+    "Hindi",
+    "PG13"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
@@ -1881,7 +1964,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1913,7 +1996,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "now",
+   "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -2082,7 +2165,7 @@
     "Screening",
     "Off the catalogue"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -2276,7 +2359,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2697,7 +2780,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2893,7 +2976,7 @@
    "tags": [
     "Coming soon"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -3173,7 +3256,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1363-Poster-1781593990362",
    "release_date": null,
    "tags": [
-    "Advance Sales",
+    "Now Showing",
     "Top Movies"
    ],
    "showing": "now",
@@ -3204,7 +3287,7 @@
    "title": "I Play Rocky",
    "url": "https://shaw.sg/movie-details/1410",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1410-Poster-1792984056128",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1410-Poster-1793785181229",
    "release_date": null,
    "tags": [
     "Coming Soon"
@@ -3256,6 +3339,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1641-Poster-1788317971729",
    "release_date": null,
    "tags": [
+    "Now Showing",
+    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
@@ -3326,7 +3411,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3371,8 +3456,6 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1788-Poster-1782442868920",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
@@ -3441,7 +3524,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1806-Poster-1789358854234",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3457,9 +3541,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1808-Poster-1787909217599",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -3494,7 +3578,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3562,7 +3646,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3574,7 +3658,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1828-Poster-1788926054751",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3657,6 +3742,7 @@
    "release_date": null,
    "tags": [
     "Now Showing",
+    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
@@ -3721,7 +3807,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1890-Poster-1791967491224",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3808,7 +3895,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3820,9 +3907,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2011-Poster-1792740515662",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -3857,7 +3944,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3956,7 +4043,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3973,7 +4060,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4017,6 +4104,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2071-Poster-1791535723974",
    "release_date": null,
    "tags": [
+    "Now Showing",
+    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
@@ -4038,7 +4127,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4050,9 +4139,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2073-Poster-1792569353634",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -4066,9 +4155,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2078-Poster-1791794130969",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -4082,7 +4171,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2079-Poster-1792035777545",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4099,6 +4189,7 @@
    "release_date": null,
    "tags": [
     "Now Showing",
+    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
@@ -4136,7 +4227,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4148,9 +4239,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2084-Poster-1792740488170",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -4164,7 +4255,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2085-Poster-1793085373347",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",

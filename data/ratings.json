@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -10,6 +10,7 @@
   "afa:sgiff-2026-my-name-aint-suzie-1985": "187021",
   "afa:sultan-mahmood-mangkat-di-julang-the-passing-of-sultan-mahmood-1961": "286237",
   "carnival:disco": "1612811",
+  "carnival:disco-m18": "1612811",
   "carnival:drones": "1716531",
   "carnival:jailer-2-nc16": "1234139",
   "carnival:mookuthi-amman-2": "1327835",
@@ -111,6 +112,7 @@
   "gv:4518": "1567937",
   "gv:4520": "1402181",
   "gv:4521": "1731816",
+  "gv:4523": "1433568",
   "gv:7490": "1586876",
   "gv:7491": "1586876",
   "gv:7509": "1591675",
@@ -146,6 +148,7 @@
   "shaw:1775": "1185806",
   "shaw:1776": "1465063",
   "shaw:1777": "1400336",
+  "shaw:1787": "1368337",
   "shaw:1788": "1368337",
   "shaw:1790": "1423191",
   "shaw:1795": "1629051",
@@ -627,7 +630,7 @@
    "year": 2026,
    "imdb_id": "tt2321555",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.4,
    "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/"
   },
   "1153576": {
@@ -762,7 +765,7 @@
    "title": "I Play Rocky",
    "year": 2026,
    "imdb_id": "tt11995650",
-   "imdb": 7.8,
+   "imdb": 7.9,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/i-play-rocky/"
   },
@@ -770,7 +773,7 @@
    "title": "The Mongoose",
    "year": 2026,
    "imdb_id": "tt13611778",
-   "imdb": 5.0,
+   "imdb": 4.9,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/the-mongoose-2026/"
   },
@@ -834,8 +837,8 @@
    "title": "Udta Teer",
    "year": 2026,
    "imdb_id": "tt31806773",
-   "imdb": 6.7,
-   "letterboxd": null,
+   "imdb": 6.8,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/udta-teer/"
   },
   "1379266": {
@@ -851,7 +854,7 @@
    "year": 2026,
    "imdb_id": "tt34384661",
    "imdb": 8.0,
-   "letterboxd": 4.0,
+   "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/"
   },
   "1384758": {
@@ -949,6 +952,14 @@
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/finding-mojo/"
+  },
+  "1433568": {
+   "title": "The Rope Curse 4: Kuntilanak",
+   "year": 2026,
+   "imdb_id": "tt38633224",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-rope-curse-4-kuntilanak/"
   },
   "1433583": {
    "title": "The Weight",
@@ -1090,7 +1101,7 @@
    "title": "V",
    "year": 2026,
    "imdb_id": "tt38775487",
-   "imdb": 7.0,
+   "imdb": 6.9,
    "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/v-2026/"
   },
@@ -1147,7 +1158,7 @@
    "year": 2026,
    "imdb_id": "tt39400168",
    "imdb": 6.5,
-   "letterboxd": 3.5,
+   "letterboxd": 3.4,
    "letterboxd_url": "https://letterboxd.com/film/blue-lock-2026/"
   },
   "1629051": {
@@ -1279,6 +1290,10 @@
   "ah girl": {
    "tmdb": 747509,
    "checked": "2026-10-30"
+  },
+  "ah girl special 90s party screening": {
+   "tmdb": null,
+   "checked": "2026-11-05"
   },
   "al awda": {
    "tmdb": 1370096,
@@ -1644,6 +1659,10 @@
    "tmdb": 1193673,
    "checked": "2026-10-30"
   },
+  "om chapter 1 udhiram the blood wood": {
+   "tmdb": null,
+   "checked": "2026-11-05"
+  },
   "once upon a time in the middle east": {
    "tmdb": 1391021,
    "checked": "2026-10-30"
@@ -1811,6 +1830,10 @@
   "the rocky horror picture show": {
    "tmdb": 36685,
    "checked": "2026-10-30"
+  },
+  "the rope curse 4 kuntilanak": {
+   "tmdb": 1433568,
+   "checked": "2026-11-05"
   },
   "the social reckoning": {
    "tmdb": 1281331,
