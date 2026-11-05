@@ -92,7 +92,13 @@
   "gv:1480": "791523",
   "gv:1481": "1300968",
   "gv:2475": "822653",
+  "gv:2477": "1411529",
+  "gv:2479": "1497873",
+  "gv:2480": "1353926",
+  "gv:2481": "1089598",
+  "gv:2482": "1546855",
   "gv:2484": "1759202",
+  "gv:2485": "1612811",
   "gv:4460": "884692",
   "gv:4484": "1633056",
   "gv:4487": "1746726",
@@ -625,6 +631,14 @@
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/bitter-christmas/"
   },
+  "1089598": {
+   "title": "Dunhuang Warriors",
+   "year": 2026,
+   "imdb_id": "tt28131387",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/dunhuang-warriors/"
+  },
   "1117898": {
    "title": "The Cat in the Hat",
    "year": 2026,
@@ -817,6 +831,14 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/mookuthi-amman-2/"
   },
+  "1353926": {
+   "title": "Keep Real",
+   "year": 2026,
+   "imdb_id": "tt43295610",
+   "imdb": 6.3,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/keep-real/"
+  },
   "1368337": {
    "title": "The Odyssey",
    "year": 2026,
@@ -920,6 +942,14 @@
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/scene-2026/"
+  },
+  "1411529": {
+   "title": "Take Off",
+   "year": 2026,
+   "imdb_id": "tt34386745",
+   "imdb": 6.5,
+   "letterboxd": 3.3,
+   "letterboxd_url": "https://letterboxd.com/film/take-off-2025/"
   },
   "1421155": {
    "title": "Ikatan Darah",
@@ -1041,6 +1071,14 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/gatto/"
   },
+  "1497873": {
+   "title": "As the Water Flows",
+   "year": 2026,
+   "imdb_id": "tt37186694",
+   "imdb": 6.9,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/as-the-water-flows/"
+  },
   "1503023": {
    "title": "Go for Broke 2",
    "year": 2026,
@@ -1072,6 +1110,14 @@
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/hexed-2026/"
+  },
+  "1546855": {
+   "title": "It's OK",
+   "year": 2026,
+   "imdb_id": "tt40915506",
+   "imdb": 6.6,
+   "letterboxd": 3.4,
+   "letterboxd_url": "https://letterboxd.com/film/its-ok-2026/"
   },
   "1555810": {
    "title": "The Old Man and His Car",
@@ -1267,6 +1313,10 @@
   }
  },
  "matches": {
+  "2026": {
+   "tmdb": null,
+   "checked": "2026-11-05"
+  },
   "a feeling of music playing": {
    "tmdb": 1157628,
    "checked": "2026-10-30"
@@ -1394,6 +1444,34 @@
   "castle in the sky": {
    "tmdb": 10515,
    "checked": "2026-10-30"
+  },
+  "cff a tapestry of a legendary land": {
+   "tmdb": null,
+   "checked": "2026-11-05"
+  },
+  "cff as the water flows": {
+   "tmdb": 1497873,
+   "checked": "2026-11-05"
+  },
+  "cff dunhuang warriors": {
+   "tmdb": 1089598,
+   "checked": "2026-11-05"
+  },
+  "cff i am what i am 2": {
+   "tmdb": null,
+   "checked": "2026-11-05"
+  },
+  "cff its ok": {
+   "tmdb": 1546855,
+   "checked": "2026-11-05"
+  },
+  "cff keep real": {
+   "tmdb": 1353926,
+   "checked": "2026-11-05"
+  },
+  "cff take off": {
+   "tmdb": 1411529,
+   "checked": "2026-11-05"
   },
   "chiikawa the movie the secret of the mermaid island": {
    "tmdb": 1586876,

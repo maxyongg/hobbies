@@ -27,6 +27,156 @@
  },
  "items": [
   {
+   "source": "gv",
+   "id": "2477",
+   "title": "CFF: Take Off 飞行家",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2477",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2477.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2478",
+   "title": "CFF: I Am What I Am 2 雄狮少年2",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2478",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2478.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2479",
+   "title": "CFF: As The Water Flows 翠湖",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2479",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2479.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2480",
+   "title": "CFF: Keep Real 特立独行",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2480",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2480.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2481",
+   "title": "CFF: Dunhuang Warriors 敦煌英雄",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2481",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2481.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "NC16"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2482",
+   "title": "CFF: It's Ok 我,许可",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2482",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2482.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "NC16"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2483",
+   "title": "CFF: A Tapestry Of A Legendary Land 只此青绿",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2483",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2483.jpg",
+   "release_date": null,
+   "tags": [
+    "Nil",
+    "PG"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2485",
+   "title": "Disco",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2485",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2485.jpg",
+   "release_date": null,
+   "tags": [
+    "Malayalam",
+    "M18"
+   ],
+   "showing": "now",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "b2c71423-3cae-4dbb-8a99-01bfb9dedb5d",
+   "title": "2026新加坡中国电影节 The China Film Festival 2026",
+   "url": "https://www.gv.com.sg/GVGroupSynopsis#/group/b2c71423-3cae-4dbb-8a99-01bfb9dedb5d",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/ChinaFF26.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-11-05T14:46:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
    "source": "carnival",
    "id": "disco-m18",
    "title": "Disco (M18)",
@@ -66,8 +216,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1787-Poster-1782454716275",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-11-05T03:46:51+08:00",
@@ -87,7 +236,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-05T03:46:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -103,7 +252,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-05T03:46:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -119,7 +268,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-04T14:22:52+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -135,7 +284,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-04T14:22:52+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -223,7 +372,7 @@
    "title": "Bts World Tour ‘arirang’ In Kaohsiung: Live Viewing (encore)",
    "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7528",
    "type": "film",
-   "poster": "https://media.gv.com.sg/imagesresize/img7527.jpg",
+   "poster": "https://media.gv.com.sg/imagesresize/img7528.jpg",
    "release_date": null,
    "tags": [
     "Korean",
@@ -264,7 +413,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-03T22:15:30+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -280,7 +429,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-03T22:15:30+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -296,7 +445,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-03T22:15:30+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -312,7 +461,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-03T22:15:30+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -578,7 +727,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -961,7 +1110,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -995,7 +1144,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1244,7 +1393,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1329,7 +1478,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1735,7 +1884,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1853,7 +2002,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1870,7 +2019,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3256,8 +3405,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1363-Poster-1781593990362",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3273,8 +3421,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1377-Poster-1784273656234",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3294,7 +3441,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3310,7 +3457,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3322,8 +3469,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1640-Poster-1789011459508",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3339,9 +3485,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1641-Poster-1788317971729",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3361,7 +3505,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3377,7 +3521,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3389,8 +3533,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1774-Poster-1789972128931",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3423,8 +3566,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1776-Poster-1789376587169",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3444,7 +3586,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3460,7 +3602,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3472,9 +3614,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1790-Poster-1786678176860",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3490,9 +3630,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1795-Poster-1792037303364",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3512,7 +3650,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3524,8 +3662,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1806-Poster-1789358854234",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3561,7 +3698,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3590,8 +3727,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1815-Poster-1789533954346",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3607,8 +3743,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1816-Poster-1784261162136",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3624,8 +3759,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1826-Poster-1786502778840",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3658,8 +3792,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1828-Poster-1788926054751",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3675,9 +3808,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1833-Poster-1790569019225",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3697,7 +3828,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3713,7 +3844,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3729,7 +3860,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3741,9 +3872,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1874-Poster-1789353229236",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3763,7 +3892,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3779,7 +3908,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3795,7 +3924,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3807,8 +3936,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1890-Poster-1791967491224",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3828,7 +3956,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3840,9 +3968,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1894-Poster-1790324051116",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3862,7 +3988,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3878,7 +4004,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3927,7 +4053,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3956,8 +4082,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2030-Poster-1790049771313",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3973,8 +4098,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2031-Poster-1790050594753",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3994,7 +4118,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4010,7 +4134,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4026,7 +4150,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4076,7 +4200,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4092,7 +4216,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4104,9 +4228,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2071-Poster-1791535723974",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4171,8 +4293,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2079-Poster-1792035777545",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4188,9 +4309,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2080-Poster-1792035322673",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon",
-    "Top Movies"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4210,7 +4329,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4255,8 +4374,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2085-Poster-1793085373347",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4292,7 +4410,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4308,7 +4426,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   }
  ]
