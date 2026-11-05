@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -204,6 +204,7 @@
   "shaw:2089": "1402181",
   "shaw:2091": "1300968",
   "shaw:2092": "1765072",
+  "shaw:2105": "13320",
   "shaw:2106": "438631"
  },
  "films": {
@@ -310,6 +311,14 @@
    "imdb": 7.9,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/this-is-spinal-tap/"
+  },
+  "13320": {
+   "title": "Funny Face",
+   "year": 1957,
+   "imdb_id": "tt0050419",
+   "imdb": 7.0,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/funny-face/"
   },
   "24128": {
    "title": "Stop Making Sense",
@@ -500,7 +509,7 @@
    "year": 2026,
    "imdb_id": "tt27988879",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
   },
   "747509": {
@@ -787,8 +796,8 @@
    "title": "The Mongoose",
    "year": 2026,
    "imdb_id": "tt13611778",
-   "imdb": 4.9,
-   "letterboxd": null,
+   "imdb": 5.0,
+   "letterboxd": 2.5,
    "letterboxd_url": "https://letterboxd.com/film/the-mongoose-2026/"
   },
   "1300926": {
@@ -875,7 +884,7 @@
    "title": "Godzilla Minus Zero",
    "year": 2026,
    "imdb_id": "tt34384661",
-   "imdb": 8.0,
+   "imdb": 8.2,
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/"
   },
@@ -1387,11 +1396,11 @@
   },
   "avengers endgame x doomsday marathon": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "back to love": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "baththa": {
    "tmdb": 1515692,
@@ -1427,15 +1436,15 @@
   },
   "cartoons underground programme a held breath": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "cartoons underground programme b rip tides": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "cartoons underground programme c playground for kids": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "casino royale": {
    "tmdb": 36557,
@@ -1515,7 +1524,7 @@
   },
   "detective conan episode zero the shinichi kudo aquarium case": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "detective conan the counterfeit case of ultra 30": {
    "tmdb": 1777750,
@@ -1523,7 +1532,7 @@
   },
   "detective conan the movie fallen angels of the highway": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "digger": {
    "tmdb": 1248832,
@@ -1559,7 +1568,7 @@
   },
   "exo planet 6 exhorizon in cinemas": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "fatherland": {
    "tmdb": 1437696,
@@ -1580,6 +1589,10 @@
   "forgotten island": {
    "tmdb": 1465063,
    "checked": "2026-10-30"
+  },
+  "funny face": {
+   "tmdb": 13320,
+   "checked": "2026-11-06"
   },
   "gatto": {
    "tmdb": 1497464,
@@ -1615,7 +1628,7 @@
   },
   "hoshimachi suisei once upon a stellar live viewing": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "how to rob a bank": {
    "tmdb": 1437511,
@@ -1643,7 +1656,7 @@
   },
   "jeonghan x joshua journey into japan live viewing": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "jumanji open world": {
    "tmdb": 1260649,
@@ -1831,7 +1844,7 @@
   },
   "stray kids world tour live viewing": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "street fighter": {
    "tmdb": 1153576,
@@ -1863,11 +1876,11 @@
   },
   "the execution": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "the fellow who rejected college": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "the hopeless 10": {
    "tmdb": null,
@@ -1939,7 +1952,7 @@
   },
   "v": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-06"
   },
   "verity": {
    "tmdb": 1283515,
