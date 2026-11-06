@@ -27,6 +27,149 @@
  },
  "items": [
   {
+   "source": "filmhouse",
+   "id": "241",
+   "title": "Children of Men (20th Anniversary)",
+   "url": "https://filmhouse.sg/film/241/children-of-men-20th-anniversary",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/uh7b_32LIPTz3qHuVHjoH3I1NeyyRoG3XRE8ttuCaXc.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
+   "id": "248",
+   "title": "Rocky (50th Anniversary)",
+   "url": "https://filmhouse.sg/film/248/rocky-50th-anniversary",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/Cs1yCXI4qoAfPw9BnwLaLz-OJWocEi4WrAM5YXufpaQ.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "gv",
+   "id": "2476",
+   "title": "Three Girls Walk Into A Bar",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2476",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2476.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "M18"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "2486",
+   "title": "Fans' Screening: The Hunger Games: Sunrise On The Reaping",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2486",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img2486.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "4509",
+   "title": "Traces Of Justice 神探之痕迹",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4509",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4509.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "M18"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "4516",
+   "title": "Final Interview",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4516",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4516.jpg",
+   "release_date": null,
+   "tags": [
+    "Korean"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7524",
+   "title": "The Alfee 3000premium One Night Encore",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7524",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7524.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2074",
+   "title": "Traces of Justice [M]",
+   "url": "https://shaw.sg/movie-details/2074",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2074-Poster-1793936675489",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2099",
+   "title": "Appa Kutty [TAM]",
+   "url": "https://shaw.sg/movie-details/2099",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2099-Poster-1793934177012",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-06T14:46:36+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
    "source": "shaw",
    "id": "2105",
    "title": "Funny Face (1957)",
@@ -285,13 +428,13 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-04T14:22:52+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
    "source": "shaw",
    "id": "2106",
-   "title": "Dune",
+   "title": "Dune (Re-issue)",
    "url": "https://shaw.sg/movie-details/2106",
    "type": "film",
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2106-Poster-1793761012420",
@@ -484,7 +627,7 @@
   {
    "source": "filmhouse",
    "id": "247",
-   "title": "Ah Girl",
+   "title": "Coming Soon",
    "url": "https://filmhouse.sg/film/247/ah-girl",
    "type": "film",
    "poster": "https://cdn.taposapp.com/poster/600x900/6g27gyNEo-e2vxYCuvVn9EFBqGPuQr6Cxh6mC5oN0Po.jpg",
@@ -494,7 +637,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-02T23:53:43+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "sent"
   },
   {

@@ -48,11 +48,13 @@
   "filmhouse:238": "1476614",
   "filmhouse:239": "848700",
   "filmhouse:240": "927547",
+  "filmhouse:241": "9693",
   "filmhouse:242": "76341",
   "filmhouse:243": "11031",
   "filmhouse:245": "1381071",
   "filmhouse:246": "1454209",
-  "filmhouse:247": "747509",
+  "filmhouse:247": "16313",
+  "filmhouse:248": "1366",
   "filmhouse:85": "313369",
   "gv:1332": "1117898",
   "gv:1392": "1248832",
@@ -92,6 +94,7 @@
   "gv:1480": "791523",
   "gv:1481": "1300968",
   "gv:2475": "822653",
+  "gv:2476": "1196901",
   "gv:2477": "1411529",
   "gv:2479": "1497873",
   "gv:2480": "1353926",
@@ -99,6 +102,7 @@
   "gv:2482": "1546855",
   "gv:2484": "1759202",
   "gv:2485": "1612811",
+  "gv:2486": "1300968",
   "gv:4460": "884692",
   "gv:4484": "1633056",
   "gv:4487": "1746726",
@@ -109,11 +113,13 @@
   "gv:4505": "1515692",
   "gv:4507": "1234139",
   "gv:4508": "1567791",
+  "gv:4509": "1439171",
   "gv:4510": "1381071",
   "gv:4511": "1503023",
   "gv:4512": "656908",
   "gv:4514": "656908",
   "gv:4515": "1748404",
+  "gv:4516": "1545057",
   "gv:4517": "1567937",
   "gv:4518": "1567937",
   "gv:4520": "1402181",
@@ -194,6 +200,7 @@
   "shaw:2071": "1234139",
   "shaw:2072": "1234139",
   "shaw:2073": "1584855",
+  "shaw:2074": "1439171",
   "shaw:2078": "1381071",
   "shaw:2081": "747509",
   "shaw:2082": "1381071",
@@ -204,6 +211,7 @@
   "shaw:2089": "1402181",
   "shaw:2091": "1300968",
   "shaw:2092": "1765072",
+  "shaw:2099": "1680033",
   "shaw:2105": "13320",
   "shaw:2106": "438631"
  },
@@ -272,6 +280,14 @@
    "letterboxd": 3.8,
    "letterboxd_url": "https://letterboxd.com/film/the-city-of-lost-children/"
   },
+  "1366": {
+   "title": "Rocky",
+   "year": 1976,
+   "imdb_id": "tt0075148",
+   "imdb": 8.1,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/rocky/"
+  },
   "2011": {
    "title": "Persepolis",
    "year": 2007,
@@ -296,6 +312,14 @@
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/monster-house/"
   },
+  "9693": {
+   "title": "Children of Men",
+   "year": 2006,
+   "imdb_id": "tt0206634",
+   "imdb": 7.9,
+   "letterboxd": 4.3,
+   "letterboxd_url": "https://letterboxd.com/film/children-of-men/"
+  },
   "10515": {
    "title": "Castle in the Sky",
    "year": 1986,
@@ -319,6 +343,14 @@
    "imdb": 7.0,
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/funny-face/"
+  },
+  "16313": {
+   "title": "Coming Soon",
+   "year": 2008,
+   "imdb_id": "tt1307057",
+   "imdb": 6.0,
+   "letterboxd": 3.0,
+   "letterboxd_url": "https://letterboxd.com/film/coming-soon-2008/"
   },
   "24128": {
    "title": "Stop Making Sense",
@@ -704,6 +736,14 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/oh-my-ghost-oh-my-god/"
   },
+  "1196901": {
+   "title": "Three Girls Walk Into a Bar",
+   "year": null,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/three-girls-walk-into-a-bar/"
+  },
   "1204680": {
    "title": "Coyote vs. Acme",
    "year": 2026,
@@ -1032,6 +1072,14 @@
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/coward-2026/"
   },
+  "1439171": {
+   "title": "Traces of Justice",
+   "year": 2026,
+   "imdb_id": "tt38188218",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/traces-of-justice/"
+  },
   "1454209": {
    "title": "National Theatre Live: Inter Alia",
    "year": 2025,
@@ -1119,6 +1167,14 @@
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/hexed-2026/"
+  },
+  "1545057": {
+   "title": "Final Interview",
+   "year": 2026,
+   "imdb_id": "tt44980509",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/final-interview/"
   },
   "1546855": {
    "title": "It's OK",
@@ -1256,6 +1312,14 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/itam-a-sun-bear-story/"
   },
+  "1680033": {
+   "title": "Appa Kutty",
+   "year": 2026,
+   "imdb_id": "tt41687980",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/appa-kutty/"
+  },
   "1716531": {
    "title": "Drones",
    "year": 2026,
@@ -1386,6 +1450,10 @@
    "tmdb": 55,
    "checked": "2026-10-30"
   },
+  "appa kutty": {
+   "tmdb": 1680033,
+   "checked": "2026-11-06"
+  },
   "avengers doomsday": {
    "tmdb": 1003596,
    "checked": "2026-10-30"
@@ -1490,6 +1558,10 @@
    "tmdb": 621304,
    "checked": "2026-10-30"
   },
+  "children of men": {
+   "tmdb": 9693,
+   "checked": "2026-11-06"
+  },
   "clayface": {
    "tmdb": 1400940,
    "checked": "2026-10-30"
@@ -1497,6 +1569,10 @@
   "cocomelon the movie": {
    "tmdb": 1480503,
    "checked": "2026-10-30"
+  },
+  "coming soon": {
+   "tmdb": 16313,
+   "checked": "2026-11-06"
   },
   "coward": {
    "tmdb": 1437981,
@@ -1573,6 +1649,10 @@
   "fatherland": {
    "tmdb": 1437696,
    "checked": "2026-10-30"
+  },
+  "final interview": {
+   "tmdb": 1545057,
+   "checked": "2026-11-06"
   },
   "finding mojo": {
    "tmdb": 1425085,
@@ -1818,6 +1898,10 @@
    "tmdb": 1423191,
    "checked": "2026-10-30"
   },
+  "rocky": {
+   "tmdb": 1366,
+   "checked": "2026-11-06"
+  },
   "roman holiday": {
    "tmdb": 804,
    "checked": "2026-10-30"
@@ -1853,6 +1937,10 @@
   "sultan mahmood mangkat di julang": {
    "tmdb": 286237,
    "checked": "2026-10-30"
+  },
+  "the alfee 3000premium one night": {
+   "tmdb": null,
+   "checked": "2026-11-06"
   },
   "the angry birds movie 3": {
    "tmdb": 1300926,
@@ -1945,6 +2033,14 @@
   "this is spinal tap": {
    "tmdb": 11031,
    "checked": "2026-10-30"
+  },
+  "three girls walk into a bar": {
+   "tmdb": 1196901,
+   "checked": "2026-11-06"
+  },
+  "traces of justice": {
+   "tmdb": 1439171,
+   "checked": "2026-11-06"
   },
   "udta teer": {
    "tmdb": 1375156,
