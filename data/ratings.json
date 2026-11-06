@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -9,10 +9,13 @@
   "afa:sgiff-2026-macho-dancer-1988": "170924",
   "afa:sgiff-2026-my-name-aint-suzie-1985": "187021",
   "afa:sultan-mahmood-mangkat-di-julang-the-passing-of-sultan-mahmood-1961": "286237",
+  "carnival:appakutty": "1680033",
   "carnival:disco": "1612811",
   "carnival:disco-m18": "1612811",
+  "carnival:donga-naa-koduku": "1641520",
   "carnival:drones": "1716531",
   "carnival:jailer-2-nc16": "1234139",
+  "carnival:john-doe": "1655020",
   "carnival:mookuthi-amman-2": "1327835",
   "carnival:mookuthi-amman-2-nc16": "1327835",
   "carnival:scene": "1402181",
@@ -134,6 +137,7 @@
   "gv:7515": "1591675",
   "gv:7518": "1381071",
   "gv:7520": "1777750",
+  "gv:7525": "1553200",
   "gv:8489": "1269325",
   "gv:8490": "1375156",
   "gv:8491": "1081010",
@@ -540,7 +544,7 @@
    "title": "Ramayana: Rise of a Legend",
    "year": 2026,
    "imdb_id": "tt27988879",
-   "imdb": null,
+   "imdb": 8.7,
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
   },
@@ -572,7 +576,7 @@
    "title": "Wildwood",
    "year": 2026,
    "imdb_id": "tt2056785",
-   "imdb": 8.7,
+   "imdb": 8.6,
    "letterboxd": 4.4,
    "letterboxd_url": "https://letterboxd.com/film/wildwood-2026/"
   },
@@ -685,7 +689,7 @@
    "year": 2026,
    "imdb_id": "tt2321555",
    "imdb": null,
-   "letterboxd": 3.4,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/"
   },
   "1153576": {
@@ -716,7 +720,7 @@
    "title": "The Beast",
    "year": 2026,
    "imdb_id": "tt29256561",
-   "imdb": 5.2,
+   "imdb": 5.1,
    "letterboxd": 2.7,
    "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
   },
@@ -837,7 +841,7 @@
    "year": 2026,
    "imdb_id": "tt13611778",
    "imdb": 5.0,
-   "letterboxd": 2.5,
+   "letterboxd": 2.3,
    "letterboxd_url": "https://letterboxd.com/film/the-mongoose-2026/"
   },
   "1300926": {
@@ -853,7 +857,7 @@
    "year": 2026,
    "imdb_id": "tt32558705",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/"
   },
   "1315772": {
@@ -924,7 +928,7 @@
    "title": "Godzilla Minus Zero",
    "year": 2026,
    "imdb_id": "tt34384661",
-   "imdb": 8.2,
+   "imdb": 8.1,
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/"
   },
@@ -941,7 +945,7 @@
    "year": 2026,
    "imdb_id": "tt32432312",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/the-mage/"
   },
   "1391021": {
@@ -1013,7 +1017,7 @@
    "year": 2026,
    "imdb_id": "tt35511966",
    "imdb": 8.1,
-   "letterboxd": 4.4,
+   "letterboxd": 4.5,
    "letterboxd_url": "https://letterboxd.com/film/la-bola-negra/"
   },
   "1423191": {
@@ -1184,6 +1188,14 @@
    "letterboxd": 3.4,
    "letterboxd_url": "https://letterboxd.com/film/its-ok-2026/"
   },
+  "1553200": {
+   "title": "Rascal Does Not Dream of a Dear Friend",
+   "year": 2026,
+   "imdb_id": "tt39927807",
+   "imdb": 9.5,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/rascal-does-not-dream-of-a-dear-friend/"
+  },
   "1555810": {
    "title": "The Old Man and His Car",
    "year": 2026,
@@ -1288,6 +1300,14 @@
    "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/all-wishes-come-true/"
   },
+  "1641520": {
+   "title": "Donga Naa Koduku",
+   "year": 2026,
+   "imdb_id": "tt43738410",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/donga-naa-koduku/"
+  },
   "1649403": {
    "title": "George Michael: The Faith Tour",
    "year": 2026,
@@ -1303,6 +1323,14 @@
    "imdb": 5.4,
    "letterboxd": 2.8,
    "letterboxd_url": "https://letterboxd.com/film/nayyi-navelli/"
+  },
+  "1655020": {
+   "title": "John Doe",
+   "year": 2026,
+   "imdb_id": "tt49855692",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/john-doe-2026/"
   },
   "1679026": {
    "title": "Itam: A Sun Bear Story",
@@ -1341,7 +1369,7 @@
    "year": 2026,
    "imdb_id": "tt49276988",
    "imdb": null,
-   "letterboxd": 3.1,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/kudrat-1968-high-council/"
   },
   "1746726": {
@@ -1453,6 +1481,10 @@
   "appa kutty": {
    "tmdb": 1680033,
    "checked": "2026-11-06"
+  },
+  "appakutty": {
+   "tmdb": 1680033,
+   "checked": "2026-11-07"
   },
   "avengers doomsday": {
    "tmdb": 1003596,
@@ -1618,6 +1650,10 @@
    "tmdb": 1612811,
    "checked": "2026-10-30"
   },
+  "donga naa koduku": {
+   "tmdb": 1641520,
+   "checked": "2026-11-07"
+  },
   "drishyam the conclusion": {
    "tmdb": 1269325,
    "checked": "2026-10-30"
@@ -1737,6 +1773,10 @@
   "jeonghan x joshua journey into japan live viewing": {
    "tmdb": null,
    "checked": "2026-11-06"
+  },
+  "john doe": {
+   "tmdb": 1655020,
+   "checked": "2026-11-07"
   },
   "jumanji open world": {
    "tmdb": 1260649,
@@ -1876,7 +1916,7 @@
   },
   "ponyo on the cliff by the sea": {
    "tmdb": null,
-   "checked": "2026-10-31"
+   "checked": "2026-11-07"
   },
   "prahaar the untold story of ujjwal nikam": {
    "tmdb": 1081010,
@@ -1893,6 +1933,10 @@
   "ramayana rise of a legend": {
    "tmdb": 656908,
    "checked": "2026-10-30"
+  },
+  "rascal does not dream of a dear friend": {
+   "tmdb": 1553200,
+   "checked": "2026-11-07"
   },
   "resident evil": {
    "tmdb": 1423191,
