@@ -405,7 +405,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-11-05T03:46:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "quiet"
   },
   {
@@ -2412,7 +2412,7 @@
    "tags": [
     "SFS Showcase #61"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
