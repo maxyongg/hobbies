@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -205,6 +205,7 @@
   "shaw:2072": "1234139",
   "shaw:2073": "1584855",
   "shaw:2074": "1439171",
+  "shaw:2075": "1381071",
   "shaw:2078": "1381071",
   "shaw:2081": "747509",
   "shaw:2082": "1381071",
@@ -544,7 +545,7 @@
    "title": "Ramayana: Rise of a Legend",
    "year": 2026,
    "imdb_id": "tt27988879",
-   "imdb": 8.6,
+   "imdb": 8.5,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
   },
@@ -688,8 +689,8 @@
    "title": "The Cat in the Hat",
    "year": 2026,
    "imdb_id": "tt2321555",
-   "imdb": 6.5,
-   "letterboxd": 3.2,
+   "imdb": 6.4,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/"
   },
   "1153576": {
@@ -720,7 +721,7 @@
    "title": "The Beast",
    "year": 2026,
    "imdb_id": "tt29256561",
-   "imdb": 5.2,
+   "imdb": 5.1,
    "letterboxd": 2.7,
    "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
   },
@@ -832,7 +833,7 @@
    "title": "I Play Rocky",
    "year": 2026,
    "imdb_id": "tt11995650",
-   "imdb": 7.9,
+   "imdb": 8.0,
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/i-play-rocky/"
   },
@@ -928,7 +929,7 @@
    "title": "Godzilla Minus Zero",
    "year": 2026,
    "imdb_id": "tt34384661",
-   "imdb": 8.1,
+   "imdb": 8.0,
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/"
   },
@@ -992,8 +993,8 @@
    "title": "Scene",
    "year": 2026,
    "imdb_id": "tt38192494",
-   "imdb": null,
-   "letterboxd": 3.9,
+   "imdb": 8.3,
+   "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/scene-2026/"
   },
   "1411529": {
@@ -1249,7 +1250,7 @@
    "year": 2026,
    "imdb_id": "tt39094466",
    "imdb": 7.6,
-   "letterboxd": 3.9,
+   "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/look-back-2026/"
   },
   "1598766": {
@@ -1313,7 +1314,7 @@
    "year": 2026,
    "imdb_id": "tt40564737",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/george-michael-the-faith-tour/"
   },
   "1654581": {
@@ -1409,7 +1410,7 @@
    "year": 2026,
    "imdb_id": "tt46656123",
    "imdb": null,
-   "letterboxd": 3.2,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/detective-conan-the-counterfeit-case-of-ultra/"
   }
  },
