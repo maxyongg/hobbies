@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -689,7 +689,7 @@
    "title": "The Cat in the Hat",
    "year": 2026,
    "imdb_id": "tt2321555",
-   "imdb": 6.4,
+   "imdb": 6.6,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/"
   },
@@ -946,7 +946,7 @@
    "year": 2026,
    "imdb_id": "tt32432312",
    "imdb": null,
-   "letterboxd": 3.1,
+   "letterboxd": 3.0,
    "letterboxd_url": "https://letterboxd.com/film/the-mage/"
   },
   "1391021": {
@@ -993,7 +993,7 @@
    "title": "Scene",
    "year": 2026,
    "imdb_id": "tt38192494",
-   "imdb": 8.3,
+   "imdb": 8.2,
    "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/scene-2026/"
   },
@@ -1194,7 +1194,7 @@
    "year": 2026,
    "imdb_id": "tt39927807",
    "imdb": 9.5,
-   "letterboxd": null,
+   "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/rascal-does-not-dream-of-a-dear-friend/"
   },
   "1555810": {
@@ -1298,7 +1298,7 @@
    "year": 2026,
    "imdb_id": "tt43515101",
    "imdb": 8.0,
-   "letterboxd": 3.9,
+   "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/all-wishes-come-true/"
   },
   "1641520": {
@@ -1313,8 +1313,8 @@
    "title": "George Michael: The Faith Tour",
    "year": 2026,
    "imdb_id": "tt40564737",
-   "imdb": null,
-   "letterboxd": 4.1,
+   "imdb": 8.8,
+   "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/george-michael-the-faith-tour/"
   },
   "1654581": {
@@ -1525,11 +1525,11 @@
   },
   "bts world tour arirang in jakarta live viewing": {
    "tmdb": null,
-   "checked": "2026-11-03"
+   "checked": "2026-11-10"
   },
   "bts world tour arirang in kaohsiung live viewing": {
    "tmdb": null,
-   "checked": "2026-11-03"
+   "checked": "2026-11-10"
   },
   "bts world tour arirang in sao paulo live viewing": {
    "tmdb": null,
@@ -1837,7 +1837,7 @@
   },
   "mookuthi amman 2 mahasakthi": {
    "tmdb": null,
-   "checked": "2026-11-03"
+   "checked": "2026-11-10"
   },
   "moonlight": {
    "tmdb": 376867,
