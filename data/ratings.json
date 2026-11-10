@@ -145,6 +145,7 @@
   "sfs:6a5042c675bd49357a05f4c2": "1679026",
   "sfs:6a5045c451da292b56c9aa70": "1555810",
   "sfs:6a5f1c002b33ea397dd1afc0": "1425085",
+  "sfs:6a6807ca888c1663a56725b9": "1248437",
   "sfs:6aaa3073f96d731e7868b10e": "458624",
   "sfs:6ab4a1ee427841e72d8e97c3": "1421155",
   "sfs:6ac5c272d4796dc7179974b0": "1157628",
@@ -152,6 +153,9 @@
   "sfs:6ace287d8ff16fc6f850878b": "804",
   "sfs:6ace29d10b3d0ab772302dbf": "164",
   "sfs:6ae00846683644e34d1bfe51": "1437981",
+  "sfs:6af27e99d10654484754a86b": "10834",
+  "sfs:6af27fc2a6767d89a78615bf": "76406",
+  "sfs:6af280c52df1bbd07f13fb7e": "1620313",
   "shaw:1363": "1117898",
   "shaw:1377": "1477104",
   "shaw:1410": "1286656",
@@ -216,6 +220,7 @@
   "shaw:2089": "1402181",
   "shaw:2091": "1300968",
   "shaw:2092": "1765072",
+  "shaw:2094": "1457866",
   "shaw:2099": "1680033",
   "shaw:2105": "13320",
   "shaw:2106": "438631"
@@ -333,6 +338,14 @@
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/castle-in-the-sky/"
   },
+  "10834": {
+   "title": "Kings of the Road",
+   "year": 1976,
+   "imdb_id": "tt0073152",
+   "imdb": 7.6,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/kings-of-the-road/"
+  },
   "11031": {
    "title": "This Is Spinal Tap",
    "year": 1984,
@@ -412,6 +425,14 @@
    "imdb": 8.1,
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/mad-max-fury-road/"
+  },
+  "76406": {
+   "title": "Tokyo-Ga",
+   "year": 1985,
+   "imdb_id": "tt0090182",
+   "imdb": 7.3,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/tokyo-ga/"
   },
   "170924": {
    "title": "Macho Dancer",
@@ -773,6 +794,14 @@
    "letterboxd": 3.4,
    "letterboxd_url": "https://letterboxd.com/film/jailer-2-2026/"
   },
+  "1248437": {
+   "title": "King Of Hawkers",
+   "year": 2024,
+   "imdb_id": "tt31358065",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/king-of-hawkers/"
+  },
   "1248832": {
    "title": "Digger",
    "year": 2026,
@@ -1093,6 +1122,14 @@
    "letterboxd": 4.3,
    "letterboxd_url": "https://letterboxd.com/film/national-theatre-live-inter-alia/"
   },
+  "1457866": {
+   "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "year": 2026,
+   "imdb_id": "tt36408401",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/"
+  },
   "1465063": {
    "title": "Forgotten Island",
    "year": 2026,
@@ -1276,6 +1313,14 @@
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/disco-2026-2/"
+  },
+  "1620313": {
+   "title": "The Samurai and the Prisoner",
+   "year": 2026,
+   "imdb_id": "tt39602215",
+   "imdb": 7.1,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/the-samurai-and-the-prisoner/"
   },
   "1623376": {
    "title": "Blue Lock",
@@ -1783,6 +1828,14 @@
    "tmdb": 1260649,
    "checked": "2026-10-30"
   },
+  "king of hawkers": {
+   "tmdb": 1248437,
+   "checked": "2026-11-10"
+  },
+  "kings of the road": {
+   "tmdb": 10834,
+   "checked": "2026-11-10"
+  },
   "kokuho": {
    "tmdb": 1379266,
    "checked": "2026-10-30"
@@ -2015,6 +2068,10 @@
    "tmdb": null,
    "checked": "2026-11-06"
   },
+  "the further mis adventures of cliff booth": {
+   "tmdb": 1457866,
+   "checked": "2026-11-10"
+  },
   "the hopeless 10": {
    "tmdb": null,
    "checked": "2026-10-30"
@@ -2059,6 +2116,10 @@
    "tmdb": 1433568,
    "checked": "2026-11-05"
   },
+  "the samurai and the prisoner": {
+   "tmdb": 1620313,
+   "checked": "2026-11-10"
+  },
   "the social reckoning": {
    "tmdb": 1281331,
    "checked": "2026-10-30"
@@ -2082,6 +2143,10 @@
   "three girls walk into a bar": {
    "tmdb": 1196901,
    "checked": "2026-11-06"
+  },
+  "tokyo ga": {
+   "tmdb": 76406,
+   "checked": "2026-11-10"
   },
   "traces of justice": {
    "tmdb": 1439171,

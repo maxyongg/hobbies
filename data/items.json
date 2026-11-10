@@ -27,6 +27,86 @@
  },
  "items": [
   {
+   "source": "sfs",
+   "id": "6a6807ca888c1663a56725b9",
+   "title": "King Of Hawkers",
+   "url": "https://events.singaporefilmsociety.com/films/6a6807ca888c1663a56725b9",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/81892209f4018478aaa08e71ee385164.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-10T15:18:31+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "sfs",
+   "id": "6af27e99d10654484754a86b",
+   "title": "Kings of the Road",
+   "url": "https://events.singaporefilmsociety.com/films/6af27e99d10654484754a86b",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/6a18b1ccbaf05da446c7d8fb6f6a7bec.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-10T15:18:31+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "sfs",
+   "id": "6af27fc2a6767d89a78615bf",
+   "title": "Tokyo-Ga",
+   "url": "https://events.singaporefilmsociety.com/films/6af27fc2a6767d89a78615bf",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/9faeafc10c0e2534df12ed10d71a69bd.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-10T15:18:31+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "sfs",
+   "id": "6af280c52df1bbd07f13fb7e",
+   "title": "The Samurai and the Prisoner",
+   "url": "https://events.singaporefilmsociety.com/films/6af280c52df1bbd07f13fb7e",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/450601a282c72cc0e97a4be1f3bd09de.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-10T15:18:31+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2094",
+   "title": "The Further Mis-Adventures of Cliff Booth (IMAX LASER)",
+   "url": "https://shaw.sg/movie-details/2094",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2094-Poster-1794284417930",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-10T15:18:31+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
    "source": "shaw",
    "id": "2075",
    "title": "Godzilla Minus Zero [JPN]",
@@ -189,7 +269,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4516.jpg",
    "release_date": null,
    "tags": [
-    "Korean"
+    "Korean",
+    "PG13"
    ],
    "showing": "soon",
    "first_seen": "2026-11-06T14:46:36+08:00",
@@ -221,7 +302,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2074-Poster-1793936675489",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-06T14:46:36+08:00",
@@ -253,7 +334,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2105-Poster-1793873257083",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-06T03:57:33+08:00",
@@ -1040,7 +1121,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img1413.jpg",
    "release_date": null,
    "tags": [
-    "English"
+    "English",
+    "NC16"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
@@ -1273,7 +1355,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img1454.jpg",
    "release_date": null,
    "tags": [
-    "English"
+    "English",
+    "PG13"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
@@ -1878,7 +1961,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4521.jpg",
    "release_date": null,
    "tags": [
-    "Malay"
+    "Malay, English",
+    "PG"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
@@ -3741,7 +3825,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1721-Poster-1791175472700",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -3939,7 +4023,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1812-Poster-1789959746428",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4239,7 +4323,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1900-Poster-1791191442855",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4305,7 +4389,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2014-Poster-1792122725906",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
