@@ -27,6 +27,56 @@
  },
  "items": [
   {
+   "source": "gv",
+   "id": "4519",
+   "title": "Godzilla Minus Zero (Atmos)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4519",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4510.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-11-11T03:44:39+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7530",
+   "title": "Puella Magi Madoka Magica The Movie -Walpurgisnach: Rising-",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7530",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7530.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG13"
+   ],
+   "showing": "now",
+   "first_seen": "2026-11-11T03:44:39+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "1875",
+   "title": "California Schemin'",
+   "url": "https://shaw.sg/movie-details/1875",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1875-Poster-1794303709810",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-11T03:44:39+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
    "source": "sfs",
    "id": "6a6807ca888c1663a56725b9",
    "title": "King Of Hawkers",
@@ -55,7 +105,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-10T15:18:31+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "quiet"
   },
   {
@@ -238,7 +288,7 @@
     "English",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
    "alert": "quiet"
@@ -255,7 +305,7 @@
     "Mandarin",
     "M18"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
    "alert": "quiet"
@@ -272,7 +322,7 @@
     "Korean",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
    "alert": "quiet"
@@ -1124,7 +1174,7 @@
     "English",
     "NC16"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1358,7 +1408,7 @@
     "English",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -1964,7 +2014,7 @@
     "Malay, English",
     "PG"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -2235,7 +2285,7 @@
     "Japanese",
     "PG"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -3304,7 +3354,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3374,7 +3424,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4339,7 +4389,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1901-Poster-1792657536940",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4383,7 +4433,7 @@
   {
    "source": "shaw",
    "id": "2014",
-   "title": "THE BEAST",
+   "title": "The Beast",
    "url": "https://shaw.sg/movie-details/2014",
    "type": "film",
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2014-Poster-1792122725906",

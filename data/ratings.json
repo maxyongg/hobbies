@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -125,6 +125,7 @@
   "gv:4516": "1545057",
   "gv:4517": "1567937",
   "gv:4518": "1567937",
+  "gv:4519": "1381071",
   "gv:4520": "1402181",
   "gv:4521": "1731816",
   "gv:4523": "1433568",
@@ -138,6 +139,7 @@
   "gv:7518": "1381071",
   "gv:7520": "1777750",
   "gv:7525": "1553200",
+  "gv:7530": "822653",
   "gv:8489": "1269325",
   "gv:8490": "1375156",
   "gv:8491": "1081010",
@@ -187,6 +189,7 @@
   "shaw:1843": "1088548",
   "shaw:1869": "1260649",
   "shaw:1874": "1294189",
+  "shaw:1875": "1193550",
   "shaw:1877": "1538497",
   "shaw:1881": "1078446",
   "shaw:1882": "1300926",
@@ -566,7 +569,7 @@
    "title": "Ramayana: Rise of a Legend",
    "year": 2026,
    "imdb_id": "tt27988879",
-   "imdb": 8.5,
+   "imdb": 8.4,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
   },
@@ -754,6 +757,14 @@
    "letterboxd": 2.9,
    "letterboxd_url": "https://letterboxd.com/film/paw-patrol-the-dino-movie/"
   },
+  "1193550": {
+   "title": "California Schemin'",
+   "year": 2026,
+   "imdb_id": "tt29549490",
+   "imdb": 6.6,
+   "letterboxd": 3.4,
+   "letterboxd_url": "https://letterboxd.com/film/california-schemin/"
+  },
   "1193673": {
    "title": "Oh My Ghost! Oh My God!",
    "year": 2026,
@@ -830,7 +841,7 @@
    "title": "Heart of the Beast",
    "year": 2026,
    "imdb_id": "tt7526136",
-   "imdb": 7.2,
+   "imdb": 7.1,
    "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/heart-of-the-beast-2026/"
   },
@@ -838,7 +849,7 @@
    "title": "Drishyam: The Conclusion",
    "year": 2026,
    "imdb_id": "tt27050858",
-   "imdb": 7.7,
+   "imdb": 7.6,
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/drishyam-the-conclusion/"
   },
@@ -910,7 +921,7 @@
    "title": "Mookuthi Amman 2",
    "year": 2026,
    "imdb_id": "tt32909364",
-   "imdb": null,
+   "imdb": 3.5,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/mookuthi-amman-2/"
   },
@@ -1046,7 +1057,7 @@
    "title": "LA BOLA NEGRA",
    "year": 2026,
    "imdb_id": "tt35511966",
-   "imdb": 8.1,
+   "imdb": 8.2,
    "letterboxd": 4.5,
    "letterboxd_url": "https://letterboxd.com/film/la-bola-negra/"
   },
@@ -1054,7 +1065,7 @@
    "title": "Resident Evil",
    "year": 2026,
    "imdb_id": "tt35538033",
-   "imdb": 7.5,
+   "imdb": 7.4,
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/resident-evil-2026/"
   },
@@ -1352,7 +1363,7 @@
    "imdb_id": "tt43738410",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/donga-naa-koduku/"
+   "letterboxd_url": "https://letterboxd.com/film/dnk/"
   },
   "1649403": {
    "title": "George Michael: The Faith Tour",
@@ -1579,6 +1590,10 @@
   "bts world tour arirang in sao paulo live viewing": {
    "tmdb": null,
    "checked": "2026-10-30"
+  },
+  "california schemin": {
+   "tmdb": 1193550,
+   "checked": "2026-11-11"
   },
   "cartoons underground programme a held breath": {
    "tmdb": null,
@@ -1975,6 +1990,10 @@
   "prahaar the untold story of ujjwal nikam": {
    "tmdb": 1081010,
    "checked": "2026-10-30"
+  },
+  "puella magi madoka magica the movie walpurgisnach rising": {
+   "tmdb": 822653,
+   "checked": "2026-11-11"
   },
   "puella magi madoka magica the movie walpurgisnacht rising": {
    "tmdb": 822653,
