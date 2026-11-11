@@ -27,6 +27,36 @@
  },
  "items": [
   {
+   "source": "carnival",
+   "id": "donga-naa-koduku-nc16",
+   "title": "Donga Naa Koduku (NC16)",
+   "url": "https://carnivalcinemas.sg/",
+   "type": "film",
+   "poster": "https://carnivalcinemas.sg/upload/movie/CC00002376.JPG",
+   "release_date": "2026-11-13",
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-11-11T14:21:03+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2088",
+   "title": "Disney's Hexed - Family Movie Day",
+   "url": "https://shaw.sg/movie-details/2088",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2088-Poster-1792983195027",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-11T14:21:03+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
    "source": "gv",
    "id": "4519",
    "title": "Godzilla Minus Zero (Atmos)",
@@ -146,7 +176,7 @@
    "title": "The Further Mis-Adventures of Cliff Booth (IMAX LASER)",
    "url": "https://shaw.sg/movie-details/2094",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2094-Poster-1794284417930",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2094-Poster-1794366126672",
    "release_date": null,
    "tags": [
     "Coming Soon"
@@ -197,7 +227,7 @@
    "tags": [],
    "showing": "soon",
    "first_seen": "2026-11-07T03:25:15+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "quiet"
   },
   {
@@ -650,7 +680,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-04T14:22:52+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -775,7 +805,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2092-Poster-1793692226083",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-03T22:15:30+08:00",
@@ -2012,7 +2042,7 @@
    "release_date": null,
    "tags": [
     "Malay, English",
-    "PG"
+    "PG13"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",

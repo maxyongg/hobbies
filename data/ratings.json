@@ -13,6 +13,7 @@
   "carnival:disco": "1612811",
   "carnival:disco-m18": "1612811",
   "carnival:donga-naa-koduku": "1641520",
+  "carnival:donga-naa-koduku-nc16": "1641520",
   "carnival:drones": "1716531",
   "carnival:jailer-2-nc16": "1234139",
   "carnival:john-doe": "1655020",
@@ -1802,6 +1803,10 @@
   "hexed": {
    "tmdb": 1538497,
    "checked": "2026-10-30"
+  },
+  "hexed family movie day": {
+   "tmdb": null,
+   "checked": "2026-11-11"
   },
   "hoshimachi suisei once upon a stellar live viewing": {
    "tmdb": null,
