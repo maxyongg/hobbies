@@ -27,6 +27,39 @@
  },
  "items": [
   {
+   "source": "gv",
+   "id": "7531",
+   "title": "Detective Conan: The Counterfeit Case Of Ultra 30",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7531",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7531.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese",
+    "PG"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-12T15:10:56+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2116",
+   "title": "Bachelor Party D'Eux [MAL]",
+   "url": "https://shaw.sg/movie-details/2116",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2116-Poster-1794452972505",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-12T15:10:56+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
    "source": "carnival",
    "id": "donga-naa-koduku-nc16",
    "title": "Donga Naa Koduku (NC16)",
@@ -49,7 +82,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2088-Poster-1794386677857",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-11T14:21:03+08:00",
@@ -641,7 +674,7 @@
    "title": "OM Chapter 1: Udhiram - The Blood Wood [TAM]",
    "url": "https://shaw.sg/movie-details/2098",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2098-Poster-1793782059048",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2098-Poster-1794450710158",
    "release_date": null,
    "tags": [
     "Coming Soon"
@@ -694,7 +727,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-11-04T07:24:06+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "quiet"
   },
   {
@@ -1189,7 +1222,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1256,7 +1289,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1474,7 +1507,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1525,7 +1558,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1842,7 +1875,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1893,7 +1926,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2097,7 +2130,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2329,7 +2362,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img7521.jpg",
    "release_date": null,
    "tags": [
-    "Korean, Japanese"
+    "Korean, Japanese",
+    "General"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",

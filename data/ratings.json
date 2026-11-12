@@ -141,6 +141,7 @@
   "gv:7520": "1777750",
   "gv:7525": "1553200",
   "gv:7530": "822653",
+  "gv:7531": "1777750",
   "gv:8489": "1269325",
   "gv:8490": "1375156",
   "gv:8491": "1081010",
@@ -227,7 +228,8 @@
   "shaw:2094": "1457866",
   "shaw:2099": "1680033",
   "shaw:2105": "13320",
-  "shaw:2106": "438631"
+  "shaw:2106": "438631",
+  "shaw:2116": "1533928"
  },
  "films": {
   "55": {
@@ -1214,6 +1216,14 @@
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/baththa/"
   },
+  "1533928": {
+   "title": "Bachelor Party D'eux",
+   "year": 2026,
+   "imdb_id": "tt41075537",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/bachelor-party-deux/"
+  },
   "1538497": {
    "title": "Hexed",
    "year": 2026,
@@ -1555,6 +1565,10 @@
   "avengers endgame x doomsday marathon": {
    "tmdb": null,
    "checked": "2026-11-06"
+  },
+  "bachelor party deux": {
+   "tmdb": 1533928,
+   "checked": "2026-11-12"
   },
   "back to love": {
    "tmdb": null,
