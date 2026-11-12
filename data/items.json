@@ -63,12 +63,12 @@
    "source": "carnival",
    "id": "donga-naa-koduku-nc16",
    "title": "Donga Naa Koduku (NC16)",
-   "url": "https://carnivalcinemas.sg/",
+   "url": "https://carnivalcinemas.sg/Donga%20Naa%20Koduku(NC16)/Donga%20Naa%20Koduku(NC16)",
    "type": "film",
    "poster": "https://carnivalcinemas.sg/upload/movie/CC00002376.JPG",
    "release_date": "2026-11-13",
    "tags": [],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-11T14:21:03+08:00",
    "listed": true,
    "alert": "quiet"
@@ -198,7 +198,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
    "alert": "quiet"
@@ -267,12 +267,12 @@
    "source": "carnival",
    "id": "john-doe",
    "title": "JOHN DOE",
-   "url": "https://carnivalcinemas.sg/",
+   "url": "https://carnivalcinemas.sg/JOHN%20DOE/JOHN%20DOE",
    "type": "film",
    "poster": "https://carnivalcinemas.sg/upload/movie/CC00002375.JPG",
    "release_date": "2026-11-13",
    "tags": [],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-07T03:25:15+08:00",
    "listed": true,
    "alert": "quiet"
@@ -2482,7 +2482,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "now",
+   "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -4676,7 +4676,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4893,6 +4893,7 @@
    "release_date": null,
    "tags": [
     "Now Showing",
+    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
