@@ -28,6 +28,22 @@
  "items": [
   {
    "source": "gv",
+   "id": "7523",
+   "title": "Yuzuru Hanyu \"REALIVE\" an ICE STORY project in Saga Live Viewing",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7523",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7523.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-13T14:45:49+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
    "id": "7531",
    "title": "Detective Conan: The Counterfeit Case Of Ultra 30",
    "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7531",
@@ -1403,7 +1419,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img1448.jpg",
    "release_date": null,
    "tags": [
-    "English"
+    "English",
+    "PG"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
