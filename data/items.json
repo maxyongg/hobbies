@@ -27,6 +27,171 @@
  },
  "items": [
   {
+   "source": "afa",
+   "id": "rerun-an-elephant-sitting-still",
+   "title": "An Elephant Sitting Still (大象席地而坐, 2018)",
+   "url": "https://asianfilmarchive.org/event-calendar/rerun-an-elephant-sitting-still/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/an-elephant-sitting-still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Rerun"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "afa",
+   "id": "rerun-december-2026",
+   "title": "RERUN: December 2026",
+   "url": "https://asianfilmarchive.org/event-calendar/rerun-december-2026/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/11/Rerun26-banner.jpg",
+   "release_date": null,
+   "tags": [
+    "Programme",
+    "Rerun"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "afa",
+   "id": "rerun-jonas-mekas",
+   "title": "As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty (2000)",
+   "url": "https://asianfilmarchive.org/event-calendar/rerun-jonas-mekas/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/08/as_I_was_moving_jonas-mekas_still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Rerun"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "afa",
+   "id": "rerun-singapore-dreaming",
+   "title": "Singapore Dreaming 美满人生 (2006)",
+   "url": "https://asianfilmarchive.org/event-calendar/rerun-singapore-dreaming/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2026/07/SingaporeDreaming_Still.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Rerun"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "afa",
+   "id": "rerun-the-colour-of-pomegranates",
+   "title": "The Colour of Pomegranates (Նռան գույնը, 1969)",
+   "url": "https://asianfilmarchive.org/event-calendar/rerun-the-colour-of-pomegranates/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2025/12/the-colour-of-pomegranates_1.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "afa",
+   "id": "rerun-the-green-ray",
+   "title": "The Green Ray (Le Rayon Vert, 1986)",
+   "url": "https://asianfilmarchive.org/event-calendar/rerun-the-green-ray/",
+   "type": "film",
+   "poster": "https://asianfilmarchive.org/wp-content/uploads/2025/06/thre-green-ray-still2.jpg",
+   "release_date": null,
+   "tags": [
+    "Screening",
+    "Rerun"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
+   "id": "254",
+   "title": "Paprika",
+   "url": "https://filmhouse.sg/film/254/paprika",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/kQmsEYLLgcJMbDif2Mv5EuGIRoqLOfa4oqJxnud3_ms.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "gv",
+   "id": "4524",
+   "title": "Om Chapter 1: Udhiram - The Blood Wood",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4524",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4524.jpg",
+   "release_date": null,
+   "tags": [
+    "Tamil"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "4525",
+   "title": "Ah Girl",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4525",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4525.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7526",
+   "title": "Family Day: Disney's Hexed",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7526",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7526.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-14T03:42:20+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
    "source": "gv",
    "id": "7523",
    "title": "Yuzuru Hanyu \"REALIVE\" an ICE STORY project in Saga Live Viewing",
@@ -166,7 +331,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
    "alert": "quiet"
@@ -677,9 +842,10 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2090-Poster-1793692306877",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing",
+    "Ending Soon"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-05T03:46:51+08:00",
    "listed": true,
    "alert": "sent"
@@ -2597,7 +2763,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {

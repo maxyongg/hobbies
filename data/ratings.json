@@ -1,9 +1,14 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
   "afa:raja-bersiong-fanged-king-1963": "249101",
+  "afa:rerun-an-elephant-sitting-still": "499556",
+  "afa:rerun-jonas-mekas": "130824",
+  "afa:rerun-singapore-dreaming": "73650",
+  "afa:rerun-the-colour-of-pomegranates": "26302",
+  "afa:rerun-the-green-ray": "54898",
   "afa:sgiff-2026-amores-perros-2000": "55",
   "afa:sgiff-2026-landmark": "784267",
   "afa:sgiff-2026-macho-dancer-1988": "170924",
@@ -59,6 +64,7 @@
   "filmhouse:246": "1454209",
   "filmhouse:247": "16313",
   "filmhouse:248": "1366",
+  "filmhouse:254": "4977",
   "filmhouse:85": "313369",
   "gv:1332": "1117898",
   "gv:1392": "1248832",
@@ -130,6 +136,7 @@
   "gv:4520": "1402181",
   "gv:4521": "1731816",
   "gv:4523": "1433568",
+  "gv:4525": "747509",
   "gv:7490": "1586876",
   "gv:7491": "1586876",
   "gv:7509": "1591675",
@@ -320,6 +327,14 @@
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/alice-in-the-cities/"
   },
+  "4977": {
+   "title": "Paprika",
+   "year": 2006,
+   "imdb_id": "tt0851578",
+   "imdb": 7.7,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/paprika-2006/"
+  },
   "9297": {
    "title": "Monster House",
    "year": 2006,
@@ -384,6 +399,14 @@
    "letterboxd": 4.7,
    "letterboxd_url": "https://letterboxd.com/film/stop-making-sense/"
   },
+  "26302": {
+   "title": "The Color of Pomegranates",
+   "year": 1969,
+   "imdb_id": "tt0063555",
+   "imdb": 7.5,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/the-color-of-pomegranates/"
+  },
   "36557": {
    "title": "Casino Royale",
    "year": 2006,
@@ -424,6 +447,22 @@
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/love-letter/"
   },
+  "54898": {
+   "title": "The Green Ray",
+   "year": 1986,
+   "imdb_id": "tt0091830",
+   "imdb": 7.6,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/the-green-ray/"
+  },
+  "73650": {
+   "title": "Singapore Dreaming",
+   "year": 2006,
+   "imdb_id": "tt0768837",
+   "imdb": 7.0,
+   "letterboxd": 3.6,
+   "letterboxd_url": "https://letterboxd.com/film/singapore-dreaming/"
+  },
   "76341": {
    "title": "Mad Max: Fury Road",
    "year": 2015,
@@ -439,6 +478,14 @@
    "imdb": 7.3,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/tokyo-ga/"
+  },
+  "130824": {
+   "title": "As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty",
+   "year": 2000,
+   "imdb_id": "tt0262240",
+   "imdb": 8.1,
+   "letterboxd": 4.5,
+   "letterboxd_url": "https://letterboxd.com/film/as-i-was-moving-ahead-occasionally-i-saw/"
   },
   "170924": {
    "title": "Macho Dancer",
@@ -543,6 +590,14 @@
    "imdb": 7.3,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/hereditary/"
+  },
+  "499556": {
+   "title": "An Elephant Sitting Still",
+   "year": 2018,
+   "imdb_id": "tt8020896",
+   "imdb": 7.8,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/an-elephant-sitting-still/"
   },
   "561483": {
    "title": "Permata Di-Perlimbahan",
@@ -748,8 +803,8 @@
    "title": "The Beast",
    "year": 2026,
    "imdb_id": "tt29256561",
-   "imdb": 5.1,
-   "letterboxd": 2.7,
+   "imdb": 5.2,
+   "letterboxd": 2.6,
    "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
   },
   "1185806": {
@@ -876,7 +931,7 @@
    "title": "I Play Rocky",
    "year": 2026,
    "imdb_id": "tt11995650",
-   "imdb": 8.0,
+   "imdb": 8.1,
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/i-play-rocky/"
   },
@@ -972,7 +1027,7 @@
    "title": "Godzilla Minus Zero",
    "year": 2026,
    "imdb_id": "tt34384661",
-   "imdb": 8.0,
+   "imdb": 7.9,
    "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/"
   },
@@ -1100,7 +1155,7 @@
    "title": "How to Rob a Bank",
    "year": 2026,
    "imdb_id": "tt35866986",
-   "imdb": null,
+   "imdb": 6.2,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/"
   },
@@ -1268,7 +1323,7 @@
    "title": "Ebenezer",
    "year": 2026,
    "imdb_id": "tt38773219",
-   "imdb": null,
+   "imdb": 7.0,
    "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/ebenezer-2026/"
   },
@@ -1340,7 +1395,7 @@
    "title": "The Samurai and the Prisoner",
    "year": 2026,
    "imdb_id": "tt39602215",
-   "imdb": 7.1,
+   "imdb": 7.0,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/the-samurai-and-the-prisoner/"
   },
@@ -1546,6 +1601,10 @@
    "tmdb": 55,
    "checked": "2026-10-30"
   },
+  "an elephant sitting still": {
+   "tmdb": 499556,
+   "checked": "2026-11-14"
+  },
   "appa kutty": {
    "tmdb": 1680033,
    "checked": "2026-11-06"
@@ -1553,6 +1612,10 @@
   "appakutty": {
    "tmdb": 1680033,
    "checked": "2026-11-07"
+  },
+  "as i was moving ahead occasionally i saw brief glimpses of beauty": {
+   "tmdb": 130824,
+   "checked": "2026-11-14"
   },
   "avengers doomsday": {
    "tmdb": 1003596,
@@ -1757,6 +1820,10 @@
   "exo planet 6 exhorizon in cinemas": {
    "tmdb": null,
    "checked": "2026-11-06"
+  },
+  "family day disneys hexed": {
+   "tmdb": null,
+   "checked": "2026-11-14"
   },
   "fatherland": {
    "tmdb": 1437696,
@@ -1978,6 +2045,10 @@
    "tmdb": null,
    "checked": "2026-10-30"
   },
+  "paprika": {
+   "tmdb": 4977,
+   "checked": "2026-11-14"
+  },
   "paradise lost": {
    "tmdb": 1584855,
    "checked": "2026-10-30"
@@ -2004,7 +2075,7 @@
   },
   "ponyo on the cliff by the sea": {
    "tmdb": null,
-   "checked": "2026-11-07"
+   "checked": "2026-11-14"
   },
   "prahaar the untold story of ujjwal nikam": {
    "tmdb": 1081010,
@@ -2030,6 +2101,10 @@
    "tmdb": 1553200,
    "checked": "2026-11-07"
   },
+  "rerun december 2026": {
+   "tmdb": null,
+   "checked": "2026-11-14"
+  },
   "resident evil": {
    "tmdb": 1423191,
    "checked": "2026-10-30"
@@ -2053,6 +2128,10 @@
   "shaun the sheep the beast of mossy bottom": {
    "tmdb": 1477104,
    "checked": "2026-10-30"
+  },
+  "singapore dreaming": {
+   "tmdb": 73650,
+   "checked": "2026-11-14"
   },
   "spider man brand new day": {
    "tmdb": 969681,
@@ -2098,6 +2177,10 @@
    "tmdb": 902,
    "checked": "2026-10-30"
   },
+  "the colour of pomegranates": {
+   "tmdb": 26302,
+   "checked": "2026-11-14"
+  },
   "the execution": {
    "tmdb": null,
    "checked": "2026-11-13"
@@ -2109,6 +2192,10 @@
   "the further mis adventures of cliff booth": {
    "tmdb": 1457866,
    "checked": "2026-11-10"
+  },
+  "the green ray": {
+   "tmdb": 54898,
+   "checked": "2026-11-14"
   },
   "the hopeless 10": {
    "tmdb": null,
