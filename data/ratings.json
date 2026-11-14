@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -30,6 +30,7 @@
   "filmhouse:127": "1370096",
   "filmhouse:144": "950028",
   "filmhouse:168": "76",
+  "filmhouse:180": "965150",
   "filmhouse:182": "976893",
   "filmhouse:186": "1437696",
   "filmhouse:195": "748681",
@@ -62,7 +63,7 @@
   "filmhouse:243": "11031",
   "filmhouse:245": "1381071",
   "filmhouse:246": "1454209",
-  "filmhouse:247": "16313",
+  "filmhouse:247": "747509",
   "filmhouse:248": "1366",
   "filmhouse:254": "4977",
   "filmhouse:85": "313369",
@@ -383,14 +384,6 @@
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/funny-face/"
   },
-  "16313": {
-   "title": "Coming Soon",
-   "year": 2008,
-   "imdb_id": "tt1307057",
-   "imdb": 6.0,
-   "letterboxd": 3.0,
-   "letterboxd_url": "https://letterboxd.com/film/coming-soon-2008/"
-  },
   "24128": {
    "title": "Stop Making Sense",
    "year": 1984,
@@ -643,7 +636,7 @@
    "title": "The Violinist",
    "year": 2026,
    "imdb_id": "tt30388264",
-   "imdb": 7.4,
+   "imdb": 7.3,
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/the-violinist-2026/"
   },
@@ -702,6 +695,14 @@
    "imdb": 7.4,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/"
+  },
+  "965150": {
+   "title": "Aftersun",
+   "year": 2022,
+   "imdb_id": "tt19770238",
+   "imdb": 7.6,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/aftersun/"
   },
   "969681": {
    "title": "Spider-Man: Brand New Day",
@@ -779,7 +780,7 @@
    "title": "Street Fighter",
    "year": 2026,
    "imdb_id": "tt27419420",
-   "imdb": 6.2,
+   "imdb": 6.1,
    "letterboxd": 2.8,
    "letterboxd_url": "https://letterboxd.com/film/street-fighter-2026/"
   },
@@ -803,7 +804,7 @@
    "title": "The Beast",
    "year": 2026,
    "imdb_id": "tt29256561",
-   "imdb": 5.2,
+   "imdb": 5.1,
    "letterboxd": 2.6,
    "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
   },
@@ -1155,7 +1156,7 @@
    "title": "How to Rob a Bank",
    "year": 2026,
    "imdb_id": "tt35866986",
-   "imdb": 6.2,
+   "imdb": 6.4,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/"
   },
@@ -1307,7 +1308,7 @@
    "title": "Rascal Does Not Dream of a Dear Friend",
    "year": 2026,
    "imdb_id": "tt39927807",
-   "imdb": 9.5,
+   "imdb": 9.4,
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/rascal-does-not-dream-of-a-dear-friend/"
   },
@@ -1324,7 +1325,7 @@
    "year": 2026,
    "imdb_id": "tt38773219",
    "imdb": 7.0,
-   "letterboxd": 3.2,
+   "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/ebenezer-2026/"
   },
   "1567791": {
@@ -1339,7 +1340,7 @@
    "title": "V",
    "year": 2026,
    "imdb_id": "tt38775487",
-   "imdb": 6.9,
+   "imdb": 7.0,
    "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/v-2026/"
   },
@@ -1560,6 +1561,10 @@
   "aadarsha kutumbam house no 47 ak": {
    "tmdb": null,
    "checked": "2026-10-30"
+  },
+  "aftersun": {
+   "tmdb": 965150,
+   "checked": "2026-11-15"
   },
   "ah girl": {
    "tmdb": 747509,
