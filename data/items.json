@@ -5,7 +5,7 @@
    "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 2,
+   "consecutive_failures": 3,
    "last_error": "from_api: ConnectionError: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
   },
   "filmhouse": {
@@ -2744,9 +2744,9 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "now",
+   "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed"
   },
   {
@@ -4138,8 +4138,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1721-Poster-1791175472700",
    "release_date": null,
    "tags": [
-    "Now Showing",
-    "Ending Soon"
+    "Now Showing"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
