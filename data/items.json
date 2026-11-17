@@ -5,7 +5,7 @@
    "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 3,
+   "consecutive_failures": 4,
    "last_error": "from_api: ConnectionError: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
   },
   "filmhouse": {
@@ -26,6 +26,94 @@
   }
  },
  "items": [
+  {
+   "source": "filmhouse",
+   "id": "262",
+   "title": "Test Film A",
+   "url": "https://filmhouse.sg/film/262/test-film-a",
+   "type": "film",
+   "poster": "https://filmhouse.sg/wp-content/plugins/jacro-plugin/images/default.png",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-17T15:55:38+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
+   "id": "263",
+   "title": "Test Film B",
+   "url": "https://filmhouse.sg/film/263/test-film-b",
+   "type": "film",
+   "poster": "https://filmhouse.sg/wp-content/plugins/jacro-plugin/images/default.png",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-17T15:55:38+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
+   "id": "264",
+   "title": "Test Film C",
+   "url": "https://filmhouse.sg/film/264/test-film-c",
+   "type": "film",
+   "poster": "https://filmhouse.sg/wp-content/plugins/jacro-plugin/images/default.png",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-17T15:55:38+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "sfs",
+   "id": "6afbd2b87406c607d2872086",
+   "title": "Pompo the Cinephile",
+   "url": "https://events.singaporefilmsociety.com/films/6afbd2b87406c607d2872086",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/7e3d8fed056bc91d31668caf41dfb274.jpg?w=300",
+   "release_date": null,
+   "tags": [],
+   "showing": "soon",
+   "first_seen": "2026-11-17T15:55:38+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "sfs",
+   "id": "6afbd41d86dd72d314563702",
+   "title": "Rollercoaster",
+   "url": "https://events.singaporefilmsociety.com/films/6afbd41d86dd72d314563702",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/3d66e38e4485250881f354c60a9998cd.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-17T15:55:38+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "sfs",
+   "id": "6afbd5215f2c74784fc1f4be",
+   "title": "Three Girls Walk Into a Bar",
+   "url": "https://events.singaporefilmsociety.com/films/6afbd5215f2c74784fc1f4be",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1794889287454temp-1794889287442-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-17T15:55:38+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
   {
    "source": "filmhouse",
    "id": "180",
@@ -845,7 +933,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-11-05T03:46:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -2824,9 +2912,9 @@
    "tags": [
     "SFS Showcase #61"
    ],
-   "showing": "now",
+   "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed"
   },
   {
@@ -4237,11 +4325,12 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1788-Poster-1782442868920",
    "release_date": null,
    "tags": [
-    "Top Movies"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed"
   },
   {
@@ -4727,7 +4816,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed"
   },
   {

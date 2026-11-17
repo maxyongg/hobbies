@@ -168,6 +168,9 @@
   "sfs:6af27e99d10654484754a86b": "10834",
   "sfs:6af27fc2a6767d89a78615bf": "76406",
   "sfs:6af280c52df1bbd07f13fb7e": "1620313",
+  "sfs:6afbd2b87406c607d2872086": "678458",
+  "sfs:6afbd41d86dd72d314563702": "10670",
+  "sfs:6afbd5215f2c74784fc1f4be": "1196901",
   "shaw:1363": "1117898",
   "shaw:1377": "1477104",
   "shaw:1410": "1286656",
@@ -359,6 +362,14 @@
    "imdb": 8.0,
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/castle-in-the-sky/"
+  },
+  "10670": {
+   "title": "Rollercoaster",
+   "year": 1977,
+   "imdb_id": "tt0076636",
+   "imdb": 6.3,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/rollercoaster/"
   },
   "10834": {
    "title": "Kings of the Road",
@@ -623,6 +634,14 @@
    "imdb": 8.3,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
+  },
+  "678458": {
+   "title": "Pompo the Cinephile",
+   "year": 2021,
+   "imdb_id": "tt12439248",
+   "imdb": 7.2,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/pompo-the-cinephile/"
   },
   "747509": {
    "title": "Ah Girl",
@@ -2074,6 +2093,10 @@
    "tmdb": 2011,
    "checked": "2026-10-30"
   },
+  "pompo the cinephile": {
+   "tmdb": 678458,
+   "checked": "2026-11-17"
+  },
   "ponyo": {
    "tmdb": 12429,
    "checked": "2026-10-30"
@@ -2118,6 +2141,10 @@
    "tmdb": 1366,
    "checked": "2026-11-06"
   },
+  "rollercoaster": {
+   "tmdb": 10670,
+   "checked": "2026-11-17"
+  },
   "roman holiday": {
    "tmdb": 804,
    "checked": "2026-10-30"
@@ -2157,6 +2184,18 @@
   "sultan mahmood mangkat di julang": {
    "tmdb": 286237,
    "checked": "2026-10-30"
+  },
+  "test film a": {
+   "tmdb": null,
+   "checked": "2026-11-17"
+  },
+  "test film b": {
+   "tmdb": null,
+   "checked": "2026-11-17"
+  },
+  "test film c": {
+   "tmdb": null,
+   "checked": "2026-11-17"
   },
   "the alfee 3000premium one night": {
    "tmdb": null,
