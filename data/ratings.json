@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -65,6 +65,7 @@
   "filmhouse:246": "1454209",
   "filmhouse:247": "747509",
   "filmhouse:248": "1366",
+  "filmhouse:249": "15283",
   "filmhouse:254": "4977",
   "filmhouse:85": "313369",
   "gv:1332": "1117898",
@@ -395,6 +396,14 @@
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/funny-face/"
   },
+  "15283": {
+   "title": "Pom Poko",
+   "year": 1994,
+   "imdb_id": "tt0110008",
+   "imdb": 7.2,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/pom-poko/"
+  },
   "24128": {
    "title": "Stop Making Sense",
    "year": 1984,
@@ -631,7 +640,7 @@
    "title": "Ramayana: Rise of a Legend",
    "year": 2026,
    "imdb_id": "tt27988879",
-   "imdb": 8.3,
+   "imdb": 8.2,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
   },
@@ -767,7 +776,7 @@
    "title": "A Talent for Murder",
    "year": 2026,
    "imdb_id": "tt14129116",
-   "imdb": 6.8,
+   "imdb": 6.7,
    "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/a-talent-for-murder-2026/"
   },
@@ -823,8 +832,8 @@
    "title": "The Beast",
    "year": 2026,
    "imdb_id": "tt29256561",
-   "imdb": 4.8,
-   "letterboxd": 2.5,
+   "imdb": 4.7,
+   "letterboxd": 2.4,
    "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
   },
   "1185806": {
@@ -976,7 +985,7 @@
    "year": 2026,
    "imdb_id": "tt32558705",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/"
   },
   "1315772": {
@@ -1153,7 +1162,7 @@
    "imdb_id": "tt35611573",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/finding-mojo/"
+   "letterboxd_url": "https://letterboxd.com/film/mojoku-hilang/"
   },
   "1433568": {
    "title": "The Rope Curse 4: Kuntilanak",
@@ -1175,7 +1184,7 @@
    "title": "How to Rob a Bank",
    "year": 2026,
    "imdb_id": "tt35866986",
-   "imdb": 6.4,
+   "imdb": 6.5,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/"
   },
@@ -1199,8 +1208,8 @@
    "title": "Traces of Justice",
    "year": 2026,
    "imdb_id": "tt38188218",
-   "imdb": null,
-   "letterboxd": null,
+   "imdb": 6.2,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/traces-of-justice/"
   },
   "1454209": {
@@ -1359,7 +1368,7 @@
    "title": "V",
    "year": 2026,
    "imdb_id": "tt38775487",
-   "imdb": 6.9,
+   "imdb": 7.0,
    "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/v-2026/"
   },
@@ -1471,7 +1480,7 @@
    "title": "John Doe",
    "year": 2026,
    "imdb_id": "tt49855692",
-   "imdb": null,
+   "imdb": 8.8,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/john-doe-2026/"
   },
@@ -1512,7 +1521,7 @@
    "year": 2026,
    "imdb_id": "tt49276988",
    "imdb": null,
-   "letterboxd": 3.2,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/kudrat-1968-high-council/"
   },
   "1746726": {
@@ -1911,7 +1920,7 @@
   },
   "hexed family movie day": {
    "tmdb": null,
-   "checked": "2026-11-11"
+   "checked": "2026-11-18"
   },
   "hoshimachi suisei once upon a stellar live viewing": {
    "tmdb": null,
@@ -2092,6 +2101,10 @@
   "persepolis": {
    "tmdb": 2011,
    "checked": "2026-10-30"
+  },
+  "pom poko": {
+   "tmdb": 15283,
+   "checked": "2026-11-18"
   },
   "pompo the cinephile": {
    "tmdb": 678458,
