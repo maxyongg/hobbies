@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -67,6 +67,9 @@
   "filmhouse:248": "1366",
   "filmhouse:249": "15283",
   "filmhouse:254": "4977",
+  "filmhouse:255": "11948",
+  "filmhouse:256": "258480",
+  "filmhouse:258": "331482",
   "filmhouse:85": "313369",
   "gv:1332": "1117898",
   "gv:1392": "1248832",
@@ -392,6 +395,14 @@
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/this-is-spinal-tap/"
   },
+  "11948": {
+   "title": "Merry Christmas, Mr. Lawrence",
+   "year": 1983,
+   "imdb_id": "tt0085933",
+   "imdb": 7.2,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/merry-christmas-mr-lawrence/"
+  },
   "13320": {
    "title": "Funny Face",
    "year": 1957,
@@ -544,6 +555,14 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/darah-ku/"
   },
+  "258480": {
+   "title": "Carol",
+   "year": 2015,
+   "imdb_id": "tt2402927",
+   "imdb": 7.3,
+   "letterboxd": 4.0,
+   "letterboxd_url": "https://letterboxd.com/film/carol-2015/"
+  },
   "286237": {
    "title": "Sultan Mahmood Mangkat Di-Julang",
    "year": 1961,
@@ -567,6 +586,14 @@
    "imdb": 8.0,
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/la-la-land/"
+  },
+  "331482": {
+   "title": "Little Women",
+   "year": 2019,
+   "imdb_id": "tt3281548",
+   "imdb": 7.7,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/little-women-2019/"
   },
   "376867": {
    "title": "Moonlight",
@@ -844,8 +871,8 @@
    "title": "The Beast",
    "year": 2026,
    "imdb_id": "tt29256561",
-   "imdb": 4.7,
-   "letterboxd": 2.4,
+   "imdb": 4.6,
+   "letterboxd": 2.3,
    "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
   },
   "1185806": {
@@ -997,7 +1024,7 @@
    "year": 2026,
    "imdb_id": "tt32558705",
    "imdb": null,
-   "letterboxd": 3.7,
+   "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/"
   },
   "1315772": {
@@ -1140,7 +1167,7 @@
    "title": "Scene",
    "year": 2026,
    "imdb_id": "tt38192494",
-   "imdb": 8.2,
+   "imdb": 8.1,
    "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/scene-2026/"
   },
@@ -1204,7 +1231,7 @@
    "title": "How to Rob a Bank",
    "year": 2026,
    "imdb_id": "tt35866986",
-   "imdb": 6.5,
+   "imdb": 6.4,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/"
   },
@@ -1373,7 +1400,7 @@
    "year": 2026,
    "imdb_id": "tt38773219",
    "imdb": 7.2,
-   "letterboxd": 3.3,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/ebenezer-2026/"
   },
   "1567791": {
@@ -1396,7 +1423,7 @@
    "title": "Paradise Lost",
    "year": 2026,
    "imdb_id": "tt43658893",
-   "imdb": null,
+   "imdb": 6.0,
    "letterboxd": 3.0,
    "letterboxd_url": "https://letterboxd.com/film/paradise-lost-2026-1/"
   },
@@ -1460,7 +1487,7 @@
    "title": "Never After Dark",
    "year": 2026,
    "imdb_id": "tt38589433",
-   "imdb": 6.6,
+   "imdb": 6.5,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/never-after-dark/"
   },
@@ -1500,7 +1527,7 @@
    "title": "John Doe",
    "year": 2026,
    "imdb_id": "tt49855692",
-   "imdb": 8.8,
+   "imdb": 9.2,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/john-doe-2026/"
   },
@@ -1541,7 +1568,7 @@
    "year": 2026,
    "imdb_id": "tt49276988",
    "imdb": null,
-   "letterboxd": 3.1,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/kudrat-1968-high-council/"
   },
   "1746726": {
@@ -1580,7 +1607,7 @@
    "title": "Detective Conan: The Counterfeit Case of Ultra 30",
    "year": 2026,
    "imdb_id": "tt46656123",
-   "imdb": null,
+   "imdb": 6.0,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/detective-conan-the-counterfeit-case-of-ultra/"
   }
@@ -1588,7 +1615,7 @@
  "matches": {
   "2026": {
    "tmdb": null,
-   "checked": "2026-11-12"
+   "checked": "2026-11-19"
   },
   "a feeling of music playing": {
    "tmdb": 1157628,
@@ -1726,6 +1753,10 @@
    "tmdb": 1193550,
    "checked": "2026-11-11"
   },
+  "carol": {
+   "tmdb": 258480,
+   "checked": "2026-11-19"
+  },
   "cartoons underground programme a held breath": {
    "tmdb": null,
    "checked": "2026-11-13"
@@ -1748,7 +1779,7 @@
   },
   "cff a tapestry of a legendary land": {
    "tmdb": null,
-   "checked": "2026-11-12"
+   "checked": "2026-11-19"
   },
   "cff as the water flows": {
    "tmdb": 1497873,
@@ -1760,7 +1791,7 @@
   },
   "cff i am what i am 2": {
    "tmdb": null,
-   "checked": "2026-11-12"
+   "checked": "2026-11-19"
   },
   "cff its ok": {
    "tmdb": 1546855,
@@ -2014,6 +2045,10 @@
    "tmdb": 784267,
    "checked": "2026-10-30"
   },
+  "little women": {
+   "tmdb": 331482,
+   "checked": "2026-11-19"
+  },
   "look back": {
    "tmdb": 1591675,
    "checked": "2026-10-30"
@@ -2029,6 +2064,10 @@
   "mad max fury road": {
    "tmdb": 76341,
    "checked": "2026-10-30"
+  },
+  "merry christmas mr lawrence": {
+   "tmdb": 11948,
+   "checked": "2026-11-19"
   },
   "minions and monsters": {
    "tmdb": 1315772,
@@ -2066,6 +2105,10 @@
    "tmdb": 1454209,
    "checked": "2026-10-30"
   },
+  "nausicaa of the valley of the wind": {
+   "tmdb": null,
+   "checked": "2026-11-19"
+  },
   "nayyi navelli": {
    "tmdb": 1654581,
    "checked": "2026-10-30"
@@ -2084,7 +2127,7 @@
   },
   "om chapter 1 udhiram the blood wood": {
    "tmdb": null,
-   "checked": "2026-11-12"
+   "checked": "2026-11-19"
   },
   "once upon a time in the middle east": {
    "tmdb": 1391021,

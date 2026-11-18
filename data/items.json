@@ -5,8 +5,8 @@
    "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 6,
-   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x77f73bae7d70>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
+   "consecutive_failures": 7,
+   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7c947c790260>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -26,6 +26,62 @@
   }
  },
  "items": [
+  {
+   "source": "filmhouse",
+   "id": "250",
+   "title": "Nausicaä of the Valley of the Wind",
+   "url": "https://filmhouse.sg/film/250/nausica-of-the-valley-of-the-wind",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/33MK6Ne1oREIrgiEEguFS8efPs2A3innIXuTDo8fajA.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-19T04:31:54+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
+   "id": "255",
+   "title": "Merry Christmas, Mr. Lawrence",
+   "url": "https://filmhouse.sg/film/255/merry-christmas-mr-lawrence",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/LDgEZcecRVfNZI67FqZtCSKVPADlEsertBip6p2l2DY.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-19T04:31:54+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
+   "id": "256",
+   "title": "Carol",
+   "url": "https://filmhouse.sg/film/256/carol",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/QpHWDZcD43EqIsKWqvc87DhhhITvjJqk-YFm1bNdWZk.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-19T04:31:54+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "filmhouse",
+   "id": "258",
+   "title": "Little Women",
+   "url": "https://filmhouse.sg/film/258/little-women",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/QLLM5R2OdUSJfad_wlu_RCOQGw9_xdUo_5IMoIwlCH0.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-19T04:31:54+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
   {
    "source": "gv",
    "id": "4526",
@@ -414,9 +470,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2116-Poster-1794452972505",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-12T15:10:56+08:00",
    "listed": true,
    "alert": "sent"
@@ -471,7 +527,7 @@
   {
    "source": "gv",
    "id": "7530",
-   "title": "Puella Magi Madoka Magica The Movie -Walpurgisnach: Rising-",
+   "title": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
    "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7530",
    "type": "film",
    "poster": "https://media.gv.com.sg/imagesresize/img7530.jpg",
@@ -761,7 +817,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img7524.jpg",
    "release_date": null,
    "tags": [
-    "Japanese"
+    "Japanese",
+    "PG"
    ],
    "showing": "soon",
    "first_seen": "2026-11-06T14:46:36+08:00",
@@ -777,7 +834,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2074-Poster-1793936675489",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
@@ -2912,7 +2970,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -3324,7 +3382,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -3561,7 +3619,7 @@
     "Screening",
     "Off the catalogue"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
@@ -3812,7 +3870,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4306,7 +4364,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1721-Poster-1791175472700",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4477,7 +4536,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4507,6 +4566,7 @@
    "release_date": null,
    "tags": [
     "Now Showing",
+    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
@@ -4696,7 +4756,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4808,6 +4868,7 @@
    "release_date": null,
    "tags": [
     "Now Showing",
+    "Ending Soon",
     "Top Movies"
    ],
    "showing": "now",
@@ -4875,7 +4936,8 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2014-Poster-1792122725906",
    "release_date": null,
    "tags": [
-    "Now Showing"
+    "Now Showing",
+    "Ending Soon"
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4913,7 +4975,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -5158,9 +5220,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2081-Poster-1791450184371",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"
