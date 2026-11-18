@@ -139,6 +139,7 @@
   "gv:4521": "1731816",
   "gv:4523": "1433568",
   "gv:4525": "747509",
+  "gv:4526": "1316347",
   "gv:7490": "1586876",
   "gv:7491": "1586876",
   "gv:7509": "1591675",
@@ -151,6 +152,7 @@
   "gv:7525": "1553200",
   "gv:7530": "822653",
   "gv:7531": "1777750",
+  "gv:7533": "1003596",
   "gv:8489": "1269325",
   "gv:8490": "1375156",
   "gv:8491": "1081010",
@@ -241,7 +243,9 @@
   "shaw:2099": "1680033",
   "shaw:2105": "13320",
   "shaw:2106": "438631",
-  "shaw:2116": "1533928"
+  "shaw:2113": "693134",
+  "shaw:2116": "1533928",
+  "shaw:2117": "438631"
  },
  "films": {
   "55": {
@@ -652,6 +656,14 @@
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/pompo-the-cinephile/"
   },
+  "693134": {
+   "title": "Dune: Part Two",
+   "year": 2024,
+   "imdb_id": "tt15239678",
+   "imdb": 8.4,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/dune-part-two/"
+  },
   "747509": {
    "title": "Ah Girl",
    "year": 2026,
@@ -995,6 +1007,14 @@
    "imdb": 6.3,
    "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/"
+  },
+  "1316347": {
+   "title": "Takluk 2: OP Daulat",
+   "year": 2026,
+   "imdb_id": "tt34463935",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/takluk-2-op-daulat/"
   },
   "1319525": {
    "title": "Henry's First Dates",
@@ -1842,6 +1862,10 @@
    "tmdb": 1170608,
    "checked": "2026-10-30"
   },
+  "dune part two": {
+   "tmdb": 693134,
+   "checked": "2026-11-18"
+  },
   "ebenezer": {
    "tmdb": 1567605,
    "checked": "2026-10-30"
@@ -2197,6 +2221,10 @@
   "sultan mahmood mangkat di julang": {
    "tmdb": 286237,
    "checked": "2026-10-30"
+  },
+  "takluk 2 op daulat": {
+   "tmdb": 1316347,
+   "checked": "2026-11-18"
   },
   "test film a": {
    "tmdb": null,

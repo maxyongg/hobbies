@@ -5,8 +5,8 @@
    "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 5,
-   "last_error": "from_api: ConnectionError: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+   "consecutive_failures": 6,
+   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x77f73bae7d70>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -26,6 +26,70 @@
   }
  },
  "items": [
+  {
+   "source": "gv",
+   "id": "4526",
+   "title": "Takluk 2: Op Daulat",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4526",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4526.jpg",
+   "release_date": null,
+   "tags": [
+    "Malay"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-18T15:28:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7533",
+   "title": "Fans' Screening: Marvel Studios' Avengers: Doomsday",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7533",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7533.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-18T15:28:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2113",
+   "title": "Dune Part Two (Re-Issue)",
+   "url": "https://shaw.sg/movie-details/2113",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2113-Poster-1794977521547",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-18T15:28:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "2117",
+   "title": "Dune (Re-issue)",
+   "url": "https://shaw.sg/movie-details/2117",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2117-Poster-1794975336413",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-18T15:28:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
   {
    "source": "filmhouse",
    "id": "249",
@@ -350,7 +414,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2116-Poster-1794452972505",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-12T15:10:56+08:00",
@@ -651,7 +715,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "quiet"
   },
   {
@@ -1499,7 +1563,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img1408.jpg",
    "release_date": null,
    "tags": [
-    "English"
+    "English",
+    "PG13"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
@@ -1752,7 +1817,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img1453.jpg",
    "release_date": null,
    "tags": [
-    "English"
+    "English",
+    "M18"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
@@ -4590,7 +4656,7 @@
    "title": "Bitter Christmas (SPANISH)",
    "url": "https://shaw.sg/movie-details/1843",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1843-Poster-1791187280511",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1843-Poster-1794984870839",
    "release_date": null,
    "tags": [
     "Coming Soon"
