@@ -1,12 +1,12 @@
 {
  "sources": {
   "afa": {
-   "consecutive_failures": 1,
-   "last_error": "from_rest: ValueError: expected JSON from https://asianfilmarchive.org/wp-json/wp/v2/mep_events?per_page=100&orderby=date&order=desc&_fields=id%2Cslug%2Clink%2Ctitle%2Cclass_list%2Cyoast_head_json.og_image%2Cevent_informations.event_upcoming_datetime%2Cevent_informations.event_start_datetime%2Cevent_informations.event_expire_datetime%2Cevent_informations.event_end_datetime%2Cevent_informations.location_name, got text/html: '<html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" content=\"0;/.well-known/sgcaptcha/?r=%2Fwp-json%2Fwp%2Fv2%2Fmep_events%3Fper_page%3D100%26orderby%3Ddate%26order%3Ddesc%26_fields%'; from_listing_pages: 0 items"
+   "consecutive_failures": 0,
+   "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 8,
-   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x760183ee8e00>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
+   "consecutive_failures": 9,
+   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7af5ee8ac9e0>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -26,6 +26,57 @@
   }
  },
  "items": [
+  {
+   "source": "gv",
+   "id": "1483",
+   "title": "Gold Class® Dining Set: Dune: Part Three",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1483",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1483.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T04:38:09+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "1487",
+   "title": "Deluxe Dine-In Set: Dune: Part Three",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1487",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1487.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T04:38:09+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "1489",
+   "title": "Dune: Part Three (Atmos)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1489",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1408.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T04:38:09+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
   {
    "source": "filmhouse",
    "id": "221",
@@ -233,7 +284,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-11-17T15:55:38+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -247,7 +298,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-11-17T15:55:38+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -261,7 +312,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-11-17T15:55:38+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -289,7 +340,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-17T15:55:38+08:00",
    "listed": true,
    "alert": "quiet"
@@ -321,7 +372,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-11-15T02:02:01+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -448,7 +499,8 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4524.jpg",
    "release_date": null,
    "tags": [
-    "Tamil"
+    "Tamil",
+    "PG13"
    ],
    "showing": "now",
    "first_seen": "2026-11-14T03:42:20+08:00",
@@ -917,7 +969,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-11-06T14:46:36+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent"
   },
   {
@@ -1159,9 +1211,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2098-Poster-1794450710158",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-05T03:46:51+08:00",
    "listed": true,
    "alert": "sent"
@@ -2214,7 +2266,7 @@
   {
    "source": "gv",
    "id": "2475",
-   "title": "Puella Magi Madoka Magica The Movie -Walpurgisnacht: Rising- 魔法少女小圆 〈魔女之夜的回天〉",
+   "title": "Fans' Screening - Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
    "url": "https://www.gv.com.sg/GVMovieDetails#/movie/2475",
    "type": "film",
    "poster": "https://media.gv.com.sg/imagesresize/img2475.jpg",
@@ -2223,9 +2275,9 @@
     "Japanese",
     "PG13"
    ],
-   "showing": "now",
+   "showing": "soon",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed"
   },
   {
@@ -4298,7 +4350,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4947,9 +4999,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1901-Poster-1792657536940",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -109,6 +109,7 @@
   "gv:1479": "615121",
   "gv:1480": "791523",
   "gv:1481": "1300968",
+  "gv:1489": "1170608",
   "gv:2475": "822653",
   "gv:2476": "1196901",
   "gv:2477": "1411529",
@@ -818,7 +819,7 @@
    "title": "A Talent for Murder",
    "year": 2026,
    "imdb_id": "tt14129116",
-   "imdb": 6.7,
+   "imdb": 6.5,
    "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/a-talent-for-murder-2026/"
   },
@@ -842,7 +843,7 @@
    "title": "The Cat in the Hat",
    "year": 2026,
    "imdb_id": "tt2321555",
-   "imdb": 6.6,
+   "imdb": 6.5,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/"
   },
@@ -1034,8 +1035,8 @@
    "title": "The Hunger Games: Sunrise on the Reaping",
    "year": 2026,
    "imdb_id": "tt32558705",
-   "imdb": null,
-   "letterboxd": 4.0,
+   "imdb": 7.6,
+   "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/"
   },
   "1315772": {
@@ -1242,7 +1243,7 @@
    "title": "How to Rob a Bank",
    "year": 2026,
    "imdb_id": "tt35866986",
-   "imdb": 6.4,
+   "imdb": 6.5,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/"
   },
@@ -1266,7 +1267,7 @@
    "title": "Traces of Justice",
    "year": 2026,
    "imdb_id": "tt38188218",
-   "imdb": 6.2,
+   "imdb": 6.6,
    "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/traces-of-justice/"
   },
@@ -1371,7 +1372,7 @@
    "year": 2026,
    "imdb_id": "tt41075537",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 2.8,
    "letterboxd_url": "https://letterboxd.com/film/bachelor-party-deux/"
   },
   "1538497": {
@@ -1434,7 +1435,7 @@
    "title": "V",
    "year": 2026,
    "imdb_id": "tt38775487",
-   "imdb": 7.0,
+   "imdb": 6.9,
    "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/v-2026/"
   },
@@ -1443,7 +1444,7 @@
    "year": 2026,
    "imdb_id": "tt43658893",
    "imdb": 6.0,
-   "letterboxd": 3.0,
+   "letterboxd": 2.9,
    "letterboxd_url": "https://letterboxd.com/film/paradise-lost-2026-1/"
   },
   "1586876": {
@@ -1734,7 +1735,7 @@
   },
   "avengers endgame x doomsday marathon": {
    "tmdb": null,
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   "bachelor party deux": {
    "tmdb": 1533928,
@@ -1880,6 +1881,10 @@
    "tmdb": 892,
    "checked": "2026-10-30"
   },
+  "deluxe dine in set dune part three": {
+   "tmdb": null,
+   "checked": "2026-11-20"
+  },
   "detective conan episode zero the shinichi kudo aquarium case": {
    "tmdb": null,
    "checked": "2026-11-13"
@@ -1984,6 +1989,10 @@
    "tmdb": 1381071,
    "checked": "2026-10-30"
   },
+  "gold class dining set dune part three": {
+   "tmdb": null,
+   "checked": "2026-11-20"
+  },
   "heart of the beast": {
    "tmdb": 1263337,
    "checked": "2026-10-30"
@@ -2034,7 +2043,7 @@
   },
   "jeonghan x joshua journey into japan live viewing": {
    "tmdb": null,
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   "john doe": {
    "tmdb": 1655020,
@@ -2314,7 +2323,7 @@
   },
   "the alfee 3000premium one night": {
    "tmdb": null,
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   "the angry birds movie 3": {
    "tmdb": 1300926,
@@ -2346,7 +2355,7 @@
   },
   "the execution": {
    "tmdb": null,
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   "the exorcist martyrs": {
    "tmdb": 1297467,
@@ -2354,7 +2363,7 @@
   },
   "the fellow who rejected college": {
    "tmdb": null,
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   "the further mis adventures of cliff booth": {
    "tmdb": 1457866,
@@ -2454,7 +2463,7 @@
   },
   "v": {
    "tmdb": null,
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   "verity": {
    "tmdb": 1283515,
@@ -2490,7 +2499,7 @@
   },
   "yuzuru hanyu realive an ice story project in saga live viewing": {
    "tmdb": null,
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   "空枪": {
    "tmdb": 1567937,
