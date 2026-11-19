@@ -103,6 +103,7 @@
   "gv:1471": "1003596",
   "gv:1472": "1480503",
   "gv:1474": "656908",
+  "gv:1475": "1297467",
   "gv:1477": "1384758",
   "gv:1478": "1718699",
   "gv:1479": "615121",
@@ -143,6 +144,7 @@
   "gv:4523": "1433568",
   "gv:4525": "747509",
   "gv:4526": "1316347",
+  "gv:4527": "1710024",
   "gv:7490": "1586876",
   "gv:7491": "1586876",
   "gv:7509": "1591675",
@@ -185,6 +187,7 @@
   "shaw:1641": "1153576",
   "shaw:1721": "1084409",
   "shaw:1741": "1212310",
+  "shaw:1748": "1440769",
   "shaw:1774": "1283515",
   "shaw:1775": "1185806",
   "shaw:1776": "1465063",
@@ -1011,6 +1014,14 @@
    "letterboxd": 2.3,
    "letterboxd_url": "https://letterboxd.com/film/the-mongoose-2026/"
   },
+  "1297467": {
+   "title": "The Exorcist: Martyrs",
+   "year": 2027,
+   "imdb_id": "tt32492552",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-exorcist-martyrs/"
+  },
   "1300926": {
    "title": "The Angry Birds Movie 3",
    "year": 2026,
@@ -1258,6 +1269,14 @@
    "imdb": 6.2,
    "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/traces-of-justice/"
+  },
+  "1440769": {
+   "title": "The Beekeeper 2",
+   "year": 2027,
+   "imdb_id": "tt35935357",
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-beekeeper-2/"
   },
   "1454209": {
    "title": "National Theatre Live: Inter Alia",
@@ -1546,6 +1565,14 @@
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/appa-kutty/"
+  },
+  "1710024": {
+   "title": "Remember",
+   "year": 2026,
+   "imdb_id": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/remember-2026-2/"
   },
   "1716531": {
    "title": "Drones",
@@ -2209,6 +2236,10 @@
    "tmdb": 1553200,
    "checked": "2026-11-07"
   },
+  "remember": {
+   "tmdb": 1710024,
+   "checked": "2026-11-19"
+  },
   "rerun december 2026": {
    "tmdb": null,
    "checked": "2026-11-14"
@@ -2293,6 +2324,10 @@
    "tmdb": 1185344,
    "checked": "2026-10-30"
   },
+  "the beekeeper 2": {
+   "tmdb": 1440769,
+   "checked": "2026-11-19"
+  },
   "the blade": {
    "tmdb": 42845,
    "checked": "2026-10-30"
@@ -2312,6 +2347,10 @@
   "the execution": {
    "tmdb": null,
    "checked": "2026-11-13"
+  },
+  "the exorcist martyrs": {
+   "tmdb": 1297467,
+   "checked": "2026-11-19"
   },
   "the fellow who rejected college": {
    "tmdb": null,
@@ -2384,6 +2423,10 @@
   "the violinist": {
    "tmdb": 748681,
    "checked": "2026-10-30"
+  },
+  "the violinist an exclusive tedxsingapore community screening q and a": {
+   "tmdb": null,
+   "checked": "2026-11-19"
   },
   "the weight": {
    "tmdb": 1433583,

@@ -1,12 +1,12 @@
 {
  "sources": {
   "afa": {
-   "consecutive_failures": 0,
-   "last_error": null
+   "consecutive_failures": 1,
+   "last_error": "from_rest: ValueError: expected JSON from https://asianfilmarchive.org/wp-json/wp/v2/mep_events?per_page=100&orderby=date&order=desc&_fields=id%2Cslug%2Clink%2Ctitle%2Cclass_list%2Cyoast_head_json.og_image%2Cevent_informations.event_upcoming_datetime%2Cevent_informations.event_start_datetime%2Cevent_informations.event_expire_datetime%2Cevent_informations.event_end_datetime%2Cevent_informations.location_name, got text/html: '<html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" content=\"0;/.well-known/sgcaptcha/?r=%2Fwp-json%2Fwp%2Fv2%2Fmep_events%3Fper_page%3D100%26orderby%3Ddate%26order%3Ddesc%26_fields%'; from_listing_pages: 0 items"
   },
   "carnival": {
-   "consecutive_failures": 7,
-   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7c947c790260>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
+   "consecutive_failures": 8,
+   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x760183ee8e00>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -26,6 +26,68 @@
   }
  },
  "items": [
+  {
+   "source": "filmhouse",
+   "id": "221",
+   "title": "The Violinist: An Exclusive TEDxSingapore Community Screening + Q&A",
+   "url": "https://filmhouse.sg/film/221/the-violinist-an-exclusive-tedxsingapore-community-screening-qa",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/LPtED4tqy1WkWqHi6VuOBkK4plkjjzFAHUt4AIWUGzE.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "first_seen": "2026-11-19T15:27:50+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "gv",
+   "id": "1475",
+   "title": "The Exorcist: Martyrs",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1475",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1475.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-19T15:27:50+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "4527",
+   "title": "Remember",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4527",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4527.jpg",
+   "release_date": null,
+   "tags": [
+    "Tagalog"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-19T15:27:50+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "1748",
+   "title": "The Beekeeper 2",
+   "url": "https://shaw.sg/movie-details/1748",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1748-Poster-1795065244042",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-19T15:27:50+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
   {
    "source": "filmhouse",
    "id": "250",
@@ -123,7 +185,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2113-Poster-1794977521547",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-18T15:28:30+08:00",
@@ -139,7 +201,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2117-Poster-1794975336413",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-18T15:28:30+08:00",
@@ -521,7 +583,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-11-11T03:44:39+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "quiet"
   },
   {
@@ -630,7 +692,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2094-Poster-1794366126672",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-10T15:18:31+08:00",
@@ -771,7 +833,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "quiet"
   },
   {
@@ -1097,7 +1159,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2098-Poster-1794450710158",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-11-05T03:46:51+08:00",
@@ -1694,7 +1756,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -1796,7 +1858,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2316,7 +2378,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2435,7 +2497,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2469,7 +2531,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2520,7 +2582,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2621,7 +2683,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2655,7 +2717,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -2808,7 +2870,7 @@
    ],
    "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4385,7 +4447,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4448,7 +4510,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1777-Poster-1779940075263",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4703,7 +4765,7 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1835-Poster-1793244230073",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
@@ -4723,7 +4785,7 @@
    ],
    "showing": "soon",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
