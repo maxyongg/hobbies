@@ -25,6 +25,7 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 6. **Web app (2026-10-29):** tabs Now showing / Coming soon / New. One card per film, merged across cinemas by normalised title (in `site/app.js`), with a link per cinema for times and booking.
 7. **Cinemas:** alerts for Filmhouse, Shaw, AFA. Golden Village, Carnival Cinemas and Singapore Film Society are web-app only (`alerts = False`). Closed or skipped venues are listed in `docs/sources.md`.
 8. **Screening times (2026-10-30):** only for the independent cinemas (Filmhouse, AFA, SFS), where a film may screen a handful of times and the times are already in what we scrape. Not for the chains (GV, Shaw, Carnival): they show a film many times a day, their own apps have live times and seats, and Shaw would need a browser render per film. Max agreed; revisit only if he wants "what's on tonight anywhere".
+9. **Want to see + Tickets (2026-11-20):** two personal tabs, stored **in the browser only** (localStorage `cinema.want` / `cinema.tickets`, ticket images in IndexedDB `cinema`), never in the repo, because the site and `data/` are public. Max asked for "Want to see" rather than "wishlist". Booking a film moves it from Want to see to Tickets. Back up / Restore (a JSON file) moves lists between browsers. Not in the widget or pushes (Scriptable can't read Safari storage).
 
 ## Status (2026-10-30)
 
@@ -34,6 +35,7 @@ App name: **cinema** (renamed from whats-on-sg on 2026-10-29). The Python packag
 - Now-showing page live (PRs #4, #5). GV/Carnival/SFS seeded silently in the 2026-10-29 14:30 UTC run (79/7/11); from now on their new films are stored as `alert: "quiet"` (New tab only, never pushed, not in the widget). That run: 124 listings now showing, 80 coming soon, all with posters; ~90 now-showing cards after merging the same film across cinemas.
 - **Ratings (2026-10-30):** IMDb + Letterboxd ratings on web-app cards (all tabs, plus a "Top rated" sort) and in the widget (medium/large rows: `IMDb 7.8 · LB 3.9`); not in ntfy pushes (Max: not needed). `whatson/ratings.py` runs after the scrapers: listed films are matched once to TMDb by cleaned title (chains GV/Shaw/Carnival prefer recent releases; others the most popular exact title; AFA's bracketed year filters) → IMDb ID; IMDb ratings from IMDb's daily `title.ratings.tsv.gz` (hidden under 100 votes); Letterboxd from `letterboxd.com/tmdb/<id>/` (scraped, best effort; on 403/429 it stops and keeps the last ratings). Ratings refresh once per SGT day, so `data/ratings.json` gets one bot commit a day. Unmatched titles retry after 7 days. Repo secret `TMDB_API_KEY` (v3 API key, verified 2026-10-30) is passed to `update.yml` "Check sources" and the `ci.yml` live dry run.
 - **Screening times (2026-10-30, merged in PR #10):** Filmhouse/AFA/SFS scrapers attach `Item.sessions`; the runner writes `data/showtimes.json` (gitignored, published like `status.json`). Cards show the next day's times, tap for all (each links to book; sold out dimmed); "Next screening" sort. Verified in the branch's live job (2026-10-30): Filmhouse 77 screenings / 37 films, AFA 7 / 7, SFS 17 / 11. `scripts/probe.py showtimes` prints the raw markup if one breaks.
+- **Want to see + Tickets (2026-11-20, branch `claude/cool-feynman-mxy9w7`):** ☆ and 🎟 buttons on every poster. Want to see groups the list into Showing now / Coming soon / Not listed right now (films matched by `filmKey`, so a film lights up at any cinema). Ticket form: film, a tap-to-fill screening for Filmhouse/AFA/SFS, date, time, cinema, seats, booking ref, e-ticket link, optional ticket screenshot (shrunk to 1600 px JPEG, shown full-screen at the door). Tickets tab: upcoming by day (until 3 h after the start), past collapsed, Add to calendar (.ics, 2 h slot, 1 h reminder). Phones show short tab labels ("Now", "Soon") so all five fit at 375 px. Checked in headless Chromium only; **not yet seen on an iPhone** (date/time pickers, the .ics download, file picker).
 - Pages serves the app since Max set the source to GitHub Actions (2026-10-29). Not yet confirmed: Max receiving a real alert; the Scriptable widget on his phone (Claude sessions can't reach github.io either).
 
 ## Layout
@@ -48,6 +50,7 @@ whatson/            Python package: python -m whatson run [--dry-run] [--source 
   ratings.py        TMDb match → IMDb + Letterboxd ratings → data/ratings.json (never fails the run)
   showtimes.py      Item.sessions → data/showtimes.json (future screenings only; not committed)
 site/               static web app (reads data/items.json, status.json, ratings.json, showtimes.json) + widget.js (Scriptable)
+                    app.js "Personal lists" section: Want to see / Tickets, on-device only
 data/rating-overrides.json  hand fixes: "<title as on the site>": IMDb/TMDb link, or null for no rating
 widget/whats-on-sg.js  symlink to site/widget.js, only because update.yml still copies that path
 .github/workflows/  update.yml: 6-hourly run + commit data + Pages deploy
@@ -59,6 +62,8 @@ Behaviour: "new" = `(source, id)` never seen. First successful fetch of a source
 
 ## Next steps
 
+1. Ask Max to try Want to see / Tickets on his iPhone once merged: the ticket form's date/time pickers, attaching a screenshot, "Add to calendar" (does iOS offer to add the .ics?), Back up. Suggest he uses the site from one place (a Home Screen web app has its own storage, separate from Safari) and backs up now and then.
+1. Possible follow-ups if he wants them: a push when a Want to see film starts showing or gets times (needs the list on the server, so public, or a token); sync between devices.
 1. Ask Max how the screening times look on his phone (first published by the post-merge `update` run).
 1. Confirm with Max: first real ntfy alert arrived and looked right; widget installed (re-paste `widget.js` for ratings); site renders with ratings.
 1. Ratings: ask Max which films show a wrong rating and add them to `data/rating-overrides.json`; if Letterboxd blocks GitHub runners (log: "Letterboxd answered HTTP 403"), show TMDb's own rating instead.
@@ -78,5 +83,6 @@ To check a scraper change against the real sites: push to a non-`main` branch, t
 - **Posters are hotlinked** from each cinema's CDN. Shaw's gumlet proxy answers 403 to other sites' Referer, so Shaw stores the Azure CDN URL behind it; Shaw's page swaps failed images for `noimage.png`, so its scraper answers image requests with a 1x1 PNG rather than blocking them. Carnival 404s posters for some coming-soon films. The web app tries each cinema's poster for a film before showing 🎬. `scripts/probe.py posters` re-checks hosts.
 - Be polite: low polling frequency, a descriptive User-Agent, ≥1 s between requests per host. Filmhouse updates general-release showtimes weekly (Tuesdays).
 - **TMDb v3 keys travel in the URL** (`api_key=`). `Tmdb.get` keeps it out of its own errors, but urllib3 retry warnings can include it; GitHub masks the secret in Actions logs. Never print TMDb request URLs elsewhere.
+- **Personal lists live in one browser.** iOS Safari may wipe a site's storage after 7 days without a visit (a Home Screen web app is exempt), and Safari vs a Home Screen web app vs another device are separate stores. The app calls `navigator.storage.persist()` and offers Back up / Restore. Never move these lists into `data/` (public).
 - Sites change markup; keep each scraper small. The zero-items/failure check alerts after 2 bad runs.
 - **AFA (SiteGround) answers with a captcha page** (`/.well-known/sgcaptcha/`) after several live runs a few minutes apart (seen 2026-10-30 on the 4th push in 6 min). Batch commits before pushing a branch; docs-only commits can carry `[skip ci]`.

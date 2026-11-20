@@ -12,6 +12,8 @@ Every 6 hours a GitHub Actions job:
 4. Looks up **IMDb** and **Letterboxd** ratings for each film (matched by title through [TMDb](https://www.themoviedb.org); refreshed daily) for the web app and widget.
 5. Publishes the web app: **Now showing** and **Coming soon** across all six (one card per film, with its ratings and a link to each cinema showing it), plus **New** listings. Films at Filmhouse, AFA and SFS also show their **screening times** (each links to book); for the chains, tap the cinema.
 
+The web app also has two personal tabs: **Want to see** (tap ☆ on a poster; shows where and when each film is on) and **Tickets** (tap 🎟 after booking: time, cinema, seats, booking ref, e-ticket link or screenshot, add to calendar). They're saved in your browser only, never in this public repo; use Back up / Restore at the bottom of either tab to move them to another browser.
+
 The first successful check of each cinema records what's already showing without alerting. If a cinema's scraper breaks (errors or finds nothing twice in a row), you get one warning push.
 
 Live at **https://maxyongg.github.io/hobbies/**. Run it on demand from Actions → update → Run workflow.
