@@ -5,8 +5,8 @@
    "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 9,
-   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7af5ee8ac9e0>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
+   "consecutive_failures": 10,
+   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7a245ee73590>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -17,8 +17,8 @@
    "last_error": null
   },
   "sfs": {
-   "consecutive_failures": 0,
-   "last_error": null
+   "consecutive_failures": 1,
+   "last_error": "from_browser: Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://www.singaporefilmsociety.com/\nCall log:\n  - navigating to \"https://www.singaporefilmsociety.com/\", waiting until \"load\"\n"
   },
   "shaw": {
    "consecutive_failures": 0,
@@ -26,6 +26,55 @@
   }
  },
  "items": [
+  {
+   "source": "gv",
+   "id": "1490",
+   "title": "Marvel Studios’ Avengers: Doomsday (IV Atmos)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1490",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1471.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T15:16:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7534",
+   "title": "Disney’s Hexed Spellbound Screening",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7534",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7534.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T15:16:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2104",
+   "title": "Shaw Silver Screen Supper Club: When Harry Met Sally... - Countdown (4K)",
+   "url": "https://shaw.sg/movie-details/2104",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2104-Poster-1794820785765",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T15:16:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
   {
    "source": "gv",
    "id": "1483",
@@ -965,11 +1014,11 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2099-Poster-1793934177012",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "sent"
   },
   {
