@@ -5,8 +5,8 @@
    "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 9,
-   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7af5ee8ac9e0>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
+   "consecutive_failures": 11,
+   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7fdd19aeb6e0>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -26,6 +26,87 @@
   }
  },
  "items": [
+  {
+   "source": "shaw",
+   "id": "1401",
+   "title": "Victorian Psycho",
+   "url": "https://shaw.sg/movie-details/1401",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1401-Poster-1795159835160",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-21T04:19:54+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "shaw",
+   "id": "1794",
+   "title": "Zero A.D.",
+   "url": "https://shaw.sg/movie-details/1794",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1794-Poster-1795158867029",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-21T04:19:54+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
+  {
+   "source": "gv",
+   "id": "1490",
+   "title": "Marvel Studios’ Avengers: Doomsday (IV Atmos)",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1490",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1471.jpg",
+   "release_date": null,
+   "tags": [
+    "English"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T15:16:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "gv",
+   "id": "7534",
+   "title": "Disney’s Hexed Spellbound Screening",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7534",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7534.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T15:16:30+08:00",
+   "listed": true,
+   "alert": "quiet"
+  },
+  {
+   "source": "shaw",
+   "id": "2104",
+   "title": "Shaw Silver Screen Supper Club: When Harry Met Sally... - Countdown (4K)",
+   "url": "https://shaw.sg/movie-details/2104",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2104-Poster-1794820785765",
+   "release_date": null,
+   "tags": [
+    "Advance Sales"
+   ],
+   "showing": "soon",
+   "first_seen": "2026-11-20T15:16:30+08:00",
+   "listed": true,
+   "alert": "sent"
+  },
   {
    "source": "gv",
    "id": "1483",
@@ -682,7 +763,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "now",
+   "showing": "soon",
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
    "alert": "quiet"
@@ -741,7 +822,7 @@
    "title": "The Further Mis-Adventures of Cliff Booth (IMAX LASER)",
    "url": "https://shaw.sg/movie-details/2094",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2094-Poster-1794366126672",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2094-Poster-1795159352091",
    "release_date": null,
    "tags": [
     "Advance Sales"
@@ -965,11 +1046,11 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2099-Poster-1793934177012",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-06T14:46:36+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "sent"
   },
   {
@@ -1388,9 +1469,9 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2095-Poster-1793674923052",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
    "alert": "sent"
@@ -3164,7 +3245,7 @@
    "tags": [
     "SFS Showcase #61"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed"
@@ -3886,7 +3967,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed"
   },
   {
@@ -4082,7 +4163,7 @@
    "tags": [],
    "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed"
   },
   {
@@ -4562,9 +4643,10 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1777-Poster-1779940075263",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing",
+    "Ending Soon"
    ],
-   "showing": "soon",
+   "showing": "now",
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed"

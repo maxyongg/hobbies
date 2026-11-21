@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -110,6 +110,7 @@
   "gv:1480": "791523",
   "gv:1481": "1300968",
   "gv:1489": "1170608",
+  "gv:1490": "1003596",
   "gv:2475": "822653",
   "gv:2476": "1196901",
   "gv:2477": "1411529",
@@ -182,6 +183,7 @@
   "sfs:6afbd5215f2c74784fc1f4be": "1196901",
   "shaw:1363": "1117898",
   "shaw:1377": "1477104",
+  "shaw:1401": "1379486",
   "shaw:1410": "1286656",
   "shaw:1633": "1003596",
   "shaw:1640": "1248832",
@@ -875,7 +877,7 @@
    "title": "The Beast",
    "year": 2026,
    "imdb_id": "tt29256561",
-   "imdb": 4.6,
+   "imdb": 4.5,
    "letterboxd": 2.3,
    "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
   },
@@ -1035,7 +1037,7 @@
    "title": "The Hunger Games: Sunrise on the Reaping",
    "year": 2026,
    "imdb_id": "tt32558705",
-   "imdb": 7.6,
+   "imdb": 7.7,
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/"
   },
@@ -1110,6 +1112,14 @@
    "imdb": 7.5,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/kokuho/"
+  },
+  "1379486": {
+   "title": "Victorian Psycho",
+   "year": 2026,
+   "imdb_id": "tt34374553",
+   "imdb": 6.3,
+   "letterboxd": 3.0,
+   "letterboxd_url": "https://letterboxd.com/film/victorian-psycho/"
   },
   "1381071": {
    "title": "Godzilla Minus Zero",
@@ -1259,7 +1269,7 @@
    "title": "Coward",
    "year": 2026,
    "imdb_id": "tt39328391",
-   "imdb": 7.5,
+   "imdb": 7.4,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/coward-2026/"
   },
@@ -1267,7 +1277,7 @@
    "title": "Traces of Justice",
    "year": 2026,
    "imdb_id": "tt38188218",
-   "imdb": 6.6,
+   "imdb": 6.5,
    "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/traces-of-justice/"
   },
@@ -1372,7 +1382,7 @@
    "year": 2026,
    "imdb_id": "tt41075537",
    "imdb": null,
-   "letterboxd": 2.8,
+   "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/bachelor-party-deux/"
   },
   "1538497": {
@@ -1943,7 +1953,7 @@
   },
   "family day disneys hexed": {
    "tmdb": null,
-   "checked": "2026-11-14"
+   "checked": "2026-11-21"
   },
   "fatherland": {
    "tmdb": 1437696,
@@ -2012,6 +2022,10 @@
   "hexed family movie day": {
    "tmdb": null,
    "checked": "2026-11-18"
+  },
+  "hexed spellbound screening": {
+   "tmdb": null,
+   "checked": "2026-11-20"
   },
   "hoshimachi suisei once upon a stellar live viewing": {
    "tmdb": null,
@@ -2219,7 +2233,7 @@
   },
   "ponyo on the cliff by the sea": {
    "tmdb": null,
-   "checked": "2026-11-14"
+   "checked": "2026-11-21"
   },
   "prahaar the untold story of ujjwal nikam": {
    "tmdb": 1081010,
@@ -2251,7 +2265,7 @@
   },
   "rerun december 2026": {
    "tmdb": null,
-   "checked": "2026-11-14"
+   "checked": "2026-11-21"
   },
   "resident evil": {
    "tmdb": 1423191,
@@ -2280,6 +2294,10 @@
   "shaun the sheep the beast of mossy bottom": {
    "tmdb": 1477104,
    "checked": "2026-10-30"
+  },
+  "shaw silver screen supper club when harry met sally countdown": {
+   "tmdb": null,
+   "checked": "2026-11-20"
   },
   "singapore dreaming": {
    "tmdb": 73650,
@@ -2469,6 +2487,10 @@
    "tmdb": 1283515,
    "checked": "2026-10-30"
   },
+  "victorian psycho": {
+   "tmdb": 1379486,
+   "checked": "2026-11-21"
+  },
   "violent night 2": {
    "tmdb": 1078446,
    "checked": "2026-10-30"
@@ -2500,6 +2522,10 @@
   "yuzuru hanyu realive an ice story project in saga live viewing": {
    "tmdb": null,
    "checked": "2026-11-20"
+  },
+  "zero a d": {
+   "tmdb": null,
+   "checked": "2026-11-21"
   },
   "空枪": {
    "tmdb": 1567937,
