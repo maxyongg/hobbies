@@ -40,21 +40,40 @@ class Store:
                 item.first_seen = now
                 item.listed = True
                 item.alert = alert
+                item.sale_alert = "skip" if item.on_sale else None
                 self.items[item.key] = item
                 new.append(item)
             else:
+                was_soon = old.showing == "soon"
                 for f in MUTABLE_FIELDS:
                     value = getattr(item, f)
                     if value:
                         setattr(old, f, value)
                 old.listed = True
+                self.update_sale(old, item.on_sale, was_soon, alert)
         for key, item in self.items.items():
             if key[0] == source and key not in fetched_keys:
                 item.listed = False
         return new
 
+    @staticmethod
+    def update_sale(old: Item, on_sale: bool | None, was_soon: bool, alert: str) -> None:
+        """Mark a coming-soon film for a "tickets on sale" alert the first time its tickets go on sale.
+
+        Only a change we saw counts: not on sale (False) on the last run, on sale now. Unknown before
+        (None, e.g. the first run after this was added) is recorded without an alert.
+        """
+        if on_sale is None:
+            return
+        if on_sale and not old.on_sale and old.sale_alert is None:
+            old.sale_alert = "pending" if old.on_sale is False and was_soon and alert == "pending" else "skip"
+        old.on_sale = on_sale
+
     def pending(self) -> list[Item]:
         return [i for i in self.items.values() if i.alert == "pending"]
+
+    def pending_sales(self) -> list[Item]:
+        return [i for i in self.items.values() if i.sale_alert == "pending"]
 
     def health(self, source: str) -> dict:
         return self.sources.setdefault(source, {"consecutive_failures": 0, "last_error": None})

@@ -89,6 +89,7 @@ class AsianFilmArchive(Source):
             item = items.setdefault(fid, Item(
                 source=self.key, id=fid, title=SOLD_OUT.sub("", wp.title(p)), url=p["link"],
                 poster=wp.featured_image(p), tags=wp.class_terms(p, ("mep_cat-", "tag-")), showing=showing,
+                on_sale=True,  # tickets are sold on the event page from the day it's listed
             ))
             if showing == "now":  # any repeat screening this week makes the film "now"
                 item.showing = "now"

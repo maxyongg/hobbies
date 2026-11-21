@@ -58,6 +58,8 @@ class Shaw(Source):
                 item.tags.append(tag)
             if tag:  # a film on any now-showing tab is "now", even if also in Advance Sales
                 item.showing = "now" if tag not in SOON_TABS or item.showing == "now" else "soon"
+                # Tickets: anything showing, or in Advance Sales; only Coming Soon isn't bookable yet.
+                item.on_sale = item.showing == "now" or "Advance Sales" in item.tags
 
     def from_browser(self, http) -> list[Item]:
         try:

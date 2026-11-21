@@ -150,3 +150,76 @@ def test_showtimes_go_to_their_own_file_not_the_store(tmp_path, http):
         {"start": "2099-01-02T19:30", "url": "https://fh.example/book/2"},
     ]}
     assert "sessions" not in (tmp_path / "items.json").read_text(encoding="utf-8")
+
+
+class SaleSource(FakeSource):
+    """Each batch: {id: (showing, on_sale)}."""
+
+    def fetch(self, http):
+        return [Item(source=self.key, id=i, title=i.upper(), url=f"{self.url}{i}", showing=showing, on_sale=on_sale)
+                for i, (showing, on_sale) in self.batches.pop(0).items()]
+
+
+def sale_pushes(http):
+    return [p[1]["json"] for p in http.posts if p[1]["json"]["tags"] == ["tickets"]]
+
+
+def test_coming_soon_film_going_on_sale_alerts_once(tmp_path, http):
+    src = SaleSource("fh", [
+        {"a": ("soon", False), "b": ("soon", True), "c": ("now", True)},  # seed: nothing sent
+        {"a": ("soon", True), "b": ("soon", True), "c": ("now", True), "d": ("soon", False)},  # a on sale; d new
+        {"a": ("soon", False), "b": ("soon", True), "c": ("now", True), "d": ("now", True)},  # d opens, bookable
+        {"a": ("soon", True), "b": ("soon", True), "c": ("now", True), "d": ("now", True)},  # a again: once only
+    ])
+    ntfy = Ntfy(http, "t")
+    store, _ = run_once(tmp_path, src, ntfy, http)
+    assert http.posts == []
+    assert [store.items[("fh", k)].sale_alert for k in "abc"] == [None, "skip", "skip"]
+
+    store, _ = run_once(tmp_path, src, ntfy, http)
+    assert [p[1]["json"]["title"] for p in http.posts] == ["New at Fh", "Tickets on sale at Fh"]
+    assert sale_pushes(http)[0]["message"] == "A" and sale_pushes(http)[0]["click"] == "https://fh.example/a"
+    assert store.items[("fh", "a")].sale_alert == "sent"
+
+    store, _ = run_once(tmp_path, src, ntfy, http)
+    assert sale_pushes(http)[1]["message"] == "D\nNow showing"
+    assert store.items[("fh", "a")].on_sale is False
+
+    run_once(tmp_path, src, ntfy, http)
+    assert len(sale_pushes(http)) == 2
+
+
+def test_on_sale_before_tracking_or_on_quiet_sources_is_silent(tmp_path, http):
+    ntfy = Ntfy(http, "t")
+    old = SaleSource("fh", [{"a": ("soon", None)}, {"a": ("soon", True)}])  # None: stored before on_sale existed
+    quiet = SaleSource("gv", [{"b": ("soon", False)}, {"b": ("soon", True)}], alerts=False)
+    for _ in range(2):
+        store = Store(tmp_path / "items.json")
+        runner.run([old, quiet], store, ntfy, http)
+    assert http.posts == []
+    assert store.items[("fh", "a")].sale_alert == "skip" and store.items[("gv", "b")].sale_alert == "skip"
+
+
+def test_on_sale_alerts_share_one_push_and_retry_after_a_failed_send(tmp_path, http):
+    src = SaleSource("fh", [{"a": ("soon", False), "b": ("soon", False)}] + [{"a": ("soon", True), "b": ("soon", True)}] * 2)
+    ntfy = Ntfy(http, "t")
+    run_once(tmp_path, src, ntfy, http)
+    http.fail_posts = True
+    store, _ = run_once(tmp_path, src, ntfy, http)
+    assert store.items[("fh", "a")].sale_alert == "pending"
+    http.fail_posts = False
+    store, _ = run_once(tmp_path, src, ntfy, http)
+    assert sale_pushes(http) == [{"topic": "t", "title": "Tickets on sale for 2 films", "message": "• A (Fh)\n• B (Fh)",
+                                  "click": runner.site_url(), "tags": ["tickets"]}]
+    assert {i.sale_alert for i in store.items.values()} == {"sent"}
+
+
+def test_when_text():
+    item = Item(source="fh", id="a", title="A", url="u", showing="soon")
+    assert runner.when(item, None) == ""
+    item.release_date = "2026-12-04"
+    assert runner.when(item, None) == "Opens Fri 4 Dec"
+    assert runner.when(item, [{"start": "2026-12-06T19:30"}, {"start": "2026-12-07T10:00"}]) == \
+        "First screening Sun 6 Dec, 7:30 pm"
+    item.showing = "now"
+    assert runner.when(item, None) == "Now showing"

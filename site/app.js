@@ -4,6 +4,7 @@
 //   Ratings (IMDb, Letterboxd) come from data/ratings.json, keyed by "<source>:<id>".
 //   Screening times (Filmhouse, AFA, SFS) come from data/showtimes.json, keyed the same way.
 //   Want to see / Tickets: personal lists kept in this browser only (see "Personal lists").
+//   Coming soon films with tickets already on sale (item.on_sale) get a badge and their own section.
 "use strict";
 
 const NAMES = {
@@ -134,6 +135,8 @@ function groupFilms(items) {
   for (const g of groups.values()) {
     g.showing = g.items.some(i => (i.showing || "now") === "now") ? "now" : "soon";
     g.sources = [...new Set(g.items.map(i => i.source))];
+    // Cinemas already selling tickets for a coming-soon film (advance sales, or bookable screenings).
+    g.onSale = g.showing === "soon" ? [...new Set(g.items.filter(i => i.on_sale).map(i => i.source))] : [];
     g.posters = posterCandidates(g.items);
     g.rating = ratingOf(g.items);
     g.sessions = sessionsOf(g.items);
@@ -246,6 +249,7 @@ function filmCard(g) {
     el("div", { class: "body" },
       el("h3", { class: "title" }, g.title),
       ratings(g.rating),
+      onSale(g.onSale, g.sources.length > 1),
       booked(g.key),
       el("div", { class: "wheres" }, ...where),
       times(g.sessions)));
@@ -261,10 +265,18 @@ function itemCard(item) {
       el("span", { class: `src src-${item.source}` }, sourceName(item.source)),
       el("h3", { class: "title" }, el("a", { href: item.url, target: "_blank", rel: "noopener" }, item.title)),
       ratings(ratingOf([item])),
+      item.listed && item.showing === "soon" && item.on_sale ? onSale([item.source], false) : null,
       item.tags?.length ? el("span", { class: "meta" }, item.tags.join(" · ")) : null,
       item.listed ? null : el("span", { class: "meta" }, "No longer listed"),
       booked(key),
       item.listed ? times(sessionsOf([item])) : null));
+}
+
+// "Tickets on sale" (· which cinemas, when the film is at several).
+function onSale(sources, name) {
+  if (!sources.length) return null;
+  return el("span", { class: "onsale" }, icon("ticket"), " Tickets on sale",
+    name ? ` · ${sources.map(shortName).join(", ")}` : null);
 }
 
 function sourceKeys() {
@@ -359,8 +371,16 @@ function render() {
 
   const matches = g => !q || g.key.includes(q) || g.items.some(i => i.title.toLowerCase().includes(raw));
   const shown = sortFilms(films.filter(g => g.showing === state.view && matches(g)));
-  feed.replaceChildren(shown.length ? el("div", { class: "grid" }, ...shown.map(filmCard))
-    : el("p", { class: "empty" }, q ? "No films match your search." : "Nothing here for the selected cinemas."));
+  if (!shown.length) {
+    feed.replaceChildren(el("p", { class: "empty" }, q ? "No films match your search." : "Nothing here for the selected cinemas."));
+    return;
+  }
+  const sale = state.view === "soon" ? shown.filter(g => g.onSale.length) : [];
+  if (!sale.length) return feed.replaceChildren(el("div", { class: "grid" }, ...shown.map(filmCard)));
+  const later = shown.filter(g => !g.onSale.length);
+  feed.replaceChildren(
+    el("h2", {}, "Tickets on sale"), el("div", { class: "grid" }, ...sale.map(filmCard)),
+    ...(later.length ? [el("h2", {}, "Not on sale yet"), el("div", { class: "grid" }, ...later.map(filmCard))] : []));
 }
 
 const byTitle = (a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" });

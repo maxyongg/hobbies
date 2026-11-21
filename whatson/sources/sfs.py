@@ -58,6 +58,8 @@ def items_from_events(events: list[dict], now: datetime) -> list[Item]:
                 item.tags.append(series)
             if start:
                 item.sessions.append(screening(start, item.url, venue(ev), note(clean(ev.get("name")), title)))
+    for item in items.values():
+        item.on_sale = bool(item.sessions)  # each screening is an Eventive ticket page
     return list(items.values())
 
 

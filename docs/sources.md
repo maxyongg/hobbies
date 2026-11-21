@@ -2,6 +2,8 @@
 
 Surveyed and verified 2026-10-29 through the CI `live` job (Claude cloud sessions can't reach these sites). The job prints what every scraper finds on non-`main` pushes; `scripts/probe.py <name>` shows what a site exposes. Showing status: "now" or "soon" per item (see each source).
 
+**On sale** (`on_sale`, 2026-11-21) — whether tickets can be bought yet: Filmhouse and SFS: the film lists at least one screening; Shaw: on the Advance Sales tab or a now-showing tab (Coming Soon alone: not yet); AFA: always (tickets are sold on the event page from the start); GV: on the `advancesales` or `nowshowing` list (`comingsoon` alone: not yet); Carnival: on the now-playing list (it includes films opening later, i.e. advance booking).
+
 ## Filmhouse — https://filmhouse.sg
 
 - Indie cinema at Golden Mile Tower, Beach Road (former Projector space), three halls.
