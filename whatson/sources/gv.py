@@ -13,6 +13,7 @@ from .html import clean
 
 BASE = "https://www.gv.com.sg"
 LISTS = {"nowshowing": "now", "advancesales": "soon", "comingsoon": "soon"}
+ON_SALE = {"nowshowing", "advancesales"}  # comingsoon: not bookable yet
 LEADING_LANGUAGE = re.compile(r"^\(([^)]+)\)\s*(.+)$")  # "(Hindi) Ramayana" -> "Ramayana (Hindi)"
 
 
@@ -57,9 +58,10 @@ class GoldenVillage(Source):
                 if code in items:  # listed twice (e.g. now showing and advance sales): now wins
                     if showing == "now":
                         items[code].showing = "now"
+                    items[code].on_sale = items[code].on_sale or endpoint in ON_SALE
                     continue
                 rating = m.get("rating") if "advised" not in (m.get("rating") or "").lower() else None
                 items[code] = Item(source=self.key, id=code, title=title, url=detail_url(m),
-                                   poster=m.get("imageLink") or None, showing=showing,
+                                   poster=m.get("imageLink") or None, showing=showing, on_sale=endpoint in ON_SALE,
                                    tags=[t for t in (m.get("language"), rating) if t])
         return list(items.values())

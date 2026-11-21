@@ -5,11 +5,12 @@ from __future__ import annotations
 import json
 import logging
 import os
+from datetime import datetime
 from pathlib import Path
 
 from . import showtimes as times
 from .models import Item, now_sgt
-from .notify import Notifier
+from .notify import Notifier, Sale
 from .sources import Source, SourceError
 
 log = logging.getLogger(__name__)
@@ -77,13 +78,15 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
         else:
             showing = {s: sum(1 for i in items if (i.showing or "now") == s) for s in ("now", "soon")}
             posters = sum(1 for i in items if i.poster)
-            log.info("%s: %d listed (%d now, %d soon, %d with posters), %d new",
-                     src.key, len(items), showing["now"], showing["soon"], posters, len(new))
+            on_sale = sum(1 for i in items if i.showing == "soon" and i.on_sale)
+            log.info("%s: %d listed (%d now, %d soon of which %d on sale, %d with posters), %d new",
+                     src.key, len(items), showing["now"], showing["soon"], on_sale, posters, len(new))
         for i in new:
             log.info("  + %s | %s | %s", i.id, i.title, i.url)
 
     if not dry_run:
         send_pending(store, notifier, names)
+        send_sales(store, notifier, names, showtimes)
         store.save()
         if status_path:
             status_path.parent.mkdir(parents=True, exist_ok=True)
@@ -106,6 +109,39 @@ def send_pending(store, notifier: Notifier, names: dict[str, str]) -> None:
             continue
         for i in items:
             i.alert = "sent"
+
+
+def send_sales(store, notifier: Notifier, names: dict[str, str], showtimes: dict[str, list[dict]]) -> None:
+    """One push per run for coming-soon films whose tickets went on sale; retried if the send fails."""
+    items = sorted(store.pending_sales(), key=lambda i: (i.title.lower(), i.source))
+    if not items:
+        return
+    sales = [Sale(i, names.get(i.source, i.source), when(i, showtimes.get(f"{i.source}:{i.id}"))) for i in items]
+    for s in sales:
+        log.info("tickets on sale: %s | %s | %s", s.cinema, s.item.title, s.when)
+    try:
+        notifier.on_sale(sales, site_url())
+    except Exception:  # noqa: BLE001
+        log.exception("tickets-on-sale alert failed; will retry next run")
+        return
+    for i in items:
+        i.sale_alert = "sent"
+
+
+def when(item: Item, sessions: list[dict] | None) -> str:
+    """"First screening Sat 6 Dec, 7:30 pm" / "Opens Thu 4 Dec" / "Now showing", when known."""
+    if item.showing == "now":
+        return "Now showing"
+    if sessions:
+        d = datetime.strptime(sessions[0]["start"], "%Y-%m-%dT%H:%M")
+        return f"First screening {d:%a} {d.day} {d:%b}, {d.hour % 12 or 12}:{d:%M} {'am' if d.hour < 12 else 'pm'}"
+    if item.release_date:
+        try:
+            d = datetime.strptime(item.release_date[:10], "%Y-%m-%d")
+        except ValueError:
+            return ""
+        return f"Opens {d:%a} {d.day} {d:%b}"
+    return ""
 
 
 def dedupe(items: list[Item]) -> list[Item]:

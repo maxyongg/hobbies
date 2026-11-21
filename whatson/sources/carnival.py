@@ -54,5 +54,6 @@ class Carnival(Source):
                     url=f"{SITE}/{quote(name, safe='()')}/{quote(name, safe='()')}" if bookable else self.url,
                     poster=f"{POSTERS}/{m['imageURL']}" if POSTERS and m.get("imageURL") else None,
                     showing="now" if bookable and (not opening or opening <= today) else "soon",
+                    on_sale=bookable,  # now-playing with a later opening date = advance booking
                 ))
         return list(items.values())

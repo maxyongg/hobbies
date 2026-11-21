@@ -125,4 +125,5 @@ class Filmhouse(Source):
                     items[fid].sessions += sessions
         for item in items.values():
             item.showing = "soon" if "Coming soon" in item.tags else "now"
+            item.on_sale = bool(item.sessions)  # a coming-soon film is bookable once it lists screenings
         return list(items.values())

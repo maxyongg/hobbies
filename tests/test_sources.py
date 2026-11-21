@@ -33,6 +33,7 @@ def test_afa_rest_merges_repeat_screenings(http):
     assert items[0].tags == ["Screening", "Singapore international film festival"]
     assert "event_informations.event_start_datetime" in afa.FIELDS
     assert items[0].poster == "https://x/p.jpg"
+    assert all(i.on_sale for i in items)  # AFA sells tickets on the event page from the start
 
 
 def test_afa_falls_back_to_listing_pages(http):
@@ -64,6 +65,7 @@ def test_filmhouse_reads_film_cards_and_tags_coming_soon(http):
     }
     assert items["220"].url == f"{base}/film/220/fjord"
     assert items["220"].poster == "https://cdn/220.jpg"
+    assert items["232"].on_sale is False  # coming soon, no screenings listed yet
 
 
 def test_filmhouse_falls_back_to_slug_title(http):
@@ -87,10 +89,14 @@ def test_shaw_reads_movie_links_and_skips_tabs():
            <h3>Dune: Part Two</h3></div>"""
     found = {}
     Shaw().items_from_html(html, found, tag="Advance Sales")
-    assert {k: (v.title, v.tags) for k, v in found.items()} == {
-        "12345": ("Wicked", ["Advance Sales"]),
-        "678": ("Dune: Part Two", ["Advance Sales"]),
+    assert {k: (v.title, v.tags, v.on_sale) for k, v in found.items()} == {
+        "12345": ("Wicked", ["Advance Sales"], True),
+        "678": ("Dune: Part Two", ["Advance Sales"], True),
     }
+    soon = '<div><a href="/movie-details/900"><img alt="Later"></a><h3>Later</h3></div>'
+    Shaw().items_from_html(soon, found, tag="Coming Soon")
+    Shaw().items_from_html(soon, found)  # the untagged first page doesn't change it
+    assert (found["900"].showing, found["900"].on_sale) == ("soon", False)
     assert found["12345"].poster == "https://shaw.sg/img/w.jpg"
 
 
@@ -158,6 +164,7 @@ def test_gv_lists_and_titles(http):
         "4510": ("Godzilla Minus Zero", "now", ["Japanese", "PG13"]),
         "4512": ("Ramayana: Rise Of A Legend (Hindi)", "soon", ["Hindi"]),
     }
+    assert {k: v.on_sale for k, v in items.items()} == {"7509": True, "4510": True, "4512": False}
     assert items["7509"].url == "https://www.gv.com.sg/GVMovieDetails#/movie/7509"
     assert items["4512"].url == "https://www.gv.com.sg/GVGroupSynopsis#/group/4512"
     assert GoldenVillage.alerts is False
@@ -182,6 +189,9 @@ def test_carnival_lists(http, monkeypatch):
         "scene": ("Scene", "soon"),
     }
     assert items["jailer-2-nc16"].url == "https://carnivalcinemas.sg/Jailer%202%20(NC16)/Jailer%202%20(NC16)"
+    # Bookable (now playing) but opening later = advance booking; coming soon isn't bookable.
+    assert {k: v.on_sale for k, v in items.items()} == {
+        "jailer-2-nc16": True, "the-execution-m18": True, "tamil-ramayana-rise-of-a-legend": False, "scene": False}
 
 
 def test_sfs_events_to_films():
@@ -203,6 +213,7 @@ def test_sfs_events_to_films():
         "f3": ("Roman Holiday", "soon", ["SFS Spotlight"]),
     }
     assert items["f1"].url == "https://events.singaporefilmsociety.com/films/f1"
+    assert all(i.on_sale for i in items.values())
 
 
 def test_poster_skips_placeholder_and_uses_picture_source():
@@ -247,6 +258,7 @@ def test_filmhouse_reads_screenings_from_cards(http, monkeypatch):
         {"start": "2026-12-30T19:45", "url": f"{base}/film/220/fjord", "note": "Sold out"},
         {"start": "2027-01-02T11:00", "url": f"{base}/filmhouse-singapore/booknow/1960"},
     ]
+    assert item.on_sale is True
 
 
 def test_filmhouse_day_and_time_parsing():

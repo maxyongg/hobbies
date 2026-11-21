@@ -169,6 +169,11 @@ h2 + .grid { margin-top: 0; }
 .act[aria-pressed="true"] { color: #ffc83d; }
 .act[aria-pressed="true"] .icon { fill: currentColor; }
 .act.has { background: var(--accent); }
+.onsale {
+  align-self: flex-start; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 999px;
+  color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  display: inline-flex; align-items: center; gap: 4px;
+}
 .booked {
   font: inherit; font-size: 0.78rem; font-weight: 600; color: var(--accent); background: none; border: 0;
   padding: 0; text-align: left; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;

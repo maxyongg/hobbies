@@ -23,6 +23,8 @@ class Item:
     release_date: str | None = None
     tags: list[str] = field(default_factory=list)
     showing: str | None = None  # "now" | "soon" (None: source can't tell; treated as now)
+    # Tickets can be bought now (advance sales, or a bookable screening). None: source can't tell.
+    on_sale: bool | None = None
     # Upcoming screenings, from sources that list them (see screening()). They go to
     # showtimes.json, not the store, so items.json doesn't change as screenings pass.
     sessions: list[dict] = field(default_factory=list)
@@ -30,6 +32,9 @@ class Item:
     first_seen: str | None = None
     listed: bool = True  # present in the latest successful fetch
     alert: str = "pending"  # "seed" (first run) | "quiet" (source doesn't alert) | "pending" | "sent"
+    # A coming-soon film seen without tickets, then with: "pending" -> "sent" (one alert per film).
+    # "skip": on sale when first seen (the new-film alert says so), on a quiet source, or before tracking.
+    sale_alert: str | None = None
 
     @property
     def key(self) -> tuple[str, str]:
