@@ -5,8 +5,8 @@
    "last_error": null
   },
   "carnival": {
-   "consecutive_failures": 11,
-   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x7fdd19aeb6e0>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
+   "consecutive_failures": 13,
+   "last_error": "from_api: ConnectTimeout: HTTPSConnectionPool(host='service.carnivalcinemas.sg', port=443): Max retries exceeded with url: /api/QuickSearch/GetNowPlayingMovies?location=Mumbai (Caused by ConnectTimeoutError(<HTTPSConnection(host='service.carnivalcinemas.sg', port=443) at 0x79d35dcf4200>, 'Connection to service.carnivalcinemas.sg timed out. (connect timeout=30)'))"
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -38,9 +38,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-11-21T04:19:54+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -54,9 +56,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-11-21T04:19:54+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -70,9 +74,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-20T15:16:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -87,9 +93,11 @@
     "PG"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-20T15:16:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -103,9 +111,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-20T15:16:30+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -120,9 +130,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-20T04:38:09+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -137,9 +149,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-20T04:38:09+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -154,9 +168,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-20T04:38:09+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -168,9 +184,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-19T15:27:50+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -184,9 +202,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-11-19T15:27:50+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -200,9 +220,11 @@
     "Tagalog"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-11-19T15:27:50+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -216,9 +238,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-11-19T15:27:50+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -230,9 +254,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-19T04:31:54+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -244,9 +270,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-19T04:31:54+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -258,9 +286,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-19T04:31:54+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -272,9 +302,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-19T04:31:54+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -288,9 +320,11 @@
     "Malay"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-11-18T15:28:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -304,9 +338,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-18T15:28:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -320,9 +356,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-18T15:28:30+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -336,9 +374,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-18T15:28:30+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -350,9 +390,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-18T04:55:37+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -364,9 +406,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-17T15:55:38+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -378,9 +422,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-17T15:55:38+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -392,9 +438,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-17T15:55:38+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -406,9 +454,11 @@
    "release_date": null,
    "tags": [],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-17T15:55:38+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -422,9 +472,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-17T15:55:38+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -437,10 +489,12 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-17T15:55:38+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -452,9 +506,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-15T02:02:01+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -469,9 +525,11 @@
     "Rerun"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "afa",
@@ -486,9 +544,11 @@
     "Rerun"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "afa",
@@ -503,9 +563,11 @@
     "Rerun"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "afa",
@@ -520,9 +582,11 @@
     "Rerun"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "afa",
@@ -536,9 +600,11 @@
     "Screening"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "afa",
@@ -553,9 +619,11 @@
     "Rerun"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -567,9 +635,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -584,9 +654,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -601,9 +673,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -618,9 +692,11 @@
     "PG"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -635,9 +711,11 @@
     "Nil"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-13T14:45:49+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -652,9 +730,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-12T15:10:56+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -668,9 +748,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-12T15:10:56+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "carnival",
@@ -682,9 +764,11 @@
    "release_date": "2026-11-13",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-11T14:21:03+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -698,9 +782,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-11T14:21:03+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -715,9 +801,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-11T03:44:39+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -732,9 +820,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-11T03:44:39+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -748,9 +838,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-11-11T03:44:39+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -764,9 +856,11 @@
     "SFS Somerset"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -780,9 +874,11 @@
     "SFS Somerset"
    ],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -796,9 +892,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -811,10 +909,12 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "now",
+   "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -828,9 +928,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -844,9 +946,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-09T06:06:00+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "carnival",
@@ -858,9 +962,11 @@
    "release_date": "2026-11-20",
    "tags": [],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-11-07T03:25:15+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -872,9 +978,11 @@
    "release_date": "2026-11-13",
    "tags": [],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-11-07T03:25:15+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -886,9 +994,11 @@
    "release_date": "2026-11-13",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-07T03:25:15+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -903,9 +1013,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-07T03:25:15+08:00",
-   "listed": true,
-   "alert": "quiet"
+   "listed": false,
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -917,9 +1029,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -931,9 +1045,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -948,9 +1064,11 @@
     "M18"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -965,9 +1083,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
-   "listed": true,
-   "alert": "quiet"
+   "listed": false,
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -982,9 +1102,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -999,9 +1121,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1016,9 +1140,11 @@
     "PG"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1033,9 +1159,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1049,9 +1177,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1065,9 +1195,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-06T03:57:33+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1082,9 +1214,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1099,9 +1233,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1116,9 +1252,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1133,9 +1271,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1150,9 +1290,11 @@
     "NC16"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1167,9 +1309,11 @@
     "NC16"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1184,9 +1328,11 @@
     "PG"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1201,9 +1347,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1215,9 +1363,11 @@
    "release_date": null,
    "tags": [],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "carnival",
@@ -1229,9 +1379,11 @@
    "release_date": "2026-11-06",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-05T03:46:51+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1246,9 +1398,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-05T03:46:51+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1263,9 +1417,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-05T03:46:51+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -1279,9 +1435,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-11-05T03:46:51+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -1295,9 +1453,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-05T03:46:51+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1311,9 +1471,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-11-04T14:22:52+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -1327,9 +1489,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-11-04T14:22:52+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1341,9 +1505,11 @@
    "release_date": "2026-11-06",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-04T07:24:06+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1355,9 +1521,11 @@
    "release_date": "2026-11-06",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-11-04T07:24:06+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1372,9 +1540,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1389,9 +1559,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1406,9 +1578,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
-   "listed": true,
-   "alert": "quiet"
+   "listed": false,
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1423,9 +1597,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1440,9 +1616,11 @@
     "General"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1456,9 +1634,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1472,9 +1652,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
-   "listed": true,
-   "alert": "sent"
+   "listed": false,
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1488,9 +1670,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -1501,12 +1685,14 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2097-Poster-1793675461446",
    "release_date": null,
    "tags": [
-    "Advance Sales"
+    "Now Showing"
    ],
-   "showing": "soon",
+   "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-03T22:15:30+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -1520,9 +1706,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-02T23:53:43+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1537,9 +1725,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-02T14:02:51+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1554,9 +1744,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-02T14:02:51+08:00",
    "listed": true,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -1568,9 +1760,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-31T20:29:52+08:00",
    "listed": false,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -1582,9 +1776,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-30T20:56:32+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -1596,9 +1792,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-30T15:27:09+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -1610,9 +1808,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-30T13:49:59+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -1624,9 +1824,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-30T13:49:59+08:00",
    "listed": true,
-   "alert": "sent"
+   "alert": "sent",
+   "sale_alert": "skip"
   },
   {
    "source": "carnival",
@@ -1638,9 +1840,11 @@
    "release_date": "2026-10-26",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T23:48:13+08:00",
    "listed": false,
-   "alert": "quiet"
+   "alert": "quiet",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1652,9 +1856,11 @@
    "release_date": "2026-11-02",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1666,9 +1872,11 @@
    "release_date": "2026-11-06",
    "tags": [],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1680,9 +1888,11 @@
    "release_date": "2026-10-15",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1694,9 +1904,11 @@
    "release_date": "2026-11-06",
    "tags": [],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1708,9 +1920,11 @@
    "release_date": "2026-11-06",
    "tags": [],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1722,9 +1936,11 @@
    "release_date": "2026-11-05",
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "carnival",
@@ -1736,9 +1952,11 @@
    "release_date": "2026-11-21",
    "tags": [],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1753,9 +1971,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1770,9 +1990,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1786,9 +2008,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1803,9 +2027,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1820,9 +2046,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1837,9 +2065,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1854,9 +2084,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1871,9 +2103,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1888,9 +2122,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1905,9 +2141,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -1922,9 +2160,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1939,9 +2179,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1956,9 +2198,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1973,9 +2217,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -1990,9 +2236,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2007,9 +2255,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2024,9 +2274,11 @@
     "PG"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2041,9 +2293,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2057,9 +2311,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2074,9 +2330,11 @@
     "M18"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2091,9 +2349,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2108,9 +2368,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2125,9 +2387,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2142,9 +2406,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2159,9 +2425,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2176,9 +2444,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2193,9 +2463,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2209,9 +2481,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2226,9 +2500,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2242,9 +2518,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2258,9 +2536,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2274,9 +2554,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2290,9 +2572,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2306,9 +2590,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2323,9 +2609,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2340,9 +2628,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2357,9 +2647,11 @@
     "PG13"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2374,9 +2666,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2391,9 +2685,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2408,9 +2704,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2425,9 +2723,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2442,9 +2742,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2459,9 +2761,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2476,9 +2780,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2493,9 +2799,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2510,9 +2818,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2527,9 +2837,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2544,9 +2856,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2561,9 +2875,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2578,9 +2894,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2595,9 +2913,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2612,9 +2932,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2629,9 +2951,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2646,9 +2970,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2663,9 +2989,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2680,9 +3008,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2697,9 +3027,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2714,9 +3046,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2731,9 +3065,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2748,9 +3084,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2765,9 +3103,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2782,9 +3122,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2798,9 +3140,11 @@
     "English"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2815,9 +3159,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2832,9 +3178,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2849,9 +3197,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2866,9 +3216,11 @@
     "M18"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2883,9 +3235,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2900,9 +3254,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2917,9 +3273,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2934,9 +3292,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2951,9 +3311,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2968,9 +3330,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -2985,9 +3349,11 @@
     "General"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -3002,9 +3368,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -3019,9 +3387,11 @@
     "PG"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -3036,9 +3406,11 @@
     "PG13"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -3053,9 +3425,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "gv",
@@ -3070,9 +3444,11 @@
     "NC16"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -3086,9 +3462,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -3102,9 +3480,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3118,9 +3498,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3134,9 +3516,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -3149,10 +3533,12 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "now",
+   "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3166,9 +3552,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3181,10 +3569,12 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3198,9 +3588,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -3214,9 +3606,11 @@
     "SFS Spotlight"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "sfs",
@@ -3230,9 +3624,11 @@
     "SFS Spotlight"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3246,9 +3642,11 @@
     "SFS Showcase #61"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "afa",
@@ -3263,9 +3661,11 @@
     "70 years of taiyupian"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3281,9 +3681,11 @@
     "Twin tales"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3299,9 +3701,11 @@
     "Yasuzo masumura"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3316,9 +3720,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3332,9 +3738,11 @@
     "Talks"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3350,9 +3758,11 @@
     "Yasuzo masumura"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3367,9 +3777,11 @@
     "Off the catalogue"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3384,9 +3796,11 @@
     "70 years of taiyupian"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3402,9 +3816,11 @@
     "Singapore shorts 2026"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3419,9 +3835,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3436,9 +3854,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3456,9 +3876,11 @@
     "Yasuzo masumura"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3473,9 +3895,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3490,9 +3914,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3508,9 +3934,11 @@
     "Twin tales"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3525,9 +3953,11 @@
     "Off the catalogue"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3542,9 +3972,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3559,9 +3991,11 @@
     "Off the catalogue"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3576,9 +4010,11 @@
     "Off the catalogue"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3593,9 +4029,11 @@
     "70 years of taiyupian"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3610,9 +4048,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3627,9 +4067,11 @@
     "Singapore international film festival"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3644,9 +4086,11 @@
     "Singapore international film festival"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3661,9 +4105,11 @@
     "Singapore international film festival"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3678,9 +4124,11 @@
     "Singapore international film festival"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3695,9 +4143,11 @@
     "Singapore international film festival"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3712,9 +4162,11 @@
     "Singapore international film festival"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3729,9 +4181,11 @@
     "Singapore international film festival"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3746,9 +4200,11 @@
     "Singapore international film festival"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3763,9 +4219,11 @@
     "Singapore dreaming"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3781,9 +4239,11 @@
     "Singapore shorts 2026"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3798,9 +4258,11 @@
     "Singapore shorts 2026"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3815,9 +4277,11 @@
     "Off the catalogue"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "afa",
@@ -3832,9 +4296,11 @@
     "70 years of taiyupian"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3849,9 +4315,11 @@
     "70 years of taiyupian"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3867,9 +4335,11 @@
     "Twin tales"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3885,9 +4355,11 @@
     "Yasuzo masumura"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3902,9 +4374,11 @@
     "70 years of taiyupian"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3919,9 +4393,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3936,9 +4412,11 @@
     "Past time"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "afa",
@@ -3952,9 +4430,11 @@
     "Screening"
    ],
    "showing": null,
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -3966,9 +4446,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -3980,9 +4462,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": false,
-   "alert": "seed"
+   "listed": true,
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -3994,9 +4478,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4008,9 +4494,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4022,9 +4510,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4036,9 +4526,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4050,9 +4542,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4064,9 +4558,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4078,9 +4574,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4092,9 +4590,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4106,9 +4606,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4120,9 +4622,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4134,9 +4638,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4148,9 +4654,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4162,9 +4670,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": false,
-   "alert": "seed"
+   "listed": true,
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4178,9 +4688,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4194,9 +4706,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4210,9 +4724,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4224,9 +4740,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4238,9 +4756,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4252,9 +4772,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4266,9 +4788,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4280,9 +4804,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4294,9 +4820,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4310,9 +4838,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4326,9 +4856,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4342,9 +4874,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
-   "alert": "seed"
+   "listed": false,
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4358,9 +4892,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4372,9 +4908,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4386,9 +4924,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4400,9 +4940,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "filmhouse",
@@ -4416,9 +4958,11 @@
     "Coming soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4430,9 +4974,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "filmhouse",
@@ -4444,9 +4990,11 @@
    "release_date": null,
    "tags": [],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4462,9 +5010,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4479,9 +5029,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4495,9 +5047,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4511,9 +5065,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4528,9 +5084,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4546,9 +5104,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4563,9 +5123,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4579,9 +5141,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4596,9 +5160,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4613,9 +5179,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4630,9 +5198,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4647,9 +5217,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4664,9 +5236,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4681,9 +5255,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4698,9 +5274,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4714,9 +5292,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4731,9 +5311,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4748,9 +5330,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4766,9 +5350,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4783,9 +5369,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4800,9 +5388,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4817,9 +5407,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4834,9 +5426,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4851,9 +5445,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4868,9 +5464,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4886,9 +5484,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4902,9 +5502,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -4918,9 +5520,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4934,9 +5538,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4951,9 +5557,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4967,9 +5575,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4983,9 +5593,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -4999,9 +5611,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5016,9 +5630,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5032,9 +5648,11 @@
     "Coming Soon"
    ],
    "showing": "soon",
+   "on_sale": false,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5050,9 +5668,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5068,9 +5688,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5084,9 +5706,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5101,9 +5725,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5119,9 +5745,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5136,9 +5764,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5153,9 +5783,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5170,9 +5802,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5187,9 +5821,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5203,9 +5839,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5219,9 +5857,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5235,9 +5875,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5252,9 +5894,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5269,9 +5913,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5285,9 +5931,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5301,9 +5949,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5318,9 +5968,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5335,9 +5987,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5352,9 +6006,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5369,9 +6025,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5386,9 +6044,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5403,9 +6063,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5419,9 +6081,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5436,9 +6100,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5454,9 +6120,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5471,9 +6139,11 @@
     "Ending Soon"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5487,9 +6157,11 @@
     "Now Showing"
    ],
    "showing": "now",
+   "on_sale": null,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": false,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": null
   },
   {
    "source": "shaw",
@@ -5503,9 +6175,11 @@
     "Advance Sales"
    ],
    "showing": "soon",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -5521,9 +6195,11 @@
     "Top Movies"
    ],
    "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
-   "alert": "seed"
+   "alert": "seed",
+   "sale_alert": "skip"
   }
  ]
 }
