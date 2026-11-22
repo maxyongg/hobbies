@@ -207,33 +207,61 @@ details.past summary { cursor: pointer; color: var(--muted); font-weight: 600; m
 .btn.danger { color: #c62828; margin-right: auto; }
 .link { font: inherit; background: none; border: 0; padding: 0; color: inherit; text-decoration: underline; cursor: pointer; }
 
-/* Ticket form */
-dialog.sheet {
-  width: min(460px, calc(100% - 24px)); max-height: calc(100% - 24px); padding: 0; overflow: auto;
-  border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--text);
+/* Ticket page (add/edit tickets): a page of its own; the list is hidden meanwhile */
+body.editing > header, body.editing > main, body.editing > footer { display: none; }
+#sheet { max-width: 560px; margin: 0 auto; }
+.sheet-bar {
+  position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  margin: calc(-1 * max(16px, env(safe-area-inset-top))) -16px 0;
+  padding: max(12px, env(safe-area-inset-top)) 16px 10px; background: var(--bg); border-bottom: 1px solid var(--line);
 }
-dialog::backdrop { background: rgb(0 0 0 / 0.45); }
-.form { padding: 18px 16px 16px; display: grid; gap: 12px; }
-.form h2 { margin: 0; font-size: 1.1rem; text-transform: none; letter-spacing: 0; color: var(--text); }
+.sheet-bar b { font-size: 1rem; }
+.sheet-bar .link { text-decoration: none; color: var(--accent); font-size: 1rem; padding: 6px 0; }
+.sheet-film { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; margin-top: 16px; }
+.sheet-film .poster { width: 64px; border-radius: 6px; }
+.sheet-film h2 { font-size: 1.15rem; text-transform: none; letter-spacing: 0; color: var(--text); margin: 0 0 2px; }
+.sheet-film p { margin: 0 0 4px; }
+.part { margin-top: 22px; display: grid; gap: 10px; }
+.part h3, .more summary { margin: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.more { margin-top: 22px; }
+.more summary { cursor: pointer; font-weight: 600; }
+.more .part { margin-top: 12px; gap: 12px; }
+#sheet input:not([type="file"]), .wheel {
+  font: inherit; font-size: 16px; color: var(--text); background: var(--card); width: 100%; min-width: 0;
+  border: 1px solid var(--line); border-radius: 8px; padding: 10px; min-height: 44px;
+}
+.when { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.when .wheel:first-child { grid-column: 1 / -1; } /* the day on its own row, hour and minutes below */
+.suggest { display: grid; gap: 4px; }
+.suggest:empty { display: none; }
+.suggestion {
+  font: inherit; text-align: left; cursor: pointer; padding: 10px 12px; border-radius: 8px; color: var(--text);
+  border: 1px solid var(--line); background: var(--card); display: flex; justify-content: space-between; gap: 10px;
+}
+.suggestion small { color: var(--muted); white-space: nowrap; }
+.choices { display: flex; flex-wrap: wrap; gap: 6px; }
+.choice {
+  font: inherit; font-size: 0.95rem; cursor: pointer; padding: 8px 14px; border-radius: 999px; color: var(--text);
+  border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); background: var(--card);
+}
+.choice[aria-pressed="true"] { background: color-mix(in srgb, var(--c) 22%, var(--card)); border-color: var(--c); font-weight: 600; }
 .field { display: grid; gap: 4px; font-size: 0.85rem; color: var(--muted); font-weight: 600; min-width: 0; }
 .field small { font-weight: 400; }
-.field input {
-  font: inherit; font-size: 16px; font-weight: 400; color: var(--text); background: var(--bg); width: 100%; min-width: 0;
-  border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px; min-height: 42px;
-}
-.field input[type="date"], .field input[type="time"] { -webkit-appearance: none; appearance: none; }
-.field input::-webkit-date-and-time-value { text-align: left; }
-.field input[type="file"] { padding: 7px 8px; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.check { font-size: 0.85rem; display: flex; align-items: center; gap: 6px; }
-.picks { display: flex; flex-wrap: wrap; gap: 5px; }
+.upload { position: relative; justify-self: start; overflow: hidden; }
+.hidden-file { position: absolute; inset: 0; opacity: 0; cursor: pointer; } /* not display:none: iOS ignores the label then */
+.attached { margin: 0; font-weight: 400; color: var(--text); }
+.picks { display: flex; flex-wrap: wrap; gap: 6px; }
 .pick {
-  font: inherit; font-size: 0.8rem; font-weight: 400; color: var(--text); cursor: pointer; padding: 4px 8px; border-radius: 6px;
+  font: inherit; font-size: 0.85rem; color: var(--text); cursor: pointer; padding: 7px 10px; border-radius: 8px;
   border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); background: color-mix(in srgb, var(--c) 8%, transparent);
 }
 .pick b { font-weight: 600; }
-.pick.on { background: color-mix(in srgb, var(--c) 30%, transparent); }
-.buttons { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
+.pick.on { background: color-mix(in srgb, var(--c) 30%, transparent); border-color: var(--c); }
+.error { color: #c62828; font-weight: 600; margin: 16px 0 0; }
+.sheet-end { margin: 26px 0 8px; display: grid; gap: 14px; justify-items: center; text-align: center; }
+.btn.wide { width: 100%; padding: 12px; font-size: 1rem; }
+.link.danger { color: #c62828; }
 
 /* Ticket image, full screen for the scanner at the door */
 dialog.viewer {
