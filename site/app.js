@@ -600,107 +600,233 @@ function privacyNote() {
     button("Back up", backup, "link"), " · ", button("Restore", pickBackup, "link"));
 }
 
-// --- Ticket form -------------------------------------------------------------------------
+// --- Ticket page: add or edit tickets ---------------------------------------------------
+// A page of its own, not a pop-up: on iOS, pickers and the keyboard behave in normal page flow,
+// and nothing closes when a picker is dismissed. Day and time are <select>s (wheels on iOS)
+// rather than <input type="time">. Swipe back / the browser's Back cancels (history entry).
+
+const sheet = { open: false, scroll: 0, f: null };
 
 function ticketForm({ key, snap, ticket }) {
-  const input = (attrs) => el("input", { autocomplete: "off", ...attrs });
-  const field = (label, control, hint) => el("label", { class: "field" }, el("span", {}, label), control,
-    hint ? el("small", {}, hint) : null);
-
-  const film = input({ name: "title", required: true, list: "film-titles", value: ticket?.title ?? snap?.title ?? "",
-    placeholder: "Film" });
-  const date = input({ type: "date", required: true, value: ticket?.start.slice(0, 10) ?? sgtDate(new Date()) });
-  const time = input({ type: "time", required: true, value: ticket?.start.slice(11, 16) ?? "" });
-  const cinema = input({ list: "cinema-names", value: ticket?.cinema ?? "", placeholder: "Cinema" });
-  const seats = input({ value: ticket?.seats ?? "", placeholder: "e.g. F7, F8" });
-  const ref = input({ value: ticket?.ref ?? "", placeholder: "From the confirmation" });
-  const link = input({ type: "url", value: ticket?.link ?? "", placeholder: "https://…" });
-  const image = el("input", { type: "file", accept: "image/*" });
-  const dropImage = el("input", { type: "checkbox" });
-  const picks = el("div", { class: "picks" });
-
-  // Screening times we know for the film (Filmhouse, AFA, SFS): tap one to fill in the form.
-  const filmFor = () => state.byKey.get(filmKey(film.value));
-  const showPicks = () => {
-    const g = filmFor();
-    const multi = g && g.sources.length > 1;
-    if (g && !ticket && !cinema.value && g.sources.length === 1) cinema.value = sourceName(g.sources[0]);
-    picks.replaceChildren(...(g?.sessions || []).slice(0, 16).map(s => button(
-      [el("b", {}, `${dayShort(s.start.slice(0, 10))} ${clock(s.start)}`), multi ? ` ${shortName(s.source)}` : null],
-      e => {
-        date.value = s.start.slice(0, 10);
-        time.value = s.start.slice(11, 16);
-        cinema.value = [sourceName(s.source), s.venue].filter(Boolean).join(" · ");
-        for (const b of picks.children) b.classList.toggle("on", b === e.currentTarget);
-      }, `pick src-${s.source}`)));
-    picks.hidden = !picks.children.length;
-  };
-  film.addEventListener("input", showPicks);
-
-  const close = () => dlg.close();
-  const form = el("form", { class: "form" },
-    el("h2", {}, ticket ? "Edit tickets" : "I have tickets"),
-    field("Film", film),
-    el("div", { class: "field" }, el("span", {}, "Screening"), picks),
-    el("div", { class: "two" }, field("Date", date), field("Time", time)),
-    field("Cinema", cinema),
-    el("div", { class: "two" }, field("Seats", seats), field("Booking ref", ref)),
-    field("Link to the e-ticket", link, "Optional: the ticket page from the cinema's email or site."),
-    field("Ticket image", image, "Optional: a screenshot of the e-ticket or its QR code, to show at the door."),
-    ticket?.image ? el("label", { class: "check" }, dropImage, " Remove the saved image") : null,
-    el("p", { class: "muted small" }, "Saved on this device only."),
-    el("div", { class: "buttons" },
-      ticket ? button("Delete", () => {
-        if (!confirm(`Delete your tickets for ${ticket.title}?`)) return;
-        mine.tickets = mine.tickets.filter(t => t.id !== ticket.id);
-        images.del(ticket.id).catch(() => {});
-        saveMine();
-        close();
-        render();
-      }, "btn danger") : null,
-      button("Cancel", close),
-      el("button", { type: "submit", class: "btn primary" }, "Save")),
-    el("datalist", { id: "film-titles" }, ...[...state.byKey.values()].sort(byTitle).map(g => el("option", { value: g.title }))),
-    el("datalist", { id: "cinema-names" }, ...sourceKeys().map(k => el("option", { value: sourceName(k) }))));
-
-  form.addEventListener("submit", async e => {
-    e.preventDefault();
-    const title = film.value.trim();
-    const k = filmKey(title);
-    const g = state.byKey.get(k);
-    const known = g ? snapshot(g) : ticket && filmKey(ticket.title) === k ? ticket : snap && k === key ? snap : {};
-    const t = {
-      id: ticket?.id || newId(), title, start: `${date.value}T${time.value.slice(0, 5)}`,
-      cinema: cinema.value.trim(), seats: seats.value.trim(), ref: ref.value.trim(), link: link.value.trim(),
-      poster: safeUrl(known.poster), url: safeUrl(known.url), image: !!ticket?.image,
-      added: ticket?.added || new Date().toISOString(),
-    };
-    if (!START.test(t.start)) return alert("Pick a date and time.");
-    try {
-      if (image.files[0]) {
-        await images.put(t.id, await shrink(image.files[0]));
-        t.image = true;
-      } else if (dropImage.checked) {
-        await images.del(t.id);
-        t.image = false;
-      }
-    } catch (err) {
-      alert(`Couldn't save the ticket image (${err.message || err}). The rest is saved.`);
-    }
-    mine.tickets = [...mine.tickets.filter(x => x.id !== t.id), t];
-    if (!ticket) mine.want.delete(k); // booked: it moves from Want to see to Tickets
-    saveMine();
-    close();
-    render();
+  const g = state.byKey.get(ticket ? filmKey(ticket.title) : key);
+  const names = sourceKeys().map(sourceName);
+  const where = ticket?.cinema || "";
+  const known = names.find(n => where === n || where.startsWith(`${n} · `));
+  openSheet({
+    ticket, snap, key,
+    title: ticket?.title ?? snap?.title ?? "",
+    chosen: !!(ticket || snap), // film fixed (from a poster or an existing ticket) vs searching
+    day: ticket?.start.slice(0, 10) ?? "",
+    hour: ticket ? String(+ticket.start.slice(11, 13)) : "",
+    minute: ticket?.start.slice(14, 16) ?? "00",
+    cinema: known || (!ticket && g?.sources.length === 1 ? sourceName(g.sources[0]) : ""),
+    place: known ? where.slice(known.length + 3) : where,
+    seats: ticket?.seats ?? "", ref: ticket?.ref ?? "", link: ticket?.link ?? "",
+    file: null, dropImage: false, error: "", saving: false,
+    more: !!(ticket && (ticket.seats || ticket.ref || ticket.link || ticket.image)),
   });
+}
 
-  const dlg = el("dialog", { class: "sheet", "aria-label": ticket ? "Edit tickets" : "I have tickets" }, form);
-  dlg.addEventListener("click", e => { if (e.target === dlg) close(); }); // tap outside
-  dlg.addEventListener("close", () => dlg.remove());
-  document.body.append(dlg);
-  showPicks();
-  dlg.showModal();
-  if (!film.value) film.focus();
+function openSheet(f) {
+  sheet.f = f;
+  if (!sheet.open) {
+    sheet.open = true;
+    sheet.scroll = scrollY;
+    history.pushState({ sheet: true }, "");
+  }
+  document.body.classList.add("editing");
+  drawSheet();
+  scrollTo(0, 0);
+}
+
+function closeSheet() { // Cancel, Save, Delete: go back, which closes the page (see popstate)
+  if (history.state?.sheet) history.back();
+  else hideSheet();
+}
+
+function hideSheet() {
+  if (!sheet.open) return;
+  sheet.open = false;
+  sheet.f = null;
+  document.body.classList.remove("editing");
+  document.getElementById("sheet").replaceChildren();
+  render();
+  scrollTo(0, sheet.scroll);
+}
+
+function dayName(iso) {
+  const d = new Date(`${iso}T12:00:00+08:00`);
+  const part = o => d.toLocaleDateString("en-GB", { timeZone: TZ, ...o });
+  const name = `${part({ weekday: "short" })} ${part({ day: "numeric" })} ${part({ month: "short" })}`
+    + (iso.slice(0, 4) === sgtDate(new Date()).slice(0, 4) ? "" : ` ${iso.slice(0, 4)}`);
+  const rel = dayShort(iso);
+  return rel === "Today" || rel === "Tomorrow" ? `${rel}, ${name}` : name;
+}
+
+function hourName(h) {
+  return h === 0 ? "12 am" : h < 12 ? `${h} am` : h === 12 ? "12 pm" : `${h - 12} pm`;
+}
+
+function picker(label, options, value, onChange) {
+  const s = el("select", { class: "wheel", "aria-label": label },
+    ...options.map(([v, text]) => el("option", { value: v, selected: v === value }, text)));
+  s.addEventListener("change", () => onChange(s.value));
+  return s;
+}
+
+function drawSheet() {
+  const f = sheet.f;
+  const redraw = () => { f.error = ""; drawSheet(); }; // any change clears the last "pick a day" message
+  const g = state.byKey.get(filmKey(f.title));
+  const text = (name, placeholder, attrs = {}) => {
+    const input = el("input", { value: f[name], placeholder, autocomplete: "off", ...attrs });
+    input.addEventListener("input", () => { f[name] = input.value; });
+    return input;
+  };
+  const section = (title, ...body) => el("section", { class: "part" }, el("h3", {}, title), ...body);
+
+  // Film: fixed when opened from a poster or a ticket; otherwise search the listings (or type any title).
+  let film;
+  if (f.chosen && f.title) {
+    const posters = [...new Set([...(g?.posters || []), safeUrl(f.snap?.poster), safeUrl(f.ticket?.poster)].filter(Boolean))];
+    film = el("div", { class: "sheet-film" }, poster(posters, null),
+      el("div", {},
+        el("h2", {}, f.title),
+        g ? el("p", { class: "meta" }, g.sources.map(shortName).join(" · ")) : null,
+        button("Change film", () => { f.chosen = false; redraw(); }, "link small")));
+  } else {
+    const search = text("title", "Film title", { type: "search", enterkeyhint: "done", "aria-label": "Film" });
+    const hits = el("div", { class: "suggest" });
+    const suggest = () => {
+      const q = filmKey(search.value);
+      // Titles starting with what was typed first, then a word starting with it, then anywhere.
+      const rank = x => x.key.startsWith(q) ? 0 : x.key.includes(` ${q}`) ? 1 : 2;
+      hits.replaceChildren(...(q ? [...state.byKey.values()].filter(x => x.key.includes(q))
+        .sort((a, b) => rank(a) - rank(b) || a.title.length - b.title.length || byTitle(a, b)).slice(0, 6) : [])
+        .map(x => button([x.title, el("small", {}, x.sources.map(shortName).join(" · "))], () => {
+          Object.assign(f, { title: x.title, chosen: true });
+          if (!f.cinema && x.sources.length === 1) f.cinema = sourceName(x.sources[0]);
+          redraw();
+        }, "suggestion")));
+    };
+    search.addEventListener("input", suggest);
+    film = section("Film", search, hits, el("p", { class: "muted small" }, "Pick from the list, or just type the title."));
+    queueMicrotask(() => { suggest(); if (!f.title) search.focus(); });
+  }
+
+  // When: known screenings (Filmhouse, AFA, SFS) fill everything in one tap; else day + hour + minute.
+  const sessions = g?.sessions || [];
+  const multi = new Set(sessions.map(s => s.source)).size > 1;
+  const start = f.day && f.hour !== "" ? `${f.day}T${f.hour.padStart(2, "0")}:${f.minute}` : "";
+  const picks = sessions.slice(0, 24).map(s => button(
+    [el("b", {}, dayShort(s.start.slice(0, 10))), ` ${clock(s.start)}`, multi ? el("small", {}, ` ${shortName(s.source)}`) : null],
+    () => {
+      Object.assign(f, { day: s.start.slice(0, 10), hour: String(+s.start.slice(11, 13)), minute: s.start.slice(14, 16),
+        cinema: sourceName(s.source), place: s.venue || "", error: "" });
+      redraw();
+    }, `pick src-${s.source}${s.start === start ? " on" : ""}`));
+  const days = Array.from({ length: 180 }, (_, i) => sgtDate(new Date(Date.now() + i * 864e5)));
+  if (f.day && !days.includes(f.day)) days.unshift(f.day); // an older ticket being edited
+  const minutes = Array.from({ length: 12 }, (_, i) => String(i * 5).padStart(2, "0"));
+  if (!minutes.includes(f.minute)) minutes.push(f.minute);
+  const hours = [...Array(24).keys()].map(i => (i + 6) % 24); // 6 am first, through to 5 am
+  const when = section("When",
+    picks.length ? el("div", { class: "picks" }, ...picks) : null,
+    picks.length ? el("p", { class: "muted small" }, "Tap your screening, or set the day and time:") : null,
+    el("div", { class: "when" },
+      picker("Day", [["", "Day"], ...days.map(d => [d, dayName(d)])], f.day, v => { f.day = v; redraw(); }),
+      picker("Hour", [["", "Hour"], ...hours.map(h => [String(h), hourName(h)])], f.hour, v => { f.hour = v; redraw(); }),
+      picker("Minutes", minutes.sort().map(m => [m, `:${m}`]), f.minute, v => { f.minute = v; redraw(); })));
+
+  // Where: the film's cinemas (or every cinema), plus the branch or hall.
+  const cinemas = g ? g.sources : sourceKeys();
+  const place = section("Where",
+    el("div", { class: "choices" }, ...cinemas.map(k => {
+      const b = button(shortName(k), () => { f.cinema = f.cinema === sourceName(k) ? "" : sourceName(k); redraw(); },
+        `choice src-${k}`);
+      b.setAttribute("aria-pressed", String(f.cinema === sourceName(k)));
+      return b;
+    })),
+    text("place", "Branch or hall (optional), e.g. Lido, Hall 5", { "aria-label": "Branch or hall" }));
+
+  // Optional details, folded away.
+  const image = el("input", { type: "file", accept: "image/*", class: "hidden-file" });
+  image.addEventListener("change", () => { f.file = image.files[0] || null; f.dropImage = false; redraw(); });
+  const hasImage = f.file || (f.ticket?.image && !f.dropImage);
+  const more = el("details", { class: "more", open: f.more },
+    el("summary", {}, "Seats, booking ref, e-ticket"),
+    el("div", { class: "part" }, // a wrapper: Safari won't lay out <details> itself as a grid
+    el("div", { class: "two" },
+      el("label", { class: "field" }, el("span", {}, "Seats"), text("seats", "e.g. F7, F8")),
+      el("label", { class: "field" }, el("span", {}, "Booking ref"), text("ref", "From the confirmation"))),
+    el("label", { class: "field" }, el("span", {}, "Link to the e-ticket"),
+      text("link", "https://…", { type: "url", inputmode: "url" })),
+    el("div", { class: "field" }, el("span", {}, "Ticket screenshot"),
+      hasImage
+        ? el("p", { class: "attached" }, f.file ? `Added: ${f.file.name}` : "Saved on this device",
+          " · ", button("Remove", () => { f.file = null; f.dropImage = true; redraw(); }, "link"))
+        : el("label", { class: "btn upload" }, "Add a screenshot", image),
+      el("small", {}, "The e-ticket or its QR code, to show at the door."))));
+  more.addEventListener("toggle", () => { f.more = more.open; });
+
+  const save = button(f.saving ? "Saving…" : "Save", () => saveSheet(), "btn primary");
+  if (f.saving) save.disabled = true;
+  document.getElementById("sheet").replaceChildren(...[
+    el("div", { class: "sheet-bar" }, button("Cancel", closeSheet, "link"),
+      el("b", {}, f.ticket ? "Edit tickets" : "Add tickets"), save),
+    film, when, place, more,
+    f.error ? el("p", { class: "error", role: "alert" }, f.error) : null,
+    el("div", { class: "sheet-end" },
+      button(f.saving ? "Saving…" : "Save", () => saveSheet(), "btn primary wide"),
+      f.ticket ? button("Delete these tickets", deleteSheet, "link danger") : null,
+      el("p", { class: "muted small" }, "Saved on this device only.")),
+  ].filter(Boolean));
+}
+
+async function saveSheet() {
+  const f = sheet.f;
+  if (!f || f.saving) return;
+  const title = f.title.trim();
+  const fail = error => { f.error = error; drawSheet(); document.querySelector("#sheet .error")?.scrollIntoView({ block: "center" }); };
+  if (!title) return fail("Which film? Type its title.");
+  if (!f.day || f.hour === "") return fail("Pick the day and time of your screening.");
+  const k = filmKey(title);
+  const g = state.byKey.get(k);
+  const known = g ? snapshot(g) : f.ticket && filmKey(f.ticket.title) === k ? f.ticket
+    : f.snap && filmKey(f.snap.title) === k ? f.snap : {};
+  const t = {
+    id: f.ticket?.id || newId(), title, start: `${f.day}T${f.hour.padStart(2, "0")}:${f.minute}`,
+    cinema: [f.cinema, f.place.trim()].filter(Boolean).join(" · "),
+    seats: f.seats.trim(), ref: f.ref.trim(), link: f.link.trim(),
+    poster: safeUrl(known.poster), url: safeUrl(known.url), image: !!f.ticket?.image,
+    added: f.ticket?.added || new Date().toISOString(),
+  };
+  f.saving = true;
+  drawSheet();
+  try {
+    if (f.file) {
+      await images.put(t.id, await shrink(f.file));
+      t.image = true;
+    } else if (f.dropImage) {
+      await images.del(t.id);
+      t.image = false;
+    }
+  } catch (err) {
+    alert(`Couldn't save the screenshot (${err.message || err}). The rest is saved.`);
+  }
+  mine.tickets = [...mine.tickets.filter(x => x.id !== t.id), t];
+  if (!f.ticket) mine.want.delete(k); // booked: it moves from Want to see to Tickets
+  saveMine();
+  closeSheet();
+}
+
+function deleteSheet() {
+  const t = sheet.f.ticket;
+  if (!confirm(`Delete your tickets for ${t.title}?`)) return;
+  mine.tickets = mine.tickets.filter(x => x.id !== t.id);
+  images.del(t.id).catch(() => {});
+  saveMine();
+  closeSheet();
 }
 
 // --- Ticket images (IndexedDB: too big for localStorage) ---------------------------------
@@ -845,6 +971,9 @@ async function getJSON(url) {
 async function main() {
   loadMine();
   addEventListener("storage", () => { loadMine(); render(); }); // changed in another tab
+  addEventListener("popstate", hideSheet); // Back / swipe back leaves the ticket page
+  addEventListener("keydown", e => { if (e.key === "Escape" && sheet.open) closeSheet(); });
+  if (history.state?.sheet) history.replaceState(null, ""); // reloaded while the ticket page was open
   state.view = load("view", "now");
   if (!VIEWS.some(([k]) => k === state.view)) state.view = "now";
   state.hidden = new Set(load("hidden", []));
