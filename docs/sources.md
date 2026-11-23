@@ -2,7 +2,7 @@
 
 Surveyed and verified 2026-10-29 through the CI `live` job (Claude cloud sessions can't reach these sites). The job prints what every scraper finds on non-`main` pushes; `scripts/probe.py <name>` shows what a site exposes. Showing status: "now" or "soon" per item (see each source).
 
-**On sale** (`on_sale`, 2026-11-21) — whether tickets can be bought yet: Filmhouse and SFS: the film lists at least one screening; Shaw: on the Advance Sales tab or a now-showing tab (Coming Soon alone: not yet); AFA: always (tickets are sold on the event page from the start); GV: on the `advancesales` or `nowshowing` list (`comingsoon` alone: not yet); Carnival: on the now-playing list (it includes films opening later, i.e. advance booking).
+**On sale** (`on_sale`, 2026-11-21) — whether tickets can be bought yet: Filmhouse and SFS: the film lists at least one screening; Shaw: on the Advance Sales tab or a now-showing tab (Coming Soon alone: not yet); AFA: always (tickets are sold on the event page from the start); GV: on the `advancesales` or `nowshowing` list (`comingsoon` alone: not yet).
 
 ## Filmhouse — https://filmhouse.sg
 
@@ -43,11 +43,6 @@ Surveyed and verified 2026-10-29 through the CI `live` job (Claude cloud session
 - Biggest chain. AngularJS site behind Cloudflare: headless Chromium gets a bot challenge, but plain `requests` POSTs (JSON body `{}`, Origin/Referer set) to `/.gv-api/nowshowing`, `/.gv-api/advancesales`, `/.gv-api/comingsoon` return JSON (`filmCd`, `filmTitle`, `imageLink`, `language`, `rating`, `type` Single/Group, `specialEvent`). Don't try to get past the challenge if plain requests start failing.
 - **Implemented (verified live 2026-10-29):** `whatson/sources/gv.py`. Titles lose the trailing `*`, "(Hindi) X" → "X (Hindi)", ALL-CAPS → capitalised. Detail URL `GVMovieDetails#/movie/<filmCd>` (Group → `GVGroupSynopsis#/group/`, events → `GVEventDetails#/event/`).
 
-## Carnival Cinemas — https://carnivalcinemas.sg (web app only)
-
-- Indian-language films at Golden Mile Tower. AngularJS; data from `service.carnivalcinemas.sg/api/QuickSearch/GetNowPlayingMovies` and `GetCommingSoonMovies` (sic), plain GET with `location=Mumbai` (what the site itself sends). Codes aren't unique (coming soon all "111"), so id = slug of the name. Posters: `carnivalcinemas.sg/upload/movie/<imageURL>`. Booking URL `/<name>/<name>`.
-- **Implemented (verified live 2026-10-29):** `whatson/sources/carnival.py`. Showing: now-playing with opening date ≤ today → now, else soon.
-
 ## Singapore Film Society — https://www.singaporefilmsociety.com (web app only)
 
 - SFS Somerset (GV Cineleisure Hall 6) plus SFS Spotlight/Showcase screenings at other halls. Site on Duda; tickets via Eventive (bucket `6a277454f068b0ba9c60baae`, frontend `events.singaporefilmsociety.com`). `api.eventive.org` refuses requests without the client header the page sends, so the scraper loads the SFS homepage in Chromium and reads `/event_buckets/<id>/events?upcoming_only=true` as the page fetches it. One item per film (`films[].id`), URL `events.singaporefilmsociety.com/films/<id>`, poster `films[].poster_image`, tag = series ("SFS Somerset", "SFS Spotlight"). Showing: a session within 7 days → now.
@@ -56,6 +51,7 @@ Surveyed and verified 2026-10-29 through the CI `live` job (Claude cloud session
 ## Looked at, not included (2026-10-29)
 
 - **Closed:** Cathay Cineplexes (ceased 2025), WE Cinemas, Filmgarde, The Projector.
+- **Carnival Cinemas** (`carnivalcinemas.sg`, Indian-language films at Golden Mile Tower): scraped 2026-10-29 to 2026-11-23 from `service.carnivalcinemas.sg/api/QuickSearch/GetNowPlayingMovies` / `GetCommingSoonMovies` (sic, `location=Mumbai`). Removed at Max's request on 2026-11-23, after the API timed out from GitHub's runners on 17 runs in a row. The scraper is in git history (`whatson/sources/carnival.py`) if it's wanted back.
 - **Alliance Française** (`alliancefrancaise.org.sg`): TLS certificate failed verification from GitHub's runners; not worked around.
 - **Objectifs** (`objectifs.com.sg`, WordPress): mostly workshops/exhibitions; film screenings are occasional. Could be added from its "What's On" category if wanted.
 - **SGIFF** (`sgiff.com`): festival 21 Oct–1 Nov 2026; its screenings are at the cinemas above (AFA lists them). WP REST is 403.

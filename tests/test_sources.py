@@ -2,7 +2,6 @@ from datetime import date, datetime, timezone
 
 from whatson.sources import afa, filmhouse
 from whatson.sources.afa import AsianFilmArchive, film_id
-from whatson.sources.carnival import Carnival
 from whatson.sources.filmhouse import Filmhouse
 from whatson.sources.gv import GoldenVillage
 from whatson.sources.html import harvest_links
@@ -176,29 +175,6 @@ def test_gv_lists_and_titles(http):
     assert items["4512"].url == "https://www.gv.com.sg/GVGroupSynopsis#/group/4512"
     assert GoldenVillage.alerts is False
 
-
-def test_carnival_lists(http, monkeypatch):
-    # Field names as returned by service.carnivalcinemas.sg/api/QuickSearch/*.
-    api = "https://service.carnivalcinemas.sg/api/QuickSearch"
-    http.routes[f"{api}/GetNowPlayingMovies"] = {"responseMovies": [
-        {"code": "Jailer 2 (NC16)", "name": "Jailer 2 (NC16)", "openingDate": "2026-10-15T00:00:00"},
-        {"code": "The Execution(M18)", "name": "The Execution(M18)", "openingDate": "2099-11-21T00:00:00"},
-    ]}
-    http.routes[f"{api}/GetCommingSoonMovies"] = {"responseMovies": [
-        {"code": "111", "name": "(TAMIL) Ramayana: Rise Of A Legend", "openingDate": "2099-11-05T00:00:00"},
-        {"code": "111", "name": "Scene ", "openingDate": "2099-11-06T00:00:00"},
-    ]}
-    items = {i.id: i for i in Carnival().fetch(http)}
-    assert {k: (v.title, v.showing) for k, v in items.items()} == {
-        "jailer-2-nc16": ("Jailer 2 (NC16)", "now"),
-        "the-execution-m18": ("The Execution (M18)", "soon"),
-        "tamil-ramayana-rise-of-a-legend": ("Ramayana: Rise Of A Legend (TAMIL)", "soon"),
-        "scene": ("Scene", "soon"),
-    }
-    assert items["jailer-2-nc16"].url == "https://carnivalcinemas.sg/Jailer%202%20(NC16)/Jailer%202%20(NC16)"
-    # Bookable (now playing) but opening later = advance booking; coming soon isn't bookable.
-    assert {k: v.on_sale for k, v in items.items()} == {
-        "jailer-2-nc16": True, "the-execution-m18": True, "tamil-ramayana-rise-of-a-legend": False, "scene": False}
 
 
 def test_sfs_events_to_films():
