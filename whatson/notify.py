@@ -6,11 +6,16 @@ import logging
 import os
 from typing import NamedTuple
 
-from .models import Item
+from .models import Item, duration
 
 log = logging.getLogger(__name__)
 
 SUMMARY_OVER = 5  # more new items than this from one source -> one summary push
+
+
+def film(i: Item) -> str:
+    """"Dune: Part Three · 2h 46m": the title, with the runtime when TMDb knows it."""
+    return i.title + (f" · {duration(i.runtime)}" if i.runtime else "")
 
 
 class Sale(NamedTuple):
@@ -55,7 +60,7 @@ class Ntfy(Notifier):
 
     def new_items(self, source_name: str, items: list[Item], site_url: str) -> None:
         if len(items) > SUMMARY_OVER:
-            lines = [f"• {i.title}" for i in items]
+            lines = [f"• {film(i)}" for i in items]
             self._send(
                 title=f"{len(items)} new at {source_name}",
                 message="\n".join(lines),
@@ -66,7 +71,7 @@ class Ntfy(Notifier):
         for i in items:
             self._send(
                 title=f"New at {source_name}" + (" · tickets on sale" if i.on_sale and i.showing == "soon" else ""),
-                message=i.title + (f"\n{', '.join(i.tags)}" if i.tags else ""),
+                message=film(i) + (f"\n{', '.join(i.tags)}" if i.tags else ""),
                 click=i.url,
                 attach=i.poster,
                 tags=["clapper"],
@@ -76,10 +81,10 @@ class Ntfy(Notifier):
         """All of a run's films in one push; one film gets its poster and a link to its page."""
         if len(sales) == 1:
             s = sales[0]
-            self._send(title=f"Tickets on sale at {s.cinema}", message="\n".join(filter(None, [s.item.title, s.when])),
+            self._send(title=f"Tickets on sale at {s.cinema}", message="\n".join(filter(None, [film(s.item), s.when])),
                        click=s.item.url, attach=s.item.poster, tags=["tickets"])
             return
-        lines = [f"• {s.item.title} ({s.cinema}" + (f", {s.when[0].lower()}{s.when[1:]})" if s.when else ")")
+        lines = [f"• {film(s.item)} ({s.cinema}" + (f", {s.when[0].lower()}{s.when[1:]})" if s.when else ")")
                  for s in sales]
         self._send(title=f"Tickets on sale for {len(sales)} films", message="\n".join(lines),
                    click=site_url, tags=["tickets"])

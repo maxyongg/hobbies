@@ -1,7 +1,7 @@
 // Cinema — renders data/items.json (written by the scheduled scraper run).
 //   Now showing / Coming soon: one card per film, merged across cinemas by title.
 //   New: listings first seen since tracking began, by day.
-//   Ratings (IMDb, Letterboxd) come from data/ratings.json, keyed by "<source>:<id>".
+//   Runtime and ratings (IMDb, Letterboxd) come from data/ratings.json (TMDb), keyed by "<source>:<id>".
 //   Screening times (Filmhouse, AFA, SFS) come from data/showtimes.json, keyed the same way.
 //   Want to see / Tickets: personal lists kept in this browser only (see "Personal lists").
 //   Coming soon films with tickets already on sale (item.on_sale) get a badge and their own section.
@@ -197,11 +197,19 @@ function score(f) {
   return f?.imdb ?? (f?.letterboxd ? f.letterboxd * 2 : -1);
 }
 
+// "1h 52m", "2h", "45m"
+function duration(minutes) {
+  const h = Math.floor(minutes / 60), m = minutes % 60;
+  return [h ? `${h}h` : "", m ? `${m}m` : ""].filter(Boolean).join(" ");
+}
+
+// Runtime, then ratings, on one line under the title.
 function ratings(f) {
-  if (!f || !(f.imdb || f.letterboxd)) return null;
+  if (!f || !(f.runtime || f.imdb || f.letterboxd)) return null;
   const link = (cls, href, label, value) => el("a", { class: `rating ${cls}`, href, target: "_blank", rel: "noopener" },
     label, " ", el("b", {}, value.toFixed(1)));
   return el("div", { class: "ratings" },
+    f.runtime > 0 ? el("span", { class: "runtime", title: `${f.runtime} minutes` }, duration(f.runtime)) : null,
     f.imdb ? link("imdb", `https://www.imdb.com/title/${f.imdb_id}/`, "IMDb", f.imdb) : null,
     f.letterboxd ? link("lb", f.letterboxd_url || `https://letterboxd.com/tmdb/${f.id}/`, "Letterboxd", f.letterboxd) : null);
 }

@@ -1,11 +1,11 @@
-"""Film ratings (IMDb, Letterboxd) for the web app's cards and the widget.
+"""Film ratings (IMDb, Letterboxd) and runtimes for the web app's cards and the widget.
 
-Each film is matched once to TMDb by title (which gives its IMDb ID). IMDb ratings come
-from IMDb's daily ratings file, Letterboxd's from the film's page (letterboxd.com/tmdb/<id>/
+Each film is matched once to TMDb by title (which gives its IMDb ID and runtime). IMDb ratings
+come from IMDb's daily ratings file, Letterboxd's from the film's page (letterboxd.com/tmdb/<id>/
 redirects there). Ratings refresh once a day. Everything goes to data/ratings.json:
 
     items:   "<source>:<id>" -> TMDb id, for the web app and widget
-    films:   TMDb id -> {title, year, imdb_id, imdb, letterboxd, letterboxd_url}
+    films:   TMDb id -> {title, year, imdb_id, runtime (minutes), imdb, letterboxd, letterboxd_url}
     matches: cleaned title -> {tmdb, checked}; tmdb is null when nothing matched
 
 Wrong or missing matches are fixed by hand in data/rating-overrides.json.
@@ -254,6 +254,7 @@ class Ratings:
         listed = {self.items[f"{i.source}:{i.id}"] for i in store_items
                   if i.listed and f"{i.source}:{i.id}" in self.items}
         stale = self.updated != today.isoformat()
+        self.fill_runtimes(tmdb, listed - new_films, stale)
         self.refresh(http, listed if stale else new_films & listed)
         if stale:
             self.updated = today.isoformat()
@@ -300,7 +301,26 @@ class Ratings:
     def describe(tmdb: Tmdb, tmdb_id: int) -> dict:
         m = tmdb.movie(tmdb_id)
         return {"title": m.get("title"), "year": release_year(m) or None, "imdb_id": m.get("imdb_id") or None,
-                "imdb": None, "letterboxd": None, "letterboxd_url": None}
+                "runtime": m.get("runtime") or None, "imdb": None, "letterboxd": None, "letterboxd_url": None}
+
+    def fill_runtimes(self, tmdb: Tmdb, ids: set[str], stale: bool) -> None:
+        """Runtimes for films saved before runtimes were kept and, once a day, for films whose
+        runtime TMDb didn't know yet (unreleased films often get one only near opening)."""
+        todo = sorted((i for i in ids if i in self.films
+                       and ("runtime" not in self.films[i] or stale and not self.films[i]["runtime"])), key=int)
+        errors = 0
+        for tmdb_id in todo:
+            try:
+                self.films[tmdb_id]["runtime"] = tmdb.movie(int(tmdb_id)).get("runtime") or None
+            except TmdbError as e:
+                log.warning("ratings: runtime for %s: %s", tmdb_id, e)
+                errors += 1
+                if errors == 3:
+                    log.warning("ratings: TMDb keeps failing; no more runtimes this run")
+                    break
+        if todo:
+            log.info("ratings: asked TMDb for %d runtimes, %d now known", len(todo),
+                     sum(1 for i in todo if self.films[i].get("runtime")))
 
     def refresh(self, http, ids: set[str]) -> None:
         ids = sorted(i for i in ids if i in self.films)
@@ -331,6 +351,11 @@ class Ratings:
                  len(films), sum(1 for f in films if f["imdb"]), sum(1 for f in films if f["letterboxd"]),
                  len(films) - rated)
 
+    def attach_runtimes(self, store_items) -> None:
+        for item in store_items:
+            film = self.films.get(self.items.get(f"{item.source}:{item.id}", ""))
+            item.runtime = film.get("runtime") if film else None
+
     def to_dict(self) -> dict:
         return {
             "updated": self.updated,
@@ -345,17 +370,22 @@ class Ratings:
 
 
 def update(store, http, path: Path, dry_run: bool = False) -> None:
-    """Match new films and refresh ratings. Never raises: ratings must not break the run."""
-    tmdb = Tmdb.from_env(http)
-    if tmdb is None:
-        log.warning("ratings: TMDB_API_KEY not set; ratings not updated")
-        return
+    """Match new films, refresh ratings, and give the store's items their runtime (for alerts).
+    Never raises: ratings must not break the run."""
     try:
         ratings = Ratings(path)
-        ratings.update(list(store.items.values()), http, tmdb)
-        matched = sum(1 for m in ratings.matches.values() if m["tmdb"] is not None)
-        log.info("ratings: %d of %d titles matched", matched, len(ratings.matches))
-        if not dry_run:
-            ratings.save()
+        tmdb = Tmdb.from_env(http)
+        if tmdb is None:
+            log.warning("ratings: TMDB_API_KEY not set; ratings not updated")
+        else:
+            try:
+                ratings.update(list(store.items.values()), http, tmdb)
+                matched = sum(1 for m in ratings.matches.values() if m["tmdb"] is not None)
+                log.info("ratings: %d of %d titles matched", matched, len(ratings.matches))
+                if not dry_run:
+                    ratings.save()
+            except Exception:  # noqa: BLE001
+                log.exception("ratings: update failed")
+        ratings.attach_runtimes(store.items.values())
     except Exception:  # noqa: BLE001
-        log.exception("ratings: update failed")
+        log.exception("ratings: could not read %s", path)

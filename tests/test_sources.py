@@ -68,6 +68,13 @@ def test_filmhouse_reads_film_cards_and_tags_coming_soon(http):
     assert items["232"].on_sale is False  # coming soon, no screenings listed yet
 
 
+def test_status_label_in_the_title_spot_is_not_the_title(http):
+    http.routes["https://filmhouse.sg/films/"] = """<div class="jacro-event">
+      <a href="/film/270/i-play-rocky"><img src="/p.jpg"></a><div class="info"><h2>Coming Soon</h2></div></div>"""
+    items = Filmhouse().fetch(http)
+    assert [i.title for i in items] == ["I Play Rocky"]
+
+
 def test_filmhouse_falls_back_to_slug_title(http):
     http.routes["https://filmhouse.sg/films/"] = '<a href="/film/245/godzilla-minus-zero"><img src="/p.jpg"></a>'
     [item] = Filmhouse().fetch(http)

@@ -37,6 +37,19 @@ def test_on_sale_push_one_film_or_a_list(http):
         "message": "• Fjord (Filmhouse, first screening Sun 6 Dec, 7:30 pm)\n• You Can See Everything (Shaw Theatres)"}
 
 
+def test_pushes_give_the_runtime_when_known(http):
+    n = notify.Ntfy(http, "t")
+    a = Item(source="shaw", id="1", title="Dune: Part Three", url="https://shaw/1", tags=["English", "PG13"],
+             runtime=166)
+    b = Item(source="filmhouse", id="2", title="Fjord", url="https://fh/2", runtime=60)
+    n.new_items("Shaw Theatres", [a], "https://site/")
+    assert http.posts[0][1]["json"]["message"] == "Dune: Part Three · 2h 46m\nEnglish, PG13"
+    n.on_sale([notify.Sale(b, "Filmhouse", "Opens Thu 4 Dec")], "https://site/")
+    assert http.posts[1][1]["json"]["message"] == "Fjord · 1h\nOpens Thu 4 Dec"
+    n.on_sale([notify.Sale(b, "Filmhouse", ""), notify.Sale(a, "Shaw Theatres", "")], "https://site/")
+    assert http.posts[2][1]["json"]["message"] == "• Fjord · 1h (Filmhouse)\n• Dune: Part Three · 2h 46m (Shaw Theatres)"
+
+
 def test_from_env_without_topic_is_log_only(monkeypatch, http):
     monkeypatch.delenv("NTFY_TOPIC", raising=False)
     assert notify.from_env(http).configured is False
