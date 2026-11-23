@@ -9,11 +9,10 @@
 
 const NAMES = {
   filmhouse: "Filmhouse", shaw: "Shaw Theatres", afa: "Asian Film Archive", gv: "Golden Village",
-  carnival: "Carnival Cinemas", sfs: "Singapore Film Society",
+  sfs: "Singapore Film Society",
 };
 const SHORT = {
-  "Shaw Theatres": "Shaw", "Asian Film Archive": "AFA", "Golden Village": "GV",
-  "Carnival Cinemas": "Carnival", "Singapore Film Society": "SFS",
+  "Shaw Theatres": "Shaw", "Asian Film Archive": "AFA", "Golden Village": "GV", "Singapore Film Society": "SFS",
 };
 const TZ = "Asia/Singapore";
 // [key, label, short label for phones]
@@ -217,7 +216,7 @@ function ratings(f) {
 // --- Rendering ------------------------------------------------------------------------
 
 // Poster hosts that load reliably from another site come first; Shaw's image proxy refuses some.
-const POSTER_ORDER = ["filmhouse", "gv", "sfs", "afa", "carnival", "shaw"];
+const POSTER_ORDER = ["filmhouse", "gv", "sfs", "afa", "shaw"];
 const PLACEHOLDER = /noimage|no-image|placeholder/i;
 
 function posterCandidates(items) {

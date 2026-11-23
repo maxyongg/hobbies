@@ -10,7 +10,6 @@
   --shaw: #2160a8;
   --afa: #7a4bb0;
   --gv: #b8860b;
-  --carnival: #c2185b;
   --sfs: #2e7d32;
   --other: #6d6a63;
 }
@@ -26,7 +25,6 @@
     --shaw: #6aa5ec;
     --afa: #b48ae8;
     --gv: #e5b84b;
-    --carnival: #f06292;
     --sfs: #74c77a;
     --other: #9b998f;
   }
@@ -94,7 +92,6 @@ a { color: inherit; }
 .src-shaw { --c: var(--shaw); }
 .src-afa { --c: var(--afa); }
 .src-gv { --c: var(--gv); }
-.src-carnival { --c: var(--carnival); }
 .src-sfs { --c: var(--sfs); }
 .dot-src { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
 

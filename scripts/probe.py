@@ -1,7 +1,7 @@
 """Print what each cinema site exposes, to pick (or re-pick) a scraping path.
 
 Run where the sites are reachable (GitHub Actions, or locally):
-    python scripts/probe.py filmhouse shaw afa afa_dates gv carnival discover
+    python scripts/probe.py filmhouse shaw afa afa_dates gv discover
 `discover` looks at candidate sites (CANDIDATES) for a new source. Rendered probes need
 `pip install playwright && playwright install chromium`.
 """
@@ -189,7 +189,6 @@ def shaw():
 
 CANDIDATES = {
     "gv": ["https://www.gv.com.sg/", "https://www.gv.com.sg/GVMovies"],
-    "carnival": ["https://carnivalcinemas.sg/", "https://www.carnivalcinemas.sg/"],
     "sfs": ["https://www.singaporefilmsociety.com/", "https://singaporefilmsociety.com/"],
     "alliance": ["https://www.alliancefrancaise.org.sg/"],
     "objectifs": ["https://www.objectifs.com.sg/"],
@@ -227,7 +226,7 @@ def discover():
         return
     with sync_playwright() as p:
         b = p.chromium.launch()
-        for key in ("gv", "carnival", "sfs"):
+        for key in ("gv", "sfs"):
             page = b.new_page(user_agent=UA)
             seen = []
 
@@ -280,42 +279,7 @@ def gv():
         print("   ", " ".join(r.text[:1200].split()))
 
 
-def carnival():
-    base = "https://carnivalcinemas.sg"
-    print("== CARNIVAL")
-    r = get(base + "/")
-    if r is not None:
-        print(r.text[:2100])
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        return
-    with sync_playwright() as p:
-        b = p.chromium.launch()
-        page = b.new_page(user_agent=UA)
-        seen = []
-        page.on("response", lambda resp: seen.append(resp) if (
-            "json" in resp.headers.get("content-type", "") or resp.request.resource_type in ("xhr", "fetch"))
-            and not NOISE.search(resp.url) else None)
-        try:
-            page.goto(base + "/", wait_until="domcontentloaded", timeout=60000)
-        except Exception as e:  # noqa: BLE001
-            print("  goto:", type(e).__name__)
-        page.wait_for_timeout(15000)
-        print("  url:", page.url)
-        for resp in seen[:40]:
-            try:
-                body = resp.text()
-            except Exception:  # noqa: BLE001
-                body = ""
-            print(f"   {resp.request.method} {resp.url[:200]} -> {resp.status} {len(body)}B")
-            print("     ", " ".join(body[:700].split()))
-        links = anchors(page.content(), page.url)
-        print(f"  rendered anchors: {len(links)}")
-        for h, txt in list(links.items())[:80]:
-            print(f"    {h} | {txt}")
-        print("  text:", " ".join(page.inner_text("body")[:1500].split()))
-        b.close()
+
 
 
 def posters():
@@ -378,7 +342,7 @@ def showtimes():
 
 
 if __name__ == "__main__":
-    names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "carnival", "discover", "posters", "showtimes"]
+    names = ["filmhouse", "shaw", "afa", "afa_dates", "gv", "discover", "posters", "showtimes"]
     wanted = sys.argv[1:]
     if not wanted:
         # CI runs this with no arguments. While debugging a source on a branch, default `wanted` to its probe.

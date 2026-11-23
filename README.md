@@ -6,7 +6,7 @@
 
 Every 6 hours a GitHub Actions job:
 
-1. Checks the listings of **Filmhouse**, **Shaw Theatres**, the **Asian Film Archive**, **Golden Village**, **Carnival Cinemas** and the **Singapore Film Society** (SFS Somerset).
+1. Checks the listings of **Filmhouse**, **Shaw Theatres**, the **Asian Film Archive**, **Golden Village** and the **Singapore Film Society** (SFS Somerset).
 2. Compares them with every film it has seen before (`data/items.json`).
 3. For each new film at Filmhouse, Shaw or AFA: sends a push via [ntfy](https://ntfy.sh) and shows it in the iOS widget ([Scriptable](https://scriptable.app)).
 4. Looks up **IMDb** and **Letterboxd** ratings for each film (matched by title through [TMDb](https://www.themoviedb.org); refreshed daily) for the web app and widget.

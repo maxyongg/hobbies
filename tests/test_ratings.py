@@ -56,10 +56,10 @@ ITEMS = [
     film("gv", "re", "Resident Evil"),
     film("shaw", "re2", "Resident Evil [M]"),
     film("filmhouse", "bs", "Before Sunrise"),
-    film("carnival", "j2", "Jailer 2 (NC16)"),
+    film("gv", "j2", "Jailer 2 (NC16)"),
     film("afa", "db", "Darah-ku (My Blood, 1963)"),
     film("gv", "bts", "Bts World Tour `arirang' In São Paulo: Live Viewing"),
-    film("carnival", "ex", "The Execution (M18)"),
+    film("gv", "ex", "The Execution (M18)"),
     film("gv", "eg", "Marvel Studios' Avengers: Endgame Encore"),
     film("gv", "dc", "Detective Conan The Movie: Fallen Angels Of The Highway"),
     film("afa", "old", "Gone Film", listed=False),
@@ -153,7 +153,7 @@ def test_runtimes_are_filled_in_and_unknown_ones_asked_again_daily(tmp_path):
 
 
 def test_unmatched_titles_are_retried_after_a_week(tmp_path):
-    items = [film("carnival", "j2", "Jailer 2")]
+    items = [film("gv", "j2", "Jailer 2")]
     run(tmp_path, FakeHttp(routes()), items)
     soon = FakeHttp(routes())
     run(tmp_path, soon, items, today=date(2026, 11, 3))
@@ -171,7 +171,7 @@ def test_overrides_fix_matches(tmp_path):
         "Resident Evil": None,
         "Before Sunrise": "https://www.themoviedb.org/movie/1-resident-evil",
     })
-    assert data["items"]["carnival:j2"] == "8"
+    assert data["items"]["gv:j2"] == "8"
     assert "gv:re" not in data["items"]
     assert data["items"]["filmhouse:bs"] == "1"
 
@@ -207,7 +207,7 @@ def test_update_gives_store_items_their_runtime(tmp_path, monkeypatch):
     ratings.update(Store, FakeHttp(routes()), tmp_path / "ratings.json")
     assert Store.items[("gv", "re")].runtime == 107
     assert Store.items[("afa", "db")].runtime is None  # TMDb doesn't know it
-    assert Store.items[("carnival", "j2")].runtime is None  # no match
+    assert Store.items[("gv", "j2")].runtime is None  # no match
 
     for i in ITEMS:
         i.runtime = None

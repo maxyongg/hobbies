@@ -31,7 +31,7 @@ IMDB_RATINGS = "https://datasets.imdbws.com/title.ratings.tsv.gz"
 LETTERBOXD = "https://letterboxd.com/tmdb/{}/"
 MIN_VOTES = 100  # fewer IMDb votes than this: too early to show a rating
 RETRY_UNMATCHED = timedelta(days=7)
-CHAINS = {"gv", "shaw", "carnival"}  # first-run cinemas: prefer recent releases
+CHAINS = {"gv", "shaw"}  # first-run cinemas: prefer recent releases
 OLD_HIT_VOTES = 500  # chains show old films only as re-releases of well-known ones (Endgame, Casino Royale)
 
 # Listings that are not films, so have no rating.

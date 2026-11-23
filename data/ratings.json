@@ -14,19 +14,6 @@
   "afa:sgiff-2026-macho-dancer-1988": "170924",
   "afa:sgiff-2026-my-name-aint-suzie-1985": "187021",
   "afa:sultan-mahmood-mangkat-di-julang-the-passing-of-sultan-mahmood-1961": "286237",
-  "carnival:appakutty": "1680033",
-  "carnival:disco": "1612811",
-  "carnival:disco-m18": "1612811",
-  "carnival:donga-naa-koduku": "1641520",
-  "carnival:donga-naa-koduku-nc16": "1641520",
-  "carnival:drones": "1716531",
-  "carnival:jailer-2-nc16": "1234139",
-  "carnival:john-doe": "1655020",
-  "carnival:mookuthi-amman-2": "1327835",
-  "carnival:mookuthi-amman-2-nc16": "1327835",
-  "carnival:scene": "1402181",
-  "carnival:scene-nc16": "1402181",
-  "carnival:tamil-ramayana-rise-of-a-legend": "656908",
   "filmhouse:127": "1370096",
   "filmhouse:144": "950028",
   "filmhouse:168": "76",
@@ -1131,14 +1118,6 @@
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/henrys-first-dates/"
   },
-  "1327835": {
-   "title": "Mookuthi Amman 2",
-   "year": 2026,
-   "imdb_id": "tt32909364",
-   "imdb": 8.5,
-   "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/mookuthi-amman-2/"
-  },
   "1353926": {
    "title": "Keep Real",
    "year": 2026,
@@ -1640,14 +1619,6 @@
    "letterboxd_url": "https://letterboxd.com/film/all-wishes-come-true/",
    "runtime": 143
   },
-  "1641520": {
-   "title": "Donga Naa Koduku",
-   "year": 2026,
-   "imdb_id": "tt43738410",
-   "imdb": null,
-   "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/dnk/"
-  },
   "1649403": {
    "title": "George Michael: The Faith Tour",
    "year": 2026,
@@ -1663,15 +1634,6 @@
    "imdb": 5.4,
    "letterboxd": 2.8,
    "letterboxd_url": "https://letterboxd.com/film/nayyi-navelli/"
-  },
-  "1655020": {
-   "title": "John Doe",
-   "year": 2026,
-   "imdb_id": "tt49855692",
-   "imdb": 9.1,
-   "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/john-doe-2026/",
-   "runtime": 149
   },
   "1679026": {
    "title": "Itam: A Sun Bear Story",
@@ -1698,14 +1660,6 @@
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/remember-2026-2/",
    "runtime": 111
-  },
-  "1716531": {
-   "title": "Drones",
-   "year": 2026,
-   "imdb_id": "tt43088118",
-   "imdb": null,
-   "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/drones-2026/"
   },
   "1718699": {
    "title": "Not Alone",
