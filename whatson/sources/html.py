@@ -14,9 +14,11 @@ log = logging.getLogger(__name__)
 # Stand-in images sites show while loading or when a poster is missing.
 PLACEHOLDER = re.compile(r"noimage|no-image|no_image|placeholder|spacer|blank\.(png|gif)", re.I)
 
-# Link texts that label buttons rather than films.
+# Texts that label buttons or a film's status rather than name a film. A new Filmhouse card
+# (2026-11-23, /film/270/i-play-rocky) had "Coming Soon" where its title heading goes.
 GENERIC = re.compile(
-    r"^(buy|book|get)( tickets?| now)?$|^\(?(more )?(info|details)\)?$|^(watch )?trailer$|^read more$|^learn more$",
+    r"^(buy|book|get)( tickets?| now)?$|^\(?(more )?(info|details)\)?$|^(watch )?trailer$|^read more$|^learn more$"
+    r"|^(coming soon|now showing|now playing|sold out|advance sales?)!?$",
     re.I,
 )
 
