@@ -34,6 +34,7 @@ SEARCH = {
 }
 MOVIES = {1: "tt0120804", 2: "tt2000002", 3: "tt0112471", 6: "tt6000006", 8: "tt8000008", 10: "tt1000010"}
 IMDB = {"tt2000002": (6.9, 5000), "tt0112471": (8.1, 300000), "tt6000006": (7.0, 12)}
+RUNTIMES = {2: 107, 3: 101, 6: 0}  # TMDb says 0 when it doesn't know
 
 
 def routes(**extra):
@@ -43,7 +44,8 @@ def routes(**extra):
                                             + "".join(f"{k}\t{r}\t{v}\n" for k, (r, v) in IMDB.items()).encode()),
     }
     for id, imdb_id in MOVIES.items():
-        r[f"{API}/movie/{id}"] = {"id": id, "title": f"Film {id}", "release_date": "2026-01-01", "imdb_id": imdb_id}
+        r[f"{API}/movie/{id}"] = {"id": id, "title": f"Film {id}", "release_date": "2026-01-01", "imdb_id": imdb_id,
+                                  **({"runtime": RUNTIMES[id]} if id in RUNTIMES else {})}
         r[ratings.LETTERBOXD.format(id)] = FakeResponse(
             f'<meta name="twitter:data2" content="3.{id}7 out of 5" />', url=f"https://letterboxd.com/film/film-{id}/")
     r.update(extra)
@@ -102,9 +104,10 @@ def test_matches_films_and_fetches_ratings(tmp_path):
     assert data["items"] == {"gv:re": "2", "shaw:re2": "2", "filmhouse:bs": "3", "afa:db": "6",
                              "gv:eg": "8", "gv:dc": "10"}
     assert data["matches"]["the execution"]["tmdb"] is None  # an obscure 2014 film: not this release
-    assert data["films"]["2"] == {"title": "Film 2", "year": 2026, "imdb_id": "tt2000002", "imdb": 6.9,
-                                  "letterboxd": 3.3, "letterboxd_url": "https://letterboxd.com/film/film-2/"}
+    assert data["films"]["2"] == {"title": "Film 2", "year": 2026, "imdb_id": "tt2000002", "runtime": 107,
+                                  "imdb": 6.9, "letterboxd": 3.3, "letterboxd_url": "https://letterboxd.com/film/film-2/"}
     assert data["films"]["6"]["imdb"] is None  # 12 votes: too few to show
+    assert data["films"]["6"]["runtime"] is None
     assert data["matches"]["jailer 2"]["tmdb"] is None  # Jailer is not Jailer 2
     assert data["matches"]["bts world tour arirang in sao paulo live viewing"]["tmdb"] is None
     assert data["updated"] == "2026-10-30"
@@ -125,6 +128,28 @@ def test_same_day_reruns_make_no_requests_and_next_day_refreshes(tmp_path):
         IMDB["tt0112471"] = (8.1, 300000)
     assert data["films"]["3"]["imdb"] == 8.2
     assert f"{API}/search/movie" not in tomorrow.gets  # matches are kept
+
+
+def test_runtimes_are_filled_in_and_unknown_ones_asked_again_daily(tmp_path):
+    run(tmp_path, FakeHttp(routes()))
+    saved = json.loads((tmp_path / "ratings.json").read_text())
+    del saved["films"]["3"]["runtime"]  # matched before runtimes were kept
+    (tmp_path / "ratings.json").write_text(json.dumps(saved))
+
+    again = FakeHttp(routes())
+    data = run(tmp_path, again)
+    assert again.gets == [f"{API}/movie/3"]  # same day: only the missing one
+    assert data["films"]["3"]["runtime"] == 101
+
+    RUNTIMES[6] = 95
+    try:
+        tomorrow = FakeHttp(routes())
+        data = run(tmp_path, tomorrow, today=date(2026, 10, 31))
+    finally:
+        RUNTIMES[6] = 0
+    assert data["films"]["6"]["runtime"] == 95
+    asked = {u for u in tomorrow.gets if u.startswith(f"{API}/movie/")}
+    assert asked == {f"{API}/movie/{id}" for id in (6, 8, 10)}  # the ones without a runtime
 
 
 def test_unmatched_titles_are_retried_after_a_week(tmp_path):
