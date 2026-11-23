@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -1088,7 +1088,7 @@
    "year": 2026,
    "imdb_id": "tt32558705",
    "imdb": 7.6,
-   "letterboxd": 4.1,
+   "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/",
    "runtime": 158
   },
@@ -1175,7 +1175,7 @@
    "title": "Godzilla Minus Zero",
    "year": 2026,
    "imdb_id": "tt34384661",
-   "imdb": 7.9,
+   "imdb": 7.8,
    "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/",
    "runtime": 135
@@ -1211,7 +1211,7 @@
    "year": 2026,
    "imdb_id": "tt34966140",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/focker-in-law/",
    "runtime": 105
   },
@@ -1369,7 +1369,7 @@
    "year": 2026,
    "imdb_id": "tt36408401",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
    "runtime": 141
   },
@@ -1421,7 +1421,7 @@
    "title": "As the Water Flows",
    "year": 2026,
    "imdb_id": "tt37186694",
-   "imdb": 6.9,
+   "imdb": 7.0,
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/as-the-water-flows/",
    "runtime": 119
@@ -1456,7 +1456,7 @@
    "title": "Bachelor Party D'eux",
    "year": 2026,
    "imdb_id": "tt41075537",
-   "imdb": null,
+   "imdb": 4.4,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/bachelor-party-deux/",
    "runtime": 132
@@ -1466,7 +1466,7 @@
    "year": 2026,
    "imdb_id": "tt38077943",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/hexed-2026/",
    "runtime": 103
   },
@@ -1536,7 +1536,7 @@
    "title": "Paradise Lost",
    "year": 2026,
    "imdb_id": "tt43658893",
-   "imdb": 6.0,
+   "imdb": 5.8,
    "letterboxd": 2.9,
    "letterboxd_url": "https://letterboxd.com/film/paradise-lost-2026-1/",
    "runtime": 101
@@ -1851,7 +1851,7 @@
   },
   "bts world tour arirang in jakarta live viewing": {
    "tmdb": null,
-   "checked": "2026-11-17"
+   "checked": "2026-11-24"
   },
   "bts world tour arirang in kaohsiung live viewing": {
    "tmdb": null,
@@ -2211,7 +2211,7 @@
   },
   "mookuthi amman 2 mahasakthi": {
    "tmdb": null,
-   "checked": "2026-11-17"
+   "checked": "2026-11-24"
   },
   "moonlight": {
    "tmdb": 376867,
