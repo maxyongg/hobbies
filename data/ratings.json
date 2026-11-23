@@ -70,6 +70,7 @@
   "filmhouse:255": "11948",
   "filmhouse:256": "258480",
   "filmhouse:258": "331482",
+  "filmhouse:270": "1286656",
   "filmhouse:85": "313369",
   "gv:1332": "1117898",
   "gv:1392": "1248832",
@@ -279,7 +280,8 @@
    "imdb_id": "tt0190332",
    "imdb": 7.8,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/crouching-tiger-hidden-dragon/"
+   "letterboxd_url": "https://letterboxd.com/film/crouching-tiger-hidden-dragon/",
+   "runtime": 120
   },
   "164": {
    "title": "Breakfast at Tiffany's",
@@ -287,7 +289,8 @@
    "imdb_id": "tt0054698",
    "imdb": 7.5,
    "letterboxd": 3.8,
-   "letterboxd_url": "https://letterboxd.com/film/breakfast-at-tiffanys/"
+   "letterboxd_url": "https://letterboxd.com/film/breakfast-at-tiffanys/",
+   "runtime": 115
   },
   "194": {
    "title": "Amélie",
@@ -295,7 +298,8 @@
    "imdb_id": "tt0211915",
    "imdb": 8.2,
    "letterboxd": 4.2,
-   "letterboxd_url": "https://letterboxd.com/film/amelie/"
+   "letterboxd_url": "https://letterboxd.com/film/amelie/",
+   "runtime": 122
   },
   "804": {
    "title": "Roman Holiday",
@@ -311,7 +315,8 @@
    "imdb_id": "tt0101700",
    "imdb": 7.5,
    "letterboxd": 3.8,
-   "letterboxd_url": "https://letterboxd.com/film/delicatessen/"
+   "letterboxd_url": "https://letterboxd.com/film/delicatessen/",
+   "runtime": 99
   },
   "902": {
    "title": "The City of Lost Children",
@@ -327,7 +332,8 @@
    "imdb_id": "tt0075148",
    "imdb": 8.1,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/rocky/"
+   "letterboxd_url": "https://letterboxd.com/film/rocky/",
+   "runtime": 119
   },
   "2011": {
    "title": "Persepolis",
@@ -351,7 +357,8 @@
    "imdb_id": "tt0851578",
    "imdb": 7.7,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/paprika-2006/"
+   "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
+   "runtime": 90
   },
   "9297": {
    "title": "Monster House",
@@ -367,7 +374,8 @@
    "imdb_id": "tt0206634",
    "imdb": 7.9,
    "letterboxd": 4.3,
-   "letterboxd_url": "https://letterboxd.com/film/children-of-men/"
+   "letterboxd_url": "https://letterboxd.com/film/children-of-men/",
+   "runtime": 109
   },
   "10515": {
    "title": "Castle in the Sky",
@@ -375,7 +383,8 @@
    "imdb_id": "tt0092067",
    "imdb": 8.0,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/castle-in-the-sky/"
+   "letterboxd_url": "https://letterboxd.com/film/castle-in-the-sky/",
+   "runtime": 125
   },
   "10670": {
    "title": "Rollercoaster",
@@ -383,7 +392,8 @@
    "imdb_id": "tt0076636",
    "imdb": 6.3,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/rollercoaster/"
+   "letterboxd_url": "https://letterboxd.com/film/rollercoaster/",
+   "runtime": 119
   },
   "10834": {
    "title": "Kings of the Road",
@@ -407,7 +417,8 @@
    "imdb_id": "tt0085933",
    "imdb": 7.2,
    "letterboxd": 3.9,
-   "letterboxd_url": "https://letterboxd.com/film/merry-christmas-mr-lawrence/"
+   "letterboxd_url": "https://letterboxd.com/film/merry-christmas-mr-lawrence/",
+   "runtime": 124
   },
   "13320": {
    "title": "Funny Face",
@@ -415,7 +426,8 @@
    "imdb_id": "tt0050419",
    "imdb": 7.0,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/funny-face/"
+   "letterboxd_url": "https://letterboxd.com/film/funny-face/",
+   "runtime": 103
   },
   "15283": {
    "title": "Pom Poko",
@@ -423,7 +435,8 @@
    "imdb_id": "tt0110008",
    "imdb": 7.2,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/pom-poko/"
+   "letterboxd_url": "https://letterboxd.com/film/pom-poko/",
+   "runtime": 119
   },
   "24128": {
    "title": "Stop Making Sense",
@@ -439,7 +452,8 @@
    "imdb_id": "tt0063555",
    "imdb": 7.5,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/the-color-of-pomegranates/"
+   "letterboxd_url": "https://letterboxd.com/film/the-color-of-pomegranates/",
+   "runtime": 80
   },
   "36557": {
    "title": "Casino Royale",
@@ -471,7 +485,8 @@
    "imdb_id": "tt0064451",
    "imdb": 7.5,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/a-touch-of-zen/"
+   "letterboxd_url": "https://letterboxd.com/film/a-touch-of-zen/",
+   "runtime": 180
   },
   "47002": {
    "title": "Love Letter",
@@ -487,7 +502,8 @@
    "imdb_id": "tt0091830",
    "imdb": 7.6,
    "letterboxd": 4.2,
-   "letterboxd_url": "https://letterboxd.com/film/the-green-ray/"
+   "letterboxd_url": "https://letterboxd.com/film/the-green-ray/",
+   "runtime": 99
   },
   "73650": {
    "title": "Singapore Dreaming",
@@ -495,7 +511,8 @@
    "imdb_id": "tt0768837",
    "imdb": 7.0,
    "letterboxd": 3.6,
-   "letterboxd_url": "https://letterboxd.com/film/singapore-dreaming/"
+   "letterboxd_url": "https://letterboxd.com/film/singapore-dreaming/",
+   "runtime": 105
   },
   "76341": {
    "title": "Mad Max: Fury Road",
@@ -503,7 +520,8 @@
    "imdb_id": "tt1392190",
    "imdb": 8.1,
    "letterboxd": 4.2,
-   "letterboxd_url": "https://letterboxd.com/film/mad-max-fury-road/"
+   "letterboxd_url": "https://letterboxd.com/film/mad-max-fury-road/",
+   "runtime": 121
   },
   "76406": {
    "title": "Tokyo-Ga",
@@ -511,7 +529,8 @@
    "imdb_id": "tt0090182",
    "imdb": 7.3,
    "letterboxd": 3.9,
-   "letterboxd_url": "https://letterboxd.com/film/tokyo-ga/"
+   "letterboxd_url": "https://letterboxd.com/film/tokyo-ga/",
+   "runtime": 92
   },
   "130824": {
    "title": "As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty",
@@ -519,7 +538,8 @@
    "imdb_id": "tt0262240",
    "imdb": 8.1,
    "letterboxd": 4.5,
-   "letterboxd_url": "https://letterboxd.com/film/as-i-was-moving-ahead-occasionally-i-saw/"
+   "letterboxd_url": "https://letterboxd.com/film/as-i-was-moving-ahead-occasionally-i-saw/",
+   "runtime": 288
   },
   "170924": {
    "title": "Macho Dancer",
@@ -567,7 +587,8 @@
    "imdb_id": "tt2402927",
    "imdb": 7.3,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/carol-2015/"
+   "letterboxd_url": "https://letterboxd.com/film/carol-2015/",
+   "runtime": 118
   },
   "286237": {
    "title": "Sultan Mahmood Mangkat Di-Julang",
@@ -575,7 +596,8 @@
    "imdb_id": null,
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/sultan-mahmood-mangkat-di-julang/"
+   "letterboxd_url": "https://letterboxd.com/film/sultan-mahmood-mangkat-di-julang/",
+   "runtime": 119
   },
   "299534": {
    "title": "Avengers: Endgame",
@@ -583,7 +605,8 @@
    "imdb_id": "tt4154796",
    "imdb": 8.4,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/avengers-endgame/"
+   "letterboxd_url": "https://letterboxd.com/film/avengers-endgame/",
+   "runtime": 181
   },
   "313369": {
    "title": "La La Land",
@@ -591,7 +614,8 @@
    "imdb_id": "tt3783958",
    "imdb": 8.0,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/la-la-land/"
+   "letterboxd_url": "https://letterboxd.com/film/la-la-land/",
+   "runtime": 129
   },
   "331482": {
    "title": "Little Women",
@@ -599,7 +623,8 @@
    "imdb_id": "tt3281548",
    "imdb": 7.7,
    "letterboxd": 4.2,
-   "letterboxd_url": "https://letterboxd.com/film/little-women-2019/"
+   "letterboxd_url": "https://letterboxd.com/film/little-women-2019/",
+   "runtime": 135
   },
   "376867": {
    "title": "Moonlight",
@@ -615,7 +640,8 @@
    "imdb_id": "tt1160419",
    "imdb": 8.0,
    "letterboxd": 3.9,
-   "letterboxd_url": "https://letterboxd.com/film/dune-2021/"
+   "letterboxd_url": "https://letterboxd.com/film/dune-2021/",
+   "runtime": 155
   },
   "458624": {
    "title": "A Wicked Tale",
@@ -623,7 +649,8 @@
    "imdb_id": "tt0462064",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/a-wicked-tale/"
+   "letterboxd_url": "https://letterboxd.com/film/a-wicked-tale/",
+   "runtime": 45
   },
   "467914": {
    "title": "The Land of Sometimes",
@@ -631,7 +658,8 @@
    "imdb_id": "tt3517106",
    "imdb": 4.6,
    "letterboxd": 2.8,
-   "letterboxd_url": "https://letterboxd.com/film/the-land-of-sometimes/"
+   "letterboxd_url": "https://letterboxd.com/film/the-land-of-sometimes/",
+   "runtime": 93
   },
   "493922": {
    "title": "Hereditary",
@@ -639,7 +667,8 @@
    "imdb_id": "tt7784604",
    "imdb": 7.3,
    "letterboxd": 3.9,
-   "letterboxd_url": "https://letterboxd.com/film/hereditary/"
+   "letterboxd_url": "https://letterboxd.com/film/hereditary/",
+   "runtime": 128
   },
   "499556": {
    "title": "An Elephant Sitting Still",
@@ -647,7 +676,8 @@
    "imdb_id": "tt8020896",
    "imdb": 7.8,
    "letterboxd": 4.4,
-   "letterboxd_url": "https://letterboxd.com/film/an-elephant-sitting-still/"
+   "letterboxd_url": "https://letterboxd.com/film/an-elephant-sitting-still/",
+   "runtime": 235
   },
   "561483": {
    "title": "Permata Di-Perlimbahan",
@@ -663,7 +693,8 @@
    "imdb_id": "tt5500064",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/the-thomas-crown-affair-2027/"
+   "letterboxd_url": "https://letterboxd.com/film/the-thomas-crown-affair-2027/",
+   "runtime": 130
   },
   "621304": {
    "title": "Children of Blood and Bone",
@@ -671,7 +702,8 @@
    "imdb_id": "tt6779038",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/children-of-blood-and-bone/"
+   "letterboxd_url": "https://letterboxd.com/film/children-of-blood-and-bone/",
+   "runtime": 146
   },
   "656908": {
    "title": "Ramayana: Rise of a Legend",
@@ -679,7 +711,8 @@
    "imdb_id": "tt27988879",
    "imdb": 8.2,
    "letterboxd": 3.6,
-   "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/"
+   "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/",
+   "runtime": 195
   },
   "678458": {
    "title": "Pompo the Cinephile",
@@ -687,7 +720,8 @@
    "imdb_id": "tt12439248",
    "imdb": 7.2,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/pompo-the-cinephile/"
+   "letterboxd_url": "https://letterboxd.com/film/pompo-the-cinephile/",
+   "runtime": 94
   },
   "693134": {
    "title": "Dune: Part Two",
@@ -695,7 +729,8 @@
    "imdb_id": "tt15239678",
    "imdb": 8.4,
    "letterboxd": 4.4,
-   "letterboxd_url": "https://letterboxd.com/film/dune-part-two/"
+   "letterboxd_url": "https://letterboxd.com/film/dune-part-two/",
+   "runtime": 167
   },
   "747509": {
    "title": "Ah Girl",
@@ -703,7 +738,8 @@
    "imdb_id": "tt35683770",
    "imdb": null,
    "letterboxd": 3.8,
-   "letterboxd_url": "https://letterboxd.com/film/ah-girl/"
+   "letterboxd_url": "https://letterboxd.com/film/ah-girl/",
+   "runtime": 99
   },
   "748681": {
    "title": "The Violinist",
@@ -711,7 +747,8 @@
    "imdb_id": "tt30388264",
    "imdb": 7.3,
    "letterboxd": 3.5,
-   "letterboxd_url": "https://letterboxd.com/film/the-violinist-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/the-violinist-2026/",
+   "runtime": 114
   },
   "784267": {
    "title": "Landmark",
@@ -727,7 +764,8 @@
    "imdb_id": "tt2056785",
    "imdb": 8.6,
    "letterboxd": 4.4,
-   "letterboxd_url": "https://letterboxd.com/film/wildwood-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/wildwood-2026/",
+   "runtime": 132
   },
   "822653": {
    "title": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
@@ -735,7 +773,8 @@
    "imdb_id": "tt14523706",
    "imdb": null,
    "letterboxd": 3.8,
-   "letterboxd_url": "https://letterboxd.com/film/puella-magi-madoka-magica-the-movie-walpurgisnacht/"
+   "letterboxd_url": "https://letterboxd.com/film/puella-magi-madoka-magica-the-movie-walpurgisnacht/",
+   "runtime": 120
   },
   "848700": {
    "title": "Minotaur",
@@ -743,7 +782,8 @@
    "imdb_id": "tt37118301",
    "imdb": 7.6,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/minotaur-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/minotaur-2026/",
+   "runtime": 142
   },
   "884692": {
    "title": "We Are All Strangers",
@@ -751,7 +791,8 @@
    "imdb_id": "tt13848364",
    "imdb": 7.2,
    "letterboxd": 3.3,
-   "letterboxd_url": "https://letterboxd.com/film/we-are-all-strangers/"
+   "letterboxd_url": "https://letterboxd.com/film/we-are-all-strangers/",
+   "runtime": 157
   },
   "927547": {
    "title": "All We Imagine as Light",
@@ -767,7 +808,8 @@
    "imdb_id": "tt14173636",
    "imdb": 7.4,
    "letterboxd": 3.9,
-   "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+   "runtime": 107
   },
   "965150": {
    "title": "Aftersun",
@@ -783,7 +825,8 @@
    "imdb_id": "tt22084616",
    "imdb": 7.9,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/spider-man-brand-new-day/"
+   "letterboxd_url": "https://letterboxd.com/film/spider-man-brand-new-day/",
+   "runtime": 145
   },
   "976893": {
    "title": "Perfect Days",
@@ -799,7 +842,8 @@
    "imdb_id": "tt21357150",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/avengers-doomsday/"
+   "letterboxd_url": "https://letterboxd.com/film/avengers-doomsday/",
+   "runtime": 165
   },
   "1078446": {
    "title": "Violent Night 2",
@@ -807,7 +851,8 @@
    "imdb_id": "tt32432428",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/violent-night-2/"
+   "letterboxd_url": "https://letterboxd.com/film/violent-night-2/",
+   "runtime": 110
   },
   "1081010": {
    "title": "Prahaar: The Untold Story of Ujjwal Nikam",
@@ -823,7 +868,8 @@
    "imdb_id": "tt14129116",
    "imdb": 6.4,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/a-talent-for-murder-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/a-talent-for-murder-2026/",
+   "runtime": 106
   },
   "1088548": {
    "title": "Bitter Christmas",
@@ -839,7 +885,8 @@
    "imdb_id": "tt28131387",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/dunhuang-warriors/"
+   "letterboxd_url": "https://letterboxd.com/film/dunhuang-warriors/",
+   "runtime": 123
   },
   "1117898": {
    "title": "The Cat in the Hat",
@@ -847,7 +894,8 @@
    "imdb_id": "tt2321555",
    "imdb": 6.5,
    "letterboxd": 3.1,
-   "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/the-cat-in-the-hat-2026/",
+   "runtime": 108
   },
   "1153576": {
    "title": "Street Fighter",
@@ -855,7 +903,8 @@
    "imdb_id": "tt27419420",
    "imdb": 6.1,
    "letterboxd": 2.8,
-   "letterboxd_url": "https://letterboxd.com/film/street-fighter-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/street-fighter-2026/",
+   "runtime": 120
   },
   "1157628": {
    "title": "A Feeling Of Music Playing",
@@ -863,7 +912,8 @@
    "imdb_id": null,
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/a-feeling-of-music-playing/"
+   "letterboxd_url": "https://letterboxd.com/film/a-feeling-of-music-playing/",
+   "runtime": 28
   },
   "1170608": {
    "title": "Dune: Part Three",
@@ -871,7 +921,8 @@
    "imdb_id": "tt31378509",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/dune-part-three/"
+   "letterboxd_url": "https://letterboxd.com/film/dune-part-three/",
+   "runtime": 150
   },
   "1185344": {
    "title": "The Beast",
@@ -879,7 +930,8 @@
    "imdb_id": "tt29256561",
    "imdb": 4.4,
    "letterboxd": 2.3,
-   "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/the-beast-2026/",
+   "runtime": 99
   },
   "1185806": {
    "title": "PAW Patrol: The Dino Movie",
@@ -895,7 +947,8 @@
    "imdb_id": "tt29549490",
    "imdb": 6.6,
    "letterboxd": 3.4,
-   "letterboxd_url": "https://letterboxd.com/film/california-schemin/"
+   "letterboxd_url": "https://letterboxd.com/film/california-schemin/",
+   "runtime": 107
   },
   "1193673": {
    "title": "Oh My Ghost! Oh My God!",
@@ -911,7 +964,8 @@
    "imdb_id": null,
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/three-girls-walk-into-a-bar/"
+   "letterboxd_url": "https://letterboxd.com/film/three-girls-walk-into-a-bar/",
+   "runtime": null
   },
   "1204680": {
    "title": "Coyote vs. Acme",
@@ -943,7 +997,8 @@
    "imdb_id": "tt31358065",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/king-of-hawkers/"
+   "letterboxd_url": "https://letterboxd.com/film/king-of-hawkers/",
+   "runtime": 121
   },
   "1248832": {
    "title": "Digger",
@@ -959,7 +1014,8 @@
    "imdb_id": "tt28535715",
    "imdb": 6.6,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/whalefall/"
+   "letterboxd_url": "https://letterboxd.com/film/whalefall/",
+   "runtime": 106
   },
   "1260649": {
    "title": "Jumanji: Open World",
@@ -967,7 +1023,8 @@
    "imdb_id": "tt26735127",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/jumanji-open-world/"
+   "letterboxd_url": "https://letterboxd.com/film/jumanji-open-world/",
+   "runtime": 126
   },
   "1263337": {
    "title": "Heart of the Beast",
@@ -975,7 +1032,8 @@
    "imdb_id": "tt7526136",
    "imdb": 7.1,
    "letterboxd": 3.3,
-   "letterboxd_url": "https://letterboxd.com/film/heart-of-the-beast-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/heart-of-the-beast-2026/",
+   "runtime": 102
   },
   "1269325": {
    "title": "Drishyam: The Conclusion",
@@ -983,7 +1041,8 @@
    "imdb_id": "tt27050858",
    "imdb": 7.6,
    "letterboxd": 3.5,
-   "letterboxd_url": "https://letterboxd.com/film/drishyam-the-conclusion/"
+   "letterboxd_url": "https://letterboxd.com/film/drishyam-the-conclusion/",
+   "runtime": 148
   },
   "1281331": {
    "title": "The Social Reckoning",
@@ -999,7 +1058,8 @@
    "imdb_id": "tt32261958",
    "imdb": 6.0,
    "letterboxd": 2.6,
-   "letterboxd_url": "https://letterboxd.com/film/verity-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/verity-2026/",
+   "runtime": 117
   },
   "1286656": {
    "title": "I Play Rocky",
@@ -1007,7 +1067,8 @@
    "imdb_id": "tt11995650",
    "imdb": 8.2,
    "letterboxd": 3.8,
-   "letterboxd_url": "https://letterboxd.com/film/i-play-rocky/"
+   "letterboxd_url": "https://letterboxd.com/film/i-play-rocky/",
+   "runtime": 128
   },
   "1294189": {
    "title": "The Mongoose",
@@ -1023,7 +1084,8 @@
    "imdb_id": "tt32492552",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/the-exorcist-martyrs/"
+   "letterboxd_url": "https://letterboxd.com/film/the-exorcist-martyrs/",
+   "runtime": null
   },
   "1300926": {
    "title": "The Angry Birds Movie 3",
@@ -1031,7 +1093,8 @@
    "imdb_id": "tt32557122",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/the-angry-birds-movie-3/"
+   "letterboxd_url": "https://letterboxd.com/film/the-angry-birds-movie-3/",
+   "runtime": 96
   },
   "1300968": {
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -1039,7 +1102,8 @@
    "imdb_id": "tt32558705",
    "imdb": 7.6,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/"
+   "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/",
+   "runtime": 158
   },
   "1315772": {
    "title": "Minions & Monsters",
@@ -1047,7 +1111,8 @@
    "imdb_id": "tt32890033",
    "imdb": 6.3,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
+   "runtime": 90
   },
   "1316347": {
    "title": "Takluk 2: OP Daulat",
@@ -1055,7 +1120,8 @@
    "imdb_id": "tt34463935",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/takluk-2-op-daulat/"
+   "letterboxd_url": "https://letterboxd.com/film/takluk-2-op-daulat/",
+   "runtime": 122
   },
   "1319525": {
    "title": "Henry's First Dates",
@@ -1079,7 +1145,8 @@
    "imdb_id": "tt43295610",
    "imdb": 6.3,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/keep-real/"
+   "letterboxd_url": "https://letterboxd.com/film/keep-real/",
+   "runtime": null
   },
   "1368337": {
    "title": "The Odyssey",
@@ -1087,7 +1154,8 @@
    "imdb_id": "tt33764258",
    "imdb": 8.4,
    "letterboxd": 4.3,
-   "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
+   "runtime": 173
   },
   "1370096": {
    "title": "Al Awda",
@@ -1095,7 +1163,8 @@
    "imdb_id": null,
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/al-awda/"
+   "letterboxd_url": "https://letterboxd.com/film/al-awda/",
+   "runtime": 70
   },
   "1375156": {
    "title": "Udta Teer",
@@ -1103,7 +1172,8 @@
    "imdb_id": "tt31806773",
    "imdb": 6.7,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/udta-teer/"
+   "letterboxd_url": "https://letterboxd.com/film/udta-teer/",
+   "runtime": 137
   },
   "1379266": {
    "title": "Kokuho",
@@ -1119,7 +1189,8 @@
    "imdb_id": "tt34374553",
    "imdb": 6.3,
    "letterboxd": 3.0,
-   "letterboxd_url": "https://letterboxd.com/film/victorian-psycho/"
+   "letterboxd_url": "https://letterboxd.com/film/victorian-psycho/",
+   "runtime": 102
   },
   "1381071": {
    "title": "Godzilla Minus Zero",
@@ -1127,7 +1198,8 @@
    "imdb_id": "tt34384661",
    "imdb": 7.9,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/"
+   "letterboxd_url": "https://letterboxd.com/film/godzilla-minus-zero/",
+   "runtime": 135
   },
   "1384758": {
    "title": "Ice Age: Boiling Point",
@@ -1135,7 +1207,8 @@
    "imdb_id": "tt34512981",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/ice-age-boiling-point/"
+   "letterboxd_url": "https://letterboxd.com/film/ice-age-boiling-point/",
+   "runtime": 103
   },
   "1386467": {
    "title": "The Mage",
@@ -1151,7 +1224,8 @@
    "imdb_id": "tt34386754",
    "imdb": 8.3,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/once-upon-a-time-in-the-middle-east/"
+   "letterboxd_url": "https://letterboxd.com/film/once-upon-a-time-in-the-middle-east/",
+   "runtime": 141
   },
   "1400336": {
    "title": "Focker-in-Law",
@@ -1159,7 +1233,8 @@
    "imdb_id": "tt34966140",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/focker-in-law/"
+   "letterboxd_url": "https://letterboxd.com/film/focker-in-law/",
+   "runtime": 105
   },
   "1400837": {
    "title": "Other Mommy",
@@ -1175,7 +1250,8 @@
    "imdb_id": "tt34890576",
    "imdb": 7.5,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/clayface/"
+   "letterboxd_url": "https://letterboxd.com/film/clayface/",
+   "runtime": 109
   },
   "1401459": {
    "title": "Fjord",
@@ -1183,7 +1259,8 @@
    "imdb_id": "tt35410859",
    "imdb": 7.6,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/fjord-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/fjord-2026/",
+   "runtime": 147
   },
   "1402181": {
    "title": "Scene",
@@ -1191,7 +1268,8 @@
    "imdb_id": "tt38192494",
    "imdb": 8.1,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/scene-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/scene-2026/",
+   "runtime": 149
   },
   "1411529": {
    "title": "Take Off",
@@ -1199,7 +1277,8 @@
    "imdb_id": "tt34386745",
    "imdb": 6.5,
    "letterboxd": 3.3,
-   "letterboxd_url": "https://letterboxd.com/film/take-off-2025/"
+   "letterboxd_url": "https://letterboxd.com/film/take-off-2025/",
+   "runtime": 123
   },
   "1421155": {
    "title": "Ikatan Darah",
@@ -1207,7 +1286,8 @@
    "imdb_id": "tt38221401",
    "imdb": 7.0,
    "letterboxd": 3.5,
-   "letterboxd_url": "https://letterboxd.com/film/ikatan-darah/"
+   "letterboxd_url": "https://letterboxd.com/film/ikatan-darah/",
+   "runtime": 119
   },
   "1422041": {
    "title": "LA BOLA NEGRA",
@@ -1215,7 +1295,8 @@
    "imdb_id": "tt35511966",
    "imdb": 8.2,
    "letterboxd": 4.5,
-   "letterboxd_url": "https://letterboxd.com/film/la-bola-negra/"
+   "letterboxd_url": "https://letterboxd.com/film/la-bola-negra/",
+   "runtime": 159
   },
   "1423191": {
    "title": "Resident Evil",
@@ -1223,7 +1304,8 @@
    "imdb_id": "tt35538033",
    "imdb": 7.4,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/resident-evil-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/resident-evil-2026/",
+   "runtime": 94
   },
   "1425085": {
    "title": "Finding Mojo",
@@ -1239,7 +1321,8 @@
    "imdb_id": "tt38633224",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/the-rope-curse-4-kuntilanak/"
+   "letterboxd_url": "https://letterboxd.com/film/the-rope-curse-4-kuntilanak/",
+   "runtime": 120
   },
   "1433583": {
    "title": "The Weight",
@@ -1255,7 +1338,8 @@
    "imdb_id": "tt35866986",
    "imdb": 6.5,
    "letterboxd": 3.1,
-   "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/how-to-rob-a-bank-2026/",
+   "runtime": 122
   },
   "1437696": {
    "title": "Fatherland",
@@ -1271,7 +1355,8 @@
    "imdb_id": "tt39328391",
    "imdb": 7.4,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/coward-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/coward-2026/",
+   "runtime": 127
   },
   "1439171": {
    "title": "Traces of Justice",
@@ -1279,7 +1364,8 @@
    "imdb_id": "tt38188218",
    "imdb": 6.6,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/traces-of-justice/"
+   "letterboxd_url": "https://letterboxd.com/film/traces-of-justice/",
+   "runtime": 140
   },
   "1440769": {
    "title": "The Beekeeper 2",
@@ -1287,7 +1373,8 @@
    "imdb_id": "tt35935357",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/the-beekeeper-2/"
+   "letterboxd_url": "https://letterboxd.com/film/the-beekeeper-2/",
+   "runtime": null
   },
   "1454209": {
    "title": "National Theatre Live: Inter Alia",
@@ -1295,7 +1382,8 @@
    "imdb_id": "tt36364878",
    "imdb": 8.4,
    "letterboxd": 4.3,
-   "letterboxd_url": "https://letterboxd.com/film/national-theatre-live-inter-alia/"
+   "letterboxd_url": "https://letterboxd.com/film/national-theatre-live-inter-alia/",
+   "runtime": 112
   },
   "1457866": {
    "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
@@ -1303,7 +1391,8 @@
    "imdb_id": "tt36408401",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/"
+   "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
+   "runtime": 141
   },
   "1465063": {
    "title": "Forgotten Island",
@@ -1319,7 +1408,8 @@
    "imdb_id": "tt36834996",
    "imdb": 7.9,
    "letterboxd": 4.2,
-   "letterboxd_url": "https://letterboxd.com/film/all-of-a-sudden-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/all-of-a-sudden-2026/",
+   "runtime": 197
   },
   "1477104": {
    "title": "Shaun the Sheep: The Beast of Mossy Bottom",
@@ -1327,7 +1417,8 @@
    "imdb_id": "tt36841161",
    "imdb": 7.1,
    "letterboxd": 3.6,
-   "letterboxd_url": "https://letterboxd.com/film/shaun-the-sheep-the-beast-of-mossy-bottom/"
+   "letterboxd_url": "https://letterboxd.com/film/shaun-the-sheep-the-beast-of-mossy-bottom/",
+   "runtime": 81
   },
   "1480503": {
    "title": "CoComelon: The Movie",
@@ -1335,7 +1426,8 @@
    "imdb_id": "tt31339071",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/cocomelon-the-movie/"
+   "letterboxd_url": "https://letterboxd.com/film/cocomelon-the-movie/",
+   "runtime": null
   },
   "1497464": {
    "title": "Gatto",
@@ -1343,7 +1435,8 @@
    "imdb_id": "tt26443610",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/gatto/"
+   "letterboxd_url": "https://letterboxd.com/film/gatto/",
+   "runtime": null
   },
   "1497873": {
    "title": "As the Water Flows",
@@ -1351,7 +1444,8 @@
    "imdb_id": "tt37186694",
    "imdb": 6.9,
    "letterboxd": 3.5,
-   "letterboxd_url": "https://letterboxd.com/film/as-the-water-flows/"
+   "letterboxd_url": "https://letterboxd.com/film/as-the-water-flows/",
+   "runtime": 119
   },
   "1503023": {
    "title": "Go for Broke 2",
@@ -1359,7 +1453,8 @@
    "imdb_id": "tt41558341",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/go-for-broke-2-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/go-for-broke-2-2026/",
+   "runtime": 132
   },
   "1503762": {
    "title": "Sense and Sensibility",
@@ -1367,7 +1462,8 @@
    "imdb_id": "tt13609648",
    "imdb": 7.2,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/sense-and-sensibility-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/sense-and-sensibility-2026/",
+   "runtime": 132
   },
   "1515692": {
    "title": "Baththa",
@@ -1383,7 +1479,8 @@
    "imdb_id": "tt41075537",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/bachelor-party-deux/"
+   "letterboxd_url": "https://letterboxd.com/film/bachelor-party-deux/",
+   "runtime": 132
   },
   "1538497": {
    "title": "Hexed",
@@ -1391,7 +1488,8 @@
    "imdb_id": "tt38077943",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/hexed-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/hexed-2026/",
+   "runtime": 103
   },
   "1545057": {
    "title": "Final Interview",
@@ -1399,7 +1497,8 @@
    "imdb_id": "tt44980509",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/final-interview/"
+   "letterboxd_url": "https://letterboxd.com/film/final-interview/",
+   "runtime": 108
   },
   "1546855": {
    "title": "It's OK",
@@ -1407,7 +1506,8 @@
    "imdb_id": "tt40915506",
    "imdb": 6.6,
    "letterboxd": 3.4,
-   "letterboxd_url": "https://letterboxd.com/film/its-ok-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/its-ok-2026/",
+   "runtime": 118
   },
   "1553200": {
    "title": "Rascal Does Not Dream of a Dear Friend",
@@ -1423,7 +1523,8 @@
    "imdb_id": "tt38589232",
    "imdb": null,
    "letterboxd": 3.3,
-   "letterboxd_url": "https://letterboxd.com/film/the-old-man-and-his-car/"
+   "letterboxd_url": "https://letterboxd.com/film/the-old-man-and-his-car/",
+   "runtime": 82
   },
   "1567605": {
    "title": "Ebenezer",
@@ -1431,7 +1532,8 @@
    "imdb_id": "tt38773219",
    "imdb": 7.2,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/ebenezer-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/ebenezer-2026/",
+   "runtime": 115
   },
   "1567791": {
    "title": "Munafik: Melawan Iblis",
@@ -1439,7 +1541,8 @@
    "imdb_id": "tt38782610",
    "imdb": null,
    "letterboxd": 2.9,
-   "letterboxd_url": "https://letterboxd.com/film/munafik-melawan-iblis/"
+   "letterboxd_url": "https://letterboxd.com/film/munafik-melawan-iblis/",
+   "runtime": 103
   },
   "1567937": {
    "title": "V",
@@ -1447,7 +1550,8 @@
    "imdb_id": "tt38775487",
    "imdb": 6.9,
    "letterboxd": 3.3,
-   "letterboxd_url": "https://letterboxd.com/film/v-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/v-2026/",
+   "runtime": 160
   },
   "1584855": {
    "title": "Paradise Lost",
@@ -1455,7 +1559,8 @@
    "imdb_id": "tt43658893",
    "imdb": 6.0,
    "letterboxd": 2.9,
-   "letterboxd_url": "https://letterboxd.com/film/paradise-lost-2026-1/"
+   "letterboxd_url": "https://letterboxd.com/film/paradise-lost-2026-1/",
+   "runtime": 101
   },
   "1586876": {
    "title": "Chiikawa the Movie: The Secret of the Mermaid Island",
@@ -1471,7 +1576,8 @@
    "imdb_id": "tt39094466",
    "imdb": 7.6,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/look-back-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/look-back-2026/",
+   "runtime": 100
   },
   "1598766": {
    "title": "Crayon Shinchan the Movie: Spooky! My Yokai Vacation",
@@ -1479,7 +1585,8 @@
    "imdb_id": "tt41293342",
    "imdb": null,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/crayon-shinchan-the-movie-spooky-my-yokai/"
+   "letterboxd_url": "https://letterboxd.com/film/crayon-shinchan-the-movie-spooky-my-yokai/",
+   "runtime": 101
   },
   "1601002": {
    "title": "The House on the Moon",
@@ -1487,7 +1594,8 @@
    "imdb_id": "tt39334277",
    "imdb": null,
    "letterboxd": 3.0,
-   "letterboxd_url": "https://letterboxd.com/film/the-house-on-the-moon-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/the-house-on-the-moon-2026/",
+   "runtime": 99
   },
   "1612811": {
    "title": "Disco",
@@ -1503,7 +1611,8 @@
    "imdb_id": "tt39602215",
    "imdb": 7.0,
    "letterboxd": 3.6,
-   "letterboxd_url": "https://letterboxd.com/film/the-samurai-and-the-prisoner/"
+   "letterboxd_url": "https://letterboxd.com/film/the-samurai-and-the-prisoner/",
+   "runtime": 147
   },
   "1623376": {
    "title": "Blue Lock",
@@ -1519,7 +1628,8 @@
    "imdb_id": "tt38589433",
    "imdb": 6.5,
    "letterboxd": 3.6,
-   "letterboxd_url": "https://letterboxd.com/film/never-after-dark/"
+   "letterboxd_url": "https://letterboxd.com/film/never-after-dark/",
+   "runtime": 104
   },
   "1633056": {
    "title": "All Wishes Come True!",
@@ -1527,7 +1637,8 @@
    "imdb_id": "tt43515101",
    "imdb": 7.9,
    "letterboxd": 4.0,
-   "letterboxd_url": "https://letterboxd.com/film/all-wishes-come-true/"
+   "letterboxd_url": "https://letterboxd.com/film/all-wishes-come-true/",
+   "runtime": 143
   },
   "1641520": {
    "title": "Donga Naa Koduku",
@@ -1559,7 +1670,8 @@
    "imdb_id": "tt49855692",
    "imdb": 9.1,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/john-doe-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/john-doe-2026/",
+   "runtime": 149
   },
   "1679026": {
    "title": "Itam: A Sun Bear Story",
@@ -1575,7 +1687,8 @@
    "imdb_id": "tt41687980",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/appa-kutty/"
+   "letterboxd_url": "https://letterboxd.com/film/appa-kutty/",
+   "runtime": 134
   },
   "1710024": {
    "title": "Remember",
@@ -1583,7 +1696,8 @@
    "imdb_id": null,
    "imdb": null,
    "letterboxd": 3.1,
-   "letterboxd_url": "https://letterboxd.com/film/remember-2026-2/"
+   "letterboxd_url": "https://letterboxd.com/film/remember-2026-2/",
+   "runtime": 111
   },
   "1716531": {
    "title": "Drones",
@@ -1599,7 +1713,8 @@
    "imdb_id": "tt43609247",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/not-alone-2027/"
+   "letterboxd_url": "https://letterboxd.com/film/not-alone-2027/",
+   "runtime": null
   },
   "1731816": {
    "title": "Kudrat 1968: High Council",
@@ -1607,7 +1722,8 @@
    "imdb_id": "tt49276988",
    "imdb": null,
    "letterboxd": 3.2,
-   "letterboxd_url": "https://letterboxd.com/film/kudrat-1968-high-council/"
+   "letterboxd_url": "https://letterboxd.com/film/kudrat-1968-high-council/",
+   "runtime": 118
   },
   "1746726": {
    "title": "Pace",
@@ -1615,7 +1731,8 @@
    "imdb_id": "tt46083068",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/pace-2026/"
+   "letterboxd_url": "https://letterboxd.com/film/pace-2026/",
+   "runtime": 102
   },
   "1748404": {
    "title": "Always Yours, Never Mine",
@@ -1631,7 +1748,8 @@
    "imdb_id": null,
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/eda-raa/"
+   "letterboxd_url": "https://letterboxd.com/film/eda-raa/",
+   "runtime": 140
   },
   "1765072": {
    "title": "You Can See Everything",
@@ -1639,7 +1757,8 @@
    "imdb_id": "tt45368240",
    "imdb": 9.0,
    "letterboxd": 4.6,
-   "letterboxd_url": "https://letterboxd.com/film/you-can-see-everything/"
+   "letterboxd_url": "https://letterboxd.com/film/you-can-see-everything/",
+   "runtime": 175
   },
   "1777750": {
    "title": "Detective Conan: The Counterfeit Case of Ultra 30",
@@ -1647,7 +1766,8 @@
    "imdb_id": "tt46656123",
    "imdb": 5.5,
    "letterboxd": 3.1,
-   "letterboxd_url": "https://letterboxd.com/film/detective-conan-the-counterfeit-case-of-ultra/"
+   "letterboxd_url": "https://letterboxd.com/film/detective-conan-the-counterfeit-case-of-ultra/",
+   "runtime": 93
   }
  },
  "matches": {
