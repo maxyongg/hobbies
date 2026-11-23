@@ -43,9 +43,11 @@ def main(argv=None) -> int:
     if not notifier.configured:
         logging.warning("NTFY_TOPIC not set: new items are logged, not pushed")
     store = Store(args.data)
+    # Ratings run before alerts, so a new film's push can give its runtime.
     status = runner.run(sources, store, notifier, http, status_path=args.status, dry_run=args.dry_run,
-                        showtimes_path=args.data.with_name("showtimes.json"))
-    ratings.update(store, http, args.data.with_name("ratings.json"), dry_run=args.dry_run)
+                        showtimes_path=args.data.with_name("showtimes.json"),
+                        enrich=lambda s: ratings.update(s, http, args.data.with_name("ratings.json"),
+                                                        dry_run=args.dry_run))
     # Non-zero only if every source failed, so one flaky site doesn't fail the workflow.
     return 0 if any(s["ok"] for s in status["sources"].values()) else 1
 

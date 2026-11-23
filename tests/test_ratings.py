@@ -197,3 +197,22 @@ def test_update_never_raises_and_skips_without_key(tmp_path, monkeypatch):
     monkeypatch.delenv("TMDB_API_KEY")
     ratings.update(Store, FakeHttp(routes()), tmp_path / "other.json")
     assert not (tmp_path / "other.json").exists()
+
+
+def test_update_gives_store_items_their_runtime(tmp_path, monkeypatch):
+    class Store:
+        items = {i.key: i for i in ITEMS}
+
+    monkeypatch.setenv("TMDB_API_KEY", "k" * 32)
+    ratings.update(Store, FakeHttp(routes()), tmp_path / "ratings.json")
+    assert Store.items[("gv", "re")].runtime == 107
+    assert Store.items[("afa", "db")].runtime is None  # TMDb doesn't know it
+    assert Store.items[("carnival", "j2")].runtime is None  # no match
+
+    for i in ITEMS:
+        i.runtime = None
+    monkeypatch.delenv("TMDB_API_KEY")  # no key: runtimes still come from the saved file
+    ratings.update(Store, FakeHttp({}), tmp_path / "ratings.json")
+    assert Store.items[("filmhouse", "bs")].runtime == 101
+    for i in ITEMS:
+        i.runtime = None

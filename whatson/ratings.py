@@ -351,6 +351,11 @@ class Ratings:
                  len(films), sum(1 for f in films if f["imdb"]), sum(1 for f in films if f["letterboxd"]),
                  len(films) - rated)
 
+    def attach_runtimes(self, store_items) -> None:
+        for item in store_items:
+            film = self.films.get(self.items.get(f"{item.source}:{item.id}", ""))
+            item.runtime = film.get("runtime") if film else None
+
     def to_dict(self) -> dict:
         return {
             "updated": self.updated,
@@ -365,17 +370,22 @@ class Ratings:
 
 
 def update(store, http, path: Path, dry_run: bool = False) -> None:
-    """Match new films and refresh ratings. Never raises: ratings must not break the run."""
-    tmdb = Tmdb.from_env(http)
-    if tmdb is None:
-        log.warning("ratings: TMDB_API_KEY not set; ratings not updated")
-        return
+    """Match new films, refresh ratings, and give the store's items their runtime (for alerts).
+    Never raises: ratings must not break the run."""
     try:
         ratings = Ratings(path)
-        ratings.update(list(store.items.values()), http, tmdb)
-        matched = sum(1 for m in ratings.matches.values() if m["tmdb"] is not None)
-        log.info("ratings: %d of %d titles matched", matched, len(ratings.matches))
-        if not dry_run:
-            ratings.save()
+        tmdb = Tmdb.from_env(http)
+        if tmdb is None:
+            log.warning("ratings: TMDB_API_KEY not set; ratings not updated")
+        else:
+            try:
+                ratings.update(list(store.items.values()), http, tmdb)
+                matched = sum(1 for m in ratings.matches.values() if m["tmdb"] is not None)
+                log.info("ratings: %d of %d titles matched", matched, len(ratings.matches))
+                if not dry_run:
+                    ratings.save()
+            except Exception:  # noqa: BLE001
+                log.exception("ratings: update failed")
+        ratings.attach_runtimes(store.items.values())
     except Exception:  # noqa: BLE001
-        log.exception("ratings: update failed")
+        log.exception("ratings: could not read %s", path)

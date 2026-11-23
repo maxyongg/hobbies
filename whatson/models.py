@@ -28,6 +28,8 @@ class Item:
     # Upcoming screenings, from sources that list them (see screening()). They go to
     # showtimes.json, not the store, so items.json doesn't change as screenings pass.
     sessions: list[dict] = field(default_factory=list)
+    # Minutes, from the film's TMDb match (ratings.py sets it each run, before alerts). Not stored.
+    runtime: int | None = None
     # Set by the store, not by sources:
     first_seen: str | None = None
     listed: bool = True  # present in the latest successful fetch
@@ -42,13 +44,19 @@ class Item:
 
     def to_dict(self) -> dict:
         d = asdict(self)
-        del d["sessions"]
+        del d["sessions"], d["runtime"]
         return d
 
     @classmethod
     def from_dict(cls, d: dict) -> Item:
         known = cls.__dataclass_fields__
         return cls(**{k: v for k, v in d.items() if k in known})
+
+
+def duration(minutes: int) -> str:
+    """"1h 52m", "2h", "45m"."""
+    h, m = divmod(minutes, 60)
+    return " ".join(filter(None, [f"{h}h" if h else "", f"{m}m" if m else ""]))
 
 
 def screening(start: datetime, url: str, venue: str | None = None, note: str | None = None) -> dict:

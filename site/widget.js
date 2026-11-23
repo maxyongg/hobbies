@@ -6,8 +6,8 @@
 // Optional widget Parameter: sources to show, comma-separated, e.g. "filmhouse,afa".
 //
 // Shows the newest films from the cinemas that send alerts (Filmhouse, Shaw, AFA), as first
-// seen by the scraper (data/items.json on GitHub Pages), with IMDb and Letterboxd ("LB")
-// ratings where known (data/ratings.json; medium and large widgets only).
+// seen by the scraper (data/items.json on GitHub Pages), with runtime and IMDb and Letterboxd
+// ("LB") ratings where known (data/ratings.json; medium and large widgets only).
 // Tapping a film (medium/large) opens it; tapping elsewhere opens the web app.
 
 const SITE = "https://maxyongg.github.io/hobbies/";
@@ -47,12 +47,19 @@ async function loadData() {
   return { data: items.data, ratings: ratings.data, stale: items.stale };
 }
 
+// "1h 52m", "2h", "45m"
+function duration(minutes) {
+  const h = Math.floor(minutes / 60), m = minutes % 60;
+  return [h ? `${h}h` : "", m ? `${m}m` : ""].filter(Boolean).join(" ");
+}
+
+// "1h 52m · IMDb 7.8 · LB 3.9", with whatever is known.
 function ratingText(ratings, item) {
   const id = ratings.items?.[`${item.source}:${item.id}`];
   const f = id && ratings.films?.[id];
   if (!f) return "";
-  return [f.imdb && `IMDb ${f.imdb.toFixed(1)}`, f.letterboxd && `LB ${f.letterboxd.toFixed(1)}`]
-    .filter(Boolean).join(" · ");
+  return [f.runtime > 0 && duration(f.runtime), f.imdb && `IMDb ${f.imdb.toFixed(1)}`,
+    f.letterboxd && `LB ${f.letterboxd.toFixed(1)}`].filter(Boolean).join(" · ");
 }
 
 function shortDate(iso) {

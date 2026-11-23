@@ -103,6 +103,20 @@ def test_many_new_items_send_one_summary(tmp_path, http):
     assert http.posts[0][1]["json"]["title"] == "6 new at Fh"
 
 
+def test_new_film_push_has_its_runtime_and_the_store_does_not(tmp_path, http):
+    src = FakeSource("fh", [["a"], ["a", "b"]])
+    ntfy = Ntfy(http, "t")
+
+    def enrich(store):  # what ratings.update does: runtimes from ratings.json, before alerts
+        for i in store.items.values():
+            i.runtime = 112 if i.id == "b" else None
+
+    run_once(tmp_path, src, ntfy, http, enrich=enrich)
+    run_once(tmp_path, src, ntfy, http, enrich=enrich)
+    assert http.posts[0][1]["json"]["message"] == "B · 1h 52m"
+    assert "runtime" not in (tmp_path / "items.json").read_text()
+
+
 def test_dry_run_writes_nothing(tmp_path, http):
     src = FakeSource("fh", [["a"]])
     run_once(tmp_path, src, Ntfy(http, "t"), http, dry_run=True)

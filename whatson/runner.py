@@ -33,7 +33,8 @@ def run_url() -> str | None:
 
 
 def run(sources: list[Source], store, notifier: Notifier, http, status_path: Path | None = None,
-        dry_run: bool = False, showtimes_path: Path | None = None) -> dict:
+        dry_run: bool = False, showtimes_path: Path | None = None, enrich=None) -> dict:
+    """`enrich(store)` runs after every source is merged and before alerts (ratings: runtimes)."""
     now = now_sgt()
     status = {"checked": now, "sources": {}}
     showtimes: dict[str, list[dict]] = {}
@@ -84,6 +85,8 @@ def run(sources: list[Source], store, notifier: Notifier, http, status_path: Pat
         for i in new:
             log.info("  + %s | %s | %s", i.id, i.title, i.url)
 
+    if enrich:
+        enrich(store)
     if not dry_run:
         send_pending(store, notifier, names)
         send_sales(store, notifier, names, showtimes)
