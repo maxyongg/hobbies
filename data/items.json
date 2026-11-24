@@ -1,8 +1,8 @@
 {
  "sources": {
   "afa": {
-   "consecutive_failures": 1,
-   "last_error": "from_rest: ValueError: expected JSON from https://asianfilmarchive.org/wp-json/wp/v2/mep_events?per_page=100&orderby=date&order=desc&_fields=id%2Cslug%2Clink%2Ctitle%2Cclass_list%2Cyoast_head_json.og_image%2Cevent_informations.event_upcoming_datetime%2Cevent_informations.event_start_datetime%2Cevent_informations.event_expire_datetime%2Cevent_informations.event_end_datetime%2Cevent_informations.location_name, got text/html: '<html><head><link rel=\"icon\" href=\"data:;\"><meta http-equiv=\"refresh\" content=\"0;/.well-known/sgcaptcha/?r=%2Fwp-json%2Fwp%2Fv2%2Fmep_events%3Fper_page%3D100%26orderby%3Ddate%26order%3Ddesc%26_fields%'; from_listing_pages: 0 items"
+   "consecutive_failures": 0,
+   "last_error": null
   },
   "filmhouse": {
    "consecutive_failures": 0,
@@ -24,6 +24,228 @@
  "items": [
   {
    "source": "filmhouse",
+   "id": "253",
+   "title": "The Lord of the Rings: The Fellowship of the Ring",
+   "url": "https://filmhouse.sg/film/253/the-lord-of-the-rings-the-fellowship-of-the-ring",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/ADEAdEk1Fc93S2rAEahX5H7hd62-lJxA0dLHWXYMd3E.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "filmhouse",
+   "id": "259",
+   "title": "Die Hard",
+   "url": "https://filmhouse.sg/film/259/die-hard",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/08JlbDuazeF6AuCF4dcVIEuYpLvKzCvh627JAI4yGqw.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "filmhouse",
+   "id": "268",
+   "title": "The Lord of the Rings: The Two Towers",
+   "url": "https://filmhouse.sg/film/268/the-lord-of-the-rings-the-two-towers",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/V6cUrjeytVRjenu5Yx4tPHKLNuHmnbrSGWQV7CQccMI.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "filmhouse",
+   "id": "269",
+   "title": "The Lord of the Rings: The Return of the King",
+   "url": "https://filmhouse.sg/film/269/the-lord-of-the-rings-the-return-of-the-king",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/0ltULaIANRCxuwROtJhW8qsHIbTaQU1o4Zxxj0wnTz4.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "filmhouse",
+   "id": "271",
+   "title": "Ryuichi Sakamoto | Opus",
+   "url": "https://filmhouse.sg/film/271/ryuichi-sakamoto-opus",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/U-AZOGjAwJZFHtXOjS-kqicNb_yBKmgPdVXZWgI0bjA.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "filmhouse",
+   "id": "272",
+   "title": "Wheel of Fortune and Fantasy",
+   "url": "https://filmhouse.sg/film/272/wheel-of-fortune-and-fantasy",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/6XcFaznM9GNKBKHmTCSiIkztT7PbEQHDKmm89M8TjTw.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "filmhouse",
+   "id": "273",
+   "title": "Evil Does Not Exist",
+   "url": "https://filmhouse.sg/film/273/evil-does-not-exist",
+   "type": "film",
+   "poster": "https://cdn.taposapp.com/poster/600x900/KdprNDYOdBrHjnVvj7fTqZy-qHtwB2YuArRhbJGUO5M.jpg",
+   "release_date": null,
+   "tags": [],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "gv",
+   "id": "4494",
+   "title": "Demon Agent 大唐妖探",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4494",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4494.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin",
+    "PG13"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": null
+  },
+  {
+   "source": "gv",
+   "id": "4528",
+   "title": "Dead Tide 黑潮",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/4528",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img4528.jpg",
+   "release_date": null,
+   "tags": [
+    "Mandarin"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": null
+  },
+  {
+   "source": "gv",
+   "id": "8493",
+   "title": "Yeh Prem Mol Liya",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8493",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8493.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi",
+    "NC16"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "gv",
+   "id": "8494",
+   "title": "Gunmaaster G9",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8494",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8494.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6b04f143ee13d3933d1bbcc8",
+   "title": "9 Temples to Heaven",
+   "url": "https://events.singaporefilmsociety.com/films/6b04f143ee13d3933d1bbcc8",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/7ed4583df20475d957fa3160ef9d1ddf.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6b04f231d129d53aad77d3a7",
+   "title": "The Sandbox",
+   "url": "https://events.singaporefilmsociety.com/films/6b04f231d129d53aad77d3a7",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1795486460508temp-1795486460483-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "soon",
+   "on_sale": true,
+   "first_seen": "2026-11-24T17:55:12+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "filmhouse",
    "id": "270",
    "title": "I Play Rocky",
    "url": "https://filmhouse.sg/film/270/i-play-rocky",
@@ -34,11 +256,11 @@
     "Coming soon"
    ],
    "showing": "soon",
-   "on_sale": false,
+   "on_sale": true,
    "first_seen": "2026-11-23T11:59:58+08:00",
    "listed": true,
    "alert": "sent",
-   "sale_alert": null
+   "sale_alert": "sent"
   },
   {
    "source": "shaw",
@@ -231,14 +453,15 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4527.jpg",
    "release_date": null,
    "tags": [
-    "Tagalog"
+    "Tagalog",
+    "PG13"
    ],
-   "showing": "soon",
-   "on_sale": false,
+   "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-19T15:27:50+08:00",
    "listed": true,
    "alert": "quiet",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -331,14 +554,15 @@
    "poster": "https://media.gv.com.sg/imagesresize/img4526.jpg",
    "release_date": null,
    "tags": [
-    "Malay"
+    "Malay",
+    "NC16"
    ],
-   "showing": "soon",
-   "on_sale": false,
+   "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-11-18T15:28:30+08:00",
    "listed": true,
    "alert": "quiet",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -488,7 +712,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-17T15:55:38+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "quiet",
    "sale_alert": "skip"
   },
@@ -705,7 +929,7 @@
     "English",
     "PG"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
@@ -724,7 +948,7 @@
     "Japanese",
     "Nil"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-13T14:45:49+08:00",
    "listed": true,
@@ -1013,7 +1237,7 @@
     "English",
     "M18"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-06T14:46:36+08:00",
    "listed": true,
@@ -1163,7 +1387,7 @@
     "Mandarin",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1182,7 +1406,7 @@
     "Mandarin",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1201,7 +1425,7 @@
     "Mandarin",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1220,7 +1444,7 @@
     "Mandarin",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1239,7 +1463,7 @@
     "Mandarin",
     "NC16"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1258,7 +1482,7 @@
     "Mandarin",
     "NC16"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1277,7 +1501,7 @@
     "Nil",
     "PG"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1312,7 +1536,7 @@
    "poster": "https://media.gv.com.sg/imagesresize/ChinaFF26b.jpg",
    "release_date": null,
    "tags": [],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-05T14:46:30+08:00",
    "listed": true,
@@ -1351,11 +1575,11 @@
     "Ending Soon"
    ],
    "showing": "now",
-   "on_sale": null,
+   "on_sale": true,
    "first_seen": "2026-11-05T03:46:51+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "sent",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "shaw",
@@ -2048,12 +2272,12 @@
     "English",
     "PG"
    ],
-   "showing": "soon",
-   "on_sale": false,
+   "showing": "now",
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
    "alert": "seed",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "gv",
@@ -2421,7 +2645,7 @@
     "Japanese",
     "PG13"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
@@ -3275,7 +3499,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -4819,14 +5043,14 @@
    "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1410-Poster-1793785181229",
    "release_date": null,
    "tags": [
-    "Coming Soon"
+    "Advance Sales"
    ],
    "showing": "soon",
-   "on_sale": false,
+   "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
    "listed": true,
    "alert": "seed",
-   "sale_alert": null
+   "sale_alert": "sent"
   },
   {
    "source": "shaw",
@@ -5012,7 +5236,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },

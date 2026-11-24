@@ -53,11 +53,18 @@
   "filmhouse:247": "747509",
   "filmhouse:248": "1366",
   "filmhouse:249": "15283",
+  "filmhouse:253": "120",
   "filmhouse:254": "4977",
   "filmhouse:255": "11948",
   "filmhouse:256": "258480",
   "filmhouse:258": "331482",
+  "filmhouse:259": "562",
+  "filmhouse:268": "121",
+  "filmhouse:269": "122",
   "filmhouse:270": "1286656",
+  "filmhouse:271": "1156189",
+  "filmhouse:272": "795811",
+  "filmhouse:273": "1156125",
   "filmhouse:85": "313369",
   "gv:1332": "1117898",
   "gv:1392": "1248832",
@@ -113,6 +120,7 @@
   "gv:4484": "1633056",
   "gv:4487": "1746726",
   "gv:4490": "1623376",
+  "gv:4494": "1630030",
   "gv:4496": "1391021",
   "gv:4499": "748681",
   "gv:4503": "1319525",
@@ -135,6 +143,7 @@
   "gv:4525": "747509",
   "gv:4526": "1316347",
   "gv:4527": "1710024",
+  "gv:4528": "1630206",
   "gv:7490": "1586876",
   "gv:7491": "1586876",
   "gv:7509": "1591675",
@@ -152,6 +161,8 @@
   "gv:8490": "1375156",
   "gv:8491": "1081010",
   "gv:8492": "1654581",
+  "gv:8493": "1209723",
+  "gv:8494": "1510775",
   "sfs:6a5042c675bd49357a05f4c2": "1679026",
   "sfs:6a5045c451da292b56c9aa70": "1555810",
   "sfs:6a5f1c002b33ea397dd1afc0": "1425085",
@@ -169,6 +180,8 @@
   "sfs:6afbd2b87406c607d2872086": "678458",
   "sfs:6afbd41d86dd72d314563702": "10670",
   "sfs:6afbd5215f2c74784fc1f4be": "1196901",
+  "sfs:6b04f143ee13d3933d1bbcc8": "1046304",
+  "sfs:6b04f231d129d53aad77d3a7": "1559680",
   "shaw:1363": "1117898",
   "shaw:1377": "1477104",
   "shaw:1401": "1379486",
@@ -261,6 +274,33 @@
    "letterboxd": 4.3,
    "letterboxd_url": "https://letterboxd.com/film/before-sunrise/"
   },
+  "120": {
+   "title": "The Lord of the Rings: The Fellowship of the Ring",
+   "year": 2001,
+   "imdb_id": "tt0120737",
+   "runtime": 179,
+   "imdb": 8.9,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/the-lord-of-the-rings-the-fellowship-of-the-ring/"
+  },
+  "121": {
+   "title": "The Lord of the Rings: The Two Towers",
+   "year": 2002,
+   "imdb_id": "tt0167261",
+   "runtime": 179,
+   "imdb": 8.8,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/the-lord-of-the-rings-the-two-towers/"
+  },
+  "122": {
+   "title": "The Lord of the Rings: The Return of the King",
+   "year": 2003,
+   "imdb_id": "tt0167260",
+   "runtime": 201,
+   "imdb": 9.0,
+   "letterboxd": 4.6,
+   "letterboxd_url": "https://letterboxd.com/film/the-lord-of-the-rings-the-return-of-the-king/"
+  },
   "146": {
    "title": "Crouching Tiger, Hidden Dragon",
    "year": 2000,
@@ -287,6 +327,15 @@
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/amelie/",
    "runtime": 122
+  },
+  "562": {
+   "title": "Die Hard",
+   "year": 1988,
+   "imdb_id": "tt0095016",
+   "runtime": 132,
+   "imdb": 8.2,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/die-hard/"
   },
   "804": {
    "title": "Roman Holiday",
@@ -754,6 +803,15 @@
    "letterboxd_url": "https://letterboxd.com/film/wildwood-2026/",
    "runtime": 132
   },
+  "795811": {
+   "title": "Wheel of Fortune and Fantasy",
+   "year": 2021,
+   "imdb_id": "tt14034966",
+   "runtime": 121,
+   "imdb": 7.5,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/wheel-of-fortune-and-fantasy/"
+  },
   "822653": {
    "title": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
    "year": 2026,
@@ -832,6 +890,15 @@
    "letterboxd_url": "https://letterboxd.com/film/avengers-doomsday/",
    "runtime": 165
   },
+  "1046304": {
+   "title": "9 Temples to Heaven",
+   "year": 2026,
+   "imdb_id": "tt37740247",
+   "runtime": 140,
+   "imdb": 6.6,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/9-temples-to-heaven/"
+  },
   "1078446": {
    "title": "Violent Night 2",
    "year": 2026,
@@ -892,6 +959,24 @@
    "letterboxd": 2.8,
    "letterboxd_url": "https://letterboxd.com/film/street-fighter-2026/",
    "runtime": 120
+  },
+  "1156125": {
+   "title": "Evil Does Not Exist",
+   "year": 2023,
+   "imdb_id": "tt28490044",
+   "runtime": 106,
+   "imdb": 7.0,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/evil-does-not-exist/"
+  },
+  "1156189": {
+   "title": "Ryuichi Sakamoto | Opus",
+   "year": 2023,
+   "imdb_id": "tt28490873",
+   "runtime": 103,
+   "imdb": 8.0,
+   "letterboxd": 4.2,
+   "letterboxd_url": "https://letterboxd.com/film/ryuichi-sakamoto-opus/"
   },
   "1157628": {
    "title": "A Feeling Of Music Playing",
@@ -961,6 +1046,15 @@
    "imdb": 7.3,
    "letterboxd": 3.8,
    "letterboxd_url": "https://letterboxd.com/film/coyote-vs-acme/"
+  },
+  "1209723": {
+   "title": "Yeh Prem Mol Liya",
+   "year": 2026,
+   "imdb_id": "tt38907401",
+   "runtime": 173,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/yeh-prem-mol-liya/"
   },
   "1212310": {
    "title": "Winter of the Crow",
@@ -1292,7 +1386,8 @@
    "imdb_id": "tt35611573",
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/mojoku-hilang/"
+   "letterboxd_url": "https://letterboxd.com/film/mojoku-hilang/",
+   "runtime": 139
   },
   "1433568": {
    "title": "The Rope Curse 4: Kuntilanak",
@@ -1444,6 +1539,15 @@
    "letterboxd_url": "https://letterboxd.com/film/sense-and-sensibility-2026/",
    "runtime": 132
   },
+  "1510775": {
+   "title": "Gunmaaster G9",
+   "year": 2026,
+   "imdb_id": "tt37539573",
+   "runtime": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/gunmaaster-g9/"
+  },
   "1515692": {
    "title": "Baththa",
    "year": 2026,
@@ -1504,6 +1608,15 @@
    "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/the-old-man-and-his-car/",
    "runtime": 82
+  },
+  "1559680": {
+   "title": "The Sandbox",
+   "year": 2026,
+   "imdb_id": "tt38775308",
+   "runtime": 120,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-sandbox-2025/"
   },
   "1567605": {
    "title": "Ebenezer",
@@ -1609,6 +1722,24 @@
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/never-after-dark/",
    "runtime": 104
+  },
+  "1630030": {
+   "title": "Demon Agent",
+   "year": 2026,
+   "imdb_id": "tt45615017",
+   "runtime": 117,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/demon-agent/"
+  },
+  "1630206": {
+   "title": "Dead Tide",
+   "year": 2026,
+   "imdb_id": "tt35486825",
+   "runtime": 106,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/dead-tide-2026/"
   },
   "1633056": {
    "title": "All Wishes Come True!",
@@ -1728,6 +1859,10 @@
   "2026": {
    "tmdb": null,
    "checked": "2026-11-19"
+  },
+  "9 temples to heaven": {
+   "tmdb": 1046304,
+   "checked": "2026-11-24"
   },
   "a feeling of music playing": {
    "tmdb": 1157628,
@@ -1961,6 +2096,10 @@
    "tmdb": 249504,
    "checked": "2026-10-30"
   },
+  "dead tide": {
+   "tmdb": 1630206,
+   "checked": "2026-11-24"
+  },
   "delicatessen": {
    "tmdb": 892,
    "checked": "2026-10-30"
@@ -1968,6 +2107,10 @@
   "deluxe dine in set dune part three": {
    "tmdb": null,
    "checked": "2026-11-20"
+  },
+  "demon agent": {
+   "tmdb": 1630030,
+   "checked": "2026-11-24"
   },
   "detective conan episode zero the shinichi kudo aquarium case": {
    "tmdb": null,
@@ -1980,6 +2123,10 @@
   "detective conan the movie fallen angels of the highway": {
    "tmdb": null,
    "checked": "2026-11-06"
+  },
+  "die hard": {
+   "tmdb": 562,
+   "checked": "2026-11-24"
   },
   "digger": {
    "tmdb": 1248832,
@@ -2020,6 +2167,10 @@
   "eda raa": {
    "tmdb": 1759202,
    "checked": "2026-10-30"
+  },
+  "evil does not exist": {
+   "tmdb": 1156125,
+   "checked": "2026-11-24"
   },
   "exo planet 6 exhorizon in cinemas": {
    "tmdb": null,
@@ -2076,6 +2227,10 @@
   "gold class dining set dune part three": {
    "tmdb": null,
    "checked": "2026-11-20"
+  },
+  "gunmaaster g9": {
+   "tmdb": 1510775,
+   "checked": "2026-11-24"
   },
   "heart of the beast": {
    "tmdb": 1263337,
@@ -2357,6 +2512,10 @@
    "tmdb": 804,
    "checked": "2026-10-30"
   },
+  "ryuichi sakamoto opus": {
+   "tmdb": 1156189,
+   "checked": "2026-11-24"
+  },
   "scene": {
    "tmdb": 1402181,
    "checked": "2026-10-30"
@@ -2485,6 +2644,18 @@
    "tmdb": 467914,
    "checked": "2026-10-30"
   },
+  "the lord of the rings the fellowship of the ring": {
+   "tmdb": 120,
+   "checked": "2026-11-24"
+  },
+  "the lord of the rings the return of the king": {
+   "tmdb": 122,
+   "checked": "2026-11-24"
+  },
+  "the lord of the rings the two towers": {
+   "tmdb": 121,
+   "checked": "2026-11-24"
+  },
   "the mage": {
    "tmdb": 1386467,
    "checked": "2026-10-30"
@@ -2512,6 +2683,10 @@
   "the samurai and the prisoner": {
    "tmdb": 1620313,
    "checked": "2026-11-10"
+  },
+  "the sandbox": {
+   "tmdb": 1559680,
+   "checked": "2026-11-24"
   },
   "the social reckoning": {
    "tmdb": 1281331,
@@ -2581,6 +2756,10 @@
    "tmdb": 246741,
    "checked": "2026-10-30"
   },
+  "wheel of fortune and fantasy": {
+   "tmdb": 795811,
+   "checked": "2026-11-24"
+  },
   "wildwood": {
    "tmdb": 791523,
    "checked": "2026-10-30"
@@ -2588,6 +2767,10 @@
   "winter of the crow": {
    "tmdb": 1212310,
    "checked": "2026-10-30"
+  },
+  "yeh prem mol liya": {
+   "tmdb": 1209723,
+   "checked": "2026-11-24"
   },
   "you can see everything": {
    "tmdb": 1765072,
