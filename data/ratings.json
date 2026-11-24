@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -199,6 +199,7 @@
   "shaw:1787": "1368337",
   "shaw:1788": "1368337",
   "shaw:1790": "1423191",
+  "shaw:1794": "1408207",
   "shaw:1795": "1629051",
   "shaw:1796": "1497464",
   "shaw:1806": "1433583",
@@ -920,8 +921,8 @@
    "title": "A Talent for Murder",
    "year": 2026,
    "imdb_id": "tt14129116",
-   "imdb": 6.4,
-   "letterboxd": 3.2,
+   "imdb": 6.3,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/a-talent-for-murder-2026/",
    "runtime": 106
   },
@@ -1181,7 +1182,7 @@
    "title": "The Hunger Games: Sunrise on the Reaping",
    "year": 2026,
    "imdb_id": "tt32558705",
-   "imdb": 7.6,
+   "imdb": 7.5,
    "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/the-hunger-games-sunrise-on-the-reaping/",
    "runtime": 158
@@ -1344,6 +1345,15 @@
    "letterboxd_url": "https://letterboxd.com/film/scene-2026/",
    "runtime": 149
   },
+  "1408207": {
+   "title": "Zero A.D.: The Birth of Christ",
+   "year": 2026,
+   "imdb_id": "tt34491649",
+   "runtime": 115,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/zero-ad-the-birth-of-christ/"
+  },
   "1411529": {
    "title": "Take Off",
    "year": 2026,
@@ -1464,7 +1474,7 @@
    "year": 2026,
    "imdb_id": "tt36408401",
    "imdb": null,
-   "letterboxd": 3.3,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
    "runtime": 141
   },
@@ -1543,7 +1553,7 @@
    "title": "Gunmaaster G9",
    "year": 2026,
    "imdb_id": "tt37539573",
-   "runtime": null,
+   "runtime": 142,
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/gunmaaster-g9/"
@@ -1560,7 +1570,7 @@
    "title": "Bachelor Party D'eux",
    "year": 2026,
    "imdb_id": "tt41075537",
-   "imdb": 4.4,
+   "imdb": 4.3,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/bachelor-party-deux/",
    "runtime": 132
@@ -1649,7 +1659,7 @@
    "title": "Paradise Lost",
    "year": 2026,
    "imdb_id": "tt43658893",
-   "imdb": 5.8,
+   "imdb": 5.9,
    "letterboxd": 2.9,
    "letterboxd_url": "https://letterboxd.com/film/paradise-lost-2026-1/",
    "runtime": 101
@@ -2250,7 +2260,7 @@
   },
   "hexed family movie day": {
    "tmdb": null,
-   "checked": "2026-11-18"
+   "checked": "2026-11-25"
   },
   "hexed spellbound screening": {
    "tmdb": null,
@@ -2783,6 +2793,10 @@
   "zero a d": {
    "tmdb": null,
    "checked": "2026-11-21"
+  },
+  "zero a d the birth of christ": {
+   "tmdb": 1408207,
+   "checked": "2026-11-25"
   },
   "空枪": {
    "tmdb": 1567937,
