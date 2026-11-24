@@ -22,11 +22,10 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main # a re-run or queued run starts from the latest data, so it can't re-send alerts
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -65,6 +64,17 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           path: _site
+
+  # Deploy in a job of its own: in the same job, deploy-pages sometimes looked for the
+  # artifact before GitHub listed it ("No artifacts named github-pages", Nov 2026).
+  # "Re-run failed jobs" on this job republishes without re-running the scrapers.
+  deploy:
+    needs: update
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
-        if: ${{ !cancelled() }}
         uses: actions/deploy-pages@v4
