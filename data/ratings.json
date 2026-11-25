@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -14,6 +14,7 @@
   "afa:sgiff-2026-macho-dancer-1988": "170924",
   "afa:sgiff-2026-my-name-aint-suzie-1985": "187021",
   "afa:sultan-mahmood-mangkat-di-julang-the-passing-of-sultan-mahmood-1961": "286237",
+  "filmhouse:108": "129",
   "filmhouse:127": "1370096",
   "filmhouse:144": "950028",
   "filmhouse:168": "76",
@@ -303,6 +304,15 @@
    "imdb": 9.0,
    "letterboxd": 4.6,
    "letterboxd_url": "https://letterboxd.com/film/the-lord-of-the-rings-the-return-of-the-king/"
+  },
+  "129": {
+   "title": "Spirited Away",
+   "year": 2001,
+   "imdb_id": "tt0245429",
+   "runtime": 125,
+   "imdb": 8.6,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/spirited-away/"
   },
   "146": {
    "title": "Crouching Tiger, Hidden Dragon",
@@ -907,7 +917,7 @@
    "year": 2026,
    "imdb_id": "tt37740247",
    "runtime": 140,
-   "imdb": 6.6,
+   "imdb": 6.5,
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/9-temples-to-heaven/"
   },
@@ -1049,7 +1059,7 @@
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/three-girls-walk-into-a-bar/",
-   "runtime": null
+   "runtime": 61
   },
   "1204680": {
    "title": "Coyote vs. Acme",
@@ -1317,7 +1327,7 @@
    "year": 2026,
    "imdb_id": "tt34966140",
    "imdb": null,
-   "letterboxd": 3.3,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/focker-in-law/",
    "runtime": 105
   },
@@ -1485,7 +1495,7 @@
    "year": 2026,
    "imdb_id": "tt36408401",
    "imdb": null,
-   "letterboxd": 3.2,
+   "letterboxd": 3.4,
    "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
    "runtime": 141
   },
@@ -1591,7 +1601,7 @@
    "year": 2026,
    "imdb_id": "tt38077943",
    "imdb": null,
-   "letterboxd": 3.3,
+   "letterboxd": 3.2,
    "letterboxd_url": "https://letterboxd.com/film/hexed-2026/",
    "runtime": 103
   },
@@ -1879,7 +1889,7 @@
  "matches": {
   "2026": {
    "tmdb": null,
-   "checked": "2026-11-19"
+   "checked": "2026-11-26"
   },
   "9 temples to heaven": {
    "tmdb": 1046304,
@@ -2047,7 +2057,7 @@
   },
   "cff a tapestry of a legendary land": {
    "tmdb": null,
-   "checked": "2026-11-19"
+   "checked": "2026-11-26"
   },
   "cff as the water flows": {
    "tmdb": 1497873,
@@ -2059,7 +2069,7 @@
   },
   "cff i am what i am 2": {
    "tmdb": null,
-   "checked": "2026-11-19"
+   "checked": "2026-11-26"
   },
   "cff its ok": {
    "tmdb": 1546855,
@@ -2345,6 +2355,10 @@
    "tmdb": 784267,
    "checked": "2026-10-30"
   },
+  "larc en ciel 35th lanniversary tour live viewing": {
+   "tmdb": null,
+   "checked": "2026-11-26"
+  },
   "little women": {
    "tmdb": 331482,
    "checked": "2026-11-19"
@@ -2407,7 +2421,7 @@
   },
   "nausicaa of the valley of the wind": {
    "tmdb": null,
-   "checked": "2026-11-19"
+   "checked": "2026-11-26"
   },
   "nayyi navelli": {
    "tmdb": 1654581,
@@ -2427,7 +2441,7 @@
   },
   "om chapter 1 udhiram the blood wood": {
    "tmdb": null,
-   "checked": "2026-11-19"
+   "checked": "2026-11-26"
   },
   "once upon a time in the middle east": {
    "tmdb": 1391021,
@@ -2564,6 +2578,10 @@
   "spider man brand new day": {
    "tmdb": 969681,
    "checked": "2026-10-30"
+  },
+  "spirited away": {
+   "tmdb": 129,
+   "checked": "2026-11-26"
   },
   "stop making sense": {
    "tmdb": 24128,
@@ -2727,7 +2745,7 @@
   },
   "the violinist an exclusive tedxsingapore community screening q and a": {
    "tmdb": null,
-   "checked": "2026-11-19"
+   "checked": "2026-11-26"
   },
   "the weight": {
    "tmdb": 1433583,
