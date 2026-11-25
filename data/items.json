@@ -23,6 +23,43 @@
  },
  "items": [
   {
+   "source": "gv",
+   "id": "7538",
+   "title": "Fans’ Screening: The Hunger Games: Sunrise On The Reaping",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7538",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7538.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "soon",
+   "on_sale": true,
+   "first_seen": "2026-11-25T16:34:28+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6b054c93044a13db3f243f56",
+   "title": "Queen at Sea",
+   "url": "https://events.singaporefilmsociety.com/films/6b054c93044a13db3f243f56",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/aaf8bc3d46306351c727bab3c52f8724.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Showcase #62"
+   ],
+   "showing": "soon",
+   "on_sale": true,
+   "first_seen": "2026-11-25T16:34:28+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
    "source": "filmhouse",
    "id": "253",
    "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -4593,7 +4630,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },

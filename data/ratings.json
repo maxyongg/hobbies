@@ -157,6 +157,7 @@
   "gv:7530": "822653",
   "gv:7531": "1777750",
   "gv:7533": "1003596",
+  "gv:7538": "1300968",
   "gv:8489": "1269325",
   "gv:8490": "1375156",
   "gv:8491": "1081010",
@@ -182,6 +183,7 @@
   "sfs:6afbd5215f2c74784fc1f4be": "1196901",
   "sfs:6b04f143ee13d3933d1bbcc8": "1046304",
   "sfs:6b04f231d129d53aad77d3a7": "1559680",
+  "sfs:6b054c93044a13db3f243f56": "1021848",
   "shaw:1363": "1117898",
   "shaw:1377": "1477104",
   "shaw:1401": "1379486",
@@ -890,6 +892,15 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/avengers-doomsday/",
    "runtime": 165
+  },
+  "1021848": {
+   "title": "Queen at Sea",
+   "year": 2026,
+   "imdb_id": "tt27541205",
+   "runtime": 121,
+   "imdb": 7.5,
+   "letterboxd": 3.8,
+   "letterboxd_url": "https://letterboxd.com/film/queen-at-sea/"
   },
   "1046304": {
    "title": "9 Temples to Heaven",
@@ -2485,6 +2496,10 @@
   "puella magi madoka magica the movie walpurgisnacht rising": {
    "tmdb": 822653,
    "checked": "2026-10-30"
+  },
+  "queen at sea": {
+   "tmdb": 1021848,
+   "checked": "2026-11-25"
   },
   "raja bersiong": {
    "tmdb": 249101,
