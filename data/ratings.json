@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -775,7 +775,7 @@
    "year": 2026,
    "imdb_id": "tt27988879",
    "imdb": 8.2,
-   "letterboxd": 3.6,
+   "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/ramayana-rise-of-a-legend/",
    "runtime": 195
   },
@@ -1263,7 +1263,7 @@
    "title": "The Odyssey",
    "year": 2026,
    "imdb_id": "tt33764258",
-   "imdb": 8.4,
+   "imdb": 8.3,
    "letterboxd": 4.3,
    "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
    "runtime": 173
@@ -1343,7 +1343,7 @@
    "year": 2026,
    "imdb_id": "tt34966140",
    "imdb": null,
-   "letterboxd": 3.2,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/focker-in-law/",
    "runtime": 105
   },
@@ -1520,7 +1520,7 @@
    "year": 2026,
    "imdb_id": "tt36408401",
    "imdb": null,
-   "letterboxd": 3.4,
+   "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
    "runtime": 141
   },
@@ -1643,8 +1643,8 @@
    "title": "Hexed",
    "year": 2026,
    "imdb_id": "tt38077943",
-   "imdb": null,
-   "letterboxd": 3.2,
+   "imdb": 6.8,
+   "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/hexed-2026/",
    "runtime": 103
   },
@@ -1653,7 +1653,7 @@
    "year": 2026,
    "imdb_id": "tt44980509",
    "imdb": null,
-   "letterboxd": null,
+   "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/final-interview/",
    "runtime": 108
   },
@@ -1915,7 +1915,7 @@
    "title": "You Can See Everything",
    "year": 2026,
    "imdb_id": "tt45368240",
-   "imdb": 9.0,
+   "imdb": 8.9,
    "letterboxd": 4.6,
    "letterboxd_url": "https://letterboxd.com/film/you-can-see-everything/",
    "runtime": 175
@@ -1924,7 +1924,7 @@
    "title": "Detective Conan: The Counterfeit Case of Ultra 30",
    "year": 2026,
    "imdb_id": "tt46656123",
-   "imdb": 5.5,
+   "imdb": 5.6,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/detective-conan-the-counterfeit-case-of-ultra/",
    "runtime": 93
@@ -2029,7 +2029,7 @@
   },
   "avengers endgame x doomsday marathon": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "bachelor party deux": {
    "tmdb": 1533928,
@@ -2181,7 +2181,7 @@
   },
   "deluxe dine in set dune part three": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "demon agent": {
    "tmdb": 1630030,
@@ -2309,7 +2309,7 @@
   },
   "gold class dining set dune part three": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "gunmaaster g9": {
    "tmdb": 1510775,
@@ -2337,7 +2337,7 @@
   },
   "hexed spellbound screening": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "hoshimachi suisei once upon a stellar live viewing": {
    "tmdb": null,
@@ -2633,7 +2633,7 @@
   },
   "shaw silver screen supper club when harry met sally countdown": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "singapore dreaming": {
    "tmdb": 73650,
@@ -2681,7 +2681,7 @@
   },
   "the alfee 3000premium one night": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "the angry birds movie 3": {
    "tmdb": 1300926,
@@ -2721,7 +2721,7 @@
   },
   "the fellow who rejected college": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "the further mis adventures of cliff booth": {
    "tmdb": 1457866,
@@ -2889,7 +2889,7 @@
   },
   "yuzuru hanyu realive an ice story project in saga live viewing": {
    "tmdb": null,
-   "checked": "2026-11-20"
+   "checked": "2026-11-27"
   },
   "zero a d": {
    "tmdb": null,
