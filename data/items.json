@@ -23,6 +23,169 @@
  },
  "items": [
   {
+   "source": "gv",
+   "id": "1492",
+   "title": "I Play Rocky",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1492",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img1492.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "NC16"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": null
+  },
+  {
+   "source": "gv",
+   "id": "7540",
+   "title": "Rascal Does Not Dream Of A Dear Friend",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7540",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7540.jpg",
+   "release_date": null,
+   "tags": [
+    "Japanese"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": null
+  },
+  {
+   "source": "gv",
+   "id": "8495",
+   "title": "Maatrubhumi: May War Rest In Peace",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8495",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8495.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": null
+  },
+  {
+   "source": "gv",
+   "id": "8496",
+   "title": "Eetha",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/8496",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img8496.jpg",
+   "release_date": null,
+   "tags": [
+    "Hindi"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": null
+  },
+  {
+   "source": "sfs",
+   "id": "6b079f646c4d53f7fd2edf65",
+   "title": "Dead Tide",
+   "url": "https://events.singaporefilmsociety.com/films/6b079f646c4d53f7fd2edf65",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1795661738383temp-1795661738309-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS x Clover Spotlight"
+   ],
+   "showing": "soon",
+   "on_sale": true,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "shaw",
+   "id": "2124",
+   "title": "Train [TAM]",
+   "url": "https://shaw.sg/movie-details/2124",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2124-Poster-1795666850749",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": null
+  },
+  {
+   "source": "shaw",
+   "id": "2125",
+   "title": "Mayan (Malayalam)",
+   "url": "https://shaw.sg/movie-details/2125",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2125-Poster-1795667164284",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": null
+  },
+  {
+   "source": "shaw",
+   "id": "2126",
+   "title": "Mr. Bhaarath [TAM]",
+   "url": "https://shaw.sg/movie-details/2126",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2126-Poster-1795667405776",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": null
+  },
+  {
+   "source": "shaw",
+   "id": "2128",
+   "title": "Flashdance (1983) (4K)",
+   "url": "https://shaw.sg/movie-details/2128",
+   "type": "film",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2128-Poster-1795679104248",
+   "release_date": null,
+   "tags": [
+    "Coming Soon"
+   ],
+   "showing": "soon",
+   "on_sale": false,
+   "first_seen": "2026-11-26T16:22:34+08:00",
+   "listed": true,
+   "alert": "sent",
+   "sale_alert": null
+  },
+  {
    "source": "filmhouse",
    "id": "108",
    "title": "Spirited Away (25th Anniversary Special Screening)",
@@ -272,7 +435,7 @@
    "release_date": null,
    "tags": [
     "Hindi",
-    "NC16"
+    "M18"
    ],
    "showing": "now",
    "on_sale": true,
@@ -2274,7 +2437,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -2369,7 +2532,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -2482,7 +2645,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -2576,7 +2739,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -2742,7 +2905,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -2799,7 +2962,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -2951,7 +3114,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -3046,7 +3209,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -3254,7 +3417,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -3482,7 +3645,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },

@@ -107,6 +107,7 @@
   "gv:1481": "1300968",
   "gv:1489": "1170608",
   "gv:1490": "1003596",
+  "gv:1492": "1286656",
   "gv:2475": "822653",
   "gv:2476": "1196901",
   "gv:2477": "1411529",
@@ -159,12 +160,15 @@
   "gv:7531": "1777750",
   "gv:7533": "1003596",
   "gv:7538": "1300968",
+  "gv:7540": "1553200",
   "gv:8489": "1269325",
   "gv:8490": "1375156",
   "gv:8491": "1081010",
   "gv:8492": "1654581",
   "gv:8493": "1209723",
   "gv:8494": "1510775",
+  "gv:8495": "1475768",
+  "gv:8496": "1489396",
   "sfs:6a5042c675bd49357a05f4c2": "1679026",
   "sfs:6a5045c451da292b56c9aa70": "1555810",
   "sfs:6a5f1c002b33ea397dd1afc0": "1425085",
@@ -185,6 +189,7 @@
   "sfs:6b04f143ee13d3933d1bbcc8": "1046304",
   "sfs:6b04f231d129d53aad77d3a7": "1559680",
   "sfs:6b054c93044a13db3f243f56": "1021848",
+  "sfs:6b079f646c4d53f7fd2edf65": "1630206",
   "shaw:1363": "1117898",
   "shaw:1377": "1477104",
   "shaw:1401": "1379486",
@@ -259,7 +264,9 @@
   "shaw:2106": "438631",
   "shaw:2113": "693134",
   "shaw:2116": "1533928",
-  "shaw:2117": "438631"
+  "shaw:2117": "438631",
+  "shaw:2126": "1404362",
+  "shaw:2128": "535"
  },
  "films": {
   "55": {
@@ -340,6 +347,15 @@
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/amelie/",
    "runtime": 122
+  },
+  "535": {
+   "title": "Flashdance",
+   "year": 1983,
+   "imdb_id": "tt0085549",
+   "runtime": 95,
+   "imdb": 6.2,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/flashdance/"
   },
   "562": {
    "title": "Die Hard",
@@ -1366,6 +1382,15 @@
    "letterboxd_url": "https://letterboxd.com/film/scene-2026/",
    "runtime": 149
   },
+  "1404362": {
+   "title": "Mr. Bhaarath",
+   "year": 2026,
+   "imdb_id": "tt35063806",
+   "runtime": 133,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/mr-bhaarath/"
+  },
   "1408207": {
    "title": "Zero A.D.: The Birth of Christ",
    "year": 2026,
@@ -1507,6 +1532,15 @@
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/forgotten-island-2026/"
   },
+  "1475768": {
+   "title": "Maatrubhumi:  May War Rest in Peace",
+   "year": 2026,
+   "imdb_id": "tt27610832",
+   "runtime": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/maatrubhumi-may-war-rest-in-peace/"
+  },
   "1476614": {
    "title": "All of a Sudden",
    "year": 2026,
@@ -1533,6 +1567,15 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/cocomelon-the-movie/",
    "runtime": null
+  },
+  "1489396": {
+   "title": "Eetha",
+   "year": 2026,
+   "imdb_id": "tt38840418",
+   "runtime": null,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/eetha/"
   },
   "1497464": {
    "title": "Gatto",
@@ -1629,7 +1672,8 @@
    "imdb_id": "tt39927807",
    "imdb": 9.4,
    "letterboxd": 3.7,
-   "letterboxd_url": "https://letterboxd.com/film/rascal-does-not-dream-of-a-dear-friend/"
+   "letterboxd_url": "https://letterboxd.com/film/rascal-does-not-dream-of-a-dear-friend/",
+   "runtime": 118
   },
   "1555810": {
    "title": "The Old Man and His Car",
@@ -2199,6 +2243,10 @@
    "tmdb": 1759202,
    "checked": "2026-10-30"
   },
+  "eetha": {
+   "tmdb": 1489396,
+   "checked": "2026-11-26"
+  },
   "evil does not exist": {
    "tmdb": 1156125,
    "checked": "2026-11-24"
@@ -2226,6 +2274,10 @@
   "fjord": {
    "tmdb": 1401459,
    "checked": "2026-10-30"
+  },
+  "flashdance": {
+   "tmdb": 535,
+   "checked": "2026-11-26"
   },
   "focker in law": {
    "tmdb": 1400336,
@@ -2371,6 +2423,10 @@
    "tmdb": 47002,
    "checked": "2026-10-30"
   },
+  "maatrubhumi may war rest in peace": {
+   "tmdb": 1475768,
+   "checked": "2026-11-26"
+  },
   "macho dancer": {
    "tmdb": 170924,
    "checked": "2026-10-30"
@@ -2378,6 +2434,10 @@
   "mad max fury road": {
    "tmdb": 76341,
    "checked": "2026-10-30"
+  },
+  "mayan": {
+   "tmdb": null,
+   "checked": "2026-11-26"
   },
   "merry christmas mr lawrence": {
    "tmdb": 11948,
@@ -2406,6 +2466,10 @@
   "moonlight": {
    "tmdb": 376867,
    "checked": "2026-10-30"
+  },
+  "mr bhaarath": {
+   "tmdb": 1404362,
+   "checked": "2026-11-26"
   },
   "munafik melawan iblis": {
    "tmdb": 1567791,
@@ -2766,6 +2830,10 @@
   "traces of justice": {
    "tmdb": 1439171,
    "checked": "2026-11-06"
+  },
+  "train": {
+   "tmdb": null,
+   "checked": "2026-11-26"
   },
   "udta teer": {
    "tmdb": 1375156,
