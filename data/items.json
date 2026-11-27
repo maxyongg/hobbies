@@ -24,6 +24,25 @@
  "items": [
   {
    "source": "gv",
+   "id": "7537",
+   "title": "Fans' Screening - Dune: Part Three",
+   "url": "https://www.gv.com.sg/GVMovieDetails#/movie/7537",
+   "type": "film",
+   "poster": "https://media.gv.com.sg/imagesresize/img7537.jpg",
+   "release_date": null,
+   "tags": [
+    "English",
+    "PG13"
+   ],
+   "showing": "soon",
+   "on_sale": true,
+   "first_seen": "2026-11-27T16:33:37+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "gv",
    "id": "1492",
    "title": "I Play Rocky",
    "url": "https://www.gv.com.sg/GVMovieDetails#/movie/1492",
@@ -2888,7 +2907,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -5298,7 +5317,7 @@
    "title": "Marvel Studios' Avengers: Doomsday",
    "url": "https://shaw.sg/movie-details/1633",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1633-Poster-1787107698768",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1633-Poster-1795768242295",
    "release_date": null,
    "tags": [
     "Coming Soon"
@@ -6106,7 +6125,7 @@
    "title": "Marvel Studios' Avengers: Doomsday (2D | INFINITY VISION)",
    "url": "https://shaw.sg/movie-details/2034",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2034-Poster-1790561879366",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/2034-Poster-1795768220165",
    "release_date": null,
    "tags": [
     "Advance Sales"
