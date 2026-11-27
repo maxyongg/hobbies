@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "items": {
   "afa:darah-ku-my-blood-1963": "249504",
   "afa:permata-di-perlimbahan-jewel-in-the-slum-1952": "561483",
@@ -170,12 +170,31 @@
   "gv:8494": "1510775",
   "gv:8495": "1475768",
   "gv:8496": "1489396",
+  "sfs:6a3b67dd0b8768e9faee26f9": "1254808",
+  "sfs:6a4cab8ec8cc1458a4729d29": "1432596",
   "sfs:6a5042c675bd49357a05f4c2": "1679026",
+  "sfs:6a5043f588c74b8069f15471": "5919",
+  "sfs:6a5045307833837892571713": "793",
   "sfs:6a5045c451da292b56c9aa70": "1555810",
+  "sfs:6a55e412af2e910c11da8e70": "1222574",
+  "sfs:6a55e61da704ab6545f8a6fe": "759524",
+  "sfs:6a55e78528cb17b5dee4633b": "1367555",
   "sfs:6a5f1c002b33ea397dd1afc0": "1425085",
+  "sfs:6a67013b9dc61f18af4f944c": "1484620",
   "sfs:6a6807ca888c1663a56725b9": "1248437",
+  "sfs:6a714df051d53385e59a747e": "335432",
+  "sfs:6a714fb37dea5c8c19a96c5f": "1523431",
+  "sfs:6a71aacc802b1ec027015d42": "884692",
+  "sfs:6a749e8e4719364d0dc3fb11": "719449",
+  "sfs:6a83dcf5a4c5d9fb6ea4a5f4": "655",
+  "sfs:6a83e1cdc5faadfad5cccffb": "1509659",
+  "sfs:6a8cf806c5d3f0424e8e3638": "1529024",
+  "sfs:6a955bec5b8243922b0141f0": "748681",
+  "sfs:6a9650a83b5fb9ff8eda4e5c": "11123",
   "sfs:6aaa3073f96d731e7868b10e": "458624",
   "sfs:6ab4a1ee427841e72d8e97c3": "1421155",
+  "sfs:6ab60f7201350a2b70123fd0": "760400",
+  "sfs:6abb4b46ccb23dcd1d926ac8": "426902",
   "sfs:6ac5c272d4796dc7179974b0": "1157628",
   "sfs:6acd9a03f65428d37ae2c60d": "2204",
   "sfs:6ace287d8ff16fc6f850878b": "804",
@@ -367,13 +386,32 @@
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/die-hard/"
   },
+  "655": {
+   "title": "Paris, Texas",
+   "year": 1984,
+   "imdb_id": "tt0087884",
+   "runtime": 145,
+   "imdb": 8.1,
+   "letterboxd": 4.4,
+   "letterboxd_url": "https://letterboxd.com/film/paris-texas/"
+  },
+  "793": {
+   "title": "Blue Velvet",
+   "year": 1986,
+   "imdb_id": "tt0090756",
+   "runtime": 120,
+   "imdb": 7.7,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/blue-velvet/"
+  },
   "804": {
    "title": "Roman Holiday",
    "year": 1953,
    "imdb_id": "tt0046250",
    "imdb": 8.0,
    "letterboxd": 4.2,
-   "letterboxd_url": "https://letterboxd.com/film/roman-holiday/"
+   "letterboxd_url": "https://letterboxd.com/film/roman-holiday/",
+   "runtime": 119
   },
   "892": {
    "title": "Delicatessen",
@@ -415,7 +453,8 @@
    "imdb_id": "tt0069687",
    "imdb": 7.8,
    "letterboxd": 4.1,
-   "letterboxd_url": "https://letterboxd.com/film/alice-in-the-cities/"
+   "letterboxd_url": "https://letterboxd.com/film/alice-in-the-cities/",
+   "runtime": 110
   },
   "4977": {
    "title": "Paprika",
@@ -425,6 +464,15 @@
    "letterboxd": 4.1,
    "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
    "runtime": 90
+  },
+  "5919": {
+   "title": "The Towering Inferno",
+   "year": 1974,
+   "imdb_id": "tt0072308",
+   "runtime": 165,
+   "imdb": 7.0,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/the-towering-inferno/"
   },
   "9297": {
    "title": "Monster House",
@@ -477,12 +525,21 @@
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/this-is-spinal-tap/"
   },
+  "11123": {
+   "title": "Earthquake",
+   "year": 1974,
+   "imdb_id": "tt0071455",
+   "runtime": 123,
+   "imdb": 6.0,
+   "letterboxd": 3.0,
+   "letterboxd_url": "https://letterboxd.com/film/earthquake/"
+  },
   "11948": {
    "title": "Merry Christmas, Mr. Lawrence",
    "year": 1983,
    "imdb_id": "tt0085933",
    "imdb": 7.2,
-   "letterboxd": 3.9,
+   "letterboxd": 4.0,
    "letterboxd_url": "https://letterboxd.com/film/merry-christmas-mr-lawrence/",
    "runtime": 124
   },
@@ -692,6 +749,15 @@
    "letterboxd_url": "https://letterboxd.com/film/little-women-2019/",
    "runtime": 135
   },
+  "335432": {
+   "title": "Rubbers",
+   "year": 2015,
+   "imdb_id": "tt3914454",
+   "runtime": 86,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/rubbers/"
+  },
   "376867": {
    "title": "Moonlight",
    "year": 2016,
@@ -699,6 +765,15 @@
    "imdb": 7.4,
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/moonlight-2016/"
+  },
+  "426902": {
+   "title": "The Songs We Sang",
+   "year": 2016,
+   "imdb_id": "tt5589158",
+   "runtime": 128,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/the-songs-we-sang/"
   },
   "438631": {
    "title": "Dune",
@@ -798,6 +873,15 @@
    "letterboxd_url": "https://letterboxd.com/film/dune-part-two/",
    "runtime": 167
   },
+  "719449": {
+   "title": "Disruption",
+   "year": 2019,
+   "imdb_id": "tt7724770",
+   "runtime": 62,
+   "imdb": 3.2,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/disruption-2019/"
+  },
   "747509": {
    "title": "Ah Girl",
    "year": 2026,
@@ -815,6 +899,24 @@
    "letterboxd": 3.5,
    "letterboxd_url": "https://letterboxd.com/film/the-violinist-2026/",
    "runtime": 114
+  },
+  "759524": {
+   "title": "The Story of Southern Islet",
+   "year": 2021,
+   "imdb_id": "tt13212046",
+   "runtime": 105,
+   "imdb": 6.7,
+   "letterboxd": 3.6,
+   "letterboxd_url": "https://letterboxd.com/film/the-story-of-southern-islet/"
+  },
+  "760400": {
+   "title": "Sementara",
+   "year": 2020,
+   "imdb_id": "tt8992454",
+   "runtime": 103,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/sementara/"
   },
   "784267": {
    "title": "Landmark",
@@ -1103,6 +1205,15 @@
    "letterboxd": 3.3,
    "letterboxd_url": "https://letterboxd.com/film/winter-of-the-crow/"
   },
+  "1222574": {
+   "title": "Marching Boys",
+   "year": 2025,
+   "imdb_id": "tt37093338",
+   "runtime": 117,
+   "imdb": null,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/marching-boys/"
+  },
   "1234139": {
    "title": "Jailer 2",
    "year": 2026,
@@ -1127,6 +1238,15 @@
    "imdb": 7.5,
    "letterboxd": 3.9,
    "letterboxd_url": "https://letterboxd.com/film/digger-2026/"
+  },
+  "1254808": {
+   "title": "Nouvelle Vague",
+   "year": 2025,
+   "imdb_id": "tt31688586",
+   "runtime": 106,
+   "imdb": 7.3,
+   "letterboxd": 3.7,
+   "letterboxd_url": "https://letterboxd.com/film/nouvelle-vague-2025/"
   },
   "1255833": {
    "title": "Whalefall",
@@ -1260,6 +1380,15 @@
    "letterboxd_url": "https://letterboxd.com/film/keep-real/",
    "runtime": null
   },
+  "1367555": {
+   "title": "Mother Bhumi",
+   "year": 2025,
+   "imdb_id": "tt33708662",
+   "runtime": 129,
+   "imdb": 6.5,
+   "letterboxd": 3.2,
+   "letterboxd_url": "https://letterboxd.com/film/mother-bhumi/"
+  },
   "1368337": {
    "title": "The Odyssey",
    "year": 2026,
@@ -1300,7 +1429,7 @@
    "year": 2026,
    "imdb_id": "tt34374553",
    "imdb": 6.3,
-   "letterboxd": 3.0,
+   "letterboxd": 2.9,
    "letterboxd_url": "https://letterboxd.com/film/victorian-psycho/",
    "runtime": 102
   },
@@ -1343,7 +1472,7 @@
    "title": "Focker-in-Law",
    "year": 2026,
    "imdb_id": "tt34966140",
-   "imdb": null,
+   "imdb": 6.0,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/focker-in-law/",
    "runtime": 105
@@ -1416,7 +1545,7 @@
    "imdb_id": "tt38221401",
    "imdb": 7.0,
    "letterboxd": 3.5,
-   "letterboxd_url": "https://letterboxd.com/film/ikatan-darah/",
+   "letterboxd_url": "https://letterboxd.com/film/blood-ties-2025-3/",
    "runtime": 119
   },
   "1422041": {
@@ -1445,6 +1574,15 @@
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/mojoku-hilang/",
    "runtime": 139
+  },
+  "1432596": {
+   "title": "Palestine 36",
+   "year": 2025,
+   "imdb_id": "tt29271622",
+   "runtime": 120,
+   "imdb": 7.4,
+   "letterboxd": 3.9,
+   "letterboxd_url": "https://letterboxd.com/film/palestine-36/"
   },
   "1433568": {
    "title": "The Rope Curse 4: Kuntilanak",
@@ -1520,7 +1658,7 @@
    "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
    "year": 2026,
    "imdb_id": "tt36408401",
-   "imdb": null,
+   "imdb": 7.9,
    "letterboxd": 3.6,
    "letterboxd_url": "https://letterboxd.com/film/the-further-mis-adventures-of-cliff-booth/",
    "runtime": 141
@@ -1569,11 +1707,20 @@
    "letterboxd_url": "https://letterboxd.com/film/cocomelon-the-movie/",
    "runtime": null
   },
+  "1484620": {
+   "title": "Everybody to Kenmure Street",
+   "year": 2026,
+   "imdb_id": "tt36966956",
+   "runtime": 98,
+   "imdb": 7.7,
+   "letterboxd": 4.1,
+   "letterboxd_url": "https://letterboxd.com/film/everybody-to-kenmure-street/"
+  },
   "1489396": {
    "title": "Eetha",
    "year": 2026,
    "imdb_id": "tt38840418",
-   "runtime": null,
+   "runtime": 150,
    "imdb": null,
    "letterboxd": null,
    "letterboxd_url": "https://letterboxd.com/film/eetha/"
@@ -1614,6 +1761,15 @@
    "letterboxd_url": "https://letterboxd.com/film/sense-and-sensibility-2026/",
    "runtime": 132
   },
+  "1509659": {
+   "title": "Badak",
+   "year": 2025,
+   "imdb_id": "tt37536961",
+   "runtime": 93,
+   "imdb": 7.0,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/badak/"
+  },
   "1510775": {
    "title": "Gunmaaster G9",
    "year": 2026,
@@ -1631,6 +1787,24 @@
    "letterboxd": 4.2,
    "letterboxd_url": "https://letterboxd.com/film/baththa/"
   },
+  "1523431": {
+   "title": "Kopitiam Days",
+   "year": 2025,
+   "imdb_id": "tt36473712",
+   "runtime": 128,
+   "imdb": null,
+   "letterboxd": null,
+   "letterboxd_url": "https://letterboxd.com/film/kopitiam-days/"
+  },
+  "1529024": {
+   "title": "How to Divorce During the War",
+   "year": 2026,
+   "imdb_id": "tt29009930",
+   "runtime": 108,
+   "imdb": 6.8,
+   "letterboxd": 3.5,
+   "letterboxd_url": "https://letterboxd.com/film/how-to-divorce-during-the-war/"
+  },
   "1533928": {
    "title": "Bachelor Party D'eux",
    "year": 2026,
@@ -1644,7 +1818,7 @@
    "title": "Hexed",
    "year": 2026,
    "imdb_id": "tt38077943",
-   "imdb": 6.8,
+   "imdb": 6.7,
    "letterboxd": 3.1,
    "letterboxd_url": "https://letterboxd.com/film/hexed-2026/",
    "runtime": 103
@@ -1671,7 +1845,7 @@
    "title": "Rascal Does Not Dream of a Dear Friend",
    "year": 2026,
    "imdb_id": "tt39927807",
-   "imdb": 9.4,
+   "imdb": 9.3,
    "letterboxd": 3.7,
    "letterboxd_url": "https://letterboxd.com/film/rascal-does-not-dream-of-a-dear-friend/",
    "runtime": 118
@@ -1848,7 +2022,8 @@
    "imdb_id": null,
    "imdb": null,
    "letterboxd": null,
-   "letterboxd_url": "https://letterboxd.com/film/itam-a-sun-bear-story/"
+   "letterboxd_url": "https://letterboxd.com/film/itam-a-sun-bear-story/",
+   "runtime": 80
   },
   "1680033": {
    "title": "Appa Kutty",
@@ -2020,6 +2195,10 @@
    "tmdb": 130824,
    "checked": "2026-11-14"
   },
+  "ashes and sighs": {
+   "tmdb": null,
+   "checked": "2026-11-28"
+  },
   "avengers doomsday": {
    "tmdb": 1003596,
    "checked": "2026-10-30"
@@ -2040,6 +2219,10 @@
    "tmdb": null,
    "checked": "2026-11-06"
   },
+  "badak": {
+   "tmdb": 1509659,
+   "checked": "2026-11-28"
+  },
   "baththa": {
    "tmdb": 1515692,
    "checked": "2026-10-30"
@@ -2055,6 +2238,10 @@
   "blue lock": {
    "tmdb": 1623376,
    "checked": "2026-10-30"
+  },
+  "blue velvet": {
+   "tmdb": 793,
+   "checked": "2026-11-28"
   },
   "breakfast at tiffanys": {
    "tmdb": 164,
@@ -2212,6 +2399,10 @@
    "tmdb": 1612811,
    "checked": "2026-10-30"
   },
+  "disruption": {
+   "tmdb": 719449,
+   "checked": "2026-11-28"
+  },
   "donga naa koduku": {
    "tmdb": 1641520,
    "checked": "2026-11-07"
@@ -2236,6 +2427,10 @@
    "tmdb": 693134,
    "checked": "2026-11-18"
   },
+  "earthquake": {
+   "tmdb": 11123,
+   "checked": "2026-11-28"
+  },
   "ebenezer": {
    "tmdb": 1567605,
    "checked": "2026-10-30"
@@ -2248,6 +2443,10 @@
    "tmdb": 1489396,
    "checked": "2026-11-26"
   },
+  "everybody to kenmure street": {
+   "tmdb": 1484620,
+   "checked": "2026-11-28"
+  },
   "evil does not exist": {
    "tmdb": 1156125,
    "checked": "2026-11-24"
@@ -2258,7 +2457,7 @@
   },
   "family day disneys hexed": {
    "tmdb": null,
-   "checked": "2026-11-21"
+   "checked": "2026-11-28"
   },
   "fatherland": {
    "tmdb": 1437696,
@@ -2344,6 +2543,10 @@
    "tmdb": null,
    "checked": "2026-11-06"
   },
+  "how to divorce during the war": {
+   "tmdb": 1529024,
+   "checked": "2026-11-28"
+  },
   "how to rob a bank": {
    "tmdb": 1437511,
    "checked": "2026-10-30"
@@ -2392,6 +2595,10 @@
    "tmdb": 1379266,
    "checked": "2026-10-30"
   },
+  "kopitiam days": {
+   "tmdb": 1523431,
+   "checked": "2026-11-28"
+  },
   "kudrat 1968 high council": {
    "tmdb": 1731816,
    "checked": "2026-10-30"
@@ -2436,6 +2643,10 @@
    "tmdb": 76341,
    "checked": "2026-10-30"
   },
+  "marching boys": {
+   "tmdb": 1222574,
+   "checked": "2026-11-28"
+  },
   "mayan": {
    "tmdb": null,
    "checked": "2026-11-26"
@@ -2467,6 +2678,10 @@
   "moonlight": {
    "tmdb": 376867,
    "checked": "2026-10-30"
+  },
+  "mother bhumi": {
+   "tmdb": 1367555,
+   "checked": "2026-11-28"
   },
   "mr bhaarath": {
    "tmdb": 1404362,
@@ -2500,6 +2715,10 @@
    "tmdb": 1718699,
    "checked": "2026-10-30"
   },
+  "nouvelle vague": {
+   "tmdb": 1254808,
+   "checked": "2026-11-28"
+  },
   "oh my ghost oh my god": {
    "tmdb": 1193673,
    "checked": "2026-10-30"
@@ -2520,6 +2739,10 @@
    "tmdb": 1746726,
    "checked": "2026-10-30"
   },
+  "palestine 36": {
+   "tmdb": 1432596,
+   "checked": "2026-11-28"
+  },
   "panelstory or how a housing development is born": {
    "tmdb": null,
    "checked": "2026-10-30"
@@ -2531,6 +2754,10 @@
   "paradise lost": {
    "tmdb": 1584855,
    "checked": "2026-10-30"
+  },
+  "paris texas": {
+   "tmdb": 655,
+   "checked": "2026-11-28"
   },
   "paw patrol the dino movie": {
    "tmdb": 1185806,
@@ -2562,7 +2789,7 @@
   },
   "ponyo on the cliff by the sea": {
    "tmdb": null,
-   "checked": "2026-11-21"
+   "checked": "2026-11-28"
   },
   "prahaar the untold story of ujjwal nikam": {
    "tmdb": 1081010,
@@ -2598,7 +2825,7 @@
   },
   "rerun december 2026": {
    "tmdb": null,
-   "checked": "2026-11-21"
+   "checked": "2026-11-28"
   },
   "resident evil": {
    "tmdb": 1423191,
@@ -2616,6 +2843,10 @@
    "tmdb": 804,
    "checked": "2026-10-30"
   },
+  "rubbers": {
+   "tmdb": 335432,
+   "checked": "2026-11-28"
+  },
   "ryuichi sakamoto opus": {
    "tmdb": 1156189,
    "checked": "2026-11-24"
@@ -2623,6 +2854,10 @@
   "scene": {
    "tmdb": 1402181,
    "checked": "2026-10-30"
+  },
+  "sementara": {
+   "tmdb": 760400,
+   "checked": "2026-11-28"
   },
   "sense and sensibility": {
    "tmdb": 1503762,
@@ -2667,6 +2902,10 @@
   "takluk 2 op daulat": {
    "tmdb": 1316347,
    "checked": "2026-11-18"
+  },
+  "temple crimes": {
+   "tmdb": null,
+   "checked": "2026-11-28"
   },
   "test film a": {
    "tmdb": null,
@@ -2734,7 +2973,7 @@
   },
   "the hopeless 10": {
    "tmdb": null,
-   "checked": "2026-10-30"
+   "checked": "2026-11-28"
   },
   "the house on the moon": {
    "tmdb": 1601002,
@@ -2800,9 +3039,21 @@
    "tmdb": 1281331,
    "checked": "2026-10-30"
   },
+  "the songs we sang": {
+   "tmdb": 426902,
+   "checked": "2026-11-28"
+  },
+  "the story of southern islet": {
+   "tmdb": 759524,
+   "checked": "2026-11-28"
+  },
   "the thomas crown affair": {
    "tmdb": 615121,
    "checked": "2026-10-30"
+  },
+  "the towering inferno": {
+   "tmdb": 5919,
+   "checked": "2026-11-28"
   },
   "the violinist": {
    "tmdb": 748681,

@@ -23,6 +23,403 @@
  },
  "items": [
   {
+   "source": "sfs",
+   "id": "6a3b67dd0b8768e9faee26f9",
+   "title": "Nouvelle Vague",
+   "url": "https://events.singaporefilmsociety.com/films/6a3b67dd0b8768e9faee26f9",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1ceb7b1e2567c6506177f5b52da13d9e.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Showcase #57",
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a4cab8ec8cc1458a4729d29",
+   "title": "Palestine 36",
+   "url": "https://events.singaporefilmsociety.com/films/6a4cab8ec8cc1458a4729d29",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/85fe63379fa77e2df0f97e8916ed874b.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a5043f588c74b8069f15471",
+   "title": "The Towering Inferno",
+   "url": "https://events.singaporefilmsociety.com/films/6a5043f588c74b8069f15471",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/289ba8a42ab00219da7d528dca669709.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a5045307833837892571713",
+   "title": "Blue Velvet",
+   "url": "https://events.singaporefilmsociety.com/films/6a5045307833837892571713",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/d1ba7bc66d024ea37cc2642e79693c45.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a55e412af2e910c11da8e70",
+   "title": "Marching Boys",
+   "url": "https://events.singaporefilmsociety.com/films/6a55e412af2e910c11da8e70",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/22f7bb8df3d5d0ab11e67d930c74f9fb.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a55e51528cb17b5dee41f72",
+   "title": "The Fellow Who Rejected College",
+   "url": "https://events.singaporefilmsociety.com/films/6a55e51528cb17b5dee41f72",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/cfa28b54bd8ce6c693def294eae0d401.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a55e61da704ab6545f8a6fe",
+   "title": "The Story of Southern Islet",
+   "url": "https://events.singaporefilmsociety.com/films/6a55e61da704ab6545f8a6fe",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/a85e9933a6af624c7ab29de77b3251d2.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a55e78528cb17b5dee4633b",
+   "title": "Mother Bhumi",
+   "url": "https://events.singaporefilmsociety.com/films/6a55e78528cb17b5dee4633b",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/6d9acf53bfc0e27b8ff7511344e8302a.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a67013b9dc61f18af4f944c",
+   "title": "Everybody to Kenmure Street",
+   "url": "https://events.singaporefilmsociety.com/films/6a67013b9dc61f18af4f944c",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/d99c36a549fb074216c2a5a9d35f4dcd.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Showcase #58"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a714df051d53385e59a747e",
+   "title": "Rubbers",
+   "url": "https://events.singaporefilmsociety.com/films/6a714df051d53385e59a747e",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/a94864f19e6a58fadeb0f54f247f6a65.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a714fb37dea5c8c19a96c5f",
+   "title": "Kopitiam Days",
+   "url": "https://events.singaporefilmsociety.com/films/6a714fb37dea5c8c19a96c5f",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/96b977ec0ffae85033503878b3cd6b82.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a71aacc802b1ec027015d42",
+   "title": "We Are All Strangers",
+   "url": "https://events.singaporefilmsociety.com/films/6a71aacc802b1ec027015d42",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/378199980b9344304e19ff825c1d337e.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Spotlight"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a749e8e4719364d0dc3fb11",
+   "title": "Disruption",
+   "url": "https://events.singaporefilmsociety.com/films/6a749e8e4719364d0dc3fb11",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1788142068463temp-1788142068394-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a749f5a56bc9a6da5b3bee2",
+   "title": "Ashes & Sighs",
+   "url": "https://events.singaporefilmsociety.com/films/6a749f5a56bc9a6da5b3bee2",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1786027913875temp-1786027913860-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a74a0b5e94a5e3455118b93",
+   "title": "Temple Crimes",
+   "url": "https://events.singaporefilmsociety.com/films/6a74a0b5e94a5e3455118b93",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/1786029039864temp-1786029039847-poster.jpg",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a83dcf5a4c5d9fb6ea4a5f4",
+   "title": "Paris, Texas",
+   "url": "https://events.singaporefilmsociety.com/films/6a83dcf5a4c5d9fb6ea4a5f4",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/de95c529d43ac96029451e8760d51b03.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a83e1cdc5faadfad5cccffb",
+   "title": "Badak",
+   "url": "https://events.singaporefilmsociety.com/films/6a83e1cdc5faadfad5cccffb",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/3610d5b1732b2b757bcf2c52bf0149a4.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS x SAS"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a8cf806c5d3f0424e8e3638",
+   "title": "How to Divorce During the War",
+   "url": "https://events.singaporefilmsociety.com/films/6a8cf806c5d3f0424e8e3638",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/36430230adb9bdcc0578fabad16a1597.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Showcase #59"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a955bec5b8243922b0141f0",
+   "title": "The Violinist",
+   "url": "https://events.singaporefilmsociety.com/films/6a955bec5b8243922b0141f0",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/ec0e32ddf42eae22ffeadad8fea89f9b.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Preview"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6a9650a83b5fb9ff8eda4e5c",
+   "title": "Earthquake",
+   "url": "https://events.singaporefilmsociety.com/films/6a9650a83b5fb9ff8eda4e5c",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/d71569000003f8e026131452df56352c.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6ab60f7201350a2b70123fd0",
+   "title": "Sementara",
+   "url": "https://events.singaporefilmsociety.com/films/6ab60f7201350a2b70123fd0",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/22d15a966784fb29d2df847d558e9153.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
+   "source": "sfs",
+   "id": "6abb4b46ccb23dcd1d926ac8",
+   "title": "The Songs We Sang",
+   "url": "https://events.singaporefilmsociety.com/films/6abb4b46ccb23dcd1d926ac8",
+   "type": "film",
+   "poster": "https://static-a.eventive.org/259d2a4608eaf43b2232ca1bcd5d100c.jpg?w=300",
+   "release_date": null,
+   "tags": [
+    "SFS Somerset"
+   ],
+   "showing": "now",
+   "on_sale": true,
+   "first_seen": "2026-11-28T05:17:53+08:00",
+   "listed": true,
+   "alert": "quiet",
+   "sale_alert": "skip"
+  },
+  {
    "source": "gv",
    "id": "7537",
    "title": "Fans' Screening - Dune: Part Three",
@@ -125,7 +522,7 @@
    "tags": [
     "SFS x Clover Spotlight"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-26T16:22:34+08:00",
    "listed": true,
@@ -1036,7 +1433,7 @@
     "Programme",
     "Rerun"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
@@ -1111,7 +1508,7 @@
     "Screening",
     "Rerun"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-14T03:42:20+08:00",
    "listed": true,
@@ -1261,7 +1658,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-11T14:21:03+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "sent",
    "sale_alert": "skip"
   },
@@ -1332,7 +1729,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-11-10T15:18:31+08:00",
    "listed": true,
@@ -3720,11 +4117,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
-   "on_sale": null,
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3753,12 +4150,13 @@
    "poster": "https://static-a.eventive.org/3f50053d20de323b5d96d37b1f084a44.jpg?w=300",
    "release_date": null,
    "tags": [
-    "SFS Somerset"
+    "SFS Somerset",
+    "SFS Spotlight"
    ],
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -3774,11 +4172,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
-   "on_sale": null,
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3791,7 +4189,7 @@
    "tags": [
     "SFS Somerset"
    ],
-   "showing": "soon",
+   "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
    "listed": true,
@@ -3807,12 +4205,13 @@
    "poster": "https://static-a.eventive.org/5b7657b33fd1a2cf66573b00efc91315.jpg?w=300",
    "release_date": null,
    "tags": [
+    "SFS Preview",
     "SFS Somerset"
    ],
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -3846,11 +4245,11 @@
     "SFS Somerset"
    ],
    "showing": "now",
-   "on_sale": null,
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -3864,11 +4263,11 @@
     "SFS Spotlight"
    ],
    "showing": "now",
-   "on_sale": null,
+   "on_sale": true,
    "first_seen": "2026-10-29T22:30:28+08:00",
-   "listed": false,
+   "listed": true,
    "alert": "seed",
-   "sale_alert": null
+   "sale_alert": "skip"
   },
   {
    "source": "sfs",
@@ -4966,7 +5365,7 @@
    "showing": "now",
    "on_sale": true,
    "first_seen": "2026-10-29T21:51:51+08:00",
-   "listed": true,
+   "listed": false,
    "alert": "seed",
    "sale_alert": "skip"
   },
@@ -5543,7 +5942,7 @@
    "title": "Disney and Pixar's Gatto",
    "url": "https://shaw.sg/movie-details/1796",
    "type": "film",
-   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1796-Poster-1781601533513",
+   "poster": "https://snow-shaw-cdn.azureedge.net/prd/content/images/movie/default/en-sg/1796-Poster-1795768493111",
    "release_date": null,
    "tags": [
     "Coming Soon"
